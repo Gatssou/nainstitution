@@ -1,9 +1,8 @@
 <?php
-session_start()
+session_start();
+require_once 'bdd.php';
 ?>
-<?php
-require_once '../index.php';
-?>
+
 <!DOCTYPE html>
 <html lang="fr">
    <head>
@@ -18,9 +17,7 @@ require_once '../index.php';
    </head>
    <body>
    <section class="zindex">
-    <img src="" alt="">
-    <form class="labin" method="POST" action="./logtx.php">
-        <img src="../logpic/team.png" class="piclog" alt="">
+    <form class="labin" method="POST" action="./function.php">
         <div class="inpdec">
             <i class="far fa-user"></i>
             <input type="text" size="20px" name="user" class="decou" placeholder="Username" required>
@@ -36,31 +33,9 @@ require_once '../index.php';
                     
         <p class="log_reg">Dont' have an account ? <a href="./register.php">Register here !</a></p>
     </form>
-        
+   
 </section>
-      <?php
-         if(isset($_GET['reg_err'])){
-            $err = htmlspecialchars($_GET['reg_err']);
-         
-            switch($err){
-               case 'success':
-                ?>
-      <div class="alert_danger">
-         <br><strong>Succès</strong>inscription réussie !
-      </div>
-      <?php
-         break;
-         
-         case 'already':
-            ?>
-      <div class="alert_danger">
-         <br><strong>Erreur</strong> : email/mot de passe/pseudo deja utilisé
-      </div>
-      <?php
-         break;
-         }
-         }
-         ?>
+      
    </form>
    </body>
    <script src="../index.js"></script>
