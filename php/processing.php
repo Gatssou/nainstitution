@@ -1,12 +1,6 @@
 <?php
-//require_once './bdd.php';
-try{
-    $bdd = new PDO('mysql:host=localhost;dbname=nains;charset=utf8', 'root', '');
-    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch(PDOException $e){
-    echo 'Erreur : ' .$e;
-}
+require_once './bdd.php';
+
 if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password'])  && isset($_POST['password_retype'])){
     $pseudo = htmlspecialchars($_POST['pseudo']);
     $email = htmlspecialchars($_POST['email']);

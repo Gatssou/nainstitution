@@ -64,7 +64,7 @@
          }
          }
          ?>
-    <form class="labin" action="processing.php" method="post">
+    <form class="labin" action="./processing.php" method="post">
        
         <div class="inpdec">
             <i class="far fa-user"></i>
