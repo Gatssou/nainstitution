@@ -3,9 +3,9 @@
     private
     $host = 'localhost';
     private
-    $user = 'root';
+    $username = 'root';
     private
-    $pass = '';
+    $passworld = '';
     private
     $database = 'nains';
    public
@@ -19,8 +19,13 @@
             $this->database = $database;
         }
 
-       try{ $this->db = new PDO('mysql:host='.$this->host.';dbname='.$this->database, $this->user,
+       try{ $this->db = new PDO('mysql:host='.$this->host.';dbname='.$this->database, $this->username,
         $this->pass, array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
             PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING    
 ));
+       }catch(PDOException $e){
+           die('<h1>impossible de se connecter  a la base de donnee</h1>');
+       }
+    }
+}
