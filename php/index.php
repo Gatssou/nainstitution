@@ -17,7 +17,35 @@ require_once 'bdd.php';
    </head>
    <body>
    <section class="zindex">
-    <form class="labin" method="POST" action="./function.php">
+       <?php
+       if(isset($_GET['login_err'])){
+           $err = htmlspecialchars($_GET['login_err']);
+           switch($err){
+            case 'password': ?>
+            <div class="alert alert_danger">
+                <strong>error</strong>mot de pass invalide
+            </div> 
+            <?php
+            break;
+
+            case 'email': ?>
+            <div class="alert alert_danger">
+                <strong>error</strong>email de pass invalide
+            </div> 
+            <?php
+            break;
+
+            case 'already': ?>
+            <div class="alert alert_danger">
+                <strong>error</strong>compte de pass invalide
+            </div> 
+            <?php
+            break;
+       } 
+    }
+       ?>
+
+    <form class="labin" method="POST" action="co.php">
         <div class="inpdec">
             <i class="far fa-user"></i>
             <input type="text" size="20px" name="user" class="decou" placeholder="Username" required>

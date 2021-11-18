@@ -1,7 +1,4 @@
-<?php
-session_start();
-require_once 'bdd.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +13,58 @@ require_once 'bdd.php';
 
     
 <section class="zindex">
-    <img src="" alt="">
-    <form class="labin" action="./login.php" method="post">
+<?php
+         if(isset($_GET['reg_err'])){
+            $err = htmlspecialchars($_GET['reg_err']);
+            switch($err){
+               case 'success':
+                ?>
+      <div class="alert alert_success">
+         <br><strong>Succès</strong>inscription réussie !
+      </div>
+      <?php
+         break;
+               case 'password':
+                ?>
+      <div class="alert alert_danger">
+         <br><strong>error</strong>mot de pass different!
+      </div>
+      <?php
+         break;
+
+               case 'email':
+                ?>
+      <div class="alert alert_danger">
+         <br><strong>error</strong>email non valide !
+      </div>
+      <?php
+         break;
+               case 'email_length':
+                ?>
+      <div class="alert alert_danger">
+         <br><strong>error</strong>email trop long !
+      </div>
+      <?php
+         break;
+               case 'pseudo_length':
+                ?>
+      <div class="alert alert_danger">
+         <br><strong>error</strong>pseudo trop long !
+      </div>
+      <?php
+         break;
+         
+         case 'already':
+            ?>
+      <div class="alert alert_danger">
+         <br><strong>Erreur</strong> : compte déjà existant!
+      </div>
+      <?php
+         break;
+         }
+         }
+         ?>
+    <form class="labin" action="processing.php" method="post">
        
         <div class="inpdec">
             <i class="far fa-user"></i>
@@ -44,29 +91,7 @@ require_once 'bdd.php';
         <p class="log_reg">Have an account ? <a href="./login.php">Login here !</a></p>
       
 </section>
-<?php
-         if(isset($_GET['reg_err'])){
-            $err = htmlspecialchars($_GET['reg_err']);
-         
-            switch($err){
-               case 'success':
-                ?>
-      <div class="alert_danger">
-         <br><strong>Succès</strong>inscription réussie !
-      </div>
-      <?php
-         break;
-         
-         case 'already':
-            ?>
-      <div class="alert_danger">
-         <br><strong>Erreur</strong> : email/mot de passe/pseudo deja utilisé
-      </div>
-      <?php
-         break;
-         }
-         }
-         ?>
+
 
     
 </body>
