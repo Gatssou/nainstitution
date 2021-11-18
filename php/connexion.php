@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once 'bdd.php';
 
 if(isset($_POST['user']) && isset($_POST['email']) && isset($_POST['password'])  && isset($_POST['password_retype'])){
@@ -26,9 +25,11 @@ if(isset($_POST['user']) && isset($_POST['email']) && isset($_POST['password']) 
                 $insert->execute(array($user, $email, $password));
 
 
-                header('Location: inscription_merci.php');
-            }else header('Location: inscription.php?reg_err=password');
-        }else header('Location: inscription.php?reg_err=email');
-    }else header('Location: inscription.php?reg_err=already');
+                header('Location: ./index.php');
+            }
+        }
+    }else {
+        $error= "youhouuuuuu";
+    }
 }
 ?>

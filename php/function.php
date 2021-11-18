@@ -5,7 +5,7 @@ require_once 'bdd.php';
 if(isset($_POST['user']) && isset($_POST['password'])){
 
     $user = htmlspecialchars($_POST['user']);
-    $pass = htmlspecialchars($_POST['password']);
+    $password = htmlspecialchars($_POST['password']);
 
     $check = $bdd->prepare('SELECT user, password FROM utilisateurs WHERE user = ?');
     $check->execute(array($user));

@@ -3,7 +3,7 @@
     private
     $host = 'localhost';
     private
-    $username = 'root';
+    $user = 'root';
     private
     $password = '';
     private
@@ -19,7 +19,7 @@
             $this->database = $database;
         }
 
-       try{ $this->bdd = new PDO('mysql:host='.$this->host.';dbname='.$this->database, $this->username,
+       try{ $this->bdd = new PDO('mysql:host='.$this->host.';dbname='.$this->database, $this->user,
         $this->password, array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
             PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING    

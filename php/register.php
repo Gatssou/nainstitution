@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../include/php/header.php';
+require_once 'bdd.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@ include '../include/php/header.php';
     
 <section class="zindex">
     <img src="" alt="">
-    <form class="labin" action="connexion.php" method="post">
+    <form class="labin" action="./login.php" method="post">
        
         <div class="inpdec">
             <i class="far fa-user"></i>

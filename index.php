@@ -1,15 +1,19 @@
 <?php
-session_start();
-require_once './register.php';
-include './include/php/header.php';
 ?>
-
-
-
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../fa/css/all.css">
+   <link rel="stylesheet" href="./sass/login.css">
+   <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
 <?php
           if(PHP_SESSION_ACTIVE){?> 
             <a href="deconnexion.php">Deconnexion</a>
@@ -21,10 +25,5 @@ include './include/php/header.php';
                </svg></a>
                <?php } ?>  
 
-
-
-
-
-
-<?php
-include './include/php/footer.php'; ?>
+</body>
+</html>
