@@ -1,7 +1,4 @@
-<?php
-session_start();
-require_once 'bdd.php';
-?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -45,7 +42,7 @@ require_once 'bdd.php';
     }
        ?>
 
-    <form class="labin" method="POST" action="co.php">
+    <form class="labin" method="POST" action="./connexion.php">
         <div class="inpdec">
             <i class="far fa-user"></i>
             <input type="text" size="20px" name="user" class="decou" placeholder="Username" required>
