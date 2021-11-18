@@ -1,5 +1,5 @@
 <?php
- class DB{
+ class BDD{
     private
     $host = 'localhost';
     private
@@ -9,7 +9,7 @@
     private
     $database = 'nains';
    public
-    $db ;
+    $bdd ;
 
     public function __construct($host = null, $user = null, $password = null, $database = null){
         if($host != null){
@@ -19,7 +19,7 @@
             $this->database = $database;
         }
 
-       try{ $this->db = new PDO('mysql:host='.$this->host.';dbname='.$this->database, $this->username,
+       try{ $this->bdd = new PDO('mysql:host='.$this->host.';dbname='.$this->database, $this->username,
         $this->password, array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
             PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING    

@@ -22,7 +22,7 @@ if(isset($_POST['user']) && isset($_POST['email']) && isset($_POST['password']) 
                /* $password = password_hash($password, PASSWORD_BCRYPT);*/
                $rand = rand();
               
-                $insert = $bdd->prepare('INSERT INTO utilisateurs (user, email, password) VALUES(?, ?, ?, ?)');
+                $insert = $bdd->prepare('INSERT INTO utilisateurs (user, email, password) VALUES(?, ?, ?)');
                 $insert->execute(array($user, $email, $password));
 
 
