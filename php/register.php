@@ -88,7 +88,7 @@
         
         <input type="submit" class="logbtn" name="login" value="Login">
         </form>
-        <p class="log_reg">Have an account ? <a href="./login.php">Login here !</a></p>
+        <p class="log_reg">Have an account ? <a href="./index.php">Login here !</a></p>
       
 </section>
 
