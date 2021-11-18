@@ -14,7 +14,7 @@
     
 <section class="zindex">
     <img src="" alt="">
-    <form class="labin" action="">
+    <form class="labin" action="POST">
         <img src="../logpic/programmer.png" class="piclog" alt="">
         <div class="inpdec">
             <i class="far fa-user"></i>
