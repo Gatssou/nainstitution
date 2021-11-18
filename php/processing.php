@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once './bdd.php';
 
 if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password'])  && isset($_POST['password_retype'])){
@@ -13,27 +14,26 @@ if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']
     $row = $check->rowCount();
 
     if($row == 0){
-        if(strlen($pseudo) <= 100){ 
-            if(strlen($email) <= 100){
+        /*if(strlen($pseudo) <= 100){ 
+            if(strlen($email) <= 100){*/
 
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
             
             if($password == $password_retype){
-                $password= hash('sha256', $password);
+              /*  $password= hash('sha256', $password);*/
                /* $pass = password_hash($password, PASSWORD_BCRYPT);*/
                $rand = rand();
                $token = md5($rand);
                
                 $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password) VALUES(:pseudo, :email, password)');
-                $insert->execute(array(
-                    'pseudo' => $pseudo, 
-                    'email' =>  $email, 
-                    'password' =>  $password));
-                header('Location: ./inscription.php?reg_err=success');
-            }else header('Location: ./inscription.php?reg_err=password');
-        }else header('Location: inscription.php?reg_err=email');
-        }else header('Location: inscription.php?reg_err=email_length');
-        }else header('Location: inscription.php?reg_err=pseudo_length');
-    }else header('Location: inscription.php?reg_err=already');
+                $insert->execute(array($pseudo, $email, $password, $token));
+                $token = base64_encode($token);
+                $url = "verification.php?token=".urlencode($token)." ";
+                echo "Lien de vérification : <br>"
+                ."<a href='".$url."'>Verification</a>";
+                header('Location: inscription_merci.php?reg_err=success');
+            }else header('Location: inscr.php?reg_err=password');
+        }else header('Location: inscr.php?reg_err=email');
+    }else header('Location: inscr.php?reg_err=already');
 }
 ?>
