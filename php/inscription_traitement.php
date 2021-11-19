@@ -1,6 +1,6 @@
 <?php 
+session_start();
     require_once './config.php'; // On inclu la connexion à la bdd
-
     // Si les variables existent et qu'elles ne sont pas vides
     if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype']))
     {
@@ -50,3 +50,4 @@
             }else{ header('Location: inscription.php?reg_err=pseudo_length'); die();}
         }else{ header('Location: inscription.php?reg_err=already'); die();}
     }
+?>
