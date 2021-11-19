@@ -1,3 +1,27 @@
+<?php 
+session_start();
+$bdd = new PDO('mysql:host=localhost;dbname=nains;charset=utf8;', 'root');
+if(isset($_POST['envoi'])){
+    if(!empty($_POST['pseudo']) AND !empty($_POST['password'])AND !empty($_POST['email'])){
+        $pseudo = htmlspecialchars($_POST['pseudo']);
+        $mdp = sha1($_POST['password']);
+            $insertUser = $bdd->prepare('INSERT INTO utilisateurs(pseudo, password)VALUES(?, ?)');
+           $insertUser->execute(array($pseudo, $password, $email));
+
+$recupUser = $bdd->prepare('SELECT * FROM users WHERE pseudo = ? AND password = ?');
+$recupUser->execute(array($pseudo, $password));
+if($recupUser->rowCount() > 0){
+           $_SESSION['pseudo'] = $pseudo;
+           $_SESSION['password'] = $password;
+           $_SESSION['id'] = $recupUser->fetch()['id'];
+}
+         
+         
+    }else{
+        echo "veuillez completer tous merci...";
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,26 +88,26 @@
          }
          }
          ?>
-    <form class="labin" action="./processing.php" method="post">
+    <form class="labin" action="" method="POST">
        
         <div class="inpdec">
             <i class="far fa-user"></i>
-            <input type="text" size="20px" name="user" class="decou" placeholder="Username" required>
+            <input type="text" size="20px" name="pseudo" autocomplete="off" class="decou" placeholder="Username" required>
         </div>
 
         <div class="inpdec">
             <i class="far fa-envelope"></i>
-            <input type="email" size="20px" name="email" class="decou" placeholder="E-mail" required>
+            <input type="email" size="20px" name="email" class="decou" placeholder="E-mail" autocomplete="off" required>
         </div>
 
         <div class="inpdec">
             <i class="fas fa-lock"></i>
-            <input type="password" name="password" class="decop" placeholder="Password" required>
+            <input type="password" name="password" autocomplete="off" class="decop" placeholder="Password" required>
         </div>
         
         <div class="inpdec">
             <i class="fas fa-lock"></i>
-            <input type="password" name="password" class="decop" placeholder="Confirm Password" required>
+            <input type="password" name="password"  autocomplete="off" class="decop" placeholder="Confirm Password" required>
         </div>
         
         <input type="submit" class="logbtn" name="login" value="Login">
