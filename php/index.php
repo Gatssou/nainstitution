@@ -59,13 +59,13 @@ require_once './config.php';
     
     <form class="labin" method="POST" action="./connexion.php">
         <div class="inpdec">
-        <i class="far fa-envelope"></i>
-            <input type="email" size="20px" name="email" class="decou" placeholder="E-mail" required>
+            <i class="far fa-user"></i>
+            <input type="text" size="20px" name="user" class="decou" placeholder="Username" required>
         </div>
 
         <div class="inpdec">
-            <i class="far fa-user"></i>
-            <input type="text" size="20px" name="user" class="decou" placeholder="Username" required>
+        <i class="far fa-envelope"></i>
+            <input type="email" size="20px" name="email" class="decou" placeholder="E-mail" required>
         </div>
 
         <div class="inpdec">

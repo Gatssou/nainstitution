@@ -20,7 +20,7 @@ if($row == 1)
             if($data['$password'] ===$password)
             {
                 $_SESSION['user'] = $data['pseudo'];
-                header('Location:landing.php');
+                header('Location:../index.php');
             }else header('Location:index.php?login_err=password');
         }else header('Location:index.php?login_err=email');
     }else header('Location:index.php?login_err=already');
