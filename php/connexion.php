@@ -19,6 +19,8 @@ if($row == 1)
         {
             $cost = ['cost' => 12];
             $password = password_hash($password, PASSWORD_BCRYPT, $cost);
+            $hash = '$2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq';
+            $password = password_verify('rasmuslerdorf', $hash);
 
 
 
