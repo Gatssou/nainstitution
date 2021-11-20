@@ -14,26 +14,25 @@
                 if(isset($_GET['reg_err']))
                 {
                     $err = htmlspecialchars($_GET['reg_err']);
-
-                    switch($err)
+                       switch($err)
                     {
-                        case 'success':
+                           case 'success':
                         ?>
-                            <div class="alert alert-success">
-                                <strong>Succès</strong> inscription réussie !
-                            </div>
-                        <?php
-                        break;
+                               <div class="alert alert-success">
+                                   <strong>Succès</strong> inscription réussie !
+                    </div>
+                            <?php
+                                  break;
 
-                        case 'password':
-                        ?>
-                            <div class="alert alert-danger">
-                                <strong>Erreur</strong> mot de passe différent
-                            </div>
-                        <?php
-                        break;
+                                     case 'password':
+                            ?>
+          <div class="alert alert-danger">
+                 <strong>Erreur</strong> mot de passe différent
+                         </div>
+                                      <?php
+                                            break;
 
-                        case 'email':
+                                                 case 'email':
                         ?>
                             <div class="alert alert-danger">
                                 <strong>Erreur</strong> email non valide
