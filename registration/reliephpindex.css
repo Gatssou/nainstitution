@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(./img/158965-conormcgregor-ufc229-conor-mcgregor-poster-conor.jpg);
+    width: 100%;
+    height: 50vw;
+    background-size: cover;
+        transform:translate3d(100%,0,0);
+        animation: slideUp 3s forwards;
+       }
+       
+       @keyframes slideUp{
+        90%{transform:translate3d(100%,0,0)}
+        100%{transform:translate3d(0,0,0)} 
+       }
+.nav-elements {
+    list-style-type: none;
+    display:flex;
+    
+}
+.nav-elements a {
+    display: flex;
+    margin-top: 3vw;
+  font-size: 2em;
+  margin: 2vw ;
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    color: #ffffff9a ;
+}
+.un{
+    border-radius: 30%;
+}
+.nav-elements a:hover {
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 30%;
+    border: 1px solid rgba(245, 0, 0, 0.411);
+  }
+  #content { margin: 50px; } 
+a { text-decoration: none; }  
+
+.expandable {
+  background: #fff;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
+}
+.expandable:target {
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+.menu{
+  position: relative;
+  left: 96vh;
+  top: 42vh;
+  width: 200px;
+  height: 200px;
+ 
+  align-items: center;
+}
+.menu li{
+position: absolute;
+left: 0;
+list-style: none;
+transform-origin: 190px;
+transition: 0.5s;
+transition-delay: calc(0.1s * var(--1i));
+transform: rotate(0deg) translateX(70px);
+}
+.menu.active li {
+  transform: rotate(calc(360deg / 8 * var(--i)));
+}
+.menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+  transform: rotate(calc(360deg / -8 * var(--i)));
+  box-shadow: 0 3px 4px white;
+  transition: 0.5s;
+}
+.menu li a:hover{
+  color: red;
+}
+.toggle img{
+  height: 20vh;
+  width: 20vw;
+}
+.toggle{
+  position:absolute;
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 20%;
+  cursor: pointer;
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+.menu.active .toggle{
+  transform:rotate(360deg) ;
+}
+
+
+
