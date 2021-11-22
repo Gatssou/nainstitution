@@ -111,5 +111,25 @@ html,body{
     height: 25vh;
     width: 18vw;
     border-radius: 30%;
+    animation: bateau ease 7s infinite alternate-reverse  ;
   }
+  
+@keyframes bateau{
+  0%{
+      translate: 0;
+  }
+  40%{
+   transform: translateY(10vw) ; 
+}
+60%{
+ transform: translateX(10vw) ; 
+}
+
+80%{ transform:rotate(45deg);
+
+}
+  100%{
+      transform: translate(150vw) ; 
+  }
+}
   
