@@ -59,7 +59,7 @@ if (isset($_POST['username'])){
 		</div>
 	<?php } ?>
 	<?php if (! empty($image)) { ?>
-		<img class="logerror" src="./img/maquenoir.jpg" alt="">
+		<img class="logerror" src="./img/203905.webp" alt="">
 	<?php } ?>
 
 	</form>

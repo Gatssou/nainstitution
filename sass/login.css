@@ -69,10 +69,11 @@ a{
 .logerror{
   height: 25vh;
   width: 18vw;
-  border-radius: 70% 10%;
+  border: rgba(255, 255, 255, 0.116) 10px ridge;
+  border-radius: 90% 10%;
 animation: bateau ease 7s infinite alternate-reverse  ;
-}
 
+}
 @keyframes bateau{
 0%{
     translate: 0;
