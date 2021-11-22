@@ -24,16 +24,34 @@ if (isset($_POST['username'])){
 	}
 }
 ?>
-<form class="box" action="" method="post" name="login">
-<h1 class="box-logo box-title"><a href="">JULIEN>PHP</a></h1>
-<h1 class="box-title">Connexion</h1>
-<input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur">
-<input type="password" class="box-input" name="password" placeholder="Mot de passe">
-<input type="submit" value="Connexion " name="submit" class="box-button">
-<p class="box-register">Vous êtes nouveau ici? <a href="register.php">S'inscrire</a></p>
-<?php if (! empty($message)) { ?>
-    <p class="errorMessage"><?php echo $message; ?></p>
-<?php } ?>
-</form>
+<section class="zindex">
+	<form class="labin" action="" method="post">
+		<h1 class="box-logo box-title"><a class="dec" href="">Pologne_Powa</a></h1>
+		<h1 class="box-title">S'inscrire</h1>
+
+		<div class="inpdec">
+			<i class="far fa-user"></i>
+			<input type="text" class="decou" name="username" placeholder="Nom d'utilisateur" required />
+		</div>
+
+		<div class="inpdec">
+			<i class="far fa-envelope"></i>
+			<input type="text" class="decou" name="email" placeholder="Email" required />
+		</div>
+
+		<div class="inpdec">
+			<i class="fas fa-lock"></i>
+			<input type="password" class="decop" name="password" placeholder="Mot de passe" required />
+		</div>
+
+		<input type="submit" name="submit" value="S'inscrire" class="logbtn" />
+
+		<p class="box-register">Vous êtes nouveau ici? <a class="dec" href="register.php">S'inscrire</a></p>
+	<?php if (! empty($message)) { ?>
+		<p class="errorMessage"><?php echo $message; ?></p>
+	<?php } ?>
+
+	</form>
+</section>
 </body>
 </html>

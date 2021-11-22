@@ -1,9 +1,15 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../fa/css/all.css">
+	<link rel="stylesheet" href="./style.css">
+	<title>Document</title>
 </head>
 <body>
+	
 <?php
 require('config.php');
 if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
@@ -29,15 +35,30 @@ if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
     }
 }else{
 ?>
-<form class="box" action="" method="post">
-	<h1 class="box-logo box-title"><a href="">Pologne_Powa</a></h1>
-    <h1 class="box-title">S'inscrire</h1>
-	<input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur" required />
-    <input type="text" class="box-input" name="email" placeholder="Email" required />
-    <input type="password" class="box-input" name="password" placeholder="Mot de passe" required />
-    <input type="submit" name="submit" value="S'inscrire" class="box-button" />
-    <p class="box-register">Déjà inscrit? <a href="login.php">Connectez-vous ici</a></p>
-</form>
+<section class="zindex">
+	<form class="labin" action="" method="post">
+		<h1 class="box-logo box-title"><a class="dec" href="">Pologne_Powa</a></h1>
+		<h1 class="box-title">S'inscrire</h1>
+
+		<div class="inpdec">
+			<i class="far fa-user"></i>
+			<input type="text" class="decou" name="username" placeholder="Nom d'utilisateur" required />
+		</div>
+
+		<div class="inpdec">
+			<i class="far fa-envelope"></i>
+			<input type="text" class="decou" name="email" placeholder="Email" required />
+		</div>
+
+		<div class="inpdec">
+			<i class="fas fa-lock"></i>
+			<input type="password" class="decop" name="password" placeholder="Mot de passe" required />
+		</div>
+
+		<input type="submit" name="submit" value="S'inscrire" class="logbtn" />
+		<p class="box-register">Déjà inscrit? <a class="dec" href="login.php">Connectez-vous ici</a></p>
+	</form>
+</section>
 <?php } ?>
 </body>
 </html>

@@ -82,6 +82,10 @@ a.forgotpass{
   display: block;
   text-align: right;
 }
+.dec{
+  text-decoration: none;
+  color: black;
+}
 .logbtn{
   color: #444444;
   border-radius: 10px;
