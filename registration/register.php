@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../fa/css/all.css">
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../sass/login.css">
 	<title>Document</title>
 </head>
 <body>
@@ -37,8 +37,7 @@ if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
 ?>
 <section class="zindex">
 	<form class="labin" action="" method="post">
-		<h1 class="box-logo box-title"><a class="dec" href="">Pologne_Powa</a></h1>
-		<h1 class="box-title">S'inscrire</h1>
+		
 
 		<div class="inpdec">
 			<i class="far fa-user"></i>

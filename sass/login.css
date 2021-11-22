@@ -2,106 +2,73 @@ html,body{
   height: 100%;
 }
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2vw;
-    overflow: hidden;
-    background: linear-gradient(60deg, #786680, #7687a3 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  /*position*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  overflow: hidden;
+  background: url(../img/106830.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1000;
+  /*backdrop-filter: blur(10px);*/
+}
 *{
-  margin: 0;
+margin: 0;
 }
 
 .labin{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 47vh;
-  
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+height: 47vh;
+
 }
 .zindex{
-  width: 33%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.404);
-  box-shadow: 0 0 12px 0 white;
-  border-radius: 15px;
-  z-index: 2;
+width: 33%;
+height: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: transparent;
+width: 30%;
+z-index: 2;
 }
-
-.piclog{
-  width: 7vw;
-  transition: transforme 0.8s;
-}
-.piclog:hover{
-  transform: rotateX(360deg);
-}
-
 input{
   border: none;
-  background: transparent;
-  outline: none; /* enleve bordure après selection*/
-  font-size: 27px;
-}
-input::selection{
-  color: #d33b3b;
+  background: white;
+  opacity: 0.5;
+  height: 5vh;
+  border-radius: 5px;
+  outline: none;
+  font-size: 25px;
+  text-align: center;
+  display: inline-block;
 }
 .inpdec{
-  border-bottom: 2px solid #d9d9d9;
+  position: relative;
 }
-.far, .fas{
-  color: #d9d9d9;
+.inpdec i{
+  position: absolute;
+  left: 1vw;
+  top: 1vh;
+  size: 20px;
 }
-::placeholder{
-  font-size: 1.5vw;
-}
-input.decop, input.decou{
-  height: 5vh;
-}
-.sufp{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 20vw;
-
-}
-a.forgotpass{
+a{
   text-decoration: none;
-  color: #999;
-  font-size: 1.5vw;
-  display: block;
-  text-align: right;
+  color: white;
 }
-
-.logbtn{
-  color: #444444;
-  border-radius: 10px;
-  height: 5vh;
-  width: 20vw;
-  background: rgb(189, 189, 189);
-}
-
-/*flip log*/
-.piclog{
-  transform: rotateX(360deg);
-}
-.log_reg{
-  font-weight: 600;
+.forgotpass, .logreg{
+  color: #000;
   font-size: 1.5vw;
 }
-.log_reg a{
-  text-decoration: none;
-  color: #999;
-  font-size: 1.5vw;
+@media screen and (max-width: 900px){
+  .zindex{
+      width: 60%;
+      border-radius: 50px;
+  }
 }
-
