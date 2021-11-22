@@ -37,7 +37,10 @@ html,body{
     border-radius: 15px;
     z-index: 2;
   }
-  
+  .dec{
+    text-decoration: none;
+    color: black;
+  }
   .piclog{
     width: 7vw;
     transition: transforme 0.8s;

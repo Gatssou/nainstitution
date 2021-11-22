@@ -44,7 +44,7 @@ if (isset($_POST['username'])){
 			<input type="password" class="decop" name="password" placeholder="Mot de passe" required />
 		</div>
 
-		<input type="submit" name="submit" value="S'inscrire" class="logbtn" />
+		<input type="submit" name="submit" value="Se connecter" class="logbtn" />
 
 		<p class="box-register">Vous êtes nouveau ici? <a class="dec" href="register.php">S'inscrire</a></p>
 	<?php if (! empty($message)) { ?>
