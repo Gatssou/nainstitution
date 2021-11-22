@@ -23,7 +23,7 @@ flex-wrap: wrap;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-height: 47vh;
+height: 60vh;
 
 }
 .zindex{
@@ -93,7 +93,9 @@ transform: translateX(10vw) ;
 }
 .cross{
   background: #8c8c8c;
-  height: 20vh;
+  border: 5px ridge;
+  border-color: white black black white;
+  height: 27vh;
   color: black;
   width: 30vw;
 }
@@ -103,10 +105,31 @@ transform: translateX(10vw) ;
 .first:before{
   position: relative;
   float: right;
-  color: grey;
+  top: -40px;
+  right: 10px;
+  color: rgb(65, 65, 65);
+  background: grey;
+  border: 2px solid grey;
+}
+.err{
+  height: 5vh;
+  font-size: 1em;
+  position: relative;
+  color: white;
 }
 .redfa{
-  color: red;
+  color: white;
+  background: red;
+  width: 2vw;
+  height: auto;
+  border-radius: 20px;
+}
+.noob{
+  border: none;
+  background: grey;
+  border: 3px ridge;
+  border-color: white black black white;
+  height: 4vh;
 }
 @media screen and (max-width: 900px){
   .zindex{

@@ -54,8 +54,10 @@ if (isset($_POST['username'])){
 		<p class="box-register">Vous êtes nouveau ici? <a class="dec" href="register.php">S'inscrire</a></p>
 	<?php if (! empty($message)) { ?>
 		<div class="cross">
-			<i class="fas fa-times first" style="background: blue;"></i>
+			<h1 class="err" style="background: blue;">Err 404<i class="fas fa-times first"></i></h1>
+			
 			<p class="errorMessage"><i class="fas fa-times redfa"></i><?php echo $message; ?></p>
+			<input type="submit" name="submit" value="Noob !" class="noob">
 		</div>
 	<?php } ?>
 	<?php if (! empty($image)) { ?>
