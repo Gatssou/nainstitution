@@ -1,7 +1,6 @@
 <?php 
 session_start();
 require_once './config.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +57,7 @@ require_once './config.php';
         }
     ?>
     
-    <form class="labin" method="POST" action="./connexion.php">
+    <form class="labin" method="POST" action="./connexion.php" novalidate>
         <div class="inpdec">
             <i class="far fa-user"></i>
             <input type="text" size="20px" name="user" class="decou" placeholder="Username" required>

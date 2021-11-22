@@ -94,12 +94,12 @@ if($recupUser->rowCount() > 0){
             <i class="far fa-user"></i>
             <input type="text" size="20px" name="pseudo" autocomplete="off" class="decou" placeholder="Username" required>
         </div>
-
+      
         <div class="inpdec">
             <i class="far fa-envelope"></i>
             <input type="email" size="20px" name="email" class="decou" placeholder="E-mail" autocomplete="off" required>
         </div>
-
+      
         <div class="inpdec">
             <i class="fas fa-lock"></i>
             <input type="password" name="password" autocomplete="off" class="decop" placeholder="Password" required>
