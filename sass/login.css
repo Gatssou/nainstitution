@@ -69,7 +69,7 @@ a{
 .logerror{
   height: 25vh;
   width: 18vw;
-  border-radius: 30%;
+  border-radius: 70% 10%;
 animation: bateau ease 7s infinite alternate-reverse  ;
 }
 

@@ -4,7 +4,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=nains;charset=utf8;', 'root');
 if(isset($_POST['envoi'])){
     if(!empty($_POST['pseudo']) AND !empty($_POST['password'])AND !empty($_POST['email'])){
         $pseudo = htmlspecialchars($_POST['pseudo']);
-        $mdp = sha1($_POST['password']);
+        $password = sha1($_POST['password']);
             $insertUser = $bdd->prepare('INSERT INTO utilisateurs(pseudo, password)VALUES(?, ?)');
            $insertUser->execute(array($pseudo, $password, $email));
 
