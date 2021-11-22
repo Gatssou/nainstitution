@@ -71,7 +71,23 @@ a{
   width: 18vw;
   border-radius: 30%;
 }
-
+.cross{
+  background: #8c8c8c;
+  height: 20vh;
+  color: black;
+  width: 30vw;
+}
+.first{
+  width: 100%;
+}
+.first:before{
+  position: relative;
+  float: right;
+  color: grey;
+}
+.redfa{
+  color: red;
+}
 @media screen and (max-width: 900px){
   .zindex{
       width: 60%;

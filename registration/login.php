@@ -53,7 +53,10 @@ if (isset($_POST['username'])){
 
 		<p class="box-register">Vous êtes nouveau ici? <a class="dec" href="register.php">S'inscrire</a></p>
 	<?php if (! empty($message)) { ?>
-		<p class="errorMessage"><?php echo $message; ?></p>
+		<div class="cross">
+			<i class="fas fa-times first" style="background: blue;"></i>
+			<p class="errorMessage"><i class="fas fa-times redfa"></i><?php echo $message; ?></p>
+		</div>
 	<?php } ?>
 	<?php if (! empty($image)) { ?>
 		<img class="logerror" src="./img/maquenoir.jpg" alt="">
