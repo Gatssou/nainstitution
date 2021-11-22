@@ -20,6 +20,7 @@ if (isset($_POST['username'])){
 	    $_SESSION['username'] = $username;
 	    header("Location: index.php");
 	}else{
+		$image = "./img/maquenoir.jpg";
 		$message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
 	}
 }
@@ -49,6 +50,9 @@ if (isset($_POST['username'])){
 		<p class="box-register">Vous êtes nouveau ici? <a class="dec" href="register.php">S'inscrire</a></p>
 	<?php if (! empty($message)) { ?>
 		<p class="errorMessage"><?php echo $message; ?></p>
+	<?php } ?>
+	<?php if (! empty($image)) { ?>
+		<img src="./img/maquenoir.jpg" alt=""><?php echo $message; ?></p>
 	<?php } ?>
 
 	</form>
