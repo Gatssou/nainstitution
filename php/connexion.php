@@ -18,6 +18,7 @@ if($row == 1)
     if(filter_var($email, FILTER_VALIDATE_EMAIL))
         {
             $cost = ['cost' => 12];
+            echo password_hash("ras")
             $password = password_hash($password, PASSWORD_BCRYPT, $cost);
             $hash = '$2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq';
             $password = password_verify('rasmuslerdorf', $hash);
@@ -32,3 +33,4 @@ if($row == 1)
         }else header('Location:index.php?login_err=email');
     }else header('Location:index.php?login_err=already');
 }else header('Location:index.php'); 
+
