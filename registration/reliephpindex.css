@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 header{
-    background-image: url(./img/158965-conormcgregor-ufc229-conor-mcgregor-poster-conor.jpg);
     width: 100%;
     height: 50vw;
     background-size: cover;
@@ -19,7 +18,6 @@ header{
 .nav-elements {
     list-style-type: none;
     display:flex;
-    
 }
 .nav-elements a {
     display: flex;
@@ -28,7 +26,7 @@ header{
   margin: 2vw ;
     padding: 15px 15px 15px 15px;
     text-decoration: none;
-    color: #ffffff9a ;
+    color: #0000009a ;
 }
 .un{
     border-radius: 30%;
@@ -111,6 +109,4 @@ transform: rotate(0deg) translateX(70px);
 .menu.active .toggle{
   transform:rotate(360deg) ;
 }
-
-
 

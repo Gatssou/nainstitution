@@ -24,6 +24,7 @@
 		   <li class="deux"><a href="">PERSONNALISER</a></li>
 		   <li class="trois"> <a href="">COMMUNAUTÉ</a></li>
 		   <li class="quatre"><a href="">BOUTIQUE</a></li>
+    
 	   </div>
 	   <div class="menu">
         <div class="toggle"> <img src="./img/têtev2.png" alt=""></div>
@@ -49,21 +50,9 @@
         <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
         </li>
         <li style="--i:7;">
-        <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
+        <a href="logout.php"><ion-icon name="sparkles-outline"></ion-icon></a>
         </li>
     </div>
-	   <div class="projectbox"><a href="#">Enlever le tableau</a></div>
-<div class="projet">
-  <p> <div id="content">
-	   <a href="#nav"><span>Tableau de Bord</span></a>
-		   <div class="expandable" id="nav" style="cursor: pointer">
-				   <h1>Bienvenue <?php echo $_SESSION['username']; ?>!</h1>
-				   <p>C'est votre tableau de bord.</p>
-				   <a href="logout.php">Déconnexion</a>
-				   </div>
-	   </div></p>
-</div>
-
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>

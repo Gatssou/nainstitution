@@ -9,7 +9,8 @@
 	<title>Document</title>
 </head>
 <body>
-	
+<div id="root"></div>
+<div class="hoo"><span class="timer"></span></div>
 <?php
 require('config.php');
 if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
@@ -36,6 +37,7 @@ if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
 }else{
 ?>
 <section class="zindex">
+	
 	<form class="labin" action="" method="post">
 		
 
@@ -65,4 +67,5 @@ if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
 </section>
 <?php } ?>
 </body>
+<script src="./index.js"></script>
 </html>
