@@ -77,8 +77,7 @@ a{
   width: 18vw;
   border: rgba(255, 255, 255, 0.116) 10px ridge;
   border-radius: 90% 10%;
-animation: bateau ease 7s infinite alternate-reverse  ;
-
+animation: bateau ease 7s infinite alternate-reverse ;
 }
 .logbtn{
   width: 5vw;
@@ -149,6 +148,7 @@ transform: translateX(10vw) ;
   border-color: white black black white;
   height: 4vh;
 }
+<<<<<<< Updated upstream
 .success{
   background: transparent;
   box-shadow: 0 10px 10px 0;
@@ -158,6 +158,8 @@ transform: translateX(10vw) ;
 }
 
 
+=======
+>>>>>>> Stashed changes
 
 @media screen and (max-width: 900px){
   .labin{

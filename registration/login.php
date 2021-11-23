@@ -9,7 +9,6 @@
 	<title>Document</title>
 </head>
 <body>
-	
 <?php
 require('config.php');
 session_start();
@@ -31,7 +30,9 @@ if (isset($_POST['username'])){
 	}
 }
 ?>
+
 <section class="zindex">
+<div id="pile"><img class="dragon" src="./img/logo.png" height="50px" alt="" ></div>
 	<form class="labin" action="" method="post">
 		
 		<input type="submit" value="ok" id="night" onclick="changeTheme()">
