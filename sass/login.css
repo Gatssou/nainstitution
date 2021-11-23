@@ -1,6 +1,7 @@
 html,body{
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -14,8 +15,8 @@ body {
   background-size: cover;
   z-index: 1000;
   transition: background 1.1s;
-  /*backdrop-filter: blur(10px);*/
 }
+
 *{
 margin: 0;
 }
@@ -235,6 +236,9 @@ label {
   }
   .logbtn{
     width: 15vw;
+  }
+  .styn, .styl{
+    font-size: 3em;
   }
 
 }
