@@ -55,7 +55,7 @@ if (isset($_POST['username'])){
 			
 		<div class="inpdec">
 			<i class="far fa-user"></i>
-			<input type="text" class="decou" name="username" placeholder="Pseudo" required />
+			<input type="text" onclick="blurEffect()" id="input" class="decou" name="username" placeholder="Pseudo" required />
 		</div>
 
 		<div class="inpdec">
@@ -91,6 +91,8 @@ if (isset($_POST['username'])){
 
 
 </body>
+<script src="../js/js stock/jquery-3.6.0.min.js"></script>
+<script src="../js/js stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="./index.js"></script>
 <script src="../js/login.js"></script>
 </html>
