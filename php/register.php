@@ -2,16 +2,16 @@
 session_start();
 $bdd = new PDO('mysql:host=localhost;dbname=nains;charset=utf8;', 'root');
 if(isset($_POST['envoi'])){
-    if(!empty($_POST['pseudo']) AND !empty($_POST['password'])AND !empty($_POST['email'])){
-        $pseudo = htmlspecialchars($_POST['pseudo']);
+    if(!empty($_POST['username']) AND !empty($_POST['password'])AND !empty($_POST['email'])){
+        $pseudo = htmlspecialchars($_POST['username']);
         $password = sha1($_POST['password']);
-            $insertUser = $bdd->prepare('INSERT INTO utilisateurs(pseudo, password)VALUES(?, ?)');
+            $insertUser = $bdd->prepare('INSERT INTO utilisateurs(username, password)VALUES(?, ?)');
            $insertUser->execute(array($pseudo, $password, $email));
 
-$recupUser = $bdd->prepare('SELECT * FROM users WHERE pseudo = ? AND password = ?');
-$recupUser->execute(array($pseudo, $password));
+$recupUser = $bdd->prepare('SELECT * FROM users WHERE username = ? AND password = ?');
+$recupUser->execute(array($username, $password));
 if($recupUser->rowCount() > 0){
-           $_SESSION['pseudo'] = $pseudo;
+           $_SESSION['username'] = $username;
            $_SESSION['password'] = $password;
            $_SESSION['id'] = $recupUser->fetch()['id'];
 }
@@ -70,7 +70,7 @@ if($recupUser->rowCount() > 0){
       </div>
       <?php
          break;
-               case 'pseudo_length':
+               case 'username_length':
                 ?>
       <div class="alert alert_danger">
          <br><strong>error</strong>pseudo trop long !
@@ -92,7 +92,7 @@ if($recupUser->rowCount() > 0){
        
         <div class="inpdec">
             <i class="far fa-user"></i>
-            <input type="text" size="20px" name="pseudo" autocomplete="off" class="decou" placeholder="Username" required>
+            <input type="text" size="20px" name="username" autocomplete="off" class="decou" placeholder="Username" required>
         </div>
       
         <div class="inpdec">
