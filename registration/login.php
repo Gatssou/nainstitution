@@ -34,7 +34,7 @@ if (isset($_POST['username'])){
 	
  
 <section class="zindex">
-<div id="pile"><img class="dragon" src="./img/logo.png" height="50px" alt="" ></div>
+
 
 	<form class="labin" action="" method="post">
 		
