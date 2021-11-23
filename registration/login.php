@@ -9,6 +9,22 @@
 	<title>Document</title>
 </head>
 <body>
+
+<section>
+<input type="checkbox" id="switch">
+	<div class="app">
+	    <div class="content">
+	      <label for="switch">
+	        <div class="toggle"></div>
+	        <div class="names">
+				<p class="styn" id="night" onclick="darkTheme()">Light</p>
+				<p class="styl" id="day" onclick="lightTheme()">Dark</p>
+	        </div>
+	      </label>
+	    </div>
+	</div>
+</section>
+
 <?php
 require('config.php');
 session_start();
@@ -67,20 +83,7 @@ if (isset($_POST['username'])){
 	</form>
 </section>
 
-<section>
-<input type="checkbox" id="switch">
-	<div class="app">
-	    <div class="content">
-	      <label for="switch">
-	        <div class="toggle"></div>
-	        <div class="names">
-				<p class="styn" id="night" onclick="darkTheme()">Light</p>
-				<p class="styl" id="day" onclick="lightTheme()">Dark</p>
-	        </div>
-	      </label>
-	    </div>
-	</div>
-</section>
+
 </body>
 <script src="./index.js"></script>
 <script src="../js/login.js"></script>
