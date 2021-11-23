@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   font-size: 2vw;
   overflow: hidden;
   background: url(../img/106830.jpg);
@@ -162,8 +162,12 @@ transform: translateX(10vw) ;
 
 /*button*/
 .app{
-  height: 5vh;
+ 
+  margin-top: 10vh;
 }
+
+
+
 .content {
   display: flex;
   flex-direction: column;
