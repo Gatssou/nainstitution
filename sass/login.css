@@ -180,6 +180,23 @@ transform: translateX(10vw) ;
   font-size: 1em;
 }
 
+.dragon{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: transform 1.25s;
+}
+.flip:hover .dragon{
+  transform:rotate(360deg) ;
+}
+
+
+
+
 
 
 @media screen and (max-width: 900px){

@@ -30,10 +30,18 @@ if (isset($_POST['username'])){
 	}
 }
 ?>
-
+ 
+	
+ 
 <section class="zindex">
+<<<<<<< Updated upstream
 <div id="pile"><img class="dragon" src="./img/logo.png" height="50px" alt="" ></div>
 
+=======
+<div class="flip">
+		 <div onclick="" class="dragon"> <img src="./img/logo.png" height="50px" alt=""></div>
+	 </div>
+>>>>>>> Stashed changes
 	<form class="labin" action="" method="post">
 		
 		<div class="switch">
@@ -75,5 +83,6 @@ if (isset($_POST['username'])){
 	</form>
 </section>
 </body>
+<script src="./index.js"></script>
 <script src="../js/login.js"></script>
 </html>
