@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="../fa/css/all.css">
 	<title>Document</title>
 </head>
-<body>
+<body id="bili">
 
 <section class="zindexbis">
 
@@ -55,12 +55,12 @@ if (isset($_POST['username'])){
 			
 		<div class="inpdec">
 			<i class="far fa-user"></i>
-			<input type="text" onclick="blurEffect()" id="input" class="decou" name="username" placeholder="Pseudo" required />
+			<input type="text" onclick="blurEffect()" class="decou" name="username" placeholder="Pseudo" required />
 		</div>
 
 		<div class="inpdec">
 			<i class="far fa-envelope"></i>
-			<input type="text" class="decou" name="email" placeholder="Email" required />
+			<input type="text" onclick="blurEffect()" id="input" class="decou" name="email" placeholder="Email" required />
 		</div>
 
 		<div class="inpdec">
