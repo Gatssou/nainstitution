@@ -71,6 +71,8 @@ if (isset($_POST['username'])){
 		<input type="submit" name="submit" value=">" class="logbtn" />
 
 		<p class="box-register">Vous êtes nouveau ici? <a class="dec" href="register.php">S'inscrire</a></p>
+		
+
 	<?php if (! empty($message)) { ?>
 		<div class="cross">
 			<h1 class="err" style="background: blue;">Err 404<i class="fas fa-times first"></i></h1>
@@ -84,7 +86,8 @@ if (isset($_POST['username'])){
 	<?php } ?>
 
 	</form>
-</section>
+			
+			</section>
 
 
 </body>
