@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../sass/login.css">
-	<link rel="stylesheet" href="../fa/css/all.css">
+	<link rel="stylesheet" href="../../fa/css/all.css">
 	<title>Document</title>
 </head>
 <body>
@@ -34,9 +34,10 @@ if (isset($_POST['username'])){
 <section class="zindex">
 	<form class="labin" action="" method="post">
 		
+		<input type="submit" value="ok" id="night" onclick="changeTheme()">
 		<div class="inpdec">
 			<i class="far fa-user"></i>
-			<input type="text" class="decou" name="username" placeholder="Nom d'utilisateur" required />
+			<input type="text" class="decou" name="username" placeholder="Pseudo" required />
 		</div>
 
 		<div class="inpdec">
@@ -46,10 +47,10 @@ if (isset($_POST['username'])){
 
 		<div class="inpdec">
 			<i class="fas fa-lock"></i>
-			<input type="password" class="decop" name="password" placeholder="Mot de passe" required />
+			<input type="password" class="decop" name="password" placeholder="Password" required />
 		</div>
 
-		<input type="submit" name="submit" value="Se connecter" class="logbtn" />
+		<input type="submit" name="submit" value=">" class="logbtn" />
 
 		<p class="box-register">Vous êtes nouveau ici? <a class="dec" href="register.php">S'inscrire</a></p>
 	<?php if (! empty($message)) { ?>
@@ -67,4 +68,5 @@ if (isset($_POST['username'])){
 	</form>
 </section>
 </body>
+<script src="../js/login.js"></script>
 </html>

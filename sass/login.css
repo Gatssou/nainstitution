@@ -24,7 +24,9 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 height: 60vh;
-
+background: transparent;
+box-shadow: 0 5px 10px 2px;
+width: 25vw;
 }
 .zindex{
 width: 33%;
@@ -40,9 +42,11 @@ z-index: 2;
 }
 input{
   border: none;
-  background: white;
-  opacity: 0.5;
+  background: rgba(129, 129, 129, 0.5);
   height: 5vh;
+  width: 17vw;
+  position: relative;
+  top: 5vh;
   border-radius: 5px;
   outline: none;
   font-size: 25px;
@@ -55,8 +59,10 @@ input{
 .inpdec i{
   position: absolute;
   left: 1vw;
-  top: 1vh;
-  size: 20px;
+  top: 6vh;
+  font-size: 27px;
+  color: black;
+  text-align: center;
 }
 a{
   text-decoration: none;
@@ -73,6 +79,17 @@ a{
   border-radius: 90% 10%;
 animation: bateau ease 7s infinite alternate-reverse  ;
 
+}
+.logbtn{
+  width: 5vw;
+  position: relative;
+  float: right;
+  background: white;
+  opacity: 0.5;
+}
+::placeholder{
+  color: black;
+  opacity: 0.5;
 }
 @keyframes bateau{
 0%{
@@ -132,9 +149,32 @@ transform: translateX(10vw) ;
   border-color: white black black white;
   height: 4vh;
 }
+.success{
+  background: transparent;
+  box-shadow: 0 10px 10px 0;
+}
+.box-register{
+  font-size: 1em;
+}
+
+
+
 @media screen and (max-width: 900px){
+  .labin{
+    width: 70vw;
+  }
   .zindex{
       width: 60%;
       border-radius: 50px;
   }
+  .box-register{
+    font-size: 3em;
+  }
+  input{
+    width: 50vw;
+  }
+  .logbtn{
+    width: 15vw;
+  }
+
 }
