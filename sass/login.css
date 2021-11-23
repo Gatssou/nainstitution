@@ -6,7 +6,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  width: 100%;
   font-size: 2vw;
   overflow: hidden;
   background: url(../img/106830.jpg);
@@ -16,9 +17,9 @@ body {
   z-index: 1000;
   transition: background 1.1s;
 }
-
 *{
-margin: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .labin{
@@ -34,15 +35,19 @@ width: 25vw;
 }
 .zindex{
 width: 33%;
-height: 70%;
+height: 60%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
 background: transparent;
-width: 30%;
 z-index: 2;
+}
+.zindexbis{
+  z-index: 1;
+  height: 7vh;
+  margin-bottom: 3vh;
 }
 input{
   border: none;
@@ -163,10 +168,13 @@ transform: translateX(10vw) ;
 /*button*/
 .app{
   height: 5vh;
+  width: 80vw;
 }
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   text-align: center;
   width: 20%;
@@ -181,15 +189,15 @@ label {
   background-color: rgba(0,0,0,.1);
   border-radius: 100px;
   position: relative;
-  margin: 1.8rem 0 4rem 0; 
   cursor: pointer;
 }
 .toggle {
   position: absolute;
   width: 50%;
-  background-color: #fff;
+  background-color: #34323D;
   box-shadow: 0 2px 15px rgba(0,0,0,.15);
   transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 }
 .names {
   font-size: 90%;
@@ -200,23 +208,22 @@ label {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  user-select: none;
 }
 .dark {
   opacity: .5;
 }
 .styn{
-  color: blue;
+  color: black;
 }
 .styl{
-  color: blue;
+  color: white;
 }
 [type="checkbox"] {
   display: none;
 }
 [type="checkbox"]:checked + .app .toggle{
   transform: translateX(100%);
-  background-color: #34323D;
+  background-color: #fff;
 }
 [type="checkbox"]:checked + .app .dark{
   opacity: 1;

@@ -10,20 +10,23 @@
 </head>
 <body>
 
-<section>
+<section class="zindexbis">
+
 <input type="checkbox" id="switch">
 	<div class="app">
 	    <div class="content">
 	      <label for="switch">
-	        <div class="toggle"></div>
+	        <div id="toggle" class="toggle"></div>
 	        <div class="names">
-				<p class="styn" id="night" onclick="darkTheme()">Light</p>
 				<p class="styl" id="day" onclick="lightTheme()">Dark</p>
+				<p class="styn" id="night" onclick="darkTheme()">Light</p>
 	        </div>
 	      </label>
 	    </div>
 	</div>
 </section>
+
+
 
 <?php
 require('config.php');
