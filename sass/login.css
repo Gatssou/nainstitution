@@ -194,13 +194,8 @@ label {
 .toggle {
   position: absolute;
   width: 50%;
-<<<<<<< Updated upstream
   background-color: #34323D;
   box-shadow: 0 2px 15px rgba(0,0,0,.15);
-=======
-  background-color: #fff;
-  box-shadow: 0 2px 15px rgba(253, 50, 50, 0.15);
->>>>>>> Stashed changes
   transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .names {
