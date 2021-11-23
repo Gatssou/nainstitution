@@ -8,7 +8,7 @@ header{
     height: 50vw;
     background-size: cover;
         transform:translate3d(100%,0,0);
-        animation: slideUp 3s forwards;
+        animation: slideUp 1s forwards;
        }
        
        @keyframes slideUp{
@@ -51,12 +51,12 @@ a { text-decoration: none; }
   line-height: 1.5;
   padding-top: 1em;
   padding-bottom: 1em;
-  color: black;
+  color: rgba(0, 0, 0, 0.219);
 }
 .menu{
   position: relative;
-  left: 96vh;
-  top: 42vh;
+  top: 10vh;
+  left: 1vh;
   width: 200px;
   height: 200px;
  
@@ -80,10 +80,10 @@ transform: rotate(0deg) translateX(70px);
   align-items: center;
   width: 40px;
   height: 40px;
-  background: black;
+  background: rgba(0, 0, 0, 0.219);
   border-radius: 50%;
   transform: rotate(calc(360deg / -8 * var(--i)));
-  box-shadow: 0 3px 4px white;
+  box-shadow: 0 3px 4px rgb(0, 0, 0);
   transition: 0.5s;
 }
 .menu li a:hover{

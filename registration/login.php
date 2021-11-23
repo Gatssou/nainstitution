@@ -15,7 +15,7 @@
 <input type="checkbox" id="switch">
 	<div class="app">
 	    <div class="content">
-	      <label for="switch">
+	      <label  for="switch">
 	        <div class="toggle"></div>
 	        <div class="names">
 				<p class="styl" id="day" onclick="lightTheme()">Dark</p>
