@@ -10,6 +10,7 @@ body {
   background: url(../img/106830.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   z-index: 1000;
   /*backdrop-filter: blur(10px);*/
 }
@@ -86,6 +87,29 @@ animation: bateau ease 7s infinite alternate-reverse ;
   background: white;
   opacity: 0.5;
 }
+.sty{
+  width: 7vw;
+  background: grey;
+}
+.theme{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 3vh;
+  border-radius: 20px;
+}
+.switch{
+
+}
+.theme{
+
+}
+.styn{
+
+}
+.styl{
+  
+}
 ::placeholder{
   color: black;
   opacity: 0.5;
@@ -148,7 +172,6 @@ transform: translateX(10vw) ;
   border-color: white black black white;
   height: 4vh;
 }
-<<<<<<< Updated upstream
 .success{
   background: transparent;
   box-shadow: 0 10px 10px 0;
@@ -158,8 +181,6 @@ transform: translateX(10vw) ;
 }
 
 
-=======
->>>>>>> Stashed changes
 
 @media screen and (max-width: 900px){
   .labin{

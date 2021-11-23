@@ -33,9 +33,15 @@ if (isset($_POST['username'])){
 
 <section class="zindex">
 <div id="pile"><img class="dragon" src="./img/logo.png" height="50px" alt="" ></div>
+
 	<form class="labin" action="" method="post">
 		
-		<input type="submit" value="ok" id="night" onclick="changeTheme()">
+		<div class="switch">
+			<div class="theme">
+				<p class="styn" id="night" onclick="darkTheme()">Night</p>
+				<p class="styl" id="day" onclick="lightTheme()">Day</p>
+			</div>
+		</div>
 		<div class="inpdec">
 			<i class="far fa-user"></i>
 			<input type="text" class="decou" name="username" placeholder="Pseudo" required />
