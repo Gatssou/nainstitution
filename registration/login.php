@@ -31,19 +31,9 @@ if (isset($_POST['username'])){
 }
 ?>
  
-	
- 
 <section class="zindex">
-
-
 	<form class="labin" action="" method="post">
-		
-		<div class="switch">
-			<div class="theme">
-				<p class="styn" id="night" onclick="darkTheme()">Night</p>
-				<p class="styl" id="day" onclick="lightTheme()">Day</p>
-			</div>
-		</div>
+			
 		<div class="inpdec">
 			<i class="far fa-user"></i>
 			<input type="text" class="decou" name="username" placeholder="Pseudo" required />
@@ -75,6 +65,21 @@ if (isset($_POST['username'])){
 	<?php } ?>
 
 	</form>
+</section>
+
+<section>
+<input type="checkbox" id="switch">
+	<div class="app">
+	    <div class="content">
+	      <label for="switch">
+	        <div class="toggle"></div>
+	        <div class="names">
+	          <p class="light">Light</p>
+	          <p class="dark">Dark</p>
+	        </div>
+	      </label>
+	    </div>
+	</div>
 </section>
 </body>
 <script src="./index.js"></script>

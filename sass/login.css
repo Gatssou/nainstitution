@@ -3,6 +3,7 @@ html,body{
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2vw;
@@ -12,6 +13,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   z-index: 1000;
+  transition: background 1.1s;
   /*backdrop-filter: blur(10px);*/
 }
 *{
@@ -87,29 +89,6 @@ animation: bateau ease 7s infinite alternate-reverse ;
   background: white;
   opacity: 0.5;
 }
-.sty{
-  width: 7vw;
-  background: grey;
-}
-.theme{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 3vh;
-  border-radius: 20px;
-}
-.switch{
-
-}
-.theme{
-
-}
-.styn{
-
-}
-.styl{
-  
-}
 ::placeholder{
   color: black;
   opacity: 0.5;
@@ -180,24 +159,65 @@ transform: translateX(10vw) ;
   font-size: 1em;
 }
 
-.dragon{
-  position:absolute;
+/*button*/
+.app{
+  height: 5vh;
+}
+.content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
-  border-radius: 20%;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 20%;
+  transform: translateY(5%);
+}
+label, .toggle {
+  height: 2.8rem;
+  border-radius: 100px;
+}
+label {
+  width: 100%;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 100px;
+  position: relative;
+  margin: 1.8rem 0 4rem 0; 
   cursor: pointer;
-  transition: transform 1.25s;
 }
-.flip:hover .dragon{
-  transform:rotate(360deg) ;
+.toggle {
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.names {
+  font-size: 90%;
+  font-weight: bolder;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: .5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+.dark {
+  opacity: .5;
 }
 
-
-
-
-
+[type="checkbox"] {
+  display: none;
+}
+[type="checkbox"]:checked + .app .toggle{
+  transform: translateX(100%);
+  background-color: #34323D;
+}
+[type="checkbox"]:checked + .app .dark{
+  opacity: 1;
+}
+[type="checkbox"]:checked + .app .light{
+  opacity: .5;
+}
 
 @media screen and (max-width: 900px){
   .labin{
