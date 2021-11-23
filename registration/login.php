@@ -16,7 +16,7 @@
 	<div class="app">
 	    <div class="content">
 	      <label for="switch">
-	        <div id="toggle" class="toggle"></div>
+	        <div class="toggle"></div>
 	        <div class="names">
 				<p class="styl" id="day" onclick="lightTheme()">Dark</p>
 				<p class="styn" id="night" onclick="darkTheme()">Light</p>
