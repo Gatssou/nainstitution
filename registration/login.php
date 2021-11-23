@@ -35,8 +35,8 @@ if (isset($_POST['username'])){
 	      <label  for="switch">
 	        <div class="toggle"></div>
 	        <div class="names">
-				<p class="styl" id="day" onclick="lightTheme()">Dark</p>
-				<p class="styn" id="night" onclick="darkTheme()">Light</p>
+				<p class="styl" id="day" onclick="lightTheme()">Light</p>
+				<p class="styn" id="night" onclick="darkTheme()">Dark</p>
 	        </div>
 	      </label>
 	    </div>
@@ -57,25 +57,30 @@ if (isset($_POST['username'])){
 
 		<div class="inpdec">
 			<i class="fas fa-lock"></i>
-			<input type="password" class="decop" name="password" placeholder="Password" required />
+			<input type="password" onclick="blurEffects()" class="decop" name="password" placeholder="Password" required />
 		</div>
 
-		<input type="submit" name="submit" value=">" class="logbtn" />
+		<div class="passforgot">
+			<!-- <a class="fgtp" href="./">Forgot Pass ?</a> -->
+			<input type="submit" name="submit" value=">" class="logbtn" />
+		</div>
 
 		<p class="box-register">Vous êtes nouveau ici? <a class="dec" href="register.php">S'inscrire</a></p>
 		
 
-	<?php if (! empty($message)) { ?>
-		<div class="cross">
-			<h1 class="err" style="background: blue;">Err 404<i class="fas fa-times first"></i></h1>
-			
-			<p class="errorMessage"><i class="fas fa-times redfa"></i><?php echo $message; ?></p>
-			<input type="submit" name="submit" value="Noob !" class="noob">
-		</div>
-	<?php } ?>
-	<?php if (! empty($image)) { ?>
-		<img class="logerror" src="./img/203905.webp" alt="">
-	<?php } ?>
+	<article class="errmess">
+		<?php if (! empty($message)) { ?>
+			<div class="cross">
+				<h1 class="err" style="background: blue;">Err 404<i class="fas fa-times first"></i></h1>
+		
+				<p class="errorMessage"><i class="fas fa-times redfa"></i><?php echo $message; ?></p>
+				<input type="submit" name="submit" value="Noob !" class="noob">
+			</div>
+		<?php } ?>
+		<?php if (! empty($image)) { ?>
+			<img class="logerror" src="./img/203905.webp" alt="">
+		<?php } ?>
+	</article>
 
 	</form>
 			
