@@ -42,7 +42,6 @@ if (isset($_POST['username'])){
 	    </div>
 	</div>
 </section>
-<<<<<<< HEAD:php/login.php
 
 <?php
 require('config.php');
@@ -66,8 +65,6 @@ if (isset($_POST['username'])){
 }
 ?>
  
-=======
->>>>>>> 1821c826d29998d92f7e9520d279042ce6f903af:registration/login.php
 <section class="zindex">
 	<form class="labin" action="" method="post">
 			
