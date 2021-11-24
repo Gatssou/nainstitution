@@ -55,8 +55,8 @@ a { text-decoration: none; }
 }
 .menu{
   position: relative;
-  top: 10vh;
-  left: 1vh;
+  top: 30vh;
+  left: 80vh;
   width: 200px;
   height: 200px;
  
@@ -92,6 +92,8 @@ transform: rotate(0deg) translateX(70px);
 .toggle img{
   height: 20vh;
   width: 20vw;
+  position: relative;
+  left: 25vw;
 }
 .toggle{
   position:absolute;
@@ -107,7 +109,5 @@ transform: rotate(0deg) translateX(70px);
   transition: transform 1.25s;
 }
 .menu.active .toggle{
-  transform:rotate(360deg) ;
-
+  transform:rotate(2880deg) ;
 }
-
