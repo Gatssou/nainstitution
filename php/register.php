@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-﻿<!DOCTYPE html>
-=======
 <?php 
 session_start();
 $bdd = new PDO('mysql:host=localhost;dbname=nains;charset=utf8;', 'root');
@@ -27,7 +24,6 @@ if($recupUser->rowCount() > 0){
 ?>
 
 <!DOCTYPE html>
->>>>>>> 1821c826d29998d92f7e9520d279042ce6f903af
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -85,7 +81,6 @@ if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
 	<form class="labin" action="" method="post">
 		
 
-<<<<<<< HEAD
 		<div class="inpdec">
 			<i class="far fa-user"></i>
 			<input type="text" onclick="blurEffect()" class="decou" name="username" placeholder="Pseudo" required />
@@ -102,58 +97,6 @@ if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
 		</div>
 
 		<div class="inpdec">
-=======
-               case 'email':
-                ?>
-      <div class="alert alert_danger">
-         <br><strong>error</strong>email non valide !
-      </div>
-      <?php
-         break;
-               case 'email_length':
-                ?>
-      <div class="alert alert_danger">
-         <br><strong>error</strong>email trop long !
-      </div>
-      <?php
-         break;
-               case 'username_length':
-                ?>
-      <div class="alert alert_danger">
-         <br><strong>error</strong>pseudo trop long !
-      </div>
-      <?php
-         break;
-         
-         case 'already':
-            ?>
-      <div class="alert alert_danger">
-         <br><strong>Erreur</strong> : compte déjà existant!
-      </div>
-      <?php
-         break;
-         }
-         }
-         ?>
-    <form class="labin" action="" method="POST">
-       
-        <div class="inpdec">
-            <i class="far fa-user"></i>
-            <input type="text" size="20px" name="username" autocomplete="off" class="decou" placeholder="Username" required>
-        </div>
-      
-        <div class="inpdec">
-            <i class="far fa-envelope"></i>
-            <input type="email" size="20px" name="email" class="decou" placeholder="E-mail" autocomplete="off" required>
-        </div>
-      
-        <div class="inpdec">
-            <i class="fas fa-lock"></i>
-            <input type="password" name="password" autocomplete="off" class="decop" placeholder="Password" required>
-        </div>
-        
-        <div class="inpdec">
->>>>>>> 1821c826d29998d92f7e9520d279042ce6f903af
             <i class="fas fa-lock"></i>
             <input type="password" onclick="blurEffects()" name="password_retype" class="decop" placeholder="Confirm Pass" autocomplete="off" required="required">
         </div>
