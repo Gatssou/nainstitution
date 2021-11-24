@@ -1,15 +1,16 @@
-<?php
-// Informations d'identification
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'nains');
- 
-// Connexion � la base de donn�es MySQL 
-$conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
- 
-// V�rifier la connexion
-if($conn === false){
-    die("ERREUR : Impossible de se connecter. " . mysqli_connect_error());
-}
-?>
+<?php 
+        /*
+           Attention ! le host => l'adresse de la base de données et non du site !!
+        
+           Pour ceux qui doivent spécifier le port ex : 
+           $bdd = new PDO("mysql:host=CHANGER_HOST_ICI;dbname=CHANGER_DB_NAME;charset=utf8;port=3306", "CHANGER_LOGIN", "CHANGER_PASS");
+           
+         */
+    try 
+    {
+        $bdd= new PDO("mysql:host=localhost;dbname=nains", 'root');
+    }
+    catch(PDOException $e)
+    {
+        die('Erreur : '.$e->getMessage());
+    }

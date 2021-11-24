@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$bdd = new PDO('mysql:host=localhost;dbname=nains;charset=utf8;', 'root');
+require_once 'config.php';
 if(isset($_POST['envoi'])){
     if(!empty($_POST['username']) AND !empty($_POST['password'])AND !empty($_POST['email'])){
         $pseudo = htmlspecialchars($_POST['username']);
