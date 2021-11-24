@@ -1,6 +1,11 @@
-<?php 
-session_start();
-require_once './config.php';
+﻿<?php
+	// Initialiser la session
+	session_start();
+	// Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
+	if(!isset($_SESSION["username"])){
+		header("Location: login.php");
+		exit(); 
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,77 +13,61 @@ require_once './config.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Fa/css/all.css">
-    <link rel="stylesheet" href="../sass/login.css">
+    <link rel="stylesheet" href="./reliephpindex.css">
     <title>Document</title>
 </head>
 <body>
-<section>
-    <div class="animation-wrapper">
-      <div class="particle particle-1"></div>
-      <div class="particle particle-2"></div>
-      <div class="particle particle-3"></div>
-      <div class="particle particle-4"></div>
+    <header>
+       
+	   <div class="nav-elements">
+		 <li class="un"><a href="">JOUER</a></li>
+		   <li class="deux"><a href="">PERSONNALISER</a></li>
+		   <li class="trois"> <a href="">COMMUNAUTÉ</a></li>
+		   <li class="quatre"><a href="">BOUTIQUE</a></li>
+    
+	   </div>
+	   <div class="menu">
+        <div class="toggle"> <img src="./img/têtev2.png" alt=""></div>
+        <li style="--i:0;">
+        <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
+        </li>
+        <li style="--i:1;">
+        <a href="#"><ion-icon name="at-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2;">
+        <a href="#"><ion-icon name="barbell-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3;">
+        <a href="#"><ion-icon name="at-outline"></ion-icon></a>
+        </li>
+        <li style="--i:4;">
+        <a href="#"><ion-icon name="rocket-outline"></ion-icon></a>
+        </li>
+        <li style="--i:5;">
+        <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
+        </li>
+        <li style="--i:6;">
+        <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
+        </li>
+        <li style="--i:7;">
+        <a href="logout.php"><ion-icon name="sparkles-outline"></ion-icon></a>
+        </li>
     </div>
-</section>
-    
-<section class="zindex">
-<?php
-    if(isset($_GET['login_err']))
-    {
-        $err = htmlspecialchars($_GET['login_err']);
-
-        switch($err)
-        {
-            case 'password':
-                ?>
-                <div class="alert alert-danger">
-                    <strong>Error</strong> password invalide
-                </div>
-                <?php
-                break;
-
-            case 'email':
-                ?>
-                <div class="alert alert-danger">
-                    <strong>Error</strong> email invalide
-                </div>
-                <?php
-                break;
-
-            case 'already':
-                ?>
-                <div class="alert alert-danger">
-                    <strong>Error</strong> accound doesn't exist
-                </div>
-                <?php
-                break;
-            }
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function(){ 
+            menu.classList.toggle('active')
         }
-    ?>
-    
-    <form class="labin" method="POST" action="./connexion.php" novalidate>
-        <div class="inpdec">
-            <i class="far fa-user"></i>
-            <input type="text" size="20px" name="user" class="decou" placeholder="Username" required>
-        </div>
+            
+    </script>
 
-        <div class="inpdec">
-        <i class="far fa-envelope"></i>
-            <input type="email" size="20px" name="email" class="decou" placeholder="E-mail" required>
-        </div>
 
-        <div class="inpdec">
-            <i class="fas fa-lock"></i>
-            <input type="password" name="password" class="decop" placeholder="Password" required>
-        </div>
-
-        <a href="#" class="forgotpass">Forgot password ?</a>
-        <input type="submit" class="logbtn" name="login" value="Login">
-                    
-        <p class="log_reg">Dont' have an account ? <a href="./inscription.php">Register here !</a></p>
-    </form>
-         
-</section>
-</body>
+	  
+	
+ </header>
+ 
+	</body>
 </html>

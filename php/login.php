@@ -26,8 +26,6 @@
 	</div>
 </section>
 
-
-
 <?php
 require('config.php');
 session_start();
@@ -44,7 +42,7 @@ if (isset($_POST['username'])){
 	    $_SESSION['username'] = $username;
 	    header("Location: index.php");
 	}else{
-		$image = "./img/maquenoir.jpg";
+		$image = "../img/img_index/maquenoir.jpg";
 		$message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
 	}
 }
@@ -86,7 +84,7 @@ if (isset($_POST['username'])){
 			</div>
 		<?php } ?>
 		<?php if (! empty($image)) { ?>
-			<img class="logerror" src="./img/203905.webp" alt="">
+			<img class="logerror" src="../img/img_log/203905.webp" alt="">
 		<?php } ?>
 	</article>
 
@@ -98,6 +96,6 @@ if (isset($_POST['username'])){
 </body>
 <script src="../js/js stock/jquery-3.6.0.min.js"></script>
 <script src="../js/js stock/jquery-ui-1.13.0/jquery-ui.js"></script>
-<script src="./index.js"></script>
+<script src="../js/index.js"></script>
 <script src="../js/login.js"></script>
 </html>

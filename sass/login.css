@@ -10,7 +10,7 @@ body{
   width: 100%;
   font-size: 2vw;
   overflow: hidden;
-  background: url(../img/106830.jpg);
+  background: url(../img/img_log/106830.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -100,7 +100,7 @@ animation: bateau ease 7s infinite alternate-reverse ;
   transition: ease-in-out 1s;
 }
 ::placeholder{
-  color: rgb(90, 90, 90);
+  color: rgb(0, 0, 0);
   opacity: 0.5;
 }
 @keyframes bateau{
@@ -170,7 +170,7 @@ transform: translateX(10vw) ;
   color: white;
 }
 .dec:hover{
-  color: red;
+  color: black;
   transition: ease-in-out 1s;
 }
 .passforgot{
@@ -250,6 +250,8 @@ label {
   opacity: .5;
 }
 
+
+/*version portable*/
 @media screen and (max-width: 900px){
   .labin{
     width: 70vw;
@@ -292,5 +294,28 @@ label {
   }
   .fgtp{
     font-size: 1.5em;
+  }
+  /*error message*/
+  .errmess{
+    position: relative;
+    top: 150%;
+    left: -110%;
+    width: 80%;
+  }
+  .errorMessage{
+    font-size: 3em;
+  }
+  .err{
+    font-size: 3em;
+  }
+  .redfa{
+    width: 5vw;
+  }
+  .cross{
+    width: 150%;
+  }
+  .first:before{
+    position: relative;
+    top: -23px;
   }
 }

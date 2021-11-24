@@ -1,16 +1,15 @@
 <?php
-
-$serv = 'localhost';
-$user = 'root';
-$pass = '';
-$bdd = 'nains';
-
-try{
-    $pdo = new PDO("mysql:host=$serv;dbname=$bdd; charset=utf8", $user, $pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-}
-catch(PDOException $e){
-    echo "Erreur : " . $e->getMessage();
+// Informations d'identification
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'nains');
+ 
+// Connexion � la base de donn�es MySQL 
+$conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
+// V�rifier la connexion
+if($conn === false){
+    die("ERREUR : Impossible de se connecter. " . mysqli_connect_error());
 }
 ?>
