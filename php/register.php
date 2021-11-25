@@ -40,8 +40,8 @@ if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
     $query = "INSERT into `users` (username, email, password)
               VALUES ('$username', '$email', '".hash('sha256', $password)."')";
 	// Exécute la requête sur la base de données
-    $res = mysqli_query($conn, $query);
-    if($res){
+   
+    if($pdo){
        echo "<div class='success'>
              <h3>Vous êtes inscrit avec succès.</h3>
              <p>Cliquez ici pour vous <a href='login.php'>connecter</a></p>
