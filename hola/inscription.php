@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+<?php
+session_start()
+?>
+         <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -8,7 +11,7 @@
 	<link rel="stylesheet" href="../sass/login.css">
 	<title>Document</title>
 </head>
-<body id="bili">
+<body id="bili"> 
 <section class="zindexbis">
 
 
@@ -27,46 +30,24 @@
 </section>
 <div id="root"></div>
 <div class="hoo"><span class="timer"></span></div>
-<?php
-require('config.php');
-if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
-	// récupérer le nom d'utilisateur et supprimer les antislashes ajoutés par le formulaire
+         <section class="zindex">
 	
-	$username = htmlspecialchars($_POST['username']); 
-	$email = htmlspecialchars($_POST['email']); 
-	$password = htmlspecialchars($_POST['password']); 
-	
-	//requéte SQL + mot de passe crypté
-    $query = "INSERT into `users` (username, email, password)
-              VALUES ('$username', '$email', '".hash('sha256', $password)."')";
-	// Exécute la requête sur la base de données
-   
-    if($pdo){
-       echo "<div class='success'>
-             <h3>Vous êtes inscrit avec succès.</h3>
-             <p>Cliquez ici pour vous <a href='login.php'>connecter</a></p>
-			 </div>";
-    }
-}else{
-?>
-<section class="zindex">
-	
-	<form class="labin" action="" method="post">
+	<form class="labin" action="inscription_traitement.php" method="post">
 		
 
 		<div class="inpdec">
 			<i class="far fa-user"></i>
-			<input type="text" onclick="blurEffect()" class="decou" name="username" placeholder="Pseudo" required />
+			<input type="text" onclick="blurEffect()" class="decou" name="pseudo" id="pseudo" placeholder="Pseudo" required />
 		</div>
 
 		<div class="inpdec">
 			<i class="far fa-envelope"></i>
-			<input type="text" onclick="blurEffect()" class="decou" name="email" placeholder="Email" required />
+			<input type="text" onclick="blurEffect()" class="decou" name="email" placeholder="Email" required id="email"  />
 		</div>
 
 		<div class="inpdec">
 			<i class="fas fa-lock"></i>
-			<input type="password" onclick="blurEffects()" class="decop" name="password" placeholder="Password" required />
+			<input type="password" onclick="blurEffects()" class="decop" name="password" placeholder="Password" id="password" required />
 		</div>
 
 		<div class="inpdec">
@@ -75,12 +56,38 @@ if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['password'])){
         </div>
 
 		<input type="submit" name="submit" value=">" class="logbtn" />
-		<p class="box-register">Déjà inscrit? <br> <a class="dec" href="login.php">Connectez-vous ici</a></p>
+		<p class="box-register">Déjà inscrit? <br> <a class="dec" href="./connexion.php">Connectez-vous ici</a></p>
+		<?php
+         if(isset($_GET['reg_err'])){
+            $err = htmlspecialchars($_GET['reg_err']);
+         
+            switch($err){
+               case 'success':
+                ?>
+      <div class="alert_danger">
+         <br><strong>Succès</strong>inscription réussie !
+      </div>
+      <?php
+         break;
+         
+         case 'already':
+            ?>
+      <div class="alert_danger">
+         <br><strong>Erreur</strong> : email/mot de passe/pseudo deja utilisé
+      </div>
+      <?php
+         break;
+         }
+         }
+         ?>
 	</form>
 </section>
-<?php } ?>
+
 </body>
 <script src="../js/js stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="../js/login.js"></script>
 <script src="./index.js"></script>
 </html>
+     
+   
+  
