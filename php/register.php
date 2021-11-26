@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -86,7 +86,7 @@
 	?>
 <section class="zindex">
 	
-	<form class="labin" action="" method="post">
+	<form class="labin" action="./inscription_traitement.php" method="post">
 		
 
 		<div class="inpdec">
