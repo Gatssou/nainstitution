@@ -19,13 +19,13 @@
 <body>
     <header>
        
-	   <div class="nav-elements">
+	   <nav class="nav-elements">
 		 <li class="un"><a href="">JOUER</a></li>
 		   <li class="deux"><a href="">PERSONNALISER</a></li>
 		   <li class="trois"> <a href="">COMMUNAUTÉ</a></li>
 		   <li class="quatre"><a href="">BOUTIQUE</a></li>
     
-	   </div>
+	   </nav>
 	   <div class="menu">
         <div class="toggle"> <img src="./img/têtev2.png" alt=""></div>
         <li style="--i:0;">
