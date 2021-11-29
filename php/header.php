@@ -28,8 +28,7 @@
 	    </div>
 	</div>
 </section>
-<div id="root"></div>
-<div class="hoo"><span class="timer"></span></div>
+
          <section class="zindex">
 	
 	<form class="labin" action="./include/inscript.php" method="POST">
