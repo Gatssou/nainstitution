@@ -4,7 +4,7 @@ require './php/functions.php';
 logged_only();
 ?>
 
-<h1>Si vous êtes ici c'est que vous êtes connecté</h1>
+<h1>1 2 , 1 2 . Connexion établie ,contact avec objet non indentifié dans 5sec Roger , transmision Out . Scroutch</h1>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +17,43 @@ logged_only();
 <body>
     <header>
        
-	   <nav class="nav-elements">
-		 <li class="un"><a href="">JOUER</a></li>
-		   <li class="deux"><a href="">PERSONNALISER</a></li>
-		   <li class="trois"> <a href="">COMMUNAUTÉ</a></li>
-		   <li class="quatre"><a href="">BOUTIQUE</a></li>
-    
-	   </nav>
+	<ul id="menu-demo2">
+        <li><a href="#">THOMASSSS</a>
+          <ul>
+            <li><a href="#"><img src="./img/img_log/jurassic.png" height="80px" width="90px" alt=""></a>
+            </li>
+            <li><a href="#">lien sous menu 1</a></li>
+            <li><a href="#">lien sous menu 1</a></li>
+            <li><a href="#">lien sous menu 1</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Rubrique</a>
+          <ul>
+            <li><a href="#"><img src="./img/img_log/darkvador.jpg" height="80px" width="90px" alt=""></a></li>
+            <li><a href="#">Lien sous menu 2</a></li>
+            <li><a href="#">Lien sous menu 2</a></li>
+            <li><a href="#">Lien sous menu 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Event</a>
+          <ul>
+            <li><a href="#"><img src="./img/img_log/wrong-pass.jpg" height="80px" width="90px" alt=""></a></li>
+            <li><a href="#">lien sous menu 3</a></li>
+            <li><a href="#">lien sous menu 3</a></li>
+            <li><a href="#">lien sous menu 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Incroyable</a>
+          <ul>
+            <li><a href="#"><img src="./img/img_index/maquenoir.jpg"  height="80px" width="90px" alt=""></a></li>
+            <li><a href="#">Lien sous menu 4</a></li>
+            <li><a href="#">Lien sous menu 4</a></li>
+            <li><a href="#">Lien sous menu 4</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
 	   <div class="menu">
         <div class="toggle"><img src="./img/img_index/têtev2.png" alt=""></div>
         <li style="--i:0;">
