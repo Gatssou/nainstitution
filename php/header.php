@@ -11,7 +11,7 @@
 </head>
 <body>
 <body id="bili"> 
-<fieldset>
+
 <section class="zindexbis">
 
 
@@ -62,6 +62,6 @@
 	
 	</form>
 </section>
-</fieldset>
+
 
     
