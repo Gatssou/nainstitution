@@ -18,7 +18,7 @@ include './php/header.php';
 	</div>
 </section>
 <section class="zindex">
-	<form class="labin" action="./log.php" method="post">
+	<form class="labin" action="./php/log.php" method="POST">
 
 		<div class="inpdec">
 			<i class="far fa-user"></i>

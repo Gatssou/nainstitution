@@ -1,29 +1,76 @@
 <?php
+session_start();
+require './php/functions.php';
+logged_only();
 ?>
+
+<h1>Si vous êtes ici c'est que vous êtes connecté</h1>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../fa/css/all.css">
-   <link rel="stylesheet" href="./sass/login.css">
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/reliephpindex.css">
+    <title>Document</title>
 </head>
 <body>
-   
-</body>
-</html>
-<?php
-          if(PHP_SESSION_ACTIVE){?> 
-            <a href="deconnexion.php">Deconnexion</a>
+    <header>
+       
+	   <nav class="nav-elements">
+		 <li class="un"><a href="">JOUER</a></li>
+		   <li class="deux"><a href="">PERSONNALISER</a></li>
+		   <li class="trois"> <a href="">COMMUNAUTÉ</a></li>
+		   <li class="quatre"><a href="">BOUTIQUE</a></li>
+    
+	   </nav>
+	   <div class="menu">
+        <div class="toggle"><img src="./img/img_index/têtev2.png" alt=""></div>
+        <li style="--i:0;">
+        <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
+        </li>
+        <li style="--i:1;">
+        <a href="#"><ion-icon name="at-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2;">
+        <a href="#"><ion-icon name="barbell-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3;">
+        <a href="#"><ion-icon name="at-outline"></ion-icon></a>
+        </li>
+        <li style="--i:4;">
+        <a href="#"><ion-icon name="rocket-outline"></ion-icon></a>
+        </li>
+        <li style="--i:5;">
+        <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
+        </li>
+        <li style="--i:6;">
+        <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
+        </li>
+        <li style="--i:7;">
+        <a href="logout.php"><ion-icon name="sparkles-outline"></ion-icon></a>
+        </li>
+    </div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function(){ 
+            menu.classList.toggle('active')
+        }
             
-            <?php }if($_SESSION['id'] = 0){?>
-               <a href="index.php">
-               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" >
-                  <path d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"/>
-               </svg></a>
-               <?php } ?>  
+    </script>
 
-</body>
+
+	  
+	
+ </header>
+ 
+	</body>
 </html>
+<a href="./include/disconnect.php">Se déconnecter</a>
+
+
+
+
