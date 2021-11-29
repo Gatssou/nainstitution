@@ -14,7 +14,7 @@ if(!empty($_POST["pseudo"])){
 
 if(!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['motdedep']) &&!empty($pseudo)){
     try{
-        require_once './include/bdd.php';
+        require_once '../include/bdd.php';
         $req = $pdo->prepare('SELECT * FROM exusers WHERE tokenconfirmed IS NOT NULL AND username = :pseudale ');
         $req->bindParam(':pseudale', $pseudo);
         $req->execute();
@@ -27,7 +27,7 @@ if(!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9
             $_SESSION['auth'] = $userdata;
             header('location:../index.php');
         }else{
-            echo 'c\'est pas bon';
+          echo 'c\'est pas bon';
         }
     }
 }else{

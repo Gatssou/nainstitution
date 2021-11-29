@@ -7,7 +7,7 @@ echo $userid . '<br>' . $tokenconf;
 
 if(!empty($tokenconf) && !empty($userid)){
     try{
-    require './bdd.php';
+    require '../include/bdd.php';
     $pdo->prepare("UPDATE exusers SET conftoken = 0, tokenconfirmed = NOW() WHERE id = $userid")->execute();
     }catch(PDOException $e){
         echo 'Erreur : ' . $e;
