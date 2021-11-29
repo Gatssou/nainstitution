@@ -25,7 +25,7 @@
 	</div>
 </section>
 <section class="zindex">
-	<form class="labin" action="./include/log.php" method="post">
+	<form class="labin" action="./log.php" method="post">
 			
 		<div class="inpdec">
 			<i class="far fa-user"></i>
@@ -36,7 +36,7 @@
 		<div class="inpdec">
 			<i class="fas fa-lock"></i>
          
-			<input type="password" onclick="blurEffects()" class="decop"  placeholder="Password" required name="motdedep" id="motdp" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,24}$"> />
+			<input type="password" onclick="blurEffects()" class="decop"  placeholder="Password" required name="motdedep" id="motdp" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,24}$"> 
 		</div>
 
 		<div class="passforgot">
