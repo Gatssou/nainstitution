@@ -1,14 +1,6 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./sass/login.css">
-	<link rel="stylesheet" href="./fa/css/all.css">
-	<title>Document</title>
-</head>
+<?php
+include './php/header.php';
+?>
 <body id="bili">
 <section class="zindexbis">
 <input type="checkbox" id="switch">
@@ -52,10 +44,6 @@
 			
 			</section>
 
-
-</body>
-<script src="../js/js stock/jquery-3.6.0.min.js"></script>
-<script src="../js/js stock/jquery-ui-1.13.0/jquery-ui.js"></script>
-<script src="../js/index.js"></script>
-<script src="../js/login.js"></script>
-</html>
+<?php
+include './php/footer.php';
+?>

@@ -5,7 +5,6 @@ include './php/header.php';
 
 
 <body id="bili"> 
-<fieldset>
 <section class="zindexbis">
 
 
@@ -34,13 +33,13 @@ include './php/header.php';
 
 		<div class="inpdec">
 			<i class="far fa-envelope"></i>
-			<input type="email" onclick="blurEffect()" class="decou" name="email" id="email" required pattern="^[A-Za-z0-9'_.-]+@{1}[A-Za-z0-9]+\.[A-Za-z]{2,}$"  placeholder="Email" > />
+			<input type="email" onclick="blurEffect()" class="decou" name="email" id="email" required pattern="^[A-Za-z0-9'_.-]+@{1}[A-Za-z0-9]+\.[A-Za-z]{2,}$"  placeholder="Email" >
 		</div>
 
 		<div class="inpdec">
 			<i class="fas fa-lock"></i>
 			<input type="password" onclick="blurEffects()" class="decop"  placeholder="Password"  required
-			name="mdp" id="motdpe" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,24}$"> :>
+			name="mdp" id="motdpe" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,24}$"> 
 		</div>
 
 		<div class="inpdec">
@@ -54,7 +53,6 @@ include './php/header.php';
 	
 	</form>
 </section>
-</fieldset>
 
     
 
