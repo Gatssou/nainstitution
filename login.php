@@ -6,9 +6,9 @@ include './include/header.php';
 <section class="zindexbis">
 	<input type="checkbox" id="switch">
 	<div class="app">
-		<div class="content">
+		<div class="content" onclick="toggleSwitch()">
 			<label for="switch">
-				<div class="toggle" id="toggle"></div>
+				<div class="toggle" id="toggle" ></div>
 				<div class="names">
 					<p class="styl" id="day">Light</p>
 					<p class="styn" id="night">Dark</p>
@@ -30,7 +30,7 @@ include './include/header.php';
 		<div class="inpdec">
 			<i class="fas fa-lock"></i>
 
-			<input type="password" onclick="blurEffects()" class="decop" placeholder="Password" required name="motdedep"
+			<input type="password" onclick="toggleSwitch()" class="decop" placeholder="Password" required name="motdedep"
 				id="motdp" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,24}$">
 		</div>
 
