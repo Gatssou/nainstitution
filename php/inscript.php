@@ -13,8 +13,8 @@ if(!empty($_POST["pseudo"]) && !empty($_POST["email"])){
     $mail = cleandata($_POST['email']);
 
 }else{
-    header("location:../insc.php");
-   // echo 'pas bon les données';
+    //header("location:../insc.php");
+    echo 'pas bon les données';
 }
 
 if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST["mdpconf"]) && $_POST['mdp'] === $_POST['mdpconf']){
@@ -23,8 +23,8 @@ if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z
     $hashed = password_hash($pass, PASSWORD_BCRYPT);
 
 }else{
-    header('location:../insc.php');
-   // echo 'pas bon le mdp';
+   // header('location:../insc.php');
+  echo 'pas bon le mdp';
 }
 
 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
@@ -47,8 +47,8 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
        header("location:./confirm.php?id=" . $usid . "&token=" . $tok);
     }
 }else{
-    header("location:./insc.php");
-    //echo 'pas bon la verif';
+    //header("location:./insc.php");
+    echo 'pas bon la verif';
 }
 
 
