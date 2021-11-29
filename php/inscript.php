@@ -29,7 +29,7 @@ if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z
 
 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     try{
-        require_once './include/bdd.php';
+        require_once '../include/bdd.php';
         $req = $pdo->prepare("INSERT INTO exusers(username, password, conftoken, email) VALUES(:username, :password, :conftoken, :email)");
         $tok = token(60);
         $req->bindParam(':username', $usname);
@@ -47,7 +47,7 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
        header("location:./confirm.php?id=" . $usid . "&token=" . $tok);
     }
 }else{
-    header("location:../insc.php");
+    header("location:./insc.php");
     //echo 'pas bon la verif';
 }
 

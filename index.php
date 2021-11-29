@@ -48,7 +48,8 @@ logged_only();
         <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
         </li>
         <li style="--i:7;">
-        <a href="logout.php"><ion-icon name="sparkles-outline"></ion-icon></a>
+        <a href="./php/disconnect.php"><ion-icon name="sparkles-outline"></ion-icon></a>
+       
         </li>
     </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -66,10 +67,10 @@ logged_only();
 	  
 	
  </header>
- 
+ <a href="./php/disconnect.php">Se déconnecter</a>
 	</body>
 </html>
-<a href="./include/disconnect.php">Se déconnecter</a>
+
 
 
 
