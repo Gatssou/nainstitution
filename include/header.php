@@ -10,5 +10,5 @@
     <title>Document</title>
 </head>
 
-<body class="bili">
+<body class="bili clair">
 	
