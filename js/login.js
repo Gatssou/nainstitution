@@ -1,5 +1,5 @@
 function darkTheme(){
-    document.getElementById("night");
+    document.getElementById("toggle");
     document.body.style.backgroundImage ="url('../img/img_log/1035117.jpg')";
 }
 function lightTheme(){
