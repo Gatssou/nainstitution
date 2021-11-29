@@ -1,5 +1,5 @@
 <?php
-include './php/header.php';
+include './include/header.php';
 ?>
 
 
@@ -45,10 +45,6 @@ include './php/header.php';
 	</form>
 </section>
 
-<script src="./js/js stock/jquery-ui-1.13.0/jquery-ui.js"></script>
-<script src="./js/login.js"></script>
-<script src="./js/index.js"></script>
-
 <?php
-include './php/footer.php';
+include './include/footer.php';
 ?>

@@ -1,5 +1,5 @@
 <?php
-include './php/header.php';
+include './include/header.php';
 ?>
 
 
@@ -21,9 +21,7 @@ include './php/header.php';
 </section>
 <section class="zindex">
 
-    <form class="labin" action="./inscript.php" method="POST">
-
-
+    <form class="labin" action="./php/inscript.php" method="POST">
         <div class="inpdec">
             <i class="far fa-user"></i>
             <input type="text" onclick="blurEffect()" class="decou" name="pseudo" id="pseud" required
@@ -54,12 +52,6 @@ include './php/header.php';
     </form>
 </section>
 
-
-
-<script src="../js/js stock/jquery-ui-1.13.0/jquery-ui.js"></script>
-<script src="../js/login.js"></script>
-<script src="../js/index.js"></script>
-
 <?php
-include './php/footer.php';
+include './include/footer.php';
 ?>
