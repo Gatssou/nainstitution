@@ -1,6 +1,6 @@
 <?php 
 session_start();
-    require_once 'config.php'; // On inclu la connexion à la bdd
+    require_once './config.php'; // On inclu la connexion à la bdd
     // Si les variables existent et qu'elles ne sont pas vides
     if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype']))
     {
@@ -11,7 +11,7 @@ session_start();
         $password_retype = htmlspecialchars($_POST['password_retype']);
 
         // On vérifie si l'utilisateur existe
-        $check = $pdo->prepare('SELECT username, email, password FROM utilisateurs WHERE email = ?');
+        $check = $pdo->prepare('SELECT username, email, password FROM users WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
