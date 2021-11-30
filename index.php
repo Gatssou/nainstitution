@@ -16,7 +16,7 @@ logged_only();
 <body>
     <header>
        
-	<ul id="menu-demo2">
+    <ul id="menu-demo2">
         <li><a href="#">THOMASSSS</a>
           <ul>
             <li><a href="#"><img src="./img/img_log/jurassic.png" height="80px" width="90px" alt=""></a>
@@ -53,7 +53,7 @@ logged_only();
       </ul>
 
     </nav>
-	   <div class="menu">
+       <div class="menu">
         <div class="toggle"><img src="./img/img_index/têtev2.png" alt=""></div>
         <li style="--i:0;">
         <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
@@ -93,14 +93,9 @@ logged_only();
     </script>
 
 
-	  
-	
+      
+    
  </header>
  <a href="./php/disconnect.php">Se déconnecter</a>
-	</body>
+    </body>
 </html>
-
-
-
-
-

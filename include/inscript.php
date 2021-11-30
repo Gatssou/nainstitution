@@ -19,7 +19,7 @@ $mail = cleandata($_POST['email']);
 if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
     try{
         require './bdd.php';
-        $check = $pdo->query("SELECT pseudo, email FROM usuervincent");
+        $check = $pdo->query("SELECT pseudo, email FROM logtest");
         $data = $check->fetch(PDO::FETCH_OBJ);      
     }catch(PDOException $e){
         echo 'Erreur : ' . $e;
@@ -45,7 +45,7 @@ else{
 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     try{
         require_once './bdd.php';
-        $req = $pdo->prepare("INSERT INTO uservincent(username, password, email, conftoken) VALUES(:username, :password, :email, :conftoken)");
+        $req = $pdo->prepare("INSERT INTO logtest(username, password, email, conftoken) VALUES(:username, :password, :email, :conftoken)");
         $tok = token(60);
         $req->bindParam(':username', $usname);
         $req->bindParam(':password', $hashed);
