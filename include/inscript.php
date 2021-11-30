@@ -19,7 +19,7 @@ $mail = cleandata($_POST['email']);
 if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
     try{
         require './bdd.php';
-        $check = $pdo->query("SELECT pseudo, email FROM logtest");
+        $check = $pdo->query("SELECT username, email FROM logtest");
         $data = $check->fetch(PDO::FETCH_OBJ);      
     }catch(PDOException $e){
         echo 'Erreur : ' . $e;

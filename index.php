@@ -1,6 +1,6 @@
 <?php
 session_start();
-require './php/functions.php';
+require './include/functions.php';
 logged_only();
 ?>
 
@@ -96,6 +96,6 @@ logged_only();
       
     
  </header>
- <a href="./php/disconnect.php">Se déconnecter</a>
+ <a href="./include/disconnect.php">Se déconnecter</a>
     </body>
 </html>
