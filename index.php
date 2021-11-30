@@ -4,7 +4,6 @@ require './php/functions.php';
 logged_only();
 ?>
 
-<h1>1 2 , 1 2 . Connexion établie ,contact avec objet non indentifié dans 5sec Roger , transmision Out . Scroutch</h1>
 <!DOCTYPE html>
 <html lang="en">
 <head>

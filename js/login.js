@@ -10,3 +10,5 @@ function toggleSwitch(){
         document.body.classList.add("clair");
     }
 }
+
+//98x*@CziY0vz4%6eC^

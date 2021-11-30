@@ -10,10 +10,10 @@ include './include/header.php';
     <div class="app">
         <div class="content">
             <label for="switch">
-                <div class="toggle"></div>
+                <div class="toggle" onclick="toggleSwitch()"></div>
                 <div class="names">
-                    <p class="styl" id="day" onclick="lightTheme()">Light</p>
-                    <p class="styn" id="night" onclick="darkTheme()">Dark</p>
+                    <p class="styl" id="day">Light</p>
+                    <p class="styn" id="night">Dark</p>
                 </div>
             </label>
         </div>
