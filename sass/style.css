@@ -15,7 +15,7 @@ html,body{
   *{
     margin: 0;
   }
-  
+ 
   .labin{
     display: flex;
     flex-wrap: wrap;

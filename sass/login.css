@@ -10,12 +10,20 @@ body{
   width: 100%;
   font-size: 2vw;
   overflow: hidden;
+  z-index: 1000;
+  transition: background 5.1s;
+}
+.clair{
   background: url(../img/img_log/106830.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  z-index: 1000;
-  transition: background 5.1s;
+}
+.obscur{
+  background: url(../img/img_log/1035117.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 *{
   margin: 0;
@@ -44,6 +52,7 @@ text-align: center;
 background: transparent;
 z-index: 2;
 }
+
 .zindexbis{
   z-index: 1;
   height: 7vh;
