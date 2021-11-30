@@ -52,6 +52,7 @@ text-align: center;
 background: transparent;
 z-index: 2;
 }
+
 .zindexbis{
   z-index: 1;
   height: 7vh;
