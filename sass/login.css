@@ -258,7 +258,12 @@ label {
 [type="checkbox"]:checked + .app .light{
   opacity: .5;
 }
-
+/* inscription_merci */
+.insc{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
 
 /*version portable*/
 @media screen and (max-width: 900px){
