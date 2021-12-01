@@ -93,6 +93,12 @@ logged_only();
     </script>
 
 
+
+    <img src="./img/img_log/homefem.png" alt="">  <span>
+  <img src="./img/img_log/homefem.png" alt="">
+  
+
+</div>
     
  </header>
 
