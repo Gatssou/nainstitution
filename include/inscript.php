@@ -39,7 +39,7 @@ $pass = $_POST["mdp"];
 $hashed = password_hash($pass, PASSWORD_BCRYPT);
 }
 else{
-    header('location:../insc.php?error=bad');
+    header('location:./inscription_merci.php');
 }
 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     try{
@@ -65,7 +65,7 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
 
     }
 }else{
-        header("location:../insc.php?error=bad");
+        header("location:./inscription_merci.php");
     }
 
 
