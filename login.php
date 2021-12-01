@@ -44,7 +44,21 @@ include './include/header.php';
 
     </form>
 </section>
-
+<?php
+                  if(isset($_GET['reg_succes'])){
+                     $err = htmlspecialchars($_GET['reg_succes']);
+                  
+                     switch($err){
+                        case 'password':
+                           ?>
+               <div class="alert_danger">
+                  <br><strong>Erreur</strong> : nscription reussit
+               </div>
+               <?php
+                  break;
+                        }
+                    }
+?>
 <?php
 include './include/footer.php';
 ?>

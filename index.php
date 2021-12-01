@@ -17,7 +17,7 @@ logged_only();
     <header>
        
     <ul id="menu-demo2">
-        <li><a href="#">THOMASSSS</a>
+        <li><a href="#">Personnalisation</a>
           <ul>
             <li><a href="#"><img src="./img/img_log/jurassic.png" height="80px" width="90px" alt=""></a>
             </li>
@@ -26,7 +26,7 @@ logged_only();
             <li><a href="#">lien sous menu 1</a></li>
           </ul>
         </li>
-        <li><a href="#">Rubrique</a>
+        <li><a href="#">Tête</a>
           <ul>
             <li><a href="#"><img src="./img/img_log/darkvador.jpg" height="80px" width="90px" alt=""></a></li>
             <li><a href="#">Lien sous menu 2</a></li>
@@ -34,7 +34,7 @@ logged_only();
             <li><a href="#">Lien sous menu 2</a></li>
           </ul>
         </li>
-        <li><a href="#">Event</a>
+        <li><a href="#">Habits</a>
           <ul>
             <li><a href="#"><img src="./img/img_log/wrong-pass.jpg" height="80px" width="90px" alt=""></a></li>
             <li><a href="#">lien sous menu 3</a></li>
@@ -42,7 +42,7 @@ logged_only();
             <li><a href="#">lien sous menu 3</a></li>
           </ul>
         </li>
-        <li><a href="#">Incroyable</a>
+        <li><a href="#">chaussures</a>
           <ul>
             <li><a href="#"><img src="./img/img_index/maquenoir.jpg"  height="80px" width="90px" alt=""></a></li>
             <li><a href="#">Lien sous menu 4</a></li>
@@ -93,9 +93,16 @@ logged_only();
     </script>
 
 
-      
     
  </header>
+
+ <div class="nd1">
+   <img class="box-3" src="./img/img_log/robot.png" alt="">
+   <img src="./img/img_log/robotdeux.png" alt="" class="box-1">
+   <img class="box-2" src="./img/img_log/robot.png" alt="">
+   <img src="./img/img_log/robotdeux.png" alt="" class="box-4">
+ 
+ </div>
  <a href="./include/disconnect.php">Se déconnecter</a>
     </body>
 </html>

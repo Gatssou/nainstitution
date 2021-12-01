@@ -10,15 +10,11 @@ header{
     width: 100%;
     height: 50vw;
     background-size: cover;
-        transform:translate3d(100%,0,0);
-        animation: slideUp 1s forwards;
-        background-image: url(../img/img_log/minion.jpg);
+      
+        background-image: url(../img/img_log/darkvador.jpg);
        }
        
-       @keyframes slideUp{
-        90%{transform:translate3d(100%,0,0)}
-        100%{transform:translate3d(0,0,0)} 
-       }
+     
 .nav-elements {
     list-style-type: none;
     display:flex;
@@ -67,8 +63,8 @@ a { text-decoration: none; }
 }
 .menu{
   position: relative;
-  top: 30vh;
-  left: 80vh;
+  top: 8vh;
+  left: 91vh;
   width: 200px;
   height: 200px;
  
@@ -78,7 +74,7 @@ a { text-decoration: none; }
 position: absolute;
 left: 0;
 list-style: none;
-transform-origin: 190px;
+transform-origin: 250px;
 transition: 0.5s;
 transition-delay: calc(0.1s * var(--1i));
 transform: rotate(0deg) translateX(70px);
@@ -105,15 +101,17 @@ transform: rotate(0deg) translateX(70px);
   height: 20vh;
   width: 20vw;
   position: relative;
-  left: 25vw;
-  border-radius: 70%;
   box-shadow: 0 0 50px #e4f31498,
     0 0 10px #e4f31498,
     0 0 21px #e4f31498,
-  
     0 0 92px rgb(0, 0, 0),
     0 0 102px rgb(0, 0, 0),
     0 0 151px rgb(0, 0, 0);
+    transition: 1.2s  ease-in-out;
+    
+}
+.toggle img:active{
+  border-radius: 60%;
 }
 .toggle{
   position:absolute;
@@ -231,3 +229,62 @@ transform: rotate(0deg) translateX(70px);
   #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
   color:#000;
   }
+  .nd1 img{
+   transform-style: preserve-3d;
+    animation: bateau ease 10s forwards alternate-reverse  ;
+    height: 20vh;
+    width:20vw ;
+    background-size: contain;
+    position: relative;
+  
+  }
+  @keyframes bateau{
+    1%{
+       transform: translateY(-360deg);
+    }
+  20%{ transform: rotateZ(360deg) ;
+  }
+  35%{
+    transform: translateX(40vw);
+  }
+  50%{ transform: translateX(1vw);
+    
+  }
+  
+    100%{transform: translateX(100vw);
+    }
+   
+  }
+  .box-1{
+    
+      transform:translateX(360deg);
+    
+
+  }
+  .box-4{
+      transform:  translateX(360deg);
+
+  }
+  header{
+    transform-style: preserve-3d;
+     animation: ups 10s forwards alternate-reverse  ;
+    
+   
+   }
+   @keyframes ups{
+     1%{
+        transform: translateY(-360deg);
+     }
+   20%{ transform: rotateZ(360deg) ;
+   }
+   35%{
+     transform: translateX(40vw);
+   }
+   50%{ transform: translateX(1vw);
+     
+   }
+   
+     100%{transform: translateX(100vw);
+     }
+    
+   }
