@@ -24,7 +24,7 @@ logged_only();
             
     </div>
             <div class="perso-back"> 
-                <img src="./img/img_index/mimiamti.png" height="700px" alt=""> 
+                <img src="./img/imagepersosnage/pikatchu.png" height="700px" alt=""> 
             </div>     
     </div>
     <div class="menup">

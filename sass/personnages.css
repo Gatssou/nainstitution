@@ -6,7 +6,7 @@
 .contien{
     height: 100vh;
     width: 100%;
-    background-image: url(../img/imagepersosnage/pexels-francesco-ungaro-96381.jpg);
+    background-image: url(../img/imagepersosnage/wallpaper_middle_earth_shadow_of_war_06_1920x1080.jpg);
     background-size: cover;
     flex-direction: column;
     display: flex;
@@ -45,7 +45,7 @@
 
 .menup:nth-child(1) .persos .left{
   
-    background-image: url(../img/img_index/mimiamti.png);
+    background-image: url(../img/imagepersosnage/pikatchu.png);
     background-size: cover;
 }
 .menup:nth-child(2) .persos .left{
