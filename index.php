@@ -54,7 +54,7 @@ logged_only();
 
     </nav>
        <div class="menu">
-        <div class="toggle"><img src="./img/img_index/têtev2.png" alt=""></div>
+        <div class="toggle"><img src="./img/img_index/reticule.png" alt=""></div>
         <li style="--i:0;">
         <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
         </li>
@@ -92,23 +92,26 @@ logged_only();
             
     </script>
 
+</header>
 
-
-    <img src="./img/img_log/homefem.png" alt="">  <span>
-  <img src="./img/img_log/homefem.png" alt="">
-  
-
+<p class="legende">Personnages</p>
+<div class="selectionner">
+  <h1 class="selec"> Selectionner</h1>
 </div>
-    
- </header>
-
- <div class="nd1">
-   <img class="box-3" src="./img/img_log/robot.png" alt="">
-   <img src="./img/img_log/robotdeux.png" alt="" class="box-1">
-   <img class="box-2" src="./img/img_log/robot.png" alt="">
-   <img src="./img/img_log/robotdeux.png" alt="" class="box-4">
- 
- </div>
+      <div class="tout">
+      
+       <div class="suivant"><img  src="./img/img_log/homme.png" alt=""></div>
+        <div class="suivant"><img  src="./img/img_log/femme.png" alt=""></div>
+      
+      </div>
+  
+      <div class="next">
+        <a class="avant" onclick="boutonAvant()"><ion-icon name="accessibility-outline"></ion-icon></a>
+        <a class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon></a> 
+      </div>
+ <footer>
  <a href="./include/disconnect.php">Se déconnecter</a>
+ </footer>
     </body>
+    <script src="./js/personnage.js"></script>
 </html>
