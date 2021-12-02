@@ -230,7 +230,7 @@ width: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: black 1px ridge;
+
     z-index: 0;
 
   }
@@ -243,6 +243,9 @@ width: 5vw;
   .suivant img {
     display: block;
     width: 100%;
+  }
+  .suivant img:hover{
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .avant,
   .apres {
