@@ -96,7 +96,7 @@ logged_only();
 
 <p class="legende">Personnages</p>
 <div class="selectionner">
-  <h1 class="selec"> Selectionner</h1>
+  <h1 class="selec"> <a href="./personnage.php">Selectionner</a></h1>
 </div>
       <div class="tout">
       
@@ -106,8 +106,8 @@ logged_only();
       </div>
   
       <div class="next">
-        <a class="avant" onclick="boutonAvant()"><ion-icon name="accessibility-outline"></ion-icon></a>
-        <a class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon></a> 
+        <a class="avant" onclick="boutonAvant()">H<ion-icon name="accessibility-outline"></ion-icon></a>
+        <a class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon>F</a> 
       </div>
  <footer>
  <a href="./include/disconnect.php">Se déconnecter</a>
