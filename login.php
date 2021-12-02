@@ -24,7 +24,7 @@ include './include/header.php';
             <i class="far fa-user"></i>
 
             <input type="text" onclick="blurEffect()" class="decou" placeholder="Username" name="pseudo" id="pseud"
-                required pattern="^[A-Za-zÀ-ÿ'-]+$">
+                required pattern="^[A-Za-zÀ-ÿ0-9'-]+$">
         </div>
 
         <div class="inpdec">
