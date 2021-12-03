@@ -32,7 +32,8 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
         }
     }
 }else{
-        echo 'toujours pas';
+        echo 'mot de pass incorrecte';
+        
     }
     
 

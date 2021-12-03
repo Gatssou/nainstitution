@@ -263,7 +263,9 @@ label {
   justify-content: center;
   display: flex;
 }
-
+.alert_danger{
+  color:white;
+}
 /*version portable*/
 @media screen and (max-width: 900px){
   .labin{

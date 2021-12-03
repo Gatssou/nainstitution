@@ -52,7 +52,7 @@ include './include/header.php';
                         case 'password':
                            ?>
                <div class="alert_danger">
-                  <br><strong>Erreur</strong> : nscription reussit
+                  <br> Mot de pass incorrecte NOOBS exemple: lonicera lonicera@hotmail.fr mdp: Lonicera62*   :Voila.
                </div>
                <?php
                   break;
