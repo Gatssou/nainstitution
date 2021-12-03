@@ -48,7 +48,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/img_log/robotdeux.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/ohohoho.png" height="500px" alt=""> 
             </div>       
     </div>
     <div class="menup">

@@ -55,7 +55,7 @@
 }
 .menup:nth-child(3) .persos .left{
   
-    background-image: url(../img/img_log/robotdeux.png);
+    background-image: url(../img/imagepersosnage/ohohoho.png);
     background-size: cover;
 }
 .menup:nth-child(4) .persos .left{
@@ -77,12 +77,18 @@
     height: 100%;
     top: 0;
     left: 40%;
-
+    
 }
+
 .perso-back img{
   display: none;
 
 }
+.perso-back img:active{
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white, inset 0px 0px 10px white ;
+}
 .active .perso-back img{
     display: flex;
+  
 }
