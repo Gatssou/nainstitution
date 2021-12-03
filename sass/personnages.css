@@ -6,7 +6,7 @@
 .contien{
     height: 100vh;
     width: 100%;
-    background-image: url(../img/imagepersosnage/wallpaper_middle_earth_shadow_of_war_06_1920x1080.jpg);
+    background-image: url(../img/imgbg/neige.png);
     background-size: cover;
     flex-direction: column;
     display: flex;
@@ -50,7 +50,7 @@
 }
 .menup:nth-child(2) .persos .left{
   
-    background-image: url(../img/img_index/squeleton.left.png);
+    background-image: url(../img/imagepersosnage/tigre.png);
     background-size: contain;
 }
 .menup:nth-child(3) .persos .left{
@@ -60,7 +60,7 @@
 }
 .menup:nth-child(4) .persos .left{
   
-    background-image: url(../img/img_log/darkvador.jpg);
+    background-image: url(../img/imagepersosnage/rouge.png);
     background-size: cover;
 }
 .persos .right h1 {
@@ -76,7 +76,7 @@
     position: absolute;
     height: 100%;
     top: 0;
-    left: 20%;
+    left: 40%;
 
 }
 .perso-back img{

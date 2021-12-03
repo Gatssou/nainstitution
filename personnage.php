@@ -24,7 +24,7 @@ logged_only();
             
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/pikatchu.png" height="700px" alt=""> 
+                <img src="./img/imagepersosnage/pikatchu.png" height="500px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -36,7 +36,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/img_index/squeleton_front.png" height="600px" alt=""> 
+                <img src="./img/imagepersosnage/tigre.png" height="500px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -48,7 +48,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/img_log/robotdeux.png" height="700px" alt=""> 
+                <img src="./img/img_log/robotdeux.png" height="500px" alt=""> 
             </div>       
     </div>
     <div class="menup">
@@ -60,7 +60,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/img_log/darkvador.png" height="700px" alt=""> 
+                <img src="./img/imagepersosnage/rouge.png" height="600px" alt=""> 
             </div>
                
     </div>
