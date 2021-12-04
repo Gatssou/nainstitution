@@ -225,6 +225,12 @@ width: 5vw;
     align-items: center;
     text-align: center;
     justify-content: center;
+    
+  }
+  .selectionner a{
+    list-style: none;
+    color: black;
+    margin: 2px;
   }
   .tout{
     display: flex;
@@ -243,9 +249,13 @@ width: 5vw;
   .suivant img {
     display: block;
     width: 100%;
+    
   }
   .suivant img:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(252, 139, 33, 0.1);
+    border-radius: 30%;
+  border:outset 2px black;
+   
   }
   .avant,
   .apres {
@@ -255,14 +265,17 @@ width: 5vw;
     color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 30%;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(252, 139, 33, 0.1);
+   
   }
   .apres {
     border-radius: 30%;
   }
   .avant:hover,
   .apres:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0.3);
+    text-shadow: cadetblue;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0), inset 0px 0px 10px rgb(0, 0, 0);
   }
   .next{
     justify-content: center;

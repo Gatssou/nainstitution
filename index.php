@@ -96,7 +96,7 @@ logged_only();
 
 <p class="legende">Personnages</p>
 <div class="selectionner">
-  <h1 class="selec"> <a href="./personnage.php">Selectionner</a></h1>
+  <h1 class="selec"> <a href="./personnage.php">Selectionner  </a></h1>
 </div>
       <div class="tout">
       
