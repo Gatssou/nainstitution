@@ -13,7 +13,7 @@
     <h2>Line test js</h2>
     <p>test</p>
    <!-- <div id="line"></div>  --> 
-    <canvas id="canva" class="canva" width="760px" height="1000px"></canvas>
+    <canvas id="canva" class="canva" width="1260px" height="1000px"></canvas>
 </div>
 
 

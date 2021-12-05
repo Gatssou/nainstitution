@@ -63,24 +63,34 @@ $(document).ready(function(){
 
 let ctx = document.getElementById("canva").getContext("2d");
 
-let start = {x:380 , y:10};
+let start = {x:380 , y:10}; /*_ |*/
 let cp1 = {x: 200, y: 400};
 let cp2 = {x: 100, y: -200};
 let end = {x:400 , y:200};
+
+let start2 = {x:0, y:300};
+let cp3 = {x: 250, y: 700};
+let cp4 = {x: 500, y: 50};
+let end2 = {x:1200 , y:500};
+
+let start3 = {x:0, y:500};
+let cp5 = {x: 250, y: 100};
+let cp6 = {x: 500, y: 600};
+let end3 = {x:1200 , y:350};
+
+let start4 = {x:0, y:400};
+let cp7 = {x: 250, y: 100};
+let cp8 = {x: 500, y: 800};
+let end4 = {x:1200 , y:250};
 
     ctx.lineWidth = "2";
     ctx.strokeStyle = "white";
     ctx.moveTo(start.x, start.y);
     ctx.bezierCurveTo(cp1.x, cp1.y, cp2.x, cp2.y, end.x, end.y);
-    ctx.stroke();
-
-let start2 = {x:400 , y:200};
-let cp3 = {x: 650, y: 500};
-let cp4 = {x: 700, y: 600};
-let end2 = {x:380 , y:900};
-
-    ctx.lineWidth = "2";
-    ctx.strokeStyle = "white";
     ctx.moveTo(start2.x, start2.y);
     ctx.bezierCurveTo(cp3.x, cp3.y, cp4.x, cp4.y, end2.x, end2.y);
+    ctx.moveTo(start3.x, start3.y);
+    ctx.bezierCurveTo(cp5.x, cp5.y, cp6.x, cp6.y, end3.x, end3.y);
+    ctx.moveTo(start4.x, start4.y);
+    ctx.bezierCurveTo(cp7.x, cp7.y, cp8.x, cp8.y, end4.x, end4.y);
     ctx.stroke();
