@@ -116,7 +116,7 @@ logged_only();
     </body>
     <script>
   $(window).scroll(function(){
-    var scrollPos = $(this).scrollTop();
+    let scrollPos = $(this).scrollTop();
    // console.log(scrollPos);
    $('body').css({
      'background-size' : 100 + scrollPos + '%'
