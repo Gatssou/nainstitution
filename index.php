@@ -11,6 +11,7 @@ logged_only();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/reliephpindex.css">
+   <script src="./js/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -113,5 +114,14 @@ logged_only();
  <a href="./include/disconnect.php">Se déconnecter</a>
  </footer>
     </body>
+    <script>
+  $(window).scroll(function(){
+    var scrollPos = $(this).scrollTop();
+   // console.log(scrollPos);
+   $('body').css({
+     'background-size' : 100 + scrollPos + '%'
+   })
+  })
+</script>
     <script src="./js/personnage.js"></script>
 </html>
