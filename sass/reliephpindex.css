@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+  background-image: url(../img/imgbg/lapin8.jpg);
+}
 
 h1{
   font-size: 1.5em;
