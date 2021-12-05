@@ -66,11 +66,25 @@ logged_only();
     </div>
 
     </div>
+   
+    <footer>
+ <a href="./include/disconnect.php">Se déconnecter</a>
+ </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
       $(document).on("click", ".menup", function () {
         $(this).addClass("active").siblings().removeClass("active");
       });
     </script>
+    </body>
+<script>
+  $(window).scroll(function(){
+    let scrollPos = $(this).scrollTop() / 20;
+   // console.log(scrollPos);
+   $('body').css({
+     'background-size' : 120 + scrollPos + '%'
+   })
+  })
+</script>
 </body>
 </html>
