@@ -224,6 +224,7 @@ width: 5vw;
   }
   .legende{
     font-size: 3em;
+    color: white;
   }
   .selectionner {
     display: flex;
@@ -234,7 +235,7 @@ width: 5vw;
   }
   .selectionner a{
     list-style: none;
-    color: black;
+    color: white;
     margin: 2px;
   }
   .tout{
@@ -259,7 +260,13 @@ width: 5vw;
   .suivant img:hover{
     background-color: rgba(252, 139, 33, 0.1);
     border-radius: 30%;
-  border:outset 2px black;
+  border:inset 1px black;
+   
+  }
+  .suivante img:hover{
+    background-color: rgba(252, 139, 33, 0.1);
+    border-radius: 30%;
+  border:inset 1px black;
    
   }
   .avant,
@@ -270,7 +277,7 @@ width: 5vw;
     color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 30%;
-    background: rgba(252, 139, 33, 0.1);
+    background: rgba(252, 139, 33, 0.863);
    
   }
   .apres {

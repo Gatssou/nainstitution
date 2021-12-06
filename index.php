@@ -102,7 +102,7 @@ logged_only();
       <div class="tout">
       
        <div class="suivant"><img  src="./img/img_log/homme.png" alt=""></div>
-        <div class="suivant"><img  src="./img/img_log/femme.png" alt=""></div>
+        <div class="suivante"><img  src="./img/img_log/femme.png" alt=""></div>
       
       </div>
   

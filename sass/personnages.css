@@ -2,22 +2,83 @@
     margin: 0;
     padding: 0%;
     list-style: none;
+    overflow-x: hidden;
 }
-
   section{
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100vh;
-      background: url(../img/imgbg/neige.png);
+      background-image: url(../img/imgbg/1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
+      animation-duration: 40s ;
+    animation-name: slidein ;
+   
   }
+  
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+      height: 100%;
+
+    }20% {
+        width:107%;
+        height: 115%;
+     
+    }
+
+    40% {
+      width: 100%;
+      height: 100%;
+    }
+    75% {
+   
+      width: 107%;
+      height: 115%;
+    }
+    85% {
+        
+      width: 100%;
+      height: 100%;
+    }
+    95%{
+     height: 107%;
+     width: 115%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @keyframes slide {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+    75% {
+       
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+     
+    }
+  }
+  
 .contien{
+  animation-duration: 40s;
+    animation-name: slide;
     height: 100vh;
     width: 100%;
     flex-direction: column;
