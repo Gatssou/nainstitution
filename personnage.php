@@ -89,7 +89,7 @@ const images = [
 
     'url("./img/imgbg/c.jpg")','url("./img/imgbg/d.jpg")','url("./img/imgbg/e.jpg")','url("./img/imgbg/f.jpg")','url("./img/imgbg/h.jpg")','url("./img/imgbg/j.jpg")','url("./img/imgbg/k.jpg")','url("./img/imgbg/l.jpg")','url("./img/imgbg/m.jpg")','url("./img/imgbg/n.jpg")','url("./img/imgbg/o.jpg")','url("./img/imgbg/r.jpg")','url("./img/imgbg/t.jpg")','url("./img/imgbg/v.jpg")','url("./img/imgbg/w.jpg")','url("./img/imgbg/y.jpg")','url("./img/imgbg/z.jpg")',
 
-    'url("./img/imgbg/584631.jpg")','url("./img/imgbg/692298.jpg")','url("./img/imgbg/ambiance.jpg")','url("./img/imgbg/cimetière.png")','url("./img/imgbg/FF.PNG")','url("./img/imgbg//FFFF.png")','url("./img/imgbg/forêts.jpg")','url("./img/imgbg/lapin8.jpg")','url("./img/imgbg/neige.png")','url("./img/imgbg/ouff.jpg")','url("./img/imgbg/village.jpg")',
+    'url("./img/imgbg/584631.jpg")','url("./img/imgbg/692298.jpg")','url("./img/imgbg/ambiance.jpg")','url("./img/imgbg/cimetière.png")','url("./img/imgbg/forêts.jpg")','url("./img/imgbg/lapin8.jpg")','url("./img/imgbg/neige.png")','url("./img/imgbg/ouff.jpg")','url("./img/imgbg/village.jpg")',
 
     'url("./img/imgbg/20211124_114046.jpg")','url("./img/imgbg/20211206_151745.jpg")','url("./img/imgbg/20211206_151747.jpg")','url("./img/imgbg/20211206_151759.jpg")','url("./img/imgbg/20211206_151802.jpg")',
 
