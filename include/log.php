@@ -28,11 +28,11 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
             header('location:../index.php');
 
         }else{
-            echo 'marche pas';
+            header('location:../login.php?log_err=1');
         }
     }
 }else{
-        echo 'mot de pass incorrecte';
+        header('location:../login.php?log_err=2');
         
     }
     

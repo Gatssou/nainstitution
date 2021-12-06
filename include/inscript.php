@@ -25,7 +25,7 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
         echo 'Erreur : ' . $e;
     }finally{
         if($_POST['pseudo'] == $data->username || $_POST['email'] == $data->email){
-            header('location:../insc.php?=error=Password');
+            header('location:../insc.php?reg_err=2');
         }
     }
 }else{
@@ -39,7 +39,7 @@ $pass = $_POST["mdp"];
 $hashed = password_hash($pass, PASSWORD_BCRYPT);
 }
 else{
-    header('location:./inscription_merci.php');
+    header('location:../insc.php?reg_err=1');
 }
 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     try{
@@ -53,7 +53,7 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
         $req->execute();
 
     }catch(PDOException $e){
-        echo "Erreur : " .$e;
+        echo "Erreur : " . $e;
 
     }finally{
         $usid = $pdo->lastInsertId();
@@ -66,7 +66,6 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     }
 }else{
        // header("location:../login.php?reg_succes=password");
-       
     } 
 
 

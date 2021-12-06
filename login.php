@@ -44,21 +44,18 @@ include './include/header.php';
 
     </form>
 </section>
+<section class="errmess">
 <?php
-                  if(isset($_GET['reg_succes'])){
-                     $err = htmlspecialchars($_GET['reg_succes']);
-                  
-                     switch($err){
-                        case 'password':
-                           ?>
-               <div class="alert_danger">
-                  <br> Mot de pass incorrecte NOOBS exemple: lonicera lonicera@hotmail.fr mdp: Lonicera62*   :Voila.
-               </div>
-               <?php
-                  break;
-                        }
-                    }
+    if(isset($_GET['log_err'])){
+        $e = $_GET['log_err'];
+       if($e == 1){
+           echo 'Mauvais mot de passe';
+       }elseif($e == 2){
+        echo 'Bad use';
+       }
+    }
 ?>
+</section>
 <?php
 include './include/footer.php';
 ?>

@@ -52,5 +52,16 @@ include './include/header.php';
 </section>
 
 <?php
+    if(isset($_GET['reg_err'])){
+        $e = $_GET['reg_err'];
+       if($e == 1){
+           echo 'Mauvais mot de passe';
+       }elseif($e == 2){
+        echo 'Bad use';
+       }
+    }
+?>
+
+<?php
 include './include/footer.php';
 ?>

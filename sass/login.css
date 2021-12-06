@@ -266,6 +266,15 @@ label {
 .alert_danger{
   color:white;
 }
+
+.errmess{
+  color: red;
+  background: grey;
+  opacity: 0.5;
+  width: 25vw;
+  height: auto;
+  text-align: center;
+}
 /*version portable*/
 @media screen and (max-width: 900px){
   .labin{
