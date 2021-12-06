@@ -91,6 +91,8 @@ const images = [
 
     'url("./img/imgbg/584631.jpg")','url("./img/imgbg/692298.jpg")','url("./img/imgbg/ambiance.jpg")','url("./img/imgbg/cimetière.png")','url("./img/imgbg/FF.PNG")','url("./img/imgbg//FFFF.png")','url("./img/imgbg/forêts.jpg")','url("./img/imgbg/lapin8.jpg")','url("./img/imgbg/neige.png")','url("./img/imgbg/ouff.jpg")','url("./img/imgbg/village.jpg")',
 
+    'url("./img/imgbg/20211124_114046.jpg")','url("./img/imgbg/20211206_151745.jpg")','url("./img/imgbg/20211206_151747.jpg")','url("./img/imgbg/20211206_151759.jpg")','url("./img/imgbg/20211206_151802.jpg")',
+
 
 ]
         const section = document.querySelector('section')

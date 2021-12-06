@@ -65,7 +65,7 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
 
     }
 }else{
-        header("location:../login.php?reg_succes=password");
+       // header("location:../login.php?reg_succes=password");
        
     } 
 
