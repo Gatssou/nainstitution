@@ -5,18 +5,38 @@
 }
 
   section{
+      overflow-y: hidden;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100vh;
-      background: url(../img/imgbg/neige.png);
+      background-image: url(../img/imgbg/1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
+      animation-duration: 50s;
+    animation-name: slide;
   }
+  
+  @keyframes slide {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    75% {
+      background-image: 100%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
 .contien{
     height: 100vh;
     width: 100%;

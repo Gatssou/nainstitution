@@ -106,7 +106,7 @@ const images = [
     ];
     section.style.backgroundImage = bg;
     }
-    setInterval(changeBg, 3000)
+    setInterval(changeBg, 2000)
 </script>
 </body>
 </html>
