@@ -70,3 +70,14 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
 
 
 ?>
+<?php
+$username = $_POST['username'];
+$stmt = $pdo->prepare("SELECT * FROM logtest WHERE username=?");
+$stmt->execute([$username]); 
+$user = $stmt->fetch();
+if ($user) {
+    // le nom d'utilisateur existe déjà
+} else {
+    // le nom d'utilisateur n'existe pas
+} 
+?>
