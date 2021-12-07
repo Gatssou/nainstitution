@@ -53,7 +53,9 @@ include './include/header.php';
        }elseif($e == 2){
         echo 'Bad use';
        }
+      
     }
+
 ?>
 </section>
 <?php

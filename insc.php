@@ -60,6 +60,9 @@ include './include/header.php';
            }elseif($e == 2){
             echo 'Bad use';
            }
+           elseif($e == 3){
+            echo 'un de vos ID or MDP est déjà utilisé';
+        }
         }
     ?>
 </section>

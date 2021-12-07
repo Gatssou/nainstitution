@@ -72,12 +72,12 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
 ?>
 <?php
 $username = $_POST['username'];
-$stmt = $pdo->prepare("SELECT * FROM logtest WHERE username=?");
+$stmt = $pdo->prepare("SELECT * FROM logtest WHERE username=?, password=?, email=?");
 $stmt->execute([$username]); 
 $user = $stmt->fetch();
 if ($user) {
-    // le nom d'utilisateur existe déjà
+    header('location:../insc.php?log_err=3');
 } else {
-    // le nom d'utilisateur n'existe pas
+    header('location:../login.php');
 } 
 ?>
