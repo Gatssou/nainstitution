@@ -1,7 +1,9 @@
 html,body{
   height: 100%;
 }
-
+html{
+  transition: background 5.1s;
+}
 body{
   display: flex;
   flex-direction: column;
@@ -11,7 +13,6 @@ body{
   font-size: 2vw;
   overflow: hidden;
   z-index: 1000;
-  transition: background 5.1s;
 }
 .clair{
   background: url(../img/img_log/106830.jpg);
@@ -20,7 +21,7 @@ body{
   background-size: cover;
 }
 .obscur{
-  background: url(../img/img_log/1035117.jpg);
+  background: url(../img/img_log/659797.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -33,12 +34,13 @@ body{
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 height: 60vh;
 background: transparent;
 box-shadow: 0 5px 10px 2px;
 width: 25vw;
+border-radius: 25px 25px 0 0;
 }
 .zindex{
 width: 33%;
@@ -59,7 +61,7 @@ z-index: 2;
 }
 input{
   border: none;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.205);
   height: 5vh;
   width: 17vw;
   position: relative;
@@ -244,19 +246,15 @@ label {
 .styl{
   color: black;
 }
-[type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
-[type="checkbox"]:checked + .app .toggle{
+input[type="checkbox"]:checked + .app .toggle{
   transform: translateX(100%);
-  background-color: #34323D;
+  background-color: #393646;
 }
-[type="checkbox"]:checked + .app .dark{
-  opacity: 1;
-}
-[type="checkbox"]:checked + .app .light{
-  opacity: .5;
-}
+
+
 /* inscription_merci */
 .insc{
   text-align: center;
@@ -274,6 +272,7 @@ label {
   width: 25vw;
   height: auto;
   text-align: center;
+  border-radius: 0 0 15px 15px;
 }
 /*version portable*/
 @media screen and (max-width: 900px){

@@ -23,25 +23,25 @@ include './include/header.php';
 <form class="labin" action="./include/inscript.php" method="POST">
         <div class="inpdec">
             <i class="far fa-user"></i>
-            <input type="text" onclick="blurEffect()" class="decou" name="pseudo" id="pseud" required
+            <input type="text" class="decou" name="pseudo" id="pseud" required
                 pattern="^[A-Za-zÀ-ÿ'-]+$" max="20" placeholder="Pseudo" required />
         </div>
 
         <div class="inpdec">
             <i class="far fa-envelope"></i>
-            <input type="email" onclick="blurEffect()" class="decou" name="email" id="email" required
+            <input type="email" class="decou" name="email" id="email" required
                 pattern="^[A-Za-z0-9'_.-]+@{1}[A-Za-z0-9]+.[A-Za-z]{2,}$" placeholder="Email">
         </div>
 
         <div class="inpdec">
             <i class="fas fa-lock"></i>
-            <input type="password" onclick="blurEffects()" class="decop" placeholder="Password" required name="mdp"
+            <input type="password" class="decop" placeholder="Password" required name="mdp"
                 id="motdpe" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?$/\=*.-]).{6,18}$">
         </div>
 
         <div class="inpdec">
             <i class="fas fa-lock"></i>
-            <input type="password" onclick="blurEffects()" class="decop" placeholder="Password" required name="mdpconf"
+            <input type="password" class="decop" placeholder="Password" required name="mdpconf"
                 id="motdpec" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?$/\=*.-]).{6,18}$">
         </div>
 
@@ -50,17 +50,19 @@ include './include/header.php';
 
     </form>
 </section>
-
-<?php
-    if(isset($_GET['reg_err'])){
-        $e = $_GET['reg_err'];
-       if($e == 1){
-           echo 'Mauvais mot de passe';
-       }elseif($e == 2){
-        echo 'Bad use';
-       }
-    }
-?>
+<section class="errmess">
+    
+    <?php
+        if(isset($_GET['reg_err'])){
+            $e = $_GET['reg_err'];
+           if($e == 1){
+               echo 'Mauvais mot de passe';
+           }elseif($e == 2){
+            echo 'Bad use';
+           }
+        }
+    ?>
+</section>
 
 <?php
 include './include/footer.php';

@@ -7,11 +7,11 @@ include './include/header.php';
     <input type="checkbox" id="switch">
     <div class="app">
         <div class="content" onclick="toggleSwitch()">
-            <label for="switch">
-                <div class="toggle" id="toggle" ></div>
+            <label for="switch" class="active">
+                <div class="toggle" id="toggle"></div>
                 <div class="names">
-                    <p class="styl" id="day">Light</p>
-                    <p class="styn" id="night">Dark</p>
+                    <p class="styl" id="day">Day</p>
+                    <p class="styn" id="night">Night</p>
                 </div>
             </label>
         </div>
@@ -23,14 +23,14 @@ include './include/header.php';
         <div class="inpdec">
             <i class="far fa-user"></i>
 
-            <input type="text" onclick="blurEffect()" class="decou" placeholder="Username" name="pseudo" id="pseud"
+            <input type="text" class="decou" placeholder="Username" name="pseudo" id="pseud"
                 required pattern="^[A-Za-zÀ-ÿ0-9'-]+$">
         </div>
 
         <div class="inpdec">
             <i class="fas fa-lock"></i>
 
-            <input type="password" onclick="toggleSwitch()" class="decop" placeholder="Password" required name="motdedep"
+            <input type="password" class="decop" placeholder="Password" name="motdedep"
                 id="motdp" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?$/\=*.-]).{6,18}$">
         </div>
 

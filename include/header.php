@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en" class="clair">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,5 +10,5 @@
     <title>Document</title>
 </head>
 
-<body class="bili clair">
+<body>
 	
