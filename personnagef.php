@@ -9,14 +9,15 @@ logged_only();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/personnages.css">
+    <link rel="stylesheet" href="./sass/personnagef.css">
     <title>Document</title>
 </head>
 <body>
     <section>
         <h2></h2>
     </section>
-    <div class="contien ">
+    <div class="contien"> 
+      
     <div class="menup ">
         <div class="persos"> 
             <div class="left">
@@ -27,7 +28,7 @@ logged_only();
             
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/pikathor.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/ohohoho.png" height="500px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -39,7 +40,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/perspider.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/femmeb.png" height="500px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -51,9 +52,10 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/tank.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/femmeb1.png" height="500px" alt=""> 
                 
-            </div>       
+            </div> 
+                  
     </div>
     <div class="menup">
         <div class="persos"> 
@@ -64,7 +66,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/classe.png" height="600px" alt=""> 
+                <img src="./img/imagepersosnage/femmecc.png" height="600px" alt=""> 
             </div>
                
     </div>
@@ -92,7 +94,7 @@ const images = [
 
     'url("./img/imgbg/584631.jpg")','url("./img/imgbg/692298.jpg")','url("./img/imgbg/ambiance.jpg")','url("./img/imgbg/cimetière.png")','url("./img/imgbg/forêts.jpg")','url("./img/imgbg/lapin8.jpg")','url("./img/imgbg/neige.png")','url("./img/imgbg/ouff.jpg")','url("./img/imgbg/village.jpg")',
 
-    'url("./img/imgbg/20211124_114046.jpg")','url("./img/imgbg/20211206_151745.jpg")','url("./img/imgbg/20211206_151747.jpg")','url("./img/imgbg/20211206_151759.jpg")','url("./img/imgbg/20211206_151802.jpg")',
+    'url("./img/imgbg/20211124_114046.jpg")','url("./img/imgbg/20211206_151745.jpg")','url("./img/imgbg/20211206_151747.jpg")','url("./img/imgbg/20211206_151759.jpg")','url("./img/imgbg/20211206_151802.jpg")', 'url("./img/imagepersosnage/wallpaper_middle_earth_shadow_of_war_06_1920x1080.jpg")',
 
 
 ]

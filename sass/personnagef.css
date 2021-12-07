@@ -118,24 +118,24 @@
 
 .menup:nth-child(1) .persos .left{
   
-    background-image: url(../img/imagepersosnage/pikathor.png);
+    background-image: url(../img/imagepersosnage/ohohoho.png);
     background-size: cover;
 }
 .menup:nth-child(2) .persos .left{
   
-    background-image: url(../img/imagepersosnage/perspider.png);
+    background-image: url(../img/imagepersosnage/femmeb.png);
     background-size: cover;
 }
 .menup:nth-child(3) .persos .left{
   
-    background-image: url(../img/imagepersosnage/tank.png);
+    background-image: url(../img/imagepersosnage/femmeb1.png);
     background-size: cover;
     
 }
 
 .menup:nth-child(4) .persos .left{
   
-    background-image: url(../img/imagepersosnage/classe.png);
+    background-image: url(../img/imagepersosnage/femmecc.png);
     background-size: cover;
 }
 
