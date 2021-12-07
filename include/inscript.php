@@ -16,6 +16,7 @@ $mail = cleandata($_POST['email']);
     //header("location:../insc.php");
     echo "données";
 }
+
 if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
     try{
         require './bdd.php';
@@ -31,6 +32,14 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
 }else{
     echo 'Remplir les champs';
 }
+
+ 
+$check = $pdo->prepare("SELECT * FROM logtest");
+$check->execute(); 
+$data = $check->fetch(PDO::FETCH_OBJ);
+if ($_POST['email'] === $data->email); {
+    header('location:../insc.php?log_err=3');
+} 
 
 if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf'])
 
@@ -69,16 +78,4 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     } 
 
 
-?>
-<?php
-  require_once './bdd.php';
-$username = $_POST['username'];
-$stmt = $pdo->prepare("SELECT * FROM logtest WHERE username=?, password=?, email=?");
-$stmt->execute([$username]); 
-$user = $stmt->fetch();
-if ($user) {
-    header('location:../insc.php?log_err=3');
-} else {
-    header('location:../login.php');
-} 
 ?>
