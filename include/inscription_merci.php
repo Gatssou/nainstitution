@@ -1,32 +1,28 @@
 <?php
-   session_start();
-   if(!isset($_SESSION['user']))
-   ?>
-       <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../fa/css/all.css">
-	<link rel="stylesheet" href="../sass/login.css">
-	<title>Document</title>
-</head>
-  <body id="bili">
+session_start();
+require_once 'bdd.php';
 
-<div class="insc">
-   <div class="merci">
-      <h1>Inscription bien envoyé</h1>
-      <img src="../img/img_log/wrong-pass.jpg" alt="" class="">
-      <div class="redirection_connexion">
-         <a href="../login.php">Retour a la connexion</a>
-      </div>
-   </div>
-</body>
-<script src="../js/js stock/jquery-ui-1.13.0/jquery-ui.js"></script>
-<script src="../js/login.js"></script>
-<script src="./index.js"></script>
+if(isset($_GET['conftoken'])){
+    $conftoken = htmlspecialchars($_GET['conftoken']);
+    $conftoken = urldecode($conftoken);
+    $conftoken = base64_decode($conftoken);
 
+    $check = $bdd->prepare('SELECT * FROM logtest WHERE conftoken = ?');
+    $check->execute(array($conftoken));
+    $data = $check->fetch();
+    $row = $check->rowCount();
 
-
-</html>
+    if($row == 1){
+        if($data['roletype'] == 0){
+            $update = $bdd->prepare('UPDATE logtest SET roletype = 1 WHERE conftoken = ?');
+            echo "Compte verifie avec succes !";
+        }else{
+            echo "Compte deja verifie";
+        }
+    }else{
+        echo "Compte existe pas";
+    }
+}else{
+    echo "Mauvais lien";
+}
+?>
