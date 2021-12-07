@@ -20,7 +20,7 @@ $mail = cleandata($_POST['email']);
 if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
     try{
         require './bdd.php';
-        $check = $pdo->query("SELECT username, email FROM logtest");
+        $check = $pdo->query("SELECT username, email FROM logtest ");
         $data = $check->fetch(PDO::FETCH_OBJ);      
     }catch(PDOException $e){
         echo 'Erreur : ' . $e;
@@ -29,17 +29,12 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
             header('location:../insc.php?reg_err=2');
         }
     }
+   
 }else{
     echo 'Remplir les champs';
 }
-
+  // ICI verification email pseudo deja utilisé
  
-$check = $pdo->prepare("SELECT * FROM logtest");
-$check->execute(); 
-$data = $check->fetch(PDO::FETCH_OBJ);
-if ($_POST['email'] === $data->email); {
-    header('location:../insc.php?log_err=3');
-} 
 
 if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf'])
 
@@ -78,4 +73,25 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     } 
 
 
+?>
+
+<?php
+require './functions.php';
+(!empty($_POST["pseudo"]) && !empty($_POST["email"])){  
+$stmt = $pdo->prepare("SELECT * FROM logtest WHERE email=?");
+$stmt->execute([$email]); 
+$user = $stmt->fetch();
+if ($user = $pdo) {
+    echo 'email existe';
+} else {
+    header('location:../insc.php?reg_err=3');
+} 
+}
+finally{
+  
+    $pdo = null;
+ 
+ 
+
+}
 ?>
