@@ -71,6 +71,7 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
 
 ?>
 <?php
+  require_once './bdd.php';
 $username = $_POST['username'];
 $stmt = $pdo->prepare("SELECT * FROM logtest WHERE username=?, password=?, email=?");
 $stmt->execute([$username]); 
