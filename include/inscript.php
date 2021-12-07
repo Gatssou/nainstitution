@@ -75,23 +75,45 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
 
 ?>
 
-<?php
-require './functions.php';
-(!empty($_POST["pseudo"]) && !empty($_POST["email"])){  
-$stmt = $pdo->prepare("SELECT * FROM logtest WHERE email=?");
-$stmt->execute([$email]); 
-$user = $stmt->fetch();
-if ($user = $pdo) {
-    echo 'email existe';
-} else {
-    header('location:../insc.php?reg_err=3');
-} 
-}
-finally{
-  
-    $pdo = null;
- 
- 
 
+
+<?php
+require_once './functions.php';
+try
+{
+ 
 }
+catch (Exception $e)
+{
+    die('Erreur : ' . $e->getMessage());
+}
+ 
+// vérification si le champ pseudo a bien été rempli
+if (isset($_POST['username']))
+{
+ 
+// Alors dans ce cas on met saisie du $_POST['pseudo'] dans la variable $pseudo
+    $usname = htmlentities($_POST['username]);
+     
+   
+    $sql = $bdd->prepare('SELECT username FROM logtest WHERE PSEUDO = \''.$pseudo.'\' AND \''.$mail.'\';');
+    $sql->execute(array('.$pseudo.' => $_POST['pseudo'], '.$mail.' => $_POST['mail']));
+  
+    // recherche de résultat
+    $res = $sql->fetch();
+  
+    if ($res)
+    {
+        // S'il y a un résultat, c'est à dire qu'il existe déjà un pseudo, alors "Ce pseudo est déjà utilisé"
+        echo "Ce pseudo ou ce mail est déjà utilisé !";
+    }
+    // Sinon le résultat est nul ce qui veut donc dire qu'il ne contient aucun pseudo, donc on insère <img src="../../bundles/tinymce/vendor/tiny_mce/plugins/emotions/img/smile.png" title=":)" alt=":)">
+    else
+    {
+    echo "Ce pseudo n'a jamais été utilisé";
+ 
+  
+ 
+    }
+
 ?>
