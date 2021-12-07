@@ -33,7 +33,7 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
 }else{
     echo 'Remplir les champs';
 }
-  // ICI verification email pseudo deja utilisé
+
  
 
 if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf'])
@@ -45,6 +45,21 @@ $hashed = password_hash($pass, PASSWORD_BCRYPT);
 else{
     header('location:../insc.php?reg_err=1');
 }
+$reponse = $pdo->query('SELECT username FROM logtest WHERE username = "' . $_POST['username'] . '" ');
+            $username = $reponse->fetch();
+
+            $reponse = $pdo->query('SELECT email FROM logtest WHERE email = "' . $_POST['email'] . '" ');
+            $mail = $reponse->fetch();
+            if (strtolower($_POST['username']) == strtolower($login['username']))
+            {
+                header('location:../insc.php?reg_err=4');
+            }
+            elseif (strtolower($_POST['email']) == strtolower($email['email']))
+            {
+                header('location:../insc.php?reg_err=3');
+            }
+
+
 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     try{
         require_once './bdd.php';
@@ -77,43 +92,3 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
 
 
 
-<?php
-require_once './functions.php';
-try
-{
- 
-}
-catch (Exception $e)
-{
-    die('Erreur : ' . $e->getMessage());
-}
- 
-// vérification si le champ pseudo a bien été rempli
-if (isset($_POST['username']))
-{
- 
-// Alors dans ce cas on met saisie du $_POST['pseudo'] dans la variable $pseudo
-    $usname = htmlentities($_POST['username]);
-     
-   
-    $sql = $bdd->prepare('SELECT username FROM logtest WHERE PSEUDO = \''.$pseudo.'\' AND \''.$mail.'\';');
-    $sql->execute(array('.$pseudo.' => $_POST['pseudo'], '.$mail.' => $_POST['mail']));
-  
-    // recherche de résultat
-    $res = $sql->fetch();
-  
-    if ($res)
-    {
-        // S'il y a un résultat, c'est à dire qu'il existe déjà un pseudo, alors "Ce pseudo est déjà utilisé"
-        echo "Ce pseudo ou ce mail est déjà utilisé !";
-    }
-    // Sinon le résultat est nul ce qui veut donc dire qu'il ne contient aucun pseudo, donc on insère <img src="../../bundles/tinymce/vendor/tiny_mce/plugins/emotions/img/smile.png" title=":)" alt=":)">
-    else
-    {
-    echo "Ce pseudo n'a jamais été utilisé";
- 
-  
- 
-    }
-
-?>
