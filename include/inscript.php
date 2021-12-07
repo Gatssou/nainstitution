@@ -45,11 +45,12 @@ $hashed = password_hash($pass, PASSWORD_BCRYPT);
 else{
     header('location:../insc.php?reg_err=1');
 }
+require './bdd.php';
 $reponse = $pdo->query('SELECT username FROM logtest WHERE username = "' . $_POST['username'] . '" ');
             $username = $reponse->fetch();
 
             $reponse = $pdo->query('SELECT email FROM logtest WHERE email = "' . $_POST['email'] . '" ');
-            $mail = $reponse->fetch();
+            $email = $reponse->fetch();
             if (strtolower($_POST['username']) == strtolower($login['username']))
             {
                 header('location:../insc.php?reg_err=4');
