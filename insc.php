@@ -58,7 +58,7 @@ include './include/header.php';
            if($e == 1){
                echo 'already exist';
            }elseif($e == 2){
-            echo 'Bad use';
+            echo 'Mauvais mdp';
            }
         }
     ?>
