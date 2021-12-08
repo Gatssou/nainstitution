@@ -231,7 +231,6 @@ label {
   font-weight: bolder;
   width: 65%;
   margin-left: 15.5%;
-  margin-top: 3%;
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -340,5 +339,9 @@ input[type="checkbox"]:checked + .app .toggle{
   .first:before{
     position: relative;
     top: -23px;
+  }
+  .inpdec i{
+    position: absolute;
+    top: 5.5vh;
   }
 }

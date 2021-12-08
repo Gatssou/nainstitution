@@ -56,14 +56,10 @@ include './include/header.php';
         if(isset($_GET['reg_err'])){
             $e = $_GET['reg_err'];
            if($e == 1){
-               echo 'Mauvais mot de passe';
+               echo 'already exist';
            }elseif($e == 2){
             echo 'Bad use';
            }
-           elseif($e == 3){
-            echo 'votre Email ou Pseudo est déjà utilisé';
-        }
-           
         }
     ?>
 </section>
