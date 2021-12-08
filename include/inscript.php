@@ -51,23 +51,23 @@ $errors = array();
 $use = $_POST['pseudo'];
 $em = $_POST['email'];
 
-$req = $pdo->prepare('SELECT * FROM logtest WHERE username = :username');
-$req->execute(array('username' => $use));
-$resultat = $req->fetch();
+$requse = $pdo->prepare('SELECT * FROM logtest WHERE username = :username');
+$requse->execute(array('username' => $use));
+$resultat = $requse->fetch();
  
 if (!$resultat)
 {
     if ($resultat['pseudo'] === $use) {
-      array_push($errors, "user exist déjà");
+      echo 'exist';
     }
- 
+
 if (count($resultat) == 0)
 {
-     $passw = md5($password);
- 
-     $req = $pdo->prepare('INSERT INTO membres (username, email, password, conftoken) VALUES(?, ?, ?, ?, NOW())');
-     $req->execute(array($use, $em, $passw));
-     echo 'err';
+     $req = $pdo->prepare('INSERT INTO logtest(username, email, password, conftoken) VALUES(:username, :email, :password, :conftoken)');
+     $req->execute(array('username' => $use, 'email' => $em));
+     header('location:../login.php');
+}else{
+    echo 'err';
 }
 }
 
