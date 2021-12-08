@@ -26,7 +26,7 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
         echo 'Erreur : ' . $e;
     }finally{
         if($_POST['pseudo'] == $data->username || $_POST['email'] == $data->email){
-            header('location:../insc.php?reg_err=2');
+            header('location:../insc.php?reg_err=1');
         }
     }
    
@@ -43,24 +43,33 @@ $pass = $_POST["mdp"];
 $hashed = password_hash($pass, PASSWORD_BCRYPT);
 }
 else{
-    header('location:../insc.php?reg_err=1');
+    header('location:../insc.php?reg_err=2');
 }
-        $reponse = $pdo->query('SELECT username FROM logtest WHERE username = "' . $_POST['username'] . '" ');
-        $username = $reponse->fetch();
-        $reponse = $pdo->query('SELECT email FROM logtest WHERE email = "' . $_POST['email'] . '" ');
-        $mail = $reponse->fetch();
-        if (strtolower($_POST['username']) === strtolower($username['username']))
-        {
-            print 
-            header('location:../insc.php?reg_err=4');
-        }
-        elseif (strtolower($_POST['email']) === strtolower($email['email']))
-        {
-            header('location:../insc.php?reg_err=3');
-        }else{
-            header('location:../login.php');
-        }
 
+require_once './bdd.php';
+$errors = array();
+$use = $_POST['pseudo'];
+$em = $_POST['email'];
+
+$req = $pdo->prepare('SELECT * FROM logtest WHERE username = :username');
+$req->execute(array('username' => $use));
+$resultat = $req->fetch();
+ 
+if (!$resultat)
+{
+    if ($resultat['pseudo'] === $use) {
+      array_push($errors, "user exist déjà");
+    }
+ 
+if (count($resultat) == 0)
+{
+     $passw = md5($password);
+ 
+     $req = $pdo->prepare('INSERT INTO membres (username, email, password, conftoken) VALUES(?, ?, ?, ?, NOW())');
+     $req->execute(array($use, $em, $passw));
+     echo 'err';
+}
+}
 
 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     try{

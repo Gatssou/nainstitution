@@ -61,11 +61,9 @@ include './include/header.php';
             echo 'Bad use';
            }
            elseif($e == 3){
-            echo 'votre Email est déjà utilisé';
+            echo 'votre Email ou Pseudo est déjà utilisé';
         }
-           elseif($e == 4){
-            echo ' ID or User est déjà utilisé';
-        }
+           
         }
     ?>
 </section>
