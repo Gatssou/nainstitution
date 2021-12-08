@@ -16,7 +16,7 @@ $mail = cleandata($_POST['email']);
 if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
     try{
         require './bdd.php';
-        $check = $pdo->query("SELECT username, email FROM logtest where email = ?");
+        $check = $pdo->query("SELECT username, email FROM logtest WHERE email = ?");
         $data = $check->fetch(PDO::FETCH_OBJ);    
         $req->bindParam(':username', $usname);
         $req->bindParam(':email', $mail);
