@@ -111,7 +111,6 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
        // header("location:../login.php?reg_succes=password");
     } 
 
-
 ?>
 
 
