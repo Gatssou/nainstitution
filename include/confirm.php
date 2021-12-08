@@ -18,7 +18,8 @@ if(!empty($tokenconf) && !empty($userid)){
   
 }
 }else{
-    header('location:../insc.php');
+    //header('location:../insc.php');
+    echo 'badass';
    
 }
 

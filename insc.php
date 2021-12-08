@@ -56,11 +56,10 @@ include './include/header.php';
         if(isset($_GET['reg_err'])){
             $e = $_GET['reg_err'];
            if($e == 1){
-               echo 'Bad use';
+               echo 'already exist';
            }elseif($e == 2){
             echo 'Mauvais mdp';
            }
-           
         }
     ?>
 </section>

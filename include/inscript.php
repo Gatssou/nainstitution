@@ -12,15 +12,12 @@ function cleandata($data){
 $usname = cleandata($_POST['pseudo']);
 $mail = cleandata($_POST['email']);
 
-}else{
-    //header("location:../insc.php");
-    echo "données";
-}
+
 
 if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
     try{
         require './bdd.php';
-        $check = $pdo->query("SELECT username, email FROM logtest ");
+        $check = $pdo->query("SELECT username, email FROM logtest where email=? ");
         $data = $check->fetch(PDO::FETCH_OBJ);      
     }catch(PDOException $e){
         echo 'Erreur : ' . $e;
@@ -28,88 +25,54 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
         if($_POST['pseudo'] == $data->username || $_POST['email'] == $data->email){
             header('location:../insc.php?reg_err=1');
         }
-    }
-   
-}else{
-    echo 'Remplir les champs';
-}
+    }else{
+        if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf'])
 
- 
+        {
+            $pass = $_POST["mdp"];
+            $hashed = password_hash($pass, PASSWORD_BCRYPT);
 
-if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf'])
+            if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
+                try{
+                    require_once './bdd.php';
+                    $req = $pdo->prepare("INSERT INTO logtest(username, password, email, conftoken) VALUES(:username, :password, :email, :conftoken)");
+                    $tok = token(60);
+                    $req->bindParam(':username', $usname);
+                    $req->bindParam(':password', $hashed);
+                    $req->bindParam(':email', $mail);
+                    $req->bindParam(':conftoken', $tok);
+                    $req->execute();
 
-{
-$pass = $_POST["mdp"];
-$hashed = password_hash($pass, PASSWORD_BCRYPT);
-}
-else{
-    header('location:../insc.php?reg_err=2');
-}
-$reponse = $pdo->query('SELECT username FROM logtest WHERE username = "' . $_POST['username'] . '" ');
-            $username = $reponse->fetch();
+                }catch(PDOException $e){
+                    echo "Erreur : " . $e;
 
-            $reponse = $pdo->query('SELECT email FROM logtest WHERE email = "' . $_POST['email'] . '" ');
-            $mail = $reponse->fetch();
-            if (strtolower($_POST['username']) == strtolower($username['username']))
-            {
-                header('location:../insc.php?reg_err=4');
-            }
-            elseif (strtolower($_POST['email']) == strtolower($email['email']))
-            {
-                header('location:../insc.php?reg_err=3');
-            }
-
-require_once './bdd.php';
-$errors = array();
-$use = $_POST['pseudo'];
-$em = $_POST['email'];
-
-$requse = $pdo->prepare('SELECT * FROM logtest WHERE username = :username');
-$requse->execute(array('username' => $use));
-$resultat = $requse->fetch();
- 
-if (!$resultat)
-{
-    if ($resultat['pseudo'] === $use) {
-      echo 'exist';
-    }
-
-if (count($resultat) == 0)
-{
-     $req = $pdo->prepare('INSERT INTO logtest(username, email, password, conftoken) VALUES(:username, :email, :password, :conftoken)');
-     $req->execute(array('username' => $use, 'email' => $em));
-     header('location:../login.php');
-}else{
-    echo 'err';
-}
-}
-
-if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
-    try{
-        require_once './bdd.php';
-        $req = $pdo->prepare("INSERT INTO logtest(username, password, email, conftoken) VALUES(:username, :password, :email, :conftoken)");
-        $tok = token(60);
-        $req->bindParam(':username', $usname);
-        $req->bindParam(':password', $hashed);
-        $req->bindParam(':email', $mail);
-        $req->bindParam(':conftoken', $tok);
-        $req->execute();
-
-    }catch(PDOException $e){
-        echo "Erreur : " . $e;
-
-    }finally{
-        $usid = $pdo->lastInsertId();
-        $pdo = null;
-        echo "Jean Bulbe";
-        header("location:./confirm.php?id=" .$usid . "&token=" . $tok);
+                }finally{
+                    $usid = $pdo->lastInsertId();
+                    $pdo = null;
+                    echo "Jean Bulbe";
+                    header("location:./confirm.php?id=" .$usid . "&token=" . $tok);
         
       //  header("location:./confirm.php");
 
     }
-}else{
+        }else{
        // header("location:../login.php?reg_succes=password");
-    } 
+        } 
+    }
+}
+else{
+    header('location:../insc.php?reg_err=2');
+}
+
+   
+    }else{
+    echo 'Remplir les champs';
+    }
+}else{
+    //header("location:../insc.php");
+    echo "données";
+}
+
 
 ?>
 
