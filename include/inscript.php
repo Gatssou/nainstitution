@@ -50,7 +50,7 @@ $reponse = $pdo->query('SELECT username FROM logtest WHERE username = "' . $_POS
 
             $reponse = $pdo->query('SELECT email FROM logtest WHERE email = "' . $_POST['email'] . '" ');
             $mail = $reponse->fetch();
-            if (strtolower($_POST['username']) == strtolower($login['username']))
+            if (strtolower($_POST['username']) == strtolower($username['username']))
             {
                 header('location:../insc.php?reg_err=4');
             }
