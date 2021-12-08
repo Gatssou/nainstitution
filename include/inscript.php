@@ -52,6 +52,7 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
         
       //  header("location:./confirm.php");
 
+<<<<<<< Updated upstream
                 }
             }
         }else{
@@ -68,8 +69,19 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
 }else{
     //header("location:../insc.php");
     echo "données";
+=======
+    }
 }
+        
+ } else{
+        header("location:../login.php?reg_succes=password");
+        }
 
+    }  else{
+    header('location:../insc.php?reg_err=2');
+>>>>>>> Stashed changes
+}
+    
 
 ?>
 
