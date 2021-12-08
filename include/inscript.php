@@ -11,8 +11,7 @@ function cleandata($data){
 
 $usname = cleandata($_POST['pseudo']);
 $mail = cleandata($_POST['email']);
-
-
+}
 
 if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
     try{
@@ -28,17 +27,17 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
         if($_POST['pseudo'] == $data->username || $_POST['email'] == $data->email){
             header('location:../insc.php?reg_err=1');
         }
+    }
     }else{
-        if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf'])
-
-{
-$pass = $_POST["mdp"];
-$hashed = password_hash($pass, PASSWORD_BCRYPT);
-
-}
-else{
-    header('location:../insc.php?reg_err=2');
-}
+        echo 'remplir';
+    }
+        if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf']){
+            $pass = $_POST["mdp"];
+            $hashed = password_hash($pass, PASSWORD_BCRYPT);
+        }else{
+            header('location:../insc.php?reg_err=2');
+        }
+        
 
 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
     try{
@@ -66,15 +65,7 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
         }else{
        // header("location:../login.php?reg_succes=password");
         } 
-    }
-   
-    }else{
-    echo 'Remplir les champs';
-    }
-}else{
-    //header("location:../insc.php");
-    echo "données";
-}
+    
 
 
 
