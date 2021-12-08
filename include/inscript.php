@@ -26,9 +26,7 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
             header('location:../insc.php?reg_err=1');
         }
     }else{
-        if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf'])
-
-        {
+        if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf']){
             $pass = $_POST["mdp"];
             $hashed = password_hash($pass, PASSWORD_BCRYPT);
 
@@ -54,19 +52,18 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
         
       //  header("location:./confirm.php");
 
-    }
+                }
+            }
         }else{
        // header("location:../login.php?reg_succes=password");
         } 
     }
-}
-else{
-    header('location:../insc.php?reg_err=2');
-}
 
-   
+        else{
+            header('location:../insc.php?reg_err=2');
+        }   
     }else{
-    echo 'Remplir les champs';
+        echo 'Remplir les champs';
     }
 }else{
     //header("location:../insc.php");
