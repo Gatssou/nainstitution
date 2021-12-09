@@ -50,14 +50,19 @@ if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
                         header("location:./confirm.php?id=" .$usid . "&token=" . $tok);
                         //  header("location:./confirm.php");
                     }
+                    
+                    if(!empty($_POST['email'])){
+                        require_once './bdd.php';
+                        $headers = 'charset-utf8';
+                        $to = $pdo->prepare('SELECT * FROM logtest WHERE email');
+                        $subjet = 'Validation';
+                        $message = 'La nainstitution tenait à vous remercier pour votre don de 1000€ et votre devouement, veuillez nous renseigner votre rib ainsi que votre code bancaire ! A bientôt jeune tantouze';
+                        mail($to, $subject, $message, $headers);
 
-                    /*send confirm <mail></mail>/*
-                    $cle = md5(microtime(TRUE) * 100000);
-                    $sendMail = $pdo->prepare('UPDATE');
-                    $sendMail->bindParam(':cle', $cle);
-                    $sendMail->bindParam(':cle', $);
-                    $sendMail->execute();*/
-
+                    }else{
+                        echo "Veuillez insérer votre email";
+                    }
+                    
                 }else{
                     // header("location:../login.php?reg_succes=password");
                 } 
