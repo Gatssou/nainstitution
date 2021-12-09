@@ -1,15 +1,18 @@
 <?php
 require './functions.php';
-if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
+
+if(!empty($_POST['email'])){
+    $em = $_POST['email'];
+
         require './bdd.php';
         $checkmail = $pdo->prepare("SELECT * FROM logtest WHERE email = ?");
-        $checkmail->bindParam(1, $email);
+        $checkmail->bindParam(1, $em);
         $checkmail->execute();
         $datam = $checkmail->fetch(PDO::FETCH_OBJ);  
         
         if($datam){
-            echo 'already exist';
-          //  header('location:../insc.php?reg_err=1');
+        
+            header('location:../insc.php?reg_err=1');
         }else{
            
      
