@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../sass/perspec.css">
     <title>Document</title>
 </head>
-<!-- 
+
 <body id="scrollbody">
     
 <div class="disp">
@@ -21,7 +21,8 @@
     </div>
 </div>
 
-  -->
+  
+  <!-- 
   <div class="wrapper">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.6 107.6" id="star-svg">
 	<path fill="none" stroke="black" stroke-width="2" id="star-path" d="M43.7,65.8L19.9,83.3c-2.9,1.9-5.1,3.2-7.9,3.2c-5.7,0-10.5-5.1-10.5-10.8
@@ -32,7 +33,7 @@
 </svg>
 
     </g>
-  </svg>
+  </svg>  -->
 </div>
 
 
