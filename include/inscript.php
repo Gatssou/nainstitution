@@ -14,6 +14,19 @@ if(!empty($_POST['email'])){
         
             header('location:../insc.php?reg_err=1');
         }else{
+if(!empty($_POST['username'])){
+    $us = $_POST['username'];
+
+        require './bdd.php';
+        $checkus = $pdo->prepare("SELECT * FROM logtest WHERE username = ?");
+        $checkus->bindParam(1, $us);
+        $checkus->execute();
+        $dataus = $checkus->fetch(PDO::FETCH_OBJ);  
+        
+        if($dataus){
+        
+            header('location:../insc.php?reg_err=2');
+        }else{
            
      
 if(!empty($_POST["pseudo"]) && !empty($_POST["email"])){
@@ -34,7 +47,7 @@ $mail = cleandata($_POST['email']);
             $hashed = password_hash($pass, PASSWORD_BCRYPT);
            
         }else{
-            header('location:../insc.php?reg_err=2');
+            header('location:../insc.php?reg_err=3');
         }
         
 
@@ -66,6 +79,8 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
         } 
     }
 }
+        }
+    }
 ?>
 
 

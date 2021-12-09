@@ -56,9 +56,12 @@ include './include/header.php';
         if(isset($_GET['reg_err'])){
             $e = $_GET['reg_err'];
            if($e == 1){
-               echo 'already exist';
+               echo 'Email already exist';
            }elseif($e == 2){
-            echo 'Mauvais mdp';
+            echo 'Username already exist';
+           }
+           elseif($e == 3){
+            echo 'BAD Model pass';
            }
         }
     ?>
