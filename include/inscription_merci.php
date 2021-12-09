@@ -6,7 +6,7 @@ if(isset($_GET['conftoken'])){
     $conftoken = urldecode($conftoken);
     $conftoken = base64_decode($conftoken);
 
-    $check = $pdo->prepare("SELECT * FROM `Membre` WHERE `email` LIKE '$mail' ");
+    $check = $pdo->prepare("SELECT * FROM Membre WHERE email LIKE $mail ");
     $check->execute(array($mail));
     $data = $check->fetch();
     $row = $check->rowCount();
@@ -18,7 +18,7 @@ if(isset($_GET['conftoken'])){
         }else{
             echo "Compte deja verifie";
         }
-    }
+    }echo 'compte déjà existant'
 }
 ?>
   if(isset($_POST['email']))

@@ -1,6 +1,18 @@
 <?php
 require './functions.php';
-
+if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
+        require './bdd.php';
+        $checkmail = $pdo->prepare("SELECT * FROM logtest WHERE email = ?");
+        $checkmail->bindParam(1, $email);
+        $checkmail->execute();
+        $datam = $checkmail->fetch(PDO::FETCH_OBJ);  
+        
+        if($datam){
+            echo 'already exist';
+          //  header('location:../insc.php?reg_err=1');
+        }else{
+           
+     
 if(!empty($_POST["pseudo"]) && !empty($_POST["email"])){
 function cleandata($data){
     $data = trim($data);
@@ -11,38 +23,13 @@ function cleandata($data){
 
 $usname = cleandata($_POST['pseudo']);
 $mail = cleandata($_POST['email']);
-
-$check->execute(array($mail));
-$data = $check->fetch();
-$row = $check->rowCount();
-
-if($row == NULL)
-
-    echo "Compte deja verifie";
 }
 
-
-if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
-    try{
-        require './bdd.php';
-        $check = $pdo->query("SELECT username, email FROM logtest WHERE email = ?");
-        $data = $check->fetch(PDO::FETCH_OBJ);    
-        $req->bindParam(':username', $usname);
-        $req->bindParam(':email', $mail);
-
-    }catch(PDOException $e){
-        echo 'Erreur : ' . $e;
-    }finally{
-        if($_POST['pseudo'] == $data->username || $_POST['email'] == $data->email){
-            header('location:../insc.php?reg_err=1');
-        }
-    }
-    }else{
-        echo 'remplir';
-    }
+    
         if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf']){
             $pass = $_POST["mdp"];
             $hashed = password_hash($pass, PASSWORD_BCRYPT);
+           
         }else{
             header('location:../insc.php?reg_err=2');
         }
@@ -74,7 +61,8 @@ if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
         }else{
        // header("location:../login.php?reg_succes=password");
         } 
-    
+    }
+}
 ?>
 
 
