@@ -1,9 +1,8 @@
 <?php
 require './functions.php';
 
-if(!empty($_POST['email'])){
+if(!empty($_POST['email'])) {
     $em = $_POST['email'];
-
     require './bdd.php';
     $checkmail = $pdo->prepare("SELECT * FROM logtest WHERE email = ?");
     $checkmail->bindParam(1, $em);
@@ -22,7 +21,7 @@ if(!empty($_POST['email'])){
                 }
                 $usname = cleandata($_POST['pseudo']);
                 $mail = cleandata($_POST['email']);
-                }
+            }
                 if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf']){
                     $pass = $_POST["mdp"];
                     $hashed = password_hash($pass, PASSWORD_BCRYPT);
@@ -55,5 +54,7 @@ if(!empty($_POST['email'])){
                     
             
         }
+        
+    
 }
 ?>
