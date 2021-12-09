@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!empty($_POST['pseudo'])){
     function cleandata($data){
         $data =  trim($data);
@@ -30,7 +28,11 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
             header('location:../index.php');
 
         }else{
+<<<<<<< Updated upstream
             header('location:../login.php?log_err=1');
+=======
+            header('location:../login.php?log_err=2');
+>>>>>>> Stashed changes
         }
     }
 }else{
