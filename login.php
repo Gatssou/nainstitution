@@ -1,5 +1,23 @@
 <?php
 include './include/header.php';
+if(isset($_POST['submit'])){
+         $pseudo_par_defaut = "admin";
+         $mdp_par_defaut = "admin1324";
+
+         $pseudo_saisi = htmlspecialchars($_POST('pseudo'));
+         $mdp_saisi = htmlspecialchars($_POST('motdedep'));
+
+         if($pseudo_saisi == $pseudo_par_defaut AND $mdp_saisi == $mdp_par_defaut){
+         }else{
+            header('location:../login.php?log_err=3');
+         }
+            
+
+        
+
+          
+}
+
 ?>
 
 
@@ -53,8 +71,11 @@ include './include/header.php';
        }elseif($e == 2){
         echo 'Bad use';
        }
+       }elseif($e == 3){
+        echo 'Bad use or MDP AD';
+       }
       
-    }
+    
 
 ?>
 </section>

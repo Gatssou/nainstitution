@@ -1,17 +1,21 @@
 <?php
+session_start();
 require './functions.php';
 
-if(!empty($_POST['email'])){
+if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
     $em = $_POST['email'];
-
+     $us = $_POST['pseudo'];
     require './bdd.php';
-    $checkmail = $pdo->prepare("SELECT * FROM logtest WHERE email = ?");
+    $checkmail = $pdo->prepare("SELECT * FROM logtest WHERE email = ? OR username = ?");
     $checkmail->bindParam(1, $em);
+    $checkmail->bindParam(2, $us);
     $checkmail->execute();
     $datam = $checkmail->fetch(PDO::FETCH_OBJ);  
         
     if($datam){
+      
         header('location:../insc.php?reg_err=1');
+     
         }else{
             if(!empty($_POST["pseudo"]) && !empty($_POST["email"])){
                 function cleandata($data){
@@ -50,7 +54,7 @@ if(!empty($_POST['email'])){
                     // header("location:../login.php?reg_succes=password");
                 } 
                 }else{
-                    header('location:../insc.php?reg_err=3');
+                    header('location:../insc.php?reg_err=2');
                 }
                     
             
