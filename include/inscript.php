@@ -11,7 +11,16 @@ function cleandata($data){
 
 $usname = cleandata($_POST['pseudo']);
 $mail = cleandata($_POST['email']);
+
+$check->execute(array($mail));
+$data = $check->fetch();
+$row = $check->rowCount();
+
+if($row == NULL)
+
+    echo "Compte deja verifie";
 }
+
 
 if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
     try{
@@ -20,7 +29,7 @@ if(!empty($_POST['pseudo']) && !empty($_POST['email'])){
         $data = $check->fetch(PDO::FETCH_OBJ);    
         $req->bindParam(':username', $usname);
         $req->bindParam(':email', $mail);
-        
+
     }catch(PDOException $e){
         echo 'Erreur : ' . $e;
     }finally{
