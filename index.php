@@ -16,6 +16,8 @@ logged_only();
 </head>
 <body>
     <header>
+
+    <!-- blipou -->
        
     <ul id="menu-demo2">
         <li><a href="#">Personnalisation</a>

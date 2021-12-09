@@ -30,11 +30,11 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
             header('location:../index.php');
 
         }else{
-          //  header('location:../login.php?log_err=2');
+            header('location:../login.php?log_err=1');
         }
     }
 }else{
-        header('location:../login.php?log_err=1');
+        header('location:../login.php?log_err=2');
         
     }
     

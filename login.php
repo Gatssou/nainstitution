@@ -49,9 +49,9 @@ include './include/header.php';
     if(isset($_GET['log_err'])){
         $e = $_GET['log_err'];
        if($e == 1){
-           echo 'Mauvais mot de passe';
+           echo 'Bad use';
        }elseif($e == 2){
-        echo 'Bad use';
+        echo 'Bad pass';
        }
        }
       

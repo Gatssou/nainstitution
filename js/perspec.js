@@ -67,7 +67,7 @@ let start = {x:630 , y:10};
 let cp1 = {x: 630, y: 400};
 let cp2 = {x: 630, y: 600};
 let end = {x:630 , y:1000};
-
+/*
 let start2 = {x:0, y:300};
 let cp3 = {x: 250, y: 700};
 let cp4 = {x: 500, y: 50};
@@ -82,20 +82,22 @@ let start4 = {x:0, y:400};
 let cp7 = {x: 250, y: 100};
 let cp8 = {x: 500, y: 800};
 let end4 = {x:1200 , y:250};
-
+*/
     ctx.lineWidth = "2";
     ctx.strokeStyle = "white";
     ctx.moveTo(start.x, start.y);
     ctx.bezierCurveTo(cp1.x, cp1.y, cp2.x, cp2.y, end.x, end.y);
+    /*
     ctx.moveTo(start2.x, start2.y);
     ctx.bezierCurveTo(cp3.x, cp3.y, cp4.x, cp4.y, end2.x, end2.y);
     ctx.moveTo(start3.x, start3.y);
     ctx.bezierCurveTo(cp5.x, cp5.y, cp6.x, cp6.y, end3.x, end3.y);
     ctx.moveTo(start4.x, start4.y);
     ctx.bezierCurveTo(cp7.x, cp7.y, cp8.x, cp8.y, end4.x, end4.y);
+    */
     ctx.stroke();
 
-    $(window).scroll(function(){
+  /*  $(window).scroll(function(){
         let bot = $(window).height()+$(window).scrollTop() >= $(document).height();
         let canv = $('#canva');
         if(bot){
@@ -105,5 +107,5 @@ let end4 = {x:1200 , y:250};
         else{
             canv.show({transition: 5000});
         }
-    });
+    });*/
     

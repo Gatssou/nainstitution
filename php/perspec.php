@@ -10,16 +10,23 @@
 
 <body id="scrollbody">
     
-<div class="disp">
-    <h2>Line test js</h2>
-    <p>test</p>
-        <div id="line"></div>  
-        <div id="trigger1"></div>
-        <svg heigth="250px" width="500px">
-           <path x1="0" y1="0" x2="100" y2="200" style="stroke:white; stroke-width:2" id="liscroll">
-        </svg>
-    </div>
-</div>
+<section>
+  <div class="disp">
+      <h2>Line test js</h2>
+      <p>test</p>
+  
+  
+          <!-- <div id="line"></div>  
+          <canvas id="canva" class="canva" width="1260px" height="1000px"></canvas>-->
+      </div>
+  </div>
+</section>
+
+<section class="title">
+  <h3 class="w">Welcome</h3>
+  <h3 class="a">Amazing site</h3>
+  <h3 class="t">Test</h3>
+</section>
 
   
   <!-- 

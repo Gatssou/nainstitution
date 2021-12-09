@@ -2,13 +2,14 @@ body{
   background: black;
   height: 2000px;
 }
-/*
+
 .disp{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 h2{
   color: white;
   text-align: center;
@@ -19,6 +20,7 @@ p{
   color: white;
   font-size: 2em;
 }
+/*
 #animscroll{
   display: flex;
   flex-direction: column;
@@ -31,11 +33,22 @@ p{
   background-color: white;
 }*/
 
-#star-svg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
+
+h3{
+  color: white;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200vh;
+  z-index: 1;
+}
+.a{
+  justify-self: end;
+}
+canvas{
+  z-index: 1000;
+  
 }

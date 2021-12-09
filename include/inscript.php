@@ -50,6 +50,14 @@ if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
                         header("location:./confirm.php?id=" .$usid . "&token=" . $tok);
                         //  header("location:./confirm.php");
                     }
+
+                    /*send confirm <mail></mail>/*
+                    $cle = md5(microtime(TRUE) * 100000);
+                    $sendMail = $pdo->prepare('UPDATE');
+                    $sendMail->bindParam(':cle', $cle);
+                    $sendMail->bindParam(':cle', $);
+                    $sendMail->execute();*/
+
                 }else{
                     // header("location:../login.php?reg_succes=password");
                 } 
