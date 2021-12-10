@@ -54,9 +54,9 @@ if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
                     if(!empty($_POST['email'])){
                         require_once './bdd.php';
                         $headers = 'charset-utf8';
-                        $to = $pdo->prepare('SELECT * FROM logtest WHERE email');
+                        $to = '';
                         $subjet = 'Validation';
-                        $message = 'La nainstitution tenait à vous remercier pour votre don de 1000€ et votre devouement, veuillez nous renseigner votre rib ainsi que votre code bancaire ! A bientôt jeune tantouze';
+                        $message = '';
                         mail($to, $subject, $message, $headers);
 
                     }else{

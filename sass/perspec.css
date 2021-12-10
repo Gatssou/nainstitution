@@ -26,29 +26,54 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+}*/
 #line{
-  height: 25vh;
+  height: 20vh;
   width: 2px;
   background-color: white;
-}*/
-
-
+  z-index: 1;
+}
+/*
+h1{
+  color: white;
+  position: relative;
+  top: -200vh;
+}
+*/
 h3{
   color: white;
 }
+
 .title{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 200vh;
-  z-index: 1;
+  z-index: 2;
+  position: relative;
+  top: -165vh;
+}
+
+.w{
+  align-self: flex-start;
+  position: relative;
+  left: -10vw;
 }
 .a{
-  justify-self: end;
+  align-self: flex-end;
+  position: relative;
+  right: 0vw;
+  opacity: 0;
 }
-canvas{
+.t{
+  position: relative;
+  left: -55vw;
+}
+.canva{
   z-index: 1000;
   
+}
+.canva2{
+  z-index: 1000;
 }

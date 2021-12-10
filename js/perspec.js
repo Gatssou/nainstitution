@@ -63,41 +63,95 @@ $(document).ready(function(){
 
 let ctx = document.getElementById("canva").getContext("2d");
 
-let start = {x:630 , y:10}; 
-let cp1 = {x: 630, y: 400};
-let cp2 = {x: 630, y: 600};
-let end = {x:630 , y:1000};
-/*
-let start2 = {x:0, y:300};
-let cp3 = {x: 250, y: 700};
-let cp4 = {x: 500, y: 50};
-let end2 = {x:1200 , y:500};
 
-let start3 = {x:0, y:500};
-let cp5 = {x: 250, y: 100};
-let cp6 = {x: 500, y: 600};
-let end3 = {x:1200 , y:350};
 
-let start4 = {x:0, y:400};
-let cp7 = {x: 250, y: 100};
-let cp8 = {x: 500, y: 800};
-let end4 = {x:1200 , y:250};
-*/
+let start11 = {x:630 , y:0}; 
+let cp133 = {x: 960, y: 80};
+let cp144 = {x: 960, y: 130};
+let end11 = {x:630 , y:200};
+
+let start111 = {x:630 , y:0}; 
+let cp13 = {x: 300, y: 80};
+let cp14 = {x: 300, y: 130};
+let end111 = {x:630 , y:200};
+
+let start10 = {x:630 , y:200}; 
+let cp11 = {x: 630, y: 200};
+let cp12 = {x: 630, y: 300};
+let end10 = {x:630 , y:410};
+
+let start = {x:630 , y:410}; 
+let cp1 = {x: 630, y: 900};
+let cp2 = {x: 200, y: 600};
+let end = {x:130 , y:750};
+
+let start2 = {x:130, y:800};
+let cp3 = {x: 250, y: 1100};
+let cp4 = {x: 800, y: 450};
+let end2 = {x:1100 , y:1370};
+
+let start3 = {x:1110, y:1420};
+let cp5 = {x: 1300, y: 1900};
+let cp6 = {x: 500, y: 2100};
+let end3 = {x:400 , y:1700};
+
+let start4 = {x:400, y:1700};
+let cp7 = {x: 350, y: 1500};
+let cp8 = {x: 650, y: 1600};
+let end4 = {x:630 , y:1970};
+
     ctx.lineWidth = "2";
     ctx.strokeStyle = "white";
     ctx.moveTo(start.x, start.y);
     ctx.bezierCurveTo(cp1.x, cp1.y, cp2.x, cp2.y, end.x, end.y);
-    /*
+    
     ctx.moveTo(start2.x, start2.y);
     ctx.bezierCurveTo(cp3.x, cp3.y, cp4.x, cp4.y, end2.x, end2.y);
+    
     ctx.moveTo(start3.x, start3.y);
     ctx.bezierCurveTo(cp5.x, cp5.y, cp6.x, cp6.y, end3.x, end3.y);
+
     ctx.moveTo(start4.x, start4.y);
     ctx.bezierCurveTo(cp7.x, cp7.y, cp8.x, cp8.y, end4.x, end4.y);
-    */
+
+    ctx.moveTo(start10.x, start10.y);
+    ctx.bezierCurveTo(cp11.x, cp11.y, cp12.x, cp12.y, end10.x, end10.y);
+
+    ctx.moveTo(start11.x, start11.y);
+    ctx.bezierCurveTo(cp13.x, cp13.y, cp14.x, cp14.y, end11.x, end11.y);
+
+    ctx.moveTo(start111.x, start111.y);
+    ctx.bezierCurveTo(cp133.x, cp133.y, cp144.x, cp144.y, end111.x, end111.y);
+    
     ctx.stroke();
 
-  /*  $(window).scroll(function(){
+
+
+
+    
+        $(window).scroll(function(){
+            let tran = $("#w");
+            tran.animate({left: '20vw'}, 1000);
+            let tran2 = $('#a');
+            tran2.animate({right: '20vw'}, 1000),
+            tran2.animate({opacity: '1'}, 1000)
+            
+            let tran3 = $('#t');
+           tran3.animate({left: '0'}, 1000);
+        });
+
+/*
+let ctxx = document.getElementById("canvaa").getContext("2d");
+
+
+
+ctxx.lineWidth = "2";
+ctxx.strokeStyle = "white";
+
+
+ctxx.stroke();*/
+/*
+    $(window).scroll(function(){
         let bot = $(window).height()+$(window).scrollTop() >= $(document).height();
         let canv = $('#canva');
         if(bot){

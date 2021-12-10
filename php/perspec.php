@@ -16,18 +16,24 @@
       <p>test</p>
   
   
-          <!-- <div id="line"></div>  
-          <canvas id="canva" class="canva" width="1260px" height="1000px"></canvas>-->
+          <div id="line"></div>  
+          <canvas id="canva" class="canva" width="1260px" height="2000px"></canvas>
+         <!-- <h1 id="s" class="s">Sloubi</h1>
+           <canvas id="canvaa" class="canvaa" width="1260px" height="1000px"></canvas> -->
       </div>
   </div>
 </section>
 
 <section class="title">
-  <h3 class="w">Welcome</h3>
-  <h3 class="a">Amazing site</h3>
-  <h3 class="t">Test</h3>
+  <h3 id="w" class="w">Merveilleux</h3>
+  <h3 id="a" class="a">Amazing site</h3>
+  <h3 id="t" class="t">ReTest</h3>
 </section>
-
+<!--
+<section>
+  <h1>Tartiflette</h1>
+  <canvas id="canva2" class="canva2" width="1260px" height="1000px"></canvas>
+</section>   -->
   
   <!-- 
   <div class="wrapper">
@@ -40,8 +46,8 @@
 </svg>
 
     </g>
-  </svg>  -->
-</div>
+  </svg>  
+</div>-->
 
 
 
@@ -56,6 +62,8 @@
 </body>
 <script src="../js/stock/jquery-3.6.0.min.js"></script>
 <script src="../js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="jquery.drawsvg.js"></script>
 <script src="../js/perspec.js"></script>
