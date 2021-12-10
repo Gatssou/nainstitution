@@ -11,14 +11,36 @@ if(!$_SESSION['mdp']){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAfficher tous les articles</title>
+    <title>Afficher tous les articles</title>
 </head>
 <body>
+<div class="retour"><a href="./indexad.php"><img src="./img/retour.png" alt=""></a>
+<style>
+        body{
+            background: black;
+          
+        }
+      h1{
+        font-family: "Bungee Inline", sans-serif;
+         text-shadow: 2px 2px 8px red;
+          color: white;
+          text-align: center;
+          justify-content:center ;
+      }
+      p{
+        color: white;
+        text-align: center;
+          justify-content:center ;
+      }
+     button{
+          cursor: pointer;
+      }
+    </style>
     <?php
          $recupArticles = $bdd->query('SELECT * FROM admin');
          while($article = $recupArticles->fetch()){
              ?>
-             <div class="article" style="border: 1px solid black;">
+             <div class="article" style="border: 1px solid orange;">
                  <h1><?= $article['titre'];?></h1>
                  <p><?= $article['description'];?></p>
                  <a href="./supprimer-article.php?id=<?= $article['id'];?>"> <button style="color:white; background-color: red; margin-bottom:10px; "> Supprimer l'article</button>

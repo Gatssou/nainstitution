@@ -34,8 +34,9 @@ $mdp_par_defaut = "admin1234";
 <body>
     <style>
         body{
+            background-color: black;
             text-align: center;
-            justify-content: center;
+            justify-content: space-around;
             display: flex;
         }
     </style>

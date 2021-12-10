@@ -1,0 +1,9 @@
+@media screen and (max-width: 900px){
+body{
+    
+    font-size: 0.5em;
+}
+.contien{
+    top: 30vh;
+}
+}
