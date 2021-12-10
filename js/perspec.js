@@ -92,11 +92,11 @@ let end2 = {x:1100 , y:1370};
 
 let start3 = {x:1110, y:1420};
 let cp5 = {x: 1300, y: 1900};
-let cp6 = {x: 500, y: 2100};
-let end3 = {x:400 , y:1700};
+let cp6 = {x: 200, y: 2100};
+let end3 = {x:430 , y:1700};
 
-let start4 = {x:400, y:1700};
-let cp7 = {x: 350, y: 1500};
+let start4 = {x:430, y:1700};
+let cp7 = {x: 490, y: 1600};
 let cp8 = {x: 650, y: 1600};
 let end4 = {x:630 , y:1970};
 
