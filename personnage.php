@@ -13,6 +13,7 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
+<div class="retour"><a href="./index.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
     <section>
         <h2></h2>
     </section>

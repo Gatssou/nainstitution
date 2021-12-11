@@ -118,7 +118,7 @@ footer a{
 </body>
 <script>
         const body = document.querySelector('body');
-        const footer = document.querySelector('footer');
+    
         const toggle = document.getElementById('toggle');
         toggle.onclick = function(){
             toggle.classList.toggle('active');

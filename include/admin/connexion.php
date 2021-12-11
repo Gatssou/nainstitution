@@ -36,14 +36,30 @@ $mdp_par_defaut = "admin1234";
         body{
             background-color: black;
             text-align: center;
-            justify-content: space-around;
+            justify-content:center;
             display: flex;
+      
+
         }
+       input{
+         background: white;
+        }
+        form{
+            margin-top:25%;
+        }
+        .congrat{
+            color: white;
+        }
+
     </style>
+ 
     <form action="" method="POST" >
-        <input type="text" name="pseudo"  autocomplete="off">
+    <div class="congrat">
+        <h1>CONGRATULATION ! ! !</h1>
+    </div>
+        <input type="text" name="pseudo"  autocomplete="off" placeholder="pseudo">
         <br>
-        <input type="password" name="mdp" autocomplete="off">
+        <input type="password" name="mdp" autocomplete="off" placeholder="mot de pass">
         <br><br>
         <input type="submit"  name="valider">
 </form>

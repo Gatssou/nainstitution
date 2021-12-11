@@ -27,6 +27,7 @@ logged_only();
             <li><a href="#">lien sous menu 1</a></li>
             <li><a href="#">lien sous menu 1</a></li>
             <li><a href="#">lien sous menu 1</a></li>
+           
           </ul>
         </li>
         <li><a href="#">Tête</a>
@@ -48,7 +49,7 @@ logged_only();
       
       </ul>
 
-    </nav>
+    
        <div class="menu">
         <div class="toggle"><img src="./img/img_index/reticule.png" alt=""></div>
         <li style="--i:0;">

@@ -33,24 +33,51 @@ if(isset($_POST['valider'])){   // si on clique sur la variable POST valider l'e
     echo " Aucun ID trouvé";
 }
 ?>
+<style>
+    body{
+        background: black;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 25%;
+    }
+    .texte{
+        height: 3vh;
+        width: 7vw;
+    }
+    .submite{
+        height: 3vh;
+        width: 4vw;
+    }
+    .namee{
+        height: 20vh;
+        width: 30vw;
+    }
+
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/modifart.css">
     <title>Modifier l'article</title>
 </head>
 <body>
     <form action="" method="POST">
-    <input type="text" name="titre" value="<?= $titre; ?>" >
+    <input class="texte" type="text" placeholder="TITRE" name="titre" value="<?= $titre; ?>" >
 
     <br>
-    <textarea name="description"  >
+    <textarea class="namee"  name="description"  >
     <?= $description; ?>
     </textarea>
     <br><br>
-    <input type="submit" name="valider">
+    <input class="submite"  type="submit" name="valider">
 
     </form>
 </body>

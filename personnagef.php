@@ -13,6 +13,11 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
+ <header>
+ <header>
+ <div class="retour"><a href="./index.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
+ </header>
+
     <section>
         <h2></h2>
     </section>
@@ -28,7 +33,8 @@ logged_only();
             
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/ohohoho.png" height="500px" alt=""> 
+           
+                <a href=""><img src="./img/imagepersosnage/ohohoho.png" height="500px" alt=""> </a>
             </div>     
     </div>
     <div class="menup">
@@ -40,6 +46,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
+          
                 <img src="./img/imagepersosnage/femmeb.png" height="500px" alt=""> 
             </div>     
     </div>
@@ -52,6 +59,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
+          
                 <img src="./img/imagepersosnage/femmeb1.png" height="500px" alt=""> 
                 
             </div> 
@@ -66,7 +74,9 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
+              
                 <img src="./img/imagepersosnage/femmecc.png" height="600px" alt=""> 
+                </a>
             </div>
                
     </div>
