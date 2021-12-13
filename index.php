@@ -38,7 +38,7 @@ logged_only();
             <li><a href="#">Lien sous menu 2</a></li>
           </ul>
         </li>
-        <li><a href="#">Habits</a>
+        <li><a href="#">Figurines</a>
           <ul>
             <li><a href="#"><img src="./img/img_log/wrong-pass.jpg" height="80px" width="90px" alt=""></a></li>
             <li><a href="#">lien sous menu 3</a></li>
@@ -97,8 +97,8 @@ logged_only();
 </div>
       <div class="tout">
       
-       <div class="suivant"><img  src="./img/img_log/homme.png" alt=""></div>
-        <div class="suivante"><img  src="./img/img_log/femme.png" alt=""></div>
+       <div class="suivant"><a href="./personnage.php"><img  src="./img/img_log/homme.png" alt=""></a></div>
+        <div class="suivante"><a href="./personnagef.php"><img  src="./img/img_log/femme.png" alt=""></a></div>
       
       </div>
   

@@ -13,7 +13,6 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
-<div class="retour"><a href="./index.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
     <section>
         <h2></h2>
     </section>
@@ -28,7 +27,7 @@ logged_only();
             
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/pikathor.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/pikathor.png" height="400px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -40,7 +39,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/perspider.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/perspider.png" height="400px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -52,7 +51,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/tank.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/tank.png" height="400px" alt=""> 
                 
             </div>       
     </div>
@@ -65,7 +64,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/classe.png" height="600px" alt=""> 
+                <img src="./img/imagepersosnage/classe.png" height="400px" alt=""> 
             </div>
                
     </div>
@@ -73,7 +72,8 @@ logged_only();
     </div>
    
     <footer>
- <a href="./include/disconnect.php">Se déconnecter</a>
+    <div class="retour"><a href="./index.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
+ <div class="deco"><a href="./include/disconnect.php">Se déconnecter</a></div>
  </footer>
  
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

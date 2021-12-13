@@ -18,40 +18,24 @@
       align-items: center;
       animation-duration: 40s ;
     animation-name: slidein ;
-   
   }
-  
-
   @keyframes slidein {
     from {
-      margin-left: 100%;
+  
       width: 100%;
       height: 100%;
 
     }20% {
         width:107%;
         height: 105%;
-     
     }
-
-    40% {
-      width: 100%;
-      height: 100%;
-    }
-    75% {
-   
-      width: 107%;
-      height: 105%;
-    }
-    85% {
+  
+    80% {
         
       width: 100%;
       height: 100%;
     }
-    95%{
-     height: 107%;
-     width: 115%;
-    }
+  
   
     to {
       margin-left: 0%;
@@ -167,4 +151,15 @@
 .active .perso-back img{
     display: flex;
   
+}
+.deco{
+  display: flex;
+  margin-top: 10vh;
+  margin-right: 2vh;
+}
+footer{
+  display: flex;
+  margin-top: 10vh;
+  justify-content: space-between;
+  flex-direction: row;
 }
