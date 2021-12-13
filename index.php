@@ -91,7 +91,6 @@ logged_only();
 
 </header>
 
-<p class="legende">Personnages</p>
 <div class="selectionner">
   <h1 class="selec"> Selectionner  </h1>
 </div>

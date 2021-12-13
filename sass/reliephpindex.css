@@ -222,10 +222,6 @@ width: 5vw;
   #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
   color:#000;
   }
-  .legende{
-    font-size: 3em;
-    color: rgb(0, 0, 0);
-  }
   .selectionner {
     display: flex;
     align-items: center;

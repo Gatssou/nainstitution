@@ -13,10 +13,6 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
- <header>
- <header>
- <div class="retour"><a href="./index.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
- </header>
 
     <section>
         <h2></h2>
@@ -34,7 +30,7 @@ logged_only();
     </div>
             <div class="perso-back"> 
            
-                <a href=""><img src="./img/imagepersosnage/ohohoho.png" height="500px" alt=""> </a>
+                <a href=""><img src="./img/imagepersosnage/ohohoho.png" height="400px" alt=""> </a>
             </div>     
     </div>
     <div class="menup">
@@ -47,7 +43,7 @@ logged_only();
     </div>
             <div class="perso-back"> 
           
-                <img src="./img/imagepersosnage/femmeb.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/femmeb.png" height="400px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -60,7 +56,7 @@ logged_only();
     </div>
             <div class="perso-back"> 
           
-                <img src="./img/imagepersosnage/femmeb1.png" height="500px" alt=""> 
+                <img src="./img/imagepersosnage/femmeb1.png" height="400px" alt=""> 
                 
             </div> 
                   
@@ -75,7 +71,7 @@ logged_only();
     </div>
             <div class="perso-back"> 
               
-                <img src="./img/imagepersosnage/femmecc.png" height="600px" alt=""> 
+                <img src="./img/imagepersosnage/femmecc.png" height="400px" alt=""> 
                 </a>
             </div>
                
@@ -84,8 +80,18 @@ logged_only();
     </div>
    
     <footer>
- <a href="./include/disconnect.php">Se déconnecter</a>
+    <div class="retour"><a href="./index.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
+    <div class="choix">
+     <ul>
+         <li><h1>uno</h1></li>
+         <li><h1>dos</h1></li>
+         <li><h1>tres</h1></li>
+         <li><h1>quatro</h1></li>
+     </ul>
+    </div>
+ <div class="deco"><a href="./include/disconnect.php">Se déconnecter</a></div>
  </footer>
+ 
  
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">

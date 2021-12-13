@@ -157,6 +157,19 @@
   margin-top: 10vh;
   margin-right: 2vh;
 }
+.deco a{
+  list-style: none;
+  color: red;
+}
+
+.choix ul{
+ display: flex;
+  margin: 3vh;
+  
+}
+.choix h1{
+  margin: 2vh;
+}
 footer{
   display: flex;
   margin-top: 10vh;
