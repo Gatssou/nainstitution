@@ -4,8 +4,8 @@ require '../bdd.php';
 
 if(isset($_POST['valider'])) {
      if(!empty($_POST['pseudo']) AND !empty($_POST['mdp'])){
-$pseudo_par_defaut = "admin";
-$mdp_par_defaut = "admin1234";
+$pseudo_par_defaut = "Gudule";
+$mdp_par_defaut = "A15H17luma";
 
         $pseudo_saisi = htmlspecialchars($_POST['pseudo']);
         $mdp_saisi = htmlspecialchars(($_POST['mdp']));

@@ -11,24 +11,41 @@
 <body id="scrollbody">
     
 <section>
-  <div class="disp">
-      <h2>Line test js</h2>
-      <p>test</p>
-  
-  
-          <div id="line"></div>  
-          <canvas id="canva" class="canva" width="1260px" height="2000px"></canvas>
-         <!-- <h1 id="s" class="s">Sloubi</h1>
-           <canvas id="canvaa" class="canvaa" width="1260px" height="1000px"></canvas> -->
+  <article class="draw">
+    <div class="disp">
+        <h2>Line test js</h2>
+        <p>test</p>
+        <?php
+          if (isset($_POST['username'])) {
+            echo "Bonjour ".$_POST['username']." (deconnexion)";
+          }
+        ?>
+    
+    
+            <div id="line"></div>
+            <canvas id="canva" class="canva" width="1260px" height="2000px"></canvas>
+           <!-- <h1 id="s" class="s">Sloubi</h1>
+             <canvas id="canvaa" class="canvaa" width="1260px" height="1000px"></canvas> -->
       </div>
-  </div>
+  </article>
+
+  <article class="title">
+    <h3 id="w" class="w">Merveilleux</h3>
+    <h3 id="a" class="a">Amazing site</h3>
+    <h3 id="t" class="t">ReTest</h3>
+  </article>
+
+  <article class="btn">
+    <button> <a href="./index.php">Visiter</a></button>
+  </article>
 </section>
 
-<section class="title">
-  <h3 id="w" class="w">Merveilleux</h3>
-  <h3 id="a" class="a">Amazing site</h3>
-  <h3 id="t" class="t">ReTest</h3>
-</section>
+
+  
+
+
+
+
 <!--
 <section>
   <h1>Tartiflette</h1>

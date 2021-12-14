@@ -1,6 +1,6 @@
-body{
+html, body{
   background: black;
-  height: 2000px;
+  height: 300vh;
 }
 
 .disp{
@@ -50,30 +50,16 @@ h3{
   justify-content: space-around;
   align-items: center;
   height: 200vh;
-  z-index: 2;
-  position: relative;
-  top: -165vh;
+  z-index: 1;
+  position: absolute;
+  top: 95vh;
 }
-
-.w{
-  align-self: flex-start;
-  position: relative;
-  left: -10vw;
+article .draw{
+  z-index: 1000;
+}
+.btn{
+  z-index: 1;
 }
 .a{
   align-self: flex-end;
-  position: relative;
-  right: 0vw;
-  opacity: 0;
-}
-.t{
-  position: relative;
-  left: -55vw;
-}
-.canva{
-  z-index: 1000;
-  
-}
-.canva2{
-  z-index: 1000;
 }

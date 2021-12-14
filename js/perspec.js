@@ -140,6 +140,10 @@ let end4 = {x:630 , y:1970};
            tran3.animate({left: '0'}, 1000);
         });
 
+        $(window).animate(function(){
+            $("#canva").offset()
+        });
+
 /*
 let ctxx = document.getElementById("canvaa").getContext("2d");
 
