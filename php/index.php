@@ -19,9 +19,10 @@
     </div>
 
     <nav class="nav">
-        <p>Afrique</p>
-        <p>Amérique</p>
-        <p>Océanie</p>
+        <p class="poney">Alaska</p>
+        <p class="poney">Tanzanie</p>
+        <p class="poney">Fidji</p>
+        <p class="poney">Laos</p>
     </nav>
 
     <section id="pic_1" class="s1">

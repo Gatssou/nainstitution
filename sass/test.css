@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 #pic_1 {
-    background-image: url(../img/img_log/106831.jpg);
+    background-image: url(../img/img_country/amazonie.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw;
@@ -145,7 +145,7 @@ input {
 }
 .nav{
     position: fixed;
-    left: -75px;
+    left: -90px;
     top: 40%;
     z-index: 1001;
     border: 2px solid black;
@@ -158,7 +158,10 @@ input {
     transition: 1s ease-in-out;
 }
 .nav:hover{
-    transform: translateX(77px);
+    transform: translateX(92px);
+}
+.poney{
+    margin-top: 2.5vh;
 }
 
 
