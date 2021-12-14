@@ -10,22 +10,19 @@
   <title>Nain ventura</title>
 </head>
 
-<header>
-    <section class="nav">
-        <nav>
-            <p>Afrique</p>
-            <p>Amérique</p>
-            <p>Océanie</p>
-        </nav>
-    </section>
-</header>
-
 <body>
 
 <div class="para">
     <div class="section-stick">
         <div class="stick active"></div>
     </div>
+
+    <nav class="nav">
+        <p>Afrique</p>
+        <p>Amérique</p>
+        <p>Océanie</p>
+    </nav>
+
     <section id="pic_1" class="s1">
         <h1>Aventurier 1</h1>
     </section>

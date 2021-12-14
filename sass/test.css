@@ -145,16 +145,22 @@ input {
 }
 .nav{
     position: fixed;
-    left: 0;
+    left: -75px;
     top: 35%;
-    z-index: 0;
+    z-index: 1001;
     border: 2px solid black;
-    width: 10vw;
+    width: 5vw;
     height: 20vh;
+    border-radius: 20px;
     overflow-x: hidden;
     background: black;
     color: white;
+    transition: 1s ease-in-out;
 }
+.nav:hover{
+    transform: translateX(75px);
+}
+
 
 
 /*** RESPONSIVE ***/
