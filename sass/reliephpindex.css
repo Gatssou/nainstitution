@@ -295,6 +295,7 @@ width: 5vw;
   
     color: white;
   }
+
   .container{
     width: 95%;
     display: flex;
@@ -364,8 +365,13 @@ width: 5vw;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
 }
-  
-  
-  
+/** connexion page admin**/
+.formp{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+
   
   
