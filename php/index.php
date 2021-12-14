@@ -13,6 +13,7 @@
 <body>
 
 <div class="para">
+
     <div class="section-stick">
         <div class="stick active"></div>
     </div>

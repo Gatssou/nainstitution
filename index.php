@@ -78,6 +78,7 @@ logged_only();
        
         </li>
     </div>
+  
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
@@ -90,7 +91,21 @@ logged_only();
     </script>
 
 </header>
-
+<div class="container">
+        <a href="./contact.html" id="bouddha">
+            <h1>MASSAGE AUX PIERRES DE BOUDDHA</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
+        </a>
+        <a href="./contact.html" id="pierre">
+            <h1>MASSAGE AUX PIERRES CHAUDES</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
+        </a>
+        <a href="./contact.html" id="palper">
+            <h1>MASSAGE EN PALPE-ROULE</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
+        </a>
+        
+    </div>
 <div class="selectionner">
   <h1 class="selec"> Selectionner  </h1>
 </div>

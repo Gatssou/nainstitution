@@ -295,7 +295,75 @@ width: 5vw;
   
     color: white;
   }
- 
+  .container{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: space-around;
+    
+}
+
+.container a{
+    margin: 5px;
+    text-decoration: none;
+}
+.container a p{
+    color: black;
+}
+#bouddha{
+  background-image: url(../img/imgbg/forêts.jpg
+  );
+  background-size: cover;
+  height: 450px;
+  width: 550px;
+  border-radius: 25px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  
+}
+#bouddha p{
+  transform: translate(3px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width:50%;
+  height: 100%;
+  opacity: 0;
+  transition: ease 1s ;
+  background-color: rgba(255, 255, 255, 0);
+}
+#bouddha h1{
+  color: black;
+  text-shadow: #aaa 1px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 70%;
+  opacity: 1;
+  transition: 1s ease;    
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+#bouddha:hover p{
+  transform: translate(0);
+  opacity: 1  ;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#bouddha:hover h1{
+  color:rgba(0, 0, 0, 0) ;
+  text-shadow: #aaa 1px 0 10px;
+  background-color: rgba(0, 0, 0, 0.568);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
   
   
   
