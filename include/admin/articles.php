@@ -36,7 +36,10 @@ if(!$_SESSION['mdp']){
           cursor: pointer;
       }
     </style>
+    <!-- Selectionne dans la table admin  à l'aide d'une boucle while  on défini que $recupAricles = à ce qui se trouvera dans la table admin dans la bdd , tout ce qu'on aura selectionné dedans = $article = au resultat trouve , on affiche les donnés-> fetch()  dans une div  avec la recuperation des resultats trouvé en echo condensé $article ['Titre'] dans la table sera (h1 ) et $article['description'] sera (p)
+qui = le titre et la description récuperé dans la base de donnée grâce à la method POST du formulaire de la page publier-article.php-->
     <?php
+    
          $recupArticles = $bdd->query('SELECT * FROM admin');
          while($article = $recupArticles->fetch()){
              ?>

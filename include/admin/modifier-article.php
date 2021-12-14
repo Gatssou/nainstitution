@@ -1,4 +1,5 @@
 <?php
+    /*récuperation du titre et description à modifier avec l'ID exemple le 14eme article posté dans le HTTP: barre de navigation */
 $bdd = new PDO('mysql:host=localhost;dbname=blipou;','root');
 if(isset($_GET['id']) AND !empty($_GET['id'])){
       $getid = $_GET['id'];

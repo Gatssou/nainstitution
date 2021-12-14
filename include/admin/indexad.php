@@ -1,4 +1,5 @@
 <?php
+/* Session_start récupere l'id de connexion pour rester connecté si déconnexion ou non inscription dans la base redigera vers connexion.php ou un message d'erreur */
 session_start();
 if(!$_SESSION['mdp']){
     header('Location: connexion.php');
@@ -25,7 +26,7 @@ if(!$_SESSION['mdp']){
 
 body{
   
- background: white;  
+ background: black;  
  display: flex;
  justify-content:space-around;
         }

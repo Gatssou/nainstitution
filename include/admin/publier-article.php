@@ -4,7 +4,9 @@ $bdd = new PDO('mysql:host=localhost;dbname=blipou;','root');
 if(!$_SESSION['mdp']){
     header('location: connexion.php');
 }
-
+/*Methode POST on récupere les informations "description" et "titre" grâçe au bouton envoie type submit de NOM ('ENVOIE') dans le formulaire [Form]  , on lui dit à l'aide 
+d'une methode$_POST attention si le champs titre est remplie et que attention le champ description est aussi remplie sans conditions ou (avec), puis à l'aide d'une securité si une personne  remplie le champ par des codes html pas gentil on lui dit htmlspecialchars pour titre et la description , et nl2(br ) pour insérer un retour à la ligne à chaque nouvelle ligne puis on récupere le titre et la description avec une définition $recupdescriptionarticle ou autre dans ce cas $inserArticle et à l'aide d'une variable prepare ->execute->
+on INSERT dans la table admin les données recuperé dans les champs titre, description de valeur(?, ?)= comme il y a deux valeurs de la table */
 if(isset($_POST['envoi'])){
     if(!empty($_POST['titre']) AND !empty($_POST['description'])){
                      $titre = htmlspecialchars($_POST['titre']);
