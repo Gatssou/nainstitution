@@ -35,9 +35,10 @@
     <h3 id="t" class="t">ReTest</h3>
   </article>
 
-  <article class="btn">
+  <article class="lebouton">
     <button> <a href="./index.php">Visiter</a></button>
   </article>
+  
 </section>
 
 
