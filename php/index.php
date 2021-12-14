@@ -26,7 +26,16 @@
     </nav>
 
     <section id="pic_1" class="s1">
+    
         <h1>Aventurier 1</h1>
+        <div class="containere">
+        <a href="./contact.html" id="bouddha">
+            <h1>Mr Kangourou IDP de survie 9.9</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
+        </a>
+      
+        
+    </div>
     </section>
 
     <section id="pic_2" class="s2">
