@@ -57,8 +57,11 @@ h3{
 article .draw{
   z-index: 1000;
 }
-.btn{
+article .lebouton{
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .a{
   align-self: flex-end;
