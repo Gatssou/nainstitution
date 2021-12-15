@@ -2,7 +2,9 @@
 session_start();
 require './include/functions.php';
 logged_only();
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -91,21 +93,7 @@ logged_only();
     </script>
 
 </header>
-<div class="container">
-        <a href="./contact.html" id="bouddha">
-            <h1>MASSAGE AUX PIERRES DE BOUDDHA</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
-        </a>
-        <a href="./contact.html" id="pierre">
-            <h1>MASSAGE AUX PIERRES CHAUDES</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
-        </a>
-        <a href="./contact.html" id="palper">
-            <h1>MASSAGE EN PALPE-ROULE</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
-        </a>
-        
-    </div>
+
 <div class="selectionner">
   <h1 class="selec"> Selectionner  </h1>
 </div>
@@ -120,6 +108,16 @@ logged_only();
         <a href="./personnage.php" class="avant" onclick="boutonAvant()"><ion-icon name="accessibility-outline"></ion-icon></a>
         <a href="./personnagef.php" class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon></a>
       </div>
+
+      <section class="hop">
+<div class="peut">
+ <p><a href="./include/articlepage/fonctionform.php">Lien vers formulaire FAQ</a></p>
+
+
+</div>
+      </section>
+
+     
  <footer>
  <a href="./include/disconnect.php">Se déconnecter</a>
  </footer>
