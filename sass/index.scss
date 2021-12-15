@@ -269,4 +269,97 @@ flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.171);
 }
 
- 
+/* LE FORMULAIRE BY DYLAN LA MERDE , DEBUT */
+.content{
+    flex-direction: column;
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    border: 1px chartreuse  solid;
+    border-radius: 15% 15% 0% 0%;
+    background-color: rgba(169, 169, 169, 0.158);
+    padding: 2vh;
+    width: 20%;
+    height: 50%;
+    top: 10%;
+    left: 50%;
+   
+}
+
+.mail{
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    margin-bottom: 2vh;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    color: chartreuse;
+}
+.titre{
+    height: 2.5vh;
+    background-color: rgb(255, 255, 255);
+    border: grey 1px solid;
+    width: 70%;
+    position: relative;
+    margin-bottom: 2vh;
+    left: 15%;
+}
+.textarea{
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-bottom: 2vh;
+    color: chartreuse;
+    
+}
+.proute{
+    position: absolute;
+    width: 10%;
+    bottom: 39.8vh;
+    left: 6%;
+}
+
+.textarea-con{
+    min-width: 97.6%;
+    max-width: 97.6%;
+    max-height: 40%;
+    min-height: 40%;
+    
+}
+.plume{
+    position: absolute;
+    height: 37%;
+    opacity: 0.2;
+    left: 53.5%;
+    top: 41.2%;
+    
+    
+}
+.envoie{
+    margin-top: 4vh;
+    width: 30%;
+    height: 6%;
+    color: white;
+    position: relative;
+    left: 35%;
+    border: 1px chartreuse solid;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+.envoie:hover{
+    color: chocolate;
+    background-color: chartreuse;
+    border:gray 1px solid;
+    border-radius: 20% 0% 20% 0%;
+}
+label::first-letter{
+    color: chocolate;
+    font-size: 1.5em;
+    font-weight:lighter;
+}
+
+.textarea-con:focus{
+    outline: solid chocolate 2px;
+}
+/* FIN DU FORMULAIRE */
