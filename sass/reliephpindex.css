@@ -15,7 +15,17 @@ h1{
 header{
     width: 100%;
    
-   
+       }
+       /**TITRE ninventura**/
+       .titree{
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         justify-content: center;
+         text-align: center;
+         font-size: 2em;
+         font-family:  'Marck Script', cursive;
+
        }
        
 .menu{
