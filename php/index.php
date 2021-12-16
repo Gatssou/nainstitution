@@ -31,10 +31,11 @@
             <div class="arrow"></div>
             <h1>Aventurier 1</h1>
             <div class="arrow_bot"></div>
-            
+        </div>
+
+        <div class="a_row">
             <div class="arrow_left"></div>
             <div class="arrow_right"></div>
-
         </div>
 
         
