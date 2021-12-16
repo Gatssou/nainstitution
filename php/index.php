@@ -27,12 +27,17 @@
     </nav>
 
     <section id="pic_1" class="s1">
-    
-    <div class="arrow"></div>
-        <h1>Aventurier 1</h1>
+        <div class="avow">
+            <div class="arrow"></div>
+            <h1>Aventurier 1</h1>
+            <div class="arrow_bot"></div>
+            
+            <div class="arrow_left"></div>
+            <div class="arrow_right"></div>
 
-        <p class="animaux">Animaux</p>
-        <p class="outils">Outils</p>
+        </div>
+
+        
 
         <div class="containere">
         <a href="" id="bouddha">
