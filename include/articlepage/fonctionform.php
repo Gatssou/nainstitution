@@ -27,8 +27,15 @@ header('location: envoief.php');
 </head>
 
 <body>
+<style>
+    body{
+background-color: gray;
+    }
+   .content{
+        background: rgba(197, 190, 190, 0.541);
+    }
+</style>
 
-</body>
 
 
 
@@ -38,10 +45,11 @@ header('location: envoief.php');
 <img src="./Img/mail.png" alt="" class="proute">
     <label class="mail" for="mail">Mail:</label  >
     
-    <input class="titre" type="text" name="maill" placeholder="JeanPierre@Outlook.fr">
+    <input class="titre" type="text" name="maill" placeholder="Email ou pseudo ">
     <label class="textarea" for="textarea">Description:</label>
     <img class="plume" src="../articlepage/Img/plume.png" alt="">
-    <textarea class="textarea-con" name="descript" placeholder="Raconte pas trop ta vie stpl"></textarea>
+    <textarea class="textarea-con" name="descript" placeholder="write"></textarea>
 
     <input class="envoie" type="submit" name="starting">
 </form>
+</body>
