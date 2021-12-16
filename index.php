@@ -20,54 +20,22 @@ logged_only();
     <header>
 
     <!-- blipou -->
-       
-    <ul id="menu-demo2">
-        <li><a href="#">Personnalisation</a>
-          <ul>
-            <li><a href="#"><img src="./img/img_log/jurassic.png" height="80px" width="90px" alt=""></a>
-            </li>
-            <li><a href="#">lien sous menu 1</a></li>
-            <li><a href="#">lien sous menu 1</a></li>
-            <li><a href="#">lien sous menu 1</a></li>
-           
-          </ul>
-        </li>
-        <li><a href="#">Tête</a>
-          <ul>
-            <li><a href="#"><img src="./img/img_log/darkvador.jpg" height="80px" width="90px" alt=""></a></li>
-            <li><a href="#">Lien sous menu 2</a></li>
-            <li><a href="#">Lien sous menu 2</a></li>
-            <li><a href="#">Lien sous menu 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Figurines</a>
-          <ul>
-            <li><a href="#"><img src="./img/img_log/wrong-pass.jpg" height="80px" width="90px" alt=""></a></li>
-            <li><a href="#">lien sous menu 3</a></li>
-            <li><a href="#">lien sous menu 3</a></li>
-            <li><a href="#">lien sous menu 3</a></li>
-          </ul>
-        </li>
-      
-      </ul>
-
-    
+    <div class="toggle"><img src="./img/img_index/reticule.png" alt=""></div>
        <div class="menu">
-        <div class="toggle"><img src="./img/img_index/reticule.png" alt=""></div>
         <li style="--i:0;">
         <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
         </li>
         <li style="--i:1;">
-        <a href="./php/index.php"><ion-icon name="at-outline"></ion-icon></a>
+        <a href="./php/index.php"><img src="./img/index/home.png" alt=""></a>
         </li>
         <li style="--i:2;">
-        <a href="#"><ion-icon name="barbell-outline"></ion-icon></a>
+        <a href="./php/perspec.php"><ion-icon name="barbell-outline"></ion-icon></a>
         </li>
         <li style="--i:3;">
-        <a href="#"><ion-icon name="at-outline"></ion-icon></a>
+        <a href="./personnage.php"><ion-icon name="at-outline"></ion-icon></a>
         </li>
         <li style="--i:4;">
-        <a href="#"><ion-icon name="rocket-outline"></ion-icon></a>
+        <a href="./personnagef.php"><ion-icon name="rocket-outline"></ion-icon></a>
         </li>
         <li style="--i:5;">
         <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
@@ -80,6 +48,11 @@ logged_only();
        
         </li>
     </div>
+    <div class="publicite">
+     
+    <img src="" alt="" height="100px" width="100px"  > <img src="" alt="" height="100px" width="100px" > <img src="" alt="" height="100px" width="100px" > <img src="" alt="" height="100px" width="100px" > <img src="" alt=""> <img src="" alt=""height="100px" width="100px" > <img src="" alt=""height="100px" width="100px" > <img src="" alt=""height="100px" width="100px" >
+
+</div>
   
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -88,48 +61,30 @@ logged_only();
         let menu = document.querySelector('.menu');
         toggle.onclick = function(){ 
             menu.classList.toggle('active')
-        }
-            
+        }  
     </script>
-
 </header>
-
 <div class="selectionner">
-  <h1 class="selec"> Selectionner  </h1>
-</div>
-      <div class="tout">
-      
-       <div class="suivant"><a href="./personnage.php"><img  src="./img/img_log/homme.png" alt=""></a></div>
-        <div class="suivante"><a href="./personnagef.php"><img  src="./img/img_log/femme.png" alt=""></a></div>
-      
+    <h1 class="selec"> Selectionner  </h1>
+        </div>
+            <div class="tout">
+               <div class="suivant"><a href="./personnage.php"><img  src="./img/img_log/homme.png" alt=""></a></div>
+                   <div class="suivante"><a href="./personnagef.php"><img  src="./img/img_log/femme.png" alt=""></a></div>
       </div>
   
-      <div class="next">
-        <a href="./personnage.php" class="avant" onclick="boutonAvant()"><ion-icon name="accessibility-outline"></ion-icon></a>
-        <a href="./personnagef.php" class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon></a>
-      </div>
+ <div class="next">
+      <a href="./personnage.php" class="avant" onclick="boutonAvant()"><ion-icon name="accessibility-outline"></ion-icon></a>
+          <a href="./personnagef.php" class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon></a>
+ </div>
 
-      <section class="hop">
-<div class="peut">
- <p><a href="./include/articlepage/fonctionform.php">Lien vers formulaire FAQ</a></p>
-
-
-</div>
-      </section>
-
-     
+ <section class="hop">
+      <div class="peut">
+          <p><a href="./include/articlepage/fonctionform.php">Lien vers formulaire FAQ</a></p>
+ </div>
+ </section>
  <footer>
  <a href="./include/disconnect.php">Se déconnecter</a>
  </footer>
     </body>
-    <script>
-  $(window).scroll(function(){
-    let scrollPos = $(this).scrollTop();
-   // console.log(scrollPos);
-   $('body').css({
-     'background-size' : 100 + scrollPos + '%'
-   })
-  })
-</script>
     <script src="./js/personnage.js"></script>
 </html>
