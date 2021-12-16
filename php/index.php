@@ -20,7 +20,7 @@
     </div>
 
     <nav class="nav">
-        <p class="poney">Alaska</p>
+        <p class="poney"><a href="../index.php">Pub</a></p>
         <p class="poney">Tanzanie</p>
         <p class="poney">Fidji</p>
         <p class="poney">Laos</p>
@@ -28,6 +28,7 @@
 
     <section id="pic_1" class="s1">
     
+    <div class="arrow"></div>
         <h1>Aventurier 1</h1>
 
         <p class="animaux">Animaux</p>

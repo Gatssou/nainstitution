@@ -58,7 +58,7 @@ logged_only();
         <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
         </li>
         <li style="--i:1;">
-        <a href="#"><ion-icon name="at-outline"></ion-icon></a>
+        <a href="./php/index.php"><ion-icon name="at-outline"></ion-icon></a>
         </li>
         <li style="--i:2;">
         <a href="#"><ion-icon name="barbell-outline"></ion-icon></a>
