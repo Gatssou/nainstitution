@@ -19,6 +19,7 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
+    
     <header>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
@@ -27,9 +28,10 @@ logged_only();
   <p class="n">N</p><p class="a">A</p><p class="i">I</p><p class="n">N</p><p class="v">V</p><p class="e">E</p><p class="i">N</p><p class="t">T</p><p class="u">U</p><p class="r">R</p><p class="a">A</p>
 </div>
     <!-- blipou -->
-    <button class="toggle" id="togg1"><img src="./img/img_index/reticule.png" alt=""></button>
-       <div class="menu" id="d2"  >
-        <li style="--i:0;">
+    <button type="boutton" class="toggle"><img src="./img/img_index/reticule.png" alt=""></button>
+      <section>
+    <div class="menu"  >
+        <li style="--i:0;" >
         <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
         </li>
         <li style="--i:1;">
@@ -55,10 +57,11 @@ logged_only();
        
         </li>
     </div>
+    </section>
     <div class="publicite">
-     
-    <img src="" alt="" height="100px" width="100px"  > <img src="" alt="" height="100px" width="100px" > <img src="" alt="" height="100px" width="100px" > <img src="" alt="" height="100px" width="100px" > <img src="" alt=""> <img src="" alt=""height="100px" width="100px" > <img src="" alt=""height="100px" width="100px" > <img src="" alt=""height="100px" width="100px" >
-
+     <div class="hover-effect">
+    <a href=""><img src="./img/imgbg/13.jpg" alt="" height="100px" width="100px"  ></a> <a href=""><img src="./img/imgbg/14.jpg" alt="" height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/15.jpg" alt="" height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/19.jpg" alt="" height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/20.jpg" alt=""height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/17.jpg" alt=""height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/18.jpg" alt=""height="100px" width="100px" ></a>
+    </div>
 </div>
   
 

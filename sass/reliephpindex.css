@@ -7,14 +7,14 @@ body {
   background-image: url()   ;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(10,10,10,.78039);
+ filter: brightness(100%);
 }
-
 h1{
   font-size: 1.5em;
 }
 header{
     width: 100%;
-   
        }
        /**TITRE ninventura**/
        .titree{
@@ -25,9 +25,8 @@ header{
          text-align: center;
          font-size: 2em;
          font-family:  'Marck Script', cursive;
-
        }
-       
+       /**Bouton et menu**/
 .menu{
   margin-top: 5px;
   position: relative;
@@ -36,6 +35,11 @@ header{
   width: 150px;
   height: 150px;
   align-items: center;
+
+}
+.menu img:hover{
+  border-radius: 30%;
+border:inset 1px black;
 }
 .menu li{
 position: absolute;
@@ -64,6 +68,7 @@ height: 7vh;
 width: 4vw;
   position: relative;
     transition: 1.2s  ;
+    transform:rotate(720deg) ;
 }
 .toggle {
   position:absolute;
@@ -76,9 +81,13 @@ width: 4vw;
   font-size: 2em;
   transition: transform 1.25s;
 }
-.menu.active .toggle{
-  transform:rotate(720deg) ;
+.toggle :hover{
+  border-radius: 30%;
+border:inset 1px rgba(240, 6, 6, 0.719);
 }
+ /**FIN Bouton et menu**/
+/** à partir du titre selectionner et l'image homme/femme  apparision du menu côté gauche a la même hauteur*/
+
   .selectionner {
     display: flex;
     align-items: center;
@@ -94,9 +103,12 @@ width: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
-
     z-index: 0;
 
+  }
+  a, ::before, ::after, img {
+    transition: all .3s ease;
+        transition-duration: 0.3s;
   }
   .tout img{
     display: flex;
@@ -188,4 +200,7 @@ width: 4vw;
   text-align: center;
 }
 
-  
+.publicite img:hover{
+  border-radius: 30%;
+border:inset 1px black;
+}
