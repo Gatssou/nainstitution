@@ -27,8 +27,8 @@ logged_only();
   <p class="n">N</p><p class="a">A</p><p class="i">I</p><p class="n">N</p><p class="v">V</p><p class="e">E</p><p class="i">N</p><p class="t">T</p><p class="u">U</p><p class="r">R</p><p class="a">A</p>
 </div>
     <!-- blipou -->
-    <div class="toggle"><img src="./img/img_index/reticule.png" alt=""></div>
-       <div class="menu">
+    <button class="toggle" id="togg1"><img src="./img/img_index/reticule.png" alt=""></button>
+       <div class="menu" id="d2"  >
         <li style="--i:0;">
         <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
         </li>
@@ -36,22 +36,22 @@ logged_only();
         <a href="./php/index.php"><img src="./img/index/home.png" alt=""></a>
         </li>
         <li style="--i:2;">
-        <a href="./php/perspec.php"><ion-icon name="barbell-outline"></ion-icon></a>
+        <a href=""><img src="./img/img_index/femme.png" alt=""></a>
         </li>
         <li style="--i:3;">
-        <a href="./personnage.php"><ion-icon name="at-outline"></ion-icon></a>
+        <a href=""><img src="./img/img_index/Sans titre.png" alt=""></a>
         </li>
         <li style="--i:4;">
-        <a href="./personnagef.php"><ion-icon name="rocket-outline"></ion-icon></a>
+        <a href=""><img src="./img/img_index/kitsurvie.png" height="80px" width="80px" alt=""></a>
         </li>
         <li style="--i:5;">
-        <a href=""><ion-icon name="sparkles-outline"></ion-icon></a>
+        <a href="./login.php"><img src="./img/img_index/faq.png" alt=""></a>
         </li>
         <li style="--i:6;">
         <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
         </li>
         <li style="--i:7;">
-        <a href="./php/disconnect.php"><img src="./img/index/logout.png" height="100px" width="100px" alt=""></a>
+        <a href="./include/disconnect.php"><img src="./img/index/logout.png" height="80px" width="80px" alt=""></a>
        
         </li>
     </div>
@@ -64,25 +64,21 @@ logged_only();
 
 </header>
 <div class="selectionner">
-    <h1 class="selec"> Selectionner  </h1>
+    <h1 class="selec"> Jeux Enigme </h1>
         </div>
             <div class="tout">
                <div class="suivant"><a href="./personnage.php"><img  src="./img/img_log/homme.png" alt=""></a></div>
-                   <div class="suivante"><a href="./personnagef.php"><img  src="./img/img_log/femme.png" alt=""></a></div>
+                   <div class="suivant"><a href="./personnagef.php"><img  src="./img/img_log/femme.png" alt=""></a></div>
       </div>
   
  <div class="next">
-      <a href="./personnage.php" class="avant" onclick="boutonAvant()"><ion-icon name="accessibility-outline"></ion-icon></a>
-          <a href="./personnagef.php" class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon></a>
+ <a  class="avant" onclick="boutonAvant()"><ion-icon name="accessibility-outline"></ion-icon></a>
+ <a class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon></a>
  </div>
 
- <section class="hop">
-      <div class="peut">
-          <p><a href="./include/articlepage/fonctionform.php">Lien vers formulaire FAQ</a></p>
- </div>
- </section>
+ 
  <footer>
- <a href="./include/disconnect.php">Se déconnecter</a>
+ 
  </footer>
     </body>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -94,5 +90,6 @@ logged_only();
             menu.classList.toggle('active')
         }  
     </script>
+  <script src="./js/menu.js"></script>
     <script src="./js/personnage.js"></script>
 </html>

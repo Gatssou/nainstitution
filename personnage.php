@@ -106,8 +106,8 @@ const images = [
 
 
 ]
-        const section = document.querySelector('section')
-        const bg = images[Math.floor(Math.random() * images.length)
+        let section = document.querySelector('section')
+       let bg = images[Math.floor(Math.random() * images.length)
     ];
     section.style.backgroundImage = bg;
     }

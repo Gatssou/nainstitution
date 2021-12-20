@@ -53,14 +53,8 @@ transform: rotate(0deg) translateX(130px) translateY(27.5px);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
-  background: rgba(0, 0, 0, 0.452);
-  border-radius: 50%;
   transform: rotate(calc(360deg / 8 * var(--i)));
-  box-shadow: 0 3px 4px rgb(0, 0, 0);
   transition: 0.5s;
- 
 }
 .menu li a:hover{
   color: red;
@@ -174,59 +168,8 @@ width: 4vw;
 .container a p{
     color: black;
 }
-#bouddha{
-  background-image: url(../img/imgbg/forêts.jpg
-  );
-  background-size: cover;
-  height: 450px;
-  width: 550px;
-  border-radius: 25px;
-  border: 1px ridge white;
-  display: flex;
-  justify-content: flex-end;
-  align-items:center;
-  
-}
-#bouddha p{
-  transform: translate(3px);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  width:50%;
-  height: 100%;
-  opacity: 0;
-  transition: ease 1s ;
-  background-color: rgba(255, 255, 255, 0);
-}
-#bouddha h1{
-  color: black;
-  text-shadow: #aaa 1px 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  width: 70%;
-  opacity: 1;
-  transition: 1s ease;    
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-}
-#bouddha:hover p{
-  transform: translate(0);
-  opacity: 1  ;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-#bouddha:hover h1{
-  color:rgba(0, 0, 0, 0) ;
-  text-shadow: #aaa 1px 0 10px;
-  background-color: rgba(0, 0, 0, 0.568);
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-}
+
+
 /** connexion page admin**/
 .formp{
   text-align: center;
