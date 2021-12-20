@@ -28,7 +28,7 @@ logged_only();
   <p class="n">N</p><p class="a">A</p><p class="i">I</p><p class="n">N</p><p class="v">V</p><p class="e">E</p><p class="i">N</p><p class="t">T</p><p class="u">U</p><p class="r">R</p><p class="a">A</p>
 </div>
     <!-- blipou -->
-    <button type="boutton" class="toggle"><img src="./img/img_index/reticule.png" alt=""></button>
+    <button type="boutton" class="toggle"><img src="./img/img_index/menu.png" alt=""></button>
       <section>
     <div class="menu"  >
         <li style="--i:0;" >
@@ -76,7 +76,7 @@ logged_only();
   
  <div class="next">
  <a  class="avant" onclick="boutonAvant()"><ion-icon name="accessibility-outline"></ion-icon></a>
- <a class="apres" onclick="boutonApres()"><ion-icon name="accessibility-outline"></ion-icon></a>
+ 
  </div>
 
  
