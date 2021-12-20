@@ -42,6 +42,7 @@ header{
 border:inset 1px black;
 }
 .menu li{
+  opacity: 0;
 position: absolute;
 left: 0;
 list-style: none;
@@ -52,6 +53,7 @@ transform: rotate(0deg) translateX(130px) translateY(27.5px);
 }
 .menu.active li {
   transform: rotate(calc(360deg / 8 * var(--i)));
+  opacity: 1;
 }
 .menu li a {
   display: flex;
