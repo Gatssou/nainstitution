@@ -1,10 +1,16 @@
 <?php
 session_start();
+$bdd = new PDO('mysql:host=localhost;dbname=blipou;','root');
 require './include/functions.php';
 logged_only();
-
+if(isset($_GET['id']) AND $_GET['id'] > 0 )
+{
+   $getid = intval($_GET['id']);
+   $requser = $bdd->prepare('SELECT * FROM logtest WHERE id= ?');
+    $requser->execute(array($getid));
+    $pseudo= $requser->fetch();
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +27,14 @@ logged_only();
 <body>
     
     <header>
+     
+        <div class="profil">
+            <h2>Votre profil</h2>
+            <br>pseudo<?php echo $pseudo['username']; ?><br/>
+            
+        </div>
+   
+    
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 </style> 

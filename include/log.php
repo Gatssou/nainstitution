@@ -19,7 +19,11 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
         $req->bindParam(':pseudale', $pseudo);
         $req->execute();
         $userdata = $req->fetch(PDO::FETCH_OBJ);
-    }catch(PDOException $e){
+    }
+
+    
+    
+    catch(PDOException $e){
         echo 'Erreur : ' . $e; 
     }finally{
         if(!empty($userdata) && password_verify($_POST['motdedep'], $userdata->password)){
@@ -35,7 +39,7 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
         header('location:../login.php?log_err=2');
         
     }
-    
+   
 
 ?>
 
