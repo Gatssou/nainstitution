@@ -1,14 +1,10 @@
 <?php
 session_start();
-$bdd = new PDO('mysql:host=localhost;dbname=blipou;','root');
 require './include/functions.php';
 logged_only();
-if(isset($_GET['id']) AND $_GET['id'] > 0 )
-{
-   $getid = intval($_GET['id']);
-   $requser = $bdd->prepare('SELECT * FROM logtest WHERE id= ?');
-    $requser->execute(array($getid));
-    $pseudo= $requser->fetch();
+$bdd = new PDO('mysql:host=localhost;dbname=blipou;','root');
+if(!$_SESSION['auth']){
+    header('Location: disconnect.php');
 }
 ?>
 
@@ -27,12 +23,20 @@ if(isset($_GET['id']) AND $_GET['id'] > 0 )
 <body>
     
     <header>
-     
-        <div class="profil">
+    <?php
+$afficher_profil = $bdd->query('SELECT username FROM logtest WHERE username = ?');
+
+while($user= $afficher_profil->fetch()){
+ ?>
+  <div class="profil">
             <h2>Votre profil</h2>
-            <br>pseudo<?php echo $pseudo['username']; ?><br/>
+            <br>pseudo<?php echo $user['username']; ?><br/>
             
         </div>
+ <?php 
+}
+         ?>
+    
    
     
     <style>

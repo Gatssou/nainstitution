@@ -80,7 +80,7 @@ logged_only();
     </div>
    
     <footer>
-    <div class="retour"><a href="./index.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
+    <div class="retour"><a href="./pub.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
     <div class="choix">
      <ul>
          <li><h1>uno</h1></li>
