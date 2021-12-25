@@ -2,10 +2,7 @@
 session_start();
 require './include/functions.php';
 logged_only();
-$bdd = new PDO('mysql:host=localhost;dbname=blipou;','root');
-if(!$_SESSION['auth']){
-    header('Location: disconnect.php');
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -23,21 +20,8 @@ if(!$_SESSION['auth']){
 <body>
     
     <header>
-    <?php
-$afficher_profil = $bdd->query('SELECT username FROM logtest WHERE username = ?');
-
-while($user= $afficher_profil->fetch()){
- ?>
-  <div class="profil">
-            <h2>Votre profil</h2>
-            <br>pseudo<?php echo $user['username']; ?><br/>
-            
-        </div>
- <?php 
-}
-         ?>
+ 
     
-   
     
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
