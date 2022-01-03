@@ -37,17 +37,13 @@ $mdp_par_defaut = "A15H17luma";
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
    transition: 0.5s;
-
-
         }
 
 body.active{
     background: black; 
 }
-
 #toggle{
     position: relative;
     display: block;
@@ -80,14 +76,17 @@ body.active{
                 inset 0 4px 4px rgba(255,255,255,1),
                 inset 0 -4px 4px rgba(255,255,255,1);
 }
-       
        input{
          background: white;
         }
-        form{
-           
+        form{ 
+            display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
             width: 40vw;
-            margin-top:25%;
+            height: 50vh;
+            margin-top:10%;
             margin-left: 35%;
             border: 1px white ridge;
             border-radius: 12px  5px 5px 12px;
@@ -99,9 +98,7 @@ body.active{
         .motdepass{
             background-color: white;
             border-radius: 5px;
-         
         }
-        
         .errmessadmin{
   color: red;
   height: 5vh;
@@ -121,17 +118,11 @@ body.active{
     <div class="congrat">
         <h1>Admin Up! ! !</h1>
     </div>
-  
         <input class="motdepass" type="text" name="pseudo"  autocomplete="off" placeholder="pseudo">
         <br>
- 
-     
         <input class="motdepass" type="password" name="mdp" autocomplete="off" placeholder="mot de pass">
         <br><br>
- 
-        
         <input class="motdepass" type="submit"  name="valider">
-      
         <section class="errmessadmin">
 <?php
     if(isset($_GET['log_err'])){
