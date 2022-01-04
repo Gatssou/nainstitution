@@ -7,7 +7,7 @@ body {
   background-image: url()   ;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(10,10,10,.78039);
+  background-color: rgba(0, 0, 0, 0.87);
  filter: brightness(100%);
 }
 h1{
@@ -124,13 +124,7 @@ border:inset 1px rgba(240, 6, 6, 0.719);
     
   }
   .suivant img:hover{
-    background-color: rgba(252, 139, 33, 0.1);
-    border-radius: 30%;
-  border:inset 1px black;
-   
-  }
-  .suivante img:hover{
-    background-color: rgba(252, 139, 33, 0.1);
+    background-color: rgba(95, 252, 33, 0.1);
     border-radius: 30%;
   border:inset 1px black;
    
@@ -143,7 +137,7 @@ border:inset 1px rgba(240, 6, 6, 0.719);
     color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 30%;
-    background: rgba(252, 139, 33, 0.863);
+    background: rgba(252, 33, 33, 0.863);
    
   }
   .apres {
