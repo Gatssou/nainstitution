@@ -1,3 +1,4 @@
+/*
 html, body{
   background: black;
   height: 300vh;
@@ -20,26 +21,26 @@ p{
   color: white;
   font-size: 2em;
 }
-/*
+
 #animscroll{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}*/
+}
 #line{
   height: 20vh;
   width: 2px;
   background-color: white;
   z-index: 1;
 }
-/*
+
 h1{
   color: white;
   position: relative;
   top: -200vh;
 }
-*/
+
 h3{
   color: white;
 }
@@ -64,4 +65,19 @@ button{
 }
 .a{
   align-self: flex-end;
+}
+*/
+
+body{
+  background: black;
+}
+  
+h1{
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 5px;
+  font-weight: 100;
+  padding: 25px 15px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }

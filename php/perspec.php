@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../sass/perspec.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../sass/perspec.css">
+  <title>Document</title>
 </head>
 
-<body id="scrollbody">
-    
-<section>
+<body>
+
+  <!-- <section>
   <article class="draw">
     <div class="disp">
         <h2>Line test js</h2>
         <p>test</p>
-        <?php
-          if (isset($_POST['username'])) {
-            echo "Bonjour ".$_POST['username']." (deconnexion)";
-          }
-        ?>
-    
-    
+        
             <div id="line"></div>
             <canvas id="canva" class="canva" width="1260px" height="2000px"></canvas>
-           <!-- <h1 id="s" class="s">Sloubi</h1>
-             <canvas id="canvaa" class="canvaa" width="1260px" height="1000px"></canvas> -->
+            <h1 id="s" class="s">Sloubi</h1>
+             <canvas id="canvaa" class="canvaa" width="1260px" height="1000px"></canvas> 
       </div>
   </article>
 
@@ -35,24 +30,15 @@
     <h3 id="t" class="t">ReTest</h3>
   </article>
 
-  
-    <button class="lebouton"><a href="./index.php">Visiter</a></button>
- 
-  
-</section>
+  <button class="lebouton"><a href="./index.php">Visiter</a></button>
+  </section> -->
 
-
-  
-
-
-
-
-<!--
+  <!--
 <section>
   <h1>Tartiflette</h1>
   <canvas id="canva2" class="canva2" width="1260px" height="1000px"></canvas>
 </section>   -->
-  
+
   <!-- 
   <div class="wrapper">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.6 107.6" id="star-svg">
@@ -67,7 +53,16 @@
   </svg>  
 </div>-->
 
-
+<h1>Scroll-to-draw</h1>
+<svg viewBox="0 0 100.6 107.6" id="pathsvg">
+  <path fill="none" stroke="white" stroke-width=".1" id="star-path" d=" 
+       M 50 10, 50 40
+       C 50 80, -20 50, 20 80
+       
+      "/> <!-- d = start draw, M Moveto, C Curveto, L Lineto Q Quadratic Bezier curve more simple than C, one control point..., z end 
+      C 30 100, 70 130, 90 200
+    <path fill="none" stroke="white" stroke-width=".1" id="star-path" d="M" />-->
+</svg>
 
 
 
@@ -80,22 +75,6 @@
 </body>
 <script src="../js/stock/jquery-3.6.0.min.js"></script>
 <script src="../js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="jquery.drawsvg.js"></script>
 <script src="../js/perspec.js"></script>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -60,10 +60,8 @@ $(document).ready(function(){
       
       }
 */
-
+/*
 let ctx = document.getElementById("canva").getContext("2d");
-
-
 
 let start11 = {x:630 , y:0}; 
 let cp133 = {x: 960, y: 80};
@@ -142,7 +140,7 @@ let end4 = {x:630 , y:1970};
 
         $(window).animate(function(){
             $("#canva").offset()
-        });
+        });*/
 
 /*
 let ctxx = document.getElementById("canvaa").getContext("2d");
@@ -166,4 +164,44 @@ ctxx.stroke();*/
             canv.show({transition: 5000});
         }
     });*/
+    /*
+let path = document.querySelector('#canva');
+let pathL = path.getTotalLength();
+
+path.style.strokeDasharray = pathL + ' ' + pathL;
+path.style.strokeDashoffset = pathL;
+path.getBoundingClientRect();
+
+window.addEventListener("scroll", function(e){
+    let scrollPerc = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.body.clientHeight);
+    let drawL = pathL * scrollPerc;
+    path.style.strokeDashoffset = pathL - drawL;
+
+    if(scrollPerc >= .99){
+        path.style.strokeDasharray = "none";
+    }
+    else{
+        path.style.strokeDasharray = pathL + ' ' + pathL;
+    }
+});*/
+
+let path = document.querySelector('#star-path');
+let pathL = path.getTotalLength();
+
+path.style.strokeDasharray = pathL + ' ' + pathL;
+path.style.strokeDashoffset = pathL;
+path.getBoundingClientRect();
+
+window.addEventListener("scroll", function(e) {
+  let scrollPerc = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+  let drawL = pathL * scrollPerc;
+  path.style.strokeDashoffset = pathL - drawL;
     
+  if (scrollPerc >= 0.99) {
+    path.style.strokeDasharray = "none";
+    
+  } else {
+    path.style.strokeDasharray = pathL + ' ' + pathL;
+  }
+  
+});
