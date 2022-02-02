@@ -74,9 +74,7 @@ logged_only();
    
     <footer>
     <div class="retour"><a href="./pub.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
-    <div class="choix">
-  
-    </div>
+    
  <div class="deco"><a href="./include/disconnect.php">Se déconnecter</a></div>
  </footer>
  
