@@ -51,14 +51,32 @@
 
     <section id="pic_2" class="s2">
         <h1>Aventurier 2</h1>
+        <div class="containere">
+        <a href="#" id="bouddhaa">
+            <h1>Mr Kangourou IDS de survie 9.9</h1>
+            <p class="infos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
+        </a>
+    </div>
     </section>
 
     <section id="pic_3" class="s3">
         <h1>Aventurier 3</h1>
+        <div class="containere">
+        <a href="" id="bouddhaaa">
+            <h1>Mr Kangourou IDS de survie 9.9</h1>
+            <p class="infos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
+        </a>
+    </div>
     </section>
 
     <section id="pic_4" class="s4">
         <h1>Aventurier 4</h1>
+        <div class="containere">
+        <a href="" id="bouddhaaaa">
+            <h1>Mr Kangourou IDS de survie 9.9</h1>
+            <p class="infos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
+        </a>
+    </div>
     </section>
   </div>
 
