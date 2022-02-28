@@ -34,25 +34,25 @@ logged_only();
       <section>
     <div class="menu"  >
         <li style="--i:0;" >
-        <a href="#"><ion-icon name="accessibility-outline"></ion-icon></a>
+        <a href="./include/articlepage/fonctionform.php"><img src="./include/articlepage/Img/mail.png" height="70px" width="70px" alt=""></a>
         </li>
         <li style="--i:1;">
         <a href="./php/index.php"><img src="./img/index/home.png" alt=""></a>
         </li>
         <li style="--i:2;">
-        <a href=""><img src="./img/img_index/femme.png" alt=""></a>
+        <a href=""><img src="./img/img_index/femme.png" height="80px" width="80px" alt=""></a>
         </li>
         <li style="--i:3;">
-        <a href=""><img src="./img/img_index/Sans titre.png" alt=""></a>
+        <a href=""><img src="./img/img_index/Sans titre.png" height="100px" width="110px" alt=""></a>
         </li>
         <li style="--i:4;">
-        <a href=""><img src="./img/img_index/kitsurvie.png" height="80px" width="80px" alt=""></a>
+        <a href="https://www.amazon.fr/s?k=mat%C3%A9riel+de+sp%C3%A9l%C3%A9ologie&adgrpid=125216127532&gclid=CjwKCAiAgvKQBhBbEiwAaPQw3MdtfKWYQ-RSxbtbNsXp-vm0QlfOwnYqD1mXyB-t0sKhHsNt9pUoPxoCFUoQAvD_BwE&hvadid=509460936478&hvdev=c&hvlocphy=9055869&hvnetw=g&hvqmt=e&hvrand=11915559390266032367&hvtargid=kwd-360675639514&hydadcr=21202_1749549&tag=googhydr0a8-21&ref=pd_sl_5303l42nxw_e"><img src="./img/img_index/kitsurvie.png" height="80px" width="80px" alt=""></a>
         </li>
         <li style="--i:5;">
-        <a href="./include/articlepage/fonctionform.php"><img src="./img/img_index/faq.png" alt=""></a>
+        <a href="./include/articlepage/envoief.php"><img src="./img/img_index/faq.png" alt=""></a>
         </li>
         <li style="--i:6;">
-        <a href="./include/admin/connexion.php"><ion-icon name="sparkles-outline"></ion-icon></a>
+        <a href="./include/admin/connexion.php"><img src="./img/index/enigme.png" height="80px" width="80px" alt=""></a>
         </li>
         <li style="--i:7;">
         <a href="./include/disconnect.php"><img src="./img/index/logout.png" height="80px" width="80px" alt=""></a>

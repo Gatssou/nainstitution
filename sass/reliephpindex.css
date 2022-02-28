@@ -104,6 +104,7 @@ width: 4vw;
     transition: 1.2s  ;
     transform:rotate(720deg) ;
 }
+
 .toggle {
   position:absolute;
   display: flex;
