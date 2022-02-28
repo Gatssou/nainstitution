@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
 
 .para {
   width: 100%;
-  height: calc(100vh * 3);
+  height: 300vh;
   position: relative;
 }
 
