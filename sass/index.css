@@ -8,34 +8,27 @@
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   50% {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 @keyframes pulse {
   0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   50% {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
-
 html {
   scrollbar-width: none;
 }
@@ -82,7 +75,7 @@ body::-webkit-scrollbar {
 
 .para {
   width: 100%;
-  height: calc(100vh * 3);
+  height: 300vh;
   position: relative;
 }
 
@@ -93,20 +86,12 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: var(--color-white);
-  -webkit-transform: translateY(100vh);
-          transform: translateY(100vh);
-  -webkit-transition: all var(--time-animation) ease-in-out;
+  transform: translateY(100vh);
   transition: all var(--time-animation) ease-in-out;
   z-index: 1;
 }
@@ -118,19 +103,10 @@ body::-webkit-scrollbar {
 }
 
 .textbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 input {
@@ -148,8 +124,7 @@ input {
 }
 
 .para .s1 {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   z-index: 1000;
 }
 
@@ -174,18 +149,10 @@ input {
 }
 
 .dispo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   height: 3vh;
 }
 
@@ -205,13 +172,11 @@ input {
   overflow-x: hidden;
   background: black;
   color: white;
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
 
 .nav:hover {
-  -webkit-transform: translateX(92px);
-          transform: translateX(92px);
+  transform: translateX(92px);
 }
 
 .poney {
@@ -247,15 +212,9 @@ input {
   width: 600px;
   border-radius: 25px;
   border: 1px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #bouddhaa {
@@ -265,15 +224,9 @@ input {
   opacity: 0.7;
   width: 600px;
   border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #bouddhaa:hover {
@@ -287,15 +240,9 @@ input {
   width: 600px;
   border-radius: 25px;
   border: 1px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #bouddhaaaa {
@@ -305,105 +252,67 @@ input {
   width: 600px;
   border-radius: 25px;
   border: 1px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #bouddha p {
-  -webkit-transform: translate(3px);
-          transform: translate(3px);
+  transform: translate(3px);
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: ease 1s;
   transition: ease 1s;
   background-color: rgba(255, 255, 255, 0);
 }
 
 #bouddhaa p {
-  -webkit-transform: translate(3px);
-          transform: translate(3px);
+  transform: translate(3px);
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: ease 1s;
   transition: ease 1s;
   background-color: rgba(255, 255, 255, 0);
 }
 
 #bouddhaaa p {
-  -webkit-transform: translate(3px);
-          transform: translate(3px);
+  transform: translate(3px);
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: ease 1s;
   transition: ease 1s;
   background-color: rgba(255, 255, 255, 0);
 }
 
 #bouddhaaaa p {
-  -webkit-transform: translate(3px);
-          transform: translate(3px);
+  transform: translate(3px);
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: ease 1s;
   transition: ease 1s;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -411,20 +320,13 @@ input {
 #bouddha h1 {
   color: white;
   text-shadow: #aaa 1px 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100%;
   width: 70%;
   opacity: 1;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -434,20 +336,13 @@ input {
 #bouddhaa h1 {
   color: white;
   text-shadow: #aaa 1px 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100%;
   width: 70%;
   opacity: 1;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -457,20 +352,13 @@ input {
 #bouddhaaa h1 {
   color: white;
   text-shadow: #aaa 1px 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100%;
   width: 70%;
   opacity: 1;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -480,20 +368,13 @@ input {
 #bouddhaaaa h1 {
   color: white;
   text-shadow: #aaa 1px 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100%;
   width: 70%;
   opacity: 1;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -501,29 +382,25 @@ input {
 }
 
 #bouddha:hover p {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 #bouddhaa:hover p {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 #bouddhaaa:hover p {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 #bouddhaaaa:hover p {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -565,82 +442,15 @@ a {
   color: white;
 }
 
-/*Arrow top*/
-avow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.arrow, .arrow_left, .arrow_bot, .arrow_right {
-  position: relative;
-  background: #88b7d5;
-  border: 4px solid #c2e1f5;
-}
-
-.arrow_box_t:after, .arrow_box_t:before {
-  bottom: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: "";
-  height: 0;
+/*Arrow*/
+#arrow {
   width: 0;
-  position: absolute;
-  pointer-events: none;
+  height: 0;
+  border-left: 18px solid red;
+  border-right: 18px solid red;
+  border-bottom: 30px solid blue;
 }
 
-.arrow_box_t:after {
-  border-color: rgba(136, 183, 213, 0);
-  border-bottom-color: #88b7d5;
-  border-width: 30px;
-  margin-left: -30px;
-}
-
-.arrow_box_t:before {
-  border-color: rgba(194, 225, 245, 0);
-  border-bottom-color: #c2e1f5;
-  border-width: 36px;
-  margin-left: -36px;
-}
-
-.a_row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 25vw;
-}
-
-/*end arrow*/
-/*
-.animaux{
-    border: 2px solid white;
-    width: 35vw;
-    height: 20vh;
-    position: relative;
-    left: -20vw;
-    font-size: 50px;
-}
-*/
 /*** RESPONSIVE ***/
 /* MOBILE */
 @media screen and (max-width: 576px) {
@@ -649,29 +459,25 @@ avow {
     background: transparent;
     -webkit-appearance: none;
   }
+
   .para .section-stick {
     right: 20px;
     bottom: 20px;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    transform: scale(0.7);
   }
+
   .para section {
     font-size: 40px;
   }
 }
-
 /*julien moi loni ne touche pas sil te plait merci.*/
 .supergrille {
   margin: 0 -10px -10px auto;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: rgba(10, 10, 10, 0.78039);
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
+  filter: brightness(100%);
 }
 
 .articlee {
@@ -680,12 +486,10 @@ avow {
   margin-right: 10px;
   width: 30%;
   cursor: pointer;
-  -webkit-transition: all .15s;
-  transition: all .15s;
+  transition: all 0.15s;
   border: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
-  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
-          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
   margin: 15px;
   border: 1px black ridge;
   background-color: rgba(0, 0, 0, 0.171);
@@ -697,18 +501,11 @@ avow {
 
 /* LE FORMULAIRE BY DYLAN LA MERDE , DEBUT */
 .content {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
   position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px chartreuse  solid;
+  justify-content: center;
+  border: 1px chartreuse solid;
   border-radius: 15% 15% 0% 0%;
   background-color: rgba(169, 169, 169, 0.158);
   padding: 2vh;
@@ -778,7 +575,6 @@ avow {
   left: 35%;
   border: 1px chartreuse solid;
   cursor: pointer;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
 
@@ -799,5 +595,4 @@ label::first-letter {
   outline: solid chocolate 2px;
 }
 
-/* FIN DU FORMULAIRE */
-/*# sourceMappingURL=index.css.map */
+/* FIN DU FORMULAIRE *//*# sourceMappingURL=index.css.map */

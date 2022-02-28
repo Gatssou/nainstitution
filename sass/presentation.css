@@ -81,3 +81,34 @@ h1{
   padding: 25px 15px;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.btn{
+  padding: 2rem 7rem;
+  background: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  will-change: transform;
+}
+button{
+  border: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+button:before{
+  transform: translate(-110%,-110%) translateZ(0);
+}
+
+button:hover:before{
+  transform: translate(-45%,-34%) translateZ(0);
+}
+    

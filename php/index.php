@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../sass/index.css">
   <link rel="shortcut icon" href="../img/bierre.jpg" type="image">
+  <link rel="stylesheet" href="../fa/css/all.css">
   <title>Nain ventura</title>
 </head>
 
@@ -27,7 +27,8 @@
     </nav>
 
     <section id="pic_1" class="s1">
-        <div class="arrow_box_t">Tesssssssssssst d'écriture</div>
+
+        <div id="triangle"></div>
         
 
         

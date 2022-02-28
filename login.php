@@ -1,10 +1,6 @@
 <?php
 include './include/header.php';
-
-
-
 ?>
-
 
 <section class="zindexbis">
     <input type="checkbox" id="switch">
