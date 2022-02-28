@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../sass/perspec.css">
+  <link rel="stylesheet" href="../sass/presentation.css">
   <title>Document</title>
 </head>
 
@@ -64,7 +64,9 @@
     <path fill="none" stroke="white" stroke-width=".1" id="star-path" d="M" />-->
 </svg>
 
-
+<div class="main">
+  <button class="btn">Rejoindre</button>
+</div>
 
 
 
@@ -75,6 +77,6 @@
 </body>
 <script src="../js/stock/jquery-3.6.0.min.js"></script>
 <script src="../js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
-<script src="../js/perspec.js"></script>
+<script src="../js/presentation.js"></script>
 
 </html>
