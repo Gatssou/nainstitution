@@ -13,18 +13,10 @@ if(isset($_POST['envoi'])){
                      $description = nl2br(htmlspecialchars($_POST['description']));
 $insererArticle = $bdd->prepare('INSERT INTO admin(titre, description) VALUES (?, ?)');
 $insererArticle->execute(array($titre, $description));
-
 header('location: articles.php');
-
     }else{
-       
     }
 }
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,9 +71,5 @@ header('location: articles.php');
 <br>
 <input class="envoie" type="submit" name="envoi">
     </form>
-    
-  
-
-
 </body>
 </html>

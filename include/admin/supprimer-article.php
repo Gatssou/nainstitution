@@ -12,8 +12,8 @@ $getid = $_GET['id'];
    $recupArticle = $bdd->prepare('SELECT * FROM admin WHERE id = ?');
    $recupArticle->execute(array($getid));
           if($recupArticle->rowCount() >0 ){
-   $deleteArticle = $bdd->prepare('DELETE FROM admin WHERE id = ?')  ;  
-   $deleteArticle->execute(array($getid)) ; 
+   $deleteArticle = $bdd->prepare('DELETE FROM admin WHERE id = ?');  
+   $deleteArticle->execute(array($getid)); 
         header('location: articles.php');
 
           }else{

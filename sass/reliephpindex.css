@@ -222,13 +222,12 @@ border:inset 1px rgba(240, 6, 6, 0.719);
 .publicite{
   display: flex;
  flex-wrap: wrap;
-  height: 20vh;
+  height: 30vh;
   border: 1px ridge black;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 .publicite img:hover{
   border-radius: 30%;
 border:inset 1px black;
