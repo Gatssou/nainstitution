@@ -27,16 +27,8 @@
     </nav>
 
     <section id="pic_1" class="s1">
-        <div class="avow">
-            <div class="arrow"></div>
-            <h1>Aventurier 1</h1>
-            <div class="arrow_bot"></div>
-        </div>
-
-        <div class="a_row">
-            <div class="arrow_left"></div>
-            <div class="arrow_right"></div>
-        </div>
+        <div class="arrow_box_t">Tesssssssssssst d'écriture</div>
+        
 
         
 
