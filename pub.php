@@ -49,10 +49,10 @@ logged_only();
         <a href=""><img src="./img/img_index/kitsurvie.png" height="80px" width="80px" alt=""></a>
         </li>
         <li style="--i:5;">
-        <a href="./login.php"><img src="./img/img_index/faq.png" alt=""></a>
+        <a href="./include/articlepage/fonctionform.php"><img src="./img/img_index/faq.png" alt=""></a>
         </li>
         <li style="--i:6;">
-        <a href="#"><ion-icon name="sparkles-outline"></ion-icon></a>
+        <a href="./include/admin/connexion.php"><ion-icon name="sparkles-outline"></ion-icon></a>
         </li>
         <li style="--i:7;">
         <a href="./include/disconnect.php"><img src="./img/index/logout.png" height="80px" width="80px" alt=""></a>
