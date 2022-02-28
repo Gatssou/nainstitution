@@ -18,6 +18,7 @@ header{
        }
        /**TITRE ninventura**/
        .titree{
+         cursor: pointer;
          display: flex;
          flex-wrap: wrap;
          flex-direction: row;
@@ -25,6 +26,37 @@ header{
          text-align: center;
          font-size: 2em;
          font-family:  'Marck Script', cursive;
+       }
+      .r{
+        transition: width 2s, height 2s, background-color 2s, transform 2s; 
+      }
+       .n:hover{
+         color: blue;
+       }
+       .a:hover{
+        transform: scale(0.7);
+       }
+       .i:hover{
+        transform: rotate(45deg);
+       }
+       .v:active{
+        transform: translate(100px, 200px);
+       }
+       .e:active:hover{
+         color: red;
+        transform: translateX(13px) translateY(27.5px);
+       }
+       .t:active{
+         display: none;
+       }
+       .u:active{
+         border-bottom: rgb(255, 0, 0) 0.1px solid ;
+       }
+       .r:hover{
+         color: #FFCCCC;
+          width: 20px;
+          height: 20px;
+          transform: rotate(360deg);
        }
        /**Bouton et menu**/
 .menu{
