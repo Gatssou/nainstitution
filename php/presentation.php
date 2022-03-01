@@ -53,20 +53,62 @@
   </svg>  
 </div>-->
 
-<h1>Scroll-to-draw</h1>
-<svg viewBox="0 0 100.6 107.6" id="pathsvg">
-  <path fill="none" stroke="white" stroke-width=".1" id="star-path" d=" 
+  <h1>Scroll-to-draw</h1>
+
+  <!--  
+  <svg viewBox="0 0 100.6 107.6" id="pathsvg">
+    <path fill="none" stroke="white" stroke-width=".1" id="star-path" d=" 
        M 50 10, 50 40
-       C 50 80, -20 50, 20 80
-       
-      "/> <!-- d = start draw, M Moveto, C Curveto, L Lineto Q Quadratic Bezier curve more simple than C, one control point..., z end 
+       C 50 70, 5 30, 6 60
+       C 6 60, 5 85, 70 70
+       C 70 70, 80 67, 90 75
+      " />
+    -->
+
+    <svg viewBox="0 0 100.6 107.6" id="svgf">
+    <path fill="none" stroke="white" stroke-width=".1" id="pathf" 
+    d="
+    M 10 10
+    C 10 10, 15 20, 70 30
+    C 70 30, 80 20, 80 10
+    "/>
+    </svg>
+
+    <svg viewBox="0 0 100.6 107.6" id="svgs">
+    <path fill="none" stroke="white" stroke-width=".1" id="paths" 
+    d="
+    M 50 10
+    C 50 10, 30 30, 60 40
+    "/>
+    </svg>
+    
+    <!--  
+    <path fill="none" stroke="white" stroke-width=".1" id="star-path" 
+    d="
+    M 50 10
+    C 50 10, 10 40, 30 50
+    
+    "/>
+    -->
+    
+
+    
+
+
+
+
+
+
+    <!-- d = start draw, M Moveto, C Curveto, L Lineto Q Quadratic Bezier curve more simple than C, one control point..., z end 
       C 30 100, 70 130, 90 200
     <path fill="none" stroke="white" stroke-width=".1" id="star-path" d="M" />-->
-</svg>
+  
 
-<div class="main">
-  <button class="btn">Rejoindre</button>
-</div>
+  <a href="./index.php">
+    <button class="btn but">
+      <div class="text">Join us !</div>
+    </button>
+  </a>
 
 
 

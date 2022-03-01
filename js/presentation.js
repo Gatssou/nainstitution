@@ -185,23 +185,47 @@ window.addEventListener("scroll", function(e){
     }
 });*/
 
-let path = document.querySelector('#star-path');
-let pathL = path.getTotalLength();
+/*First svg*/
+let path = document.querySelector('#pathf');
+let pathLf = path.getTotalLength();
 
-path.style.strokeDasharray = pathL + ' ' + pathL;
-path.style.strokeDashoffset = pathL;
+path.style.strokeDasharray = pathLf + ' ' + pathLf;
+path.style.strokeDashoffset = pathLf;
 path.getBoundingClientRect();
 
 window.addEventListener("scroll", function(e) {
   let scrollPerc = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-  let drawL = pathL * scrollPerc;
-  path.style.strokeDashoffset = pathL - drawL;
+  let drawLf = pathLf * scrollPerc;
+  path.style.strokeDashoffset = pathLf - drawLf;
     
   if (scrollPerc >= 0.99) {
     path.style.strokeDasharray = "none";
     
   } else {
-    path.style.strokeDasharray = pathL + ' ' + pathL;
+    path.style.strokeDasharray = pathLf + ' ' + pathLf;
   }
   
 });
+
+/*Second svg*/
+let paths = document.querySelector('#paths');
+let pathLs = paths.getTotalLength();
+
+paths.style.strokeDasharray = pathLs + ' ' + pathLs;
+paths.style.strokeDashoffset = pathLs;
+paths.getBoundingClientRect();
+
+window.addEventListener("scroll", function(e) {
+  let scrollPerc = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+  let drawLs = pathLs * scrollPerc;
+  paths.style.strokeDashoffset = pathLs - drawLs;
+    
+  if (scrollPerc >= 0.99) {
+    paths.style.strokeDasharray = "none";
+    
+  } else {
+    paths.style.strokeDasharray = pathLs + ' ' + pathLs;
+  }
+  
+});
+

@@ -1,3 +1,8 @@
+<?php 
+session_start();
+require '/laragon/www/nainstitution/include/functions.php';
+logged_only();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
