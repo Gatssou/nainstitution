@@ -29,7 +29,7 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
         if(!empty($userdata) && password_verify($_POST['motdedep'], $userdata->password)){
             session_start();
             $_SESSION['auth'] = $userdata;
-            header('location:../php/presentation.php');
+            header('location:../presentation.php');
 
         }else{
             header('location:../login.php?log_err=1');
