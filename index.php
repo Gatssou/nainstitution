@@ -4,6 +4,7 @@ require './include/functions.php';
 logged_only();
 // session_start recupere l'information si l'utilisateur est connecté si ne l'est pas  on redirige vers une funtion créé au préalable dans un dossier qui utilise la manière require qui appelle cette dite function pour rediriger méthode 1.
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
