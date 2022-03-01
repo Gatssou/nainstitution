@@ -102,7 +102,6 @@ body.active{
         .errmessadmin{
   color: red;
   height: 5vh;
-  opacity: 0.5;
   width: 17vw;
   text-align: center;
   border-radius: 0 0 15px 15px;
@@ -143,6 +142,5 @@ body.active{
             toggle.classList.toggle('active');
             body.classList.toggle('active');
         }
- 
     </script>
 </html>

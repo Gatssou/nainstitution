@@ -423,11 +423,12 @@ a {
 /*julien moi loni ne touche pas sil te plait merci.*/
 .supergrille{
   margin: 0 -10px -10px auto;
-  padding: 10px;
+  padding: 15px;
 display: flex;
 flex-wrap: wrap;
 background-color: rgba(10,10,10,.78039);
  filter: brightness(100%);
+justify-content: center;
 }
 
 .articlee{

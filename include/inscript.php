@@ -11,11 +11,8 @@ if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
     $checkmail->bindParam(2, $us);
     $checkmail->execute();
     $datam = $checkmail->fetch(PDO::FETCH_OBJ);  
-        
-    if($datam){
-      
+    if($datam){ 
         header('location:../insc.php?reg_err=1');
-     
         }else{
             if(!empty($_POST["pseudo"]) && !empty($_POST["email"])){
                 function cleandata($data){
@@ -29,8 +26,7 @@ if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
             }
                 if(!empty($_POST['mdp']) && !empty($_POST['mdpconf']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdp']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?*$.+-]).{6,18}#', $_POST['mdpconf']) && $_POST['mdp'] === $_POST['mdpconf']){
                     $pass = $_POST["mdp"];
-                    $hashed = password_hash($pass, PASSWORD_BCRYPT);
-             
+                    $hashed = password_hash($pass, PASSWORD_BCRYPT);            
                 if(!empty($_POST) && !empty($hashed) && !empty($usname) && !empty($mail)){
                     try{
                     require_once './bdd.php';
@@ -49,8 +45,7 @@ if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
                         echo "Jean Bulbe";
                         header("location:./confirm.php?id=" .$usid . "&token=" . $tok);
                         //  header("location:./confirm.php");
-                    }
-                    
+                    }                   
                     if(!empty($_POST['email'])){
                         require_once './bdd.php';
                         $headers = 'charset-utf8';
