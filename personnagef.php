@@ -14,10 +14,13 @@ logged_only();
 </head>
 <body>
     <section>
-        <h2></h2>
+    <div class="globe"> <img src="./img/imagepersosnage/5.gif" alt="">
+</div>
     </section>
+  
+  
     <div class="contien"> 
-      
+  
     <div class="menup ">
         <div class="persos"> 
             <div class="left">
