@@ -25,7 +25,7 @@ logged_only();
     </div>
 
     <nav class="nav">
-        <p class="poney"><a href="../pub.php">Pub</a></p>
+        <p class="poney"><a href="./pub.php">Pub</a></p>
         <p class="poney">Tanzanie</p>
         <p class="poney">Fidji</p>
         <p class="poney">Laos</p>

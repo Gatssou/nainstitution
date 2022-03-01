@@ -30,7 +30,7 @@ logged_only();
         <a href="./include/articlepage/fonctionform.php"><img src="./include/articlepage/Img/mail.png" height="70px" width="70px" alt=""></a>
         </li>
         <li style="--i:1;">
-        <a href="./php/index.php"><img src="./img/index/home.png" alt=""></a>
+        <a href="./index.php"><img src="./img/index/home.png" alt=""></a>
         </li>
         <li style="--i:2;">
         <a href=""><img src="./img/img_index/femme.png" height="80px" width="80px" alt=""></a>

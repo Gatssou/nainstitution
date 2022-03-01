@@ -48,8 +48,9 @@ if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
                     }                   
                     if(!empty($_POST['email'])){
                         require_once './bdd.php';
+                        $destinataire = "lenaingudule@gmail.com";
                         $headers = 'charset-utf8';
-                        $to = '';
+                        $to = 'lenaingudule@gmail.com';
                         $subjet = 'Validation';
                         $message = '';
                         mail($to, $subject, $message, $headers);
