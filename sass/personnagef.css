@@ -52,8 +52,7 @@
   
     to {
       margin-left: 0%;
-      width: 100%;
-     
+      width: 100%;     
     }
   }
 .contien{
@@ -95,7 +94,6 @@
     width: 90px;
     background-color: rgb(0, 0, 0);
 }
-
 .menup:nth-child(1) .persos .left{
   
     background-image: url(../img/imagepersosnage/jeanne.jpg);
@@ -103,21 +101,19 @@
 }
 .menup:nth-child(2) .persos .left{
   
-    background-image: url(../img/imagepersosnage/femmeb.png);
+    background-image: url(../img/imagepersosnage/Annie\ Smith-Peck.jpg);
     background-size: cover;
 }
 .menup:nth-child(3) .persos .left{
   
-    background-image: url(../img/imagepersosnage/femmeb1.png);
+    background-image: url(../img/imagepersosnage/Nellie\ Bly.jpg);
     background-size: cover;
     
 }
-
 .menup:nth-child(4) .persos .left{
-    background-image: url(../img/imagepersosnage/femmecc.png);
+    background-image: url(../img/imagepersosnage/Annie\ “Londonderry”\ Cohen\ Kopchovsky.jpg);
     background-size: cover;
 }
-
 .persos .right h1 {
     font-size: 1.5em;
     font-weight: 500;
@@ -148,11 +144,9 @@
   list-style: none;
   color: red;
 }
-
 .choix ul{
  display: flex;
   margin: 3vh;
-  
 }
 .choix h1{
   margin: 2vh;

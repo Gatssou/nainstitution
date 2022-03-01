@@ -1,4 +1,11 @@
 <?php
+session_start();
+$bdd = new PDO('mysql:host=localhost;dbname=blipou;','root');
+if(!$_SESSION['mdp']){
+    header('Location: connexion.php');
+} // session_start recupere l'information si l'utilisateur est connecté si ne l'est pas  on redirige vers connexion.php méthode 2 , on redirectionne a l'aide de la connexion à la base avec $bdd.
+?>
+<?php
     /*récuperation du titre et description à modifier avec l'ID exemple le 14eme article posté dans le HTTP: barre de navigation */
 $bdd = new PDO('mysql:host=localhost;dbname=blipou;','root');
 if(isset($_GET['id']) AND !empty($_GET['id'])){

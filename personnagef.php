@@ -13,7 +13,6 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
-
     <section>
         <h2></h2>
     </section>
@@ -42,8 +41,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-          
-                <img src="./img/imagepersosnage/femmeb.png" height="400px" alt=""> 
+                <img src="./img/imagepersosnage/Annie Smith-Peck.jpg" height="400px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -55,11 +53,8 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-          
-                <img src="./img/imagepersosnage/femmeb1.png" height="400px" alt=""> 
-                
-            </div> 
-                  
+                <img src="./img/imagepersosnage/Nellie Bly.jpg" height="400px" alt="">  
+            </div>      
     </div>
     <div class="menup">
         <div class="persos"> 
@@ -70,36 +65,25 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-              
-                <img src="./img/imagepersosnage/femmecc.png" height="400px" alt=""> 
+                <img src="./img/imagepersosnage/Annie “Londonderry” Cohen Kopchovsky.jpg" height="400px" alt=""> 
                 </a>
-            </div>
-               
+            </div>         
     </div>
-
     </div>
-   
     <footer>
     <div class="retour"><a href="./pub.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
-    
  <div class="deco"><a href="./include/disconnect.php">Se déconnecter</a></div>
  </footer>
- 
- 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
       $(document).on("click", ".menup", function () {
         $(this).addClass("active").siblings().removeClass("active");
       });
     </script>
-   
-
 <script>
     function changeBg(){
 const images = [
     'url("./img/imgbg/2.jpg")','url("./img/imgbg/3.jpg")','url("./img/imgbg/4.jpg")','url("./img/img_country/plage.jpg")',
-
-
 ]
         const section = document.querySelector('section')
         const bg = images[Math.floor(Math.random() * images.length)
