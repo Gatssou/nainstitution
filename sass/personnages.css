@@ -99,24 +99,24 @@
 
 .menup:nth-child(1) .persos .left{
   
-    background-image: url(../img/imagepersosnage/pikathor.png);
+    background-image: url(../img/imagepersosnage/jacquecartier.jpg);
     background-size: cover;
 }
 .menup:nth-child(2) .persos .left{
   
-    background-image: url(../img/imagepersosnage/perspider.png);
+    background-image: url(../img/imagepersosnage/jamescook.jpg);
     background-size: cover;
 }
 .menup:nth-child(3) .persos .left{
   
-    background-image: url(../img/imagepersosnage/tank.png);
+    background-image: url(../img/imagepersosnage/christophe.jpg);
     background-size: cover;
     
 }
 
 .menup:nth-child(4) .persos .left{
   
-    background-image: url(../img/imagepersosnage/classe.png);
+    background-image: url(../img/imagepersosnage/Magellan.jpg);
     background-size: cover;
 }
 

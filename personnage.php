@@ -28,7 +28,7 @@ logged_only();
             
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/pikathor.png" height="400px" alt=""> 
+                <img src="./img/imagepersosnage/jacquecartier.jpg" height="400px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -40,7 +40,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/perspider.png" height="400px" alt=""> 
+                <img src="./img/imagepersosnage/jamescook.jpg" height="400px" alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -52,7 +52,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/tank.png" height="400px" alt=""> 
+                <img src="./img/imagepersosnage/christophe.jpg" height="400px" alt=""> 
                 
             </div>       
     </div>
@@ -65,7 +65,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/classe.png" height="400px" alt=""> 
+                <img src="./img/imagepersosnage/Magellan.jpg" height="400px" alt=""> 
             </div>
                
     </div>
@@ -83,20 +83,11 @@ logged_only();
       $(document).on("click", ".menup", function () {
         $(this).addClass("active").siblings().removeClass("active");
       });
-    </script>
-   
-
-<script>
+            </script>
+ <script>
     function changeBg(){
 const images = [
-    'url("./img/imgbg/208702.jpg")','url("./img/imgbg/1.jpg")','url("./img/imgbg/2.jpg")','url("./img/imgbg/3.jpg")','url("./img/imgbg/4.jpg")','url("./img/imgbg/5.jpg")','url("./img/imgbg/6.jpg")','url("./img/imgbg/7.jpg")','url("./img/imgbg/8.png")','url("./img/imgbg/9.jpg")','url("./img/imgbg/10.jpg")','url("./img/imgbg/11.png")','url("./img/imgbg/12.jpg")','url("./img/imgbg/13.jpg")','url("./img/imgbg/14.jpg")','url("./img/imgbg/15.jpg")','url("./img/imgbg/16.jpg")','url("./img/imgbg/17.jpg")','url("./img/imgbg/18.jpg")','url("./img/imgbg/19.jpg")','url("./img/imgbg/20.jpg")','url("./img/imgbg/21.jpg")','url("./img/imgbg/22.jpg")','url("./img/imgbg/23.jpg")','url("./img/imgbg/24.jpg")','url("./img/imgbg/25.jpg")','url("./img/imgbg/26.jpg")','url("./img/imgbg/27.jpg")','url("./img/imgbg/28.jpg")','url("./img/imgbg/29.jpg")','url("./img/imgbg/30.jpg")','url("./img/imgbg/31.jpg")','url("./img/imgbg/32.jpg")','url("./img/imgbg/33.jpg")','url("./img/imgbg/34.png")','url("./img/imgbg/35.jpg")','url("./img/imgbg/36.jpg")','url("./img/imgbg/37.png")','url("./img/imgbg/38.jpg")','url("./img/imgbg/39.jpg")','url("./img/imgbg/40.jpg")','url("./img/imgbg/208702.jpg")','url("./img/imgbg/208702.jpg")','url("./img/imgbg/208702.jpg")','url("./img/imgbg/208702.jpg")','url("./img/imgbg/208702.jpg")',
-
-    'url("./img/imgbg/c.jpg")','url("./img/imgbg/d.jpg")','url("./img/imgbg/e.jpg")','url("./img/imgbg/f.jpg")','url("./img/imgbg/h.jpg")','url("./img/imgbg/j.jpg")','url("./img/imgbg/k.jpg")','url("./img/imgbg/l.jpg")','url("./img/imgbg/m.jpg")','url("./img/imgbg/n.jpg")','url("./img/imgbg/o.jpg")','url("./img/imgbg/r.jpg")','url("./img/imgbg/t.jpg")','url("./img/imgbg/v.jpg")','url("./img/imgbg/w.jpg")','url("./img/imgbg/y.jpg")','url("./img/imgbg/z.jpg")',
-
-    'url("./img/imgbg/584631.jpg")','url("./img/imgbg/692298.jpg")','url("./img/imgbg/ambiance.jpg")','url("./img/imgbg/cimetière.png")','url("./img/imgbg/forêts.jpg")','url("./img/imgbg/lapin8.jpg")','url("./img/imgbg/neige.png")','url("./img/imgbg/ouff.jpg")','url("./img/imgbg/village.jpg")',
-
-    'url("./img/imgbg/20211124_114046.jpg")','url("./img/imgbg/20211206_151745.jpg")','url("./img/imgbg/20211206_151747.jpg")','url("./img/imgbg/20211206_151759.jpg")','url("./img/imgbg/20211206_151802.jpg")',
-
+   'url("./img/imgbg/2.jpg")','url("./img/imgbg/3.jpg")','url("./img/imgbg/4.jpg")','url("./img/img_country/plage.jpg")',
 
 ]
         let section = document.querySelector('section')
