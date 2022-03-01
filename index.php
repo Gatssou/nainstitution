@@ -10,7 +10,7 @@ logged_only();
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../sass/index.css">
+  <link rel="stylesheet" href="./sass/index.css">
   <link rel="shortcut icon" href="../img/bierre.jpg" type="image">
   <link rel="stylesheet" href="../fa/css/all.css">
   <title>Nain ventura</title>
@@ -79,5 +79,5 @@ logged_only();
   </div>
 
 </body>
-<script src="../js/index.js"></script>
+<script src="./js/index.js"></script>
 </html>
