@@ -33,10 +33,10 @@ logged_only();
         <a href="./php/index.php"><img src="./img/index/home.png" alt=""></a>
         </li>
         <li style="--i:2;">
-        <a href=""><img src="./img/img_index/femme.png" height="80px" width="80px" alt=""></a>
+        <a href="./personnagef.php"><img src="./img/img_index/femme.png" height="80px" width="80px" alt=""></a>
         </li>
         <li style="--i:3;">
-        <a href=""><img src="./img/img_index/Sans titre.png" height="100px" width="110px" alt=""></a>
+        <a href="./personnage.php"><img src="./img/img_index/Sans titre.png" height="100px" width="110px" alt=""></a>
         </li>
         <li style="--i:4;">
         <a href=""><img src="./img/img_index/kitsurvie.png" height="80px" width="80px" alt=""></a>
