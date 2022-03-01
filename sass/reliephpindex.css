@@ -227,32 +227,7 @@ border:inset 1px rgba(240, 6, 6, 0.719);
   align-items: center;
   text-align: center;
   font-size: 1em;
-  
- 
-  
- 
 }
-.hover-effect{
-  animation-duration: 25s;
-  animation-name: plop;
-}
-@keyframes plop {
-  from {
-    margin-left: 100%;
-    font-size: 300%;
-  }
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-  }
-
-  to {
-    margin-left: 0%;
-    font-size: 200%;
-  }
-}
-
-
 
 .publicite p:active{
   border-radius: 30%;

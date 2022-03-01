@@ -3,6 +3,7 @@ session_start();
 require './include/functions.php';
 logged_only();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,6 +77,7 @@ logged_only();
  </div>
  <footer>
  </footer>
+ 
  
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
