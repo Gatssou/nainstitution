@@ -40,9 +40,9 @@ logged_only();
             <div class="av1">
                 <div class="ttl">Aventurier 1</div>
                 <div id="avs">
-                    <div class="st av"><i class="far fa-file-alt"></i>Hi</div>
-                    <div class="nd av"><i class="fas fa-dragon"></i>Hi</div>
-                    <div class="rd av"><i class="fab fa-envira"></i>Hi</div>
+                    <div class="st av"><i class="fa fa-facebook"></i></div>
+                    <div class="nd av"><i class="fa fa-twitter"></i></div>
+                    <div class="rd av"><i class="fa fa-instagram"></i></div>
                 </div>
             </div>
 
@@ -57,7 +57,6 @@ logged_only();
                         commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
                 </a>
             </div>
-
         </section>
 
         <section id="pic_2" class="s2">
@@ -104,7 +103,7 @@ logged_only();
     </div>
 
 </body>
-
+<script src="./js/stock/jquery-3.6.0.min.js"></script>
+<script src="./js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="./js/index.js"></script>
-
 </html>

@@ -51,19 +51,26 @@ window.onscroll = () => {
 }
 
 /* Button menu */
-$(document).ready(function openAv(){
+$(document).ready(function(){
+
   $(".av1").mouseenter(function(){
-    $(".avs").css({
-      transform: "translateY(20vw)",
-      width: "20vw",
-      bottom: "10vh"
+    $(".st").css({
+      transform: "translateY(10vh)",
+      background: "black",
+      right: "40%"
+    })
+    $(".nd").css({
+      transform: "translateY(-10vh)",
+      background: "grey"
+    })
+    $(".rd").css({
+      transform: "translateY(10vh)",
+      background: "white"
     })
   })
-  $(".av1").click(function closeAv(){
-    $(".avs").css({
-      width: "0",
-      transform: "translateY(20vw)",
-      bottom: "0"
-    });
-  });
+  $(".av1").click(function(){
+    $(".st").hide(1000);
+    $(".nd").hide(1000);
+    $(".rd").hide(1000);
+  })
 });

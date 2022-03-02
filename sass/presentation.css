@@ -87,7 +87,6 @@ button{
   border: none;
   cursor: pointer;
   background-color: black;
-  color: red;
   font-size: 2em;
   border-radius: 20px;
   height: 5vh;
@@ -106,17 +105,16 @@ position: absolute;
 width: 200%;
 height: 500%;
 border-radius: 100%;
-transition: .36s cubic-bezier(0.4, 0.0, 1, 1);
+transition: .5s cubic-bezier(0.4, 0.0, 1, 1);
 }
 button:hover .text{
 color: white;
 }
-
 button:hover{
 color: transparent;
 }
 .text{
-  color: red;
+  color: rgb(77, 146, 71);
   position: relative;
   top: 0;
   height: 100%;
@@ -134,5 +132,5 @@ color: transparent;
 .btn:hover::before{
   transform: translate(-45%, -34%) translateZ(0);
   color: white;
-  background-color: red;
+  background-color: rgb(77, 146, 71);
 }

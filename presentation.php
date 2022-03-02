@@ -139,7 +139,8 @@ require_once '/laragon/www/nainstitution/presentation.php';
 ?>
 <div class="overlay">
     <div class="cookie_alert">
-        <p>Hello world je suis un mechant cookies. Oui je suis vraiment mais vraiment un mechant cookie.
+      <img src="./img/draw/cookies.gif" style="width: 5vw;" alt="">
+        <p>Hello world je suis un méchant cookie. Oui je suis vraiment mais vraiment un méchant cookie.
             <a href="./include/accept_cookie.php">J'accepte</a></p>
     </div>
 </div>
