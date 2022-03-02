@@ -14,7 +14,7 @@ logged_only();
 </head>
 <body>
     <section>
-    <div class="globe"> <img src="./img/imagepersosnage/5.gif" alt="">
+    <div id="globe"> <img src="./img/imagepersosnage/terretrois.gif" alt="">
 </div>
     </section>
   
@@ -86,7 +86,7 @@ logged_only();
 <script>
     function changeBg(){
 const images = [
-    'url("./img/imgbg/2.jpg")','url("./img/imgbg/3.jpg")','url("./img/imgbg/4.jpg")','url("./img/img_country/plage.jpg")',
+    'url("./img/imagepersosnage/etoile.jpg")','url("./img/imagepersosnage/etoile.jpg")','url("./img/imgbg/4.jpg")','url("./img/img_country/plage.jpg")',
 ]
         const section = document.querySelector('section')
         const bg = images[Math.floor(Math.random() * images.length)
@@ -95,5 +95,6 @@ const images = [
     }
     setInterval(changeBg, 5000)
 </script>
+
 </body>
 </html>
