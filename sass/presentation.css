@@ -86,7 +86,7 @@ button{
   text-decoration: none;
   border: none;
   cursor: pointer;
-  background-color: white;
+  background-color: black;
   color: red;
   font-size: 2em;
   border-radius: 20px;
@@ -130,8 +130,6 @@ color: transparent;
 }
 .btn::before{
   transform: translate(-110%, -110%) translateZ(0);
-  color: red;
-  background-color: white;
 }
 .btn:hover::before{
   transform: translate(-45%, -34%) translateZ(0);
