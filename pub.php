@@ -3,6 +3,7 @@ session_start();
 require './include/functions.php';
 logged_only();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,12 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
+
     <header>
+    <div class="image">
+    <img src="./img/wrong-pass.jpg" alt="">
+    
+</div>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 </style> 
@@ -54,7 +60,8 @@ logged_only();
     </section>
     <div class="publicite">
      <div class="hover-effect">
-    <a href=""><img src="./img/imgbg/13.jpg" alt="" height="100px" width="100px"  ></a> <a href=""><img src="./img/imgbg/14.jpg" alt="" height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/15.jpg" alt="" height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/19.jpg" alt="" height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/20.jpg" alt=""height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/17.jpg" alt=""height="100px" width="100px" ></a> <a href=""><img src="./img/imgbg/18.jpg" alt=""height="100px" width="100px" ></a>
+         
+   <p>T</p><p>R</p><p>A</p><p>I</p><p>N</p>
     </div>
 </div>
 </header>
@@ -70,6 +77,16 @@ logged_only();
  </div>
  <footer>
  </footer>
+ 
+ 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $('.overlay').on('click', function(e){
+            if (e.target !== this){
+                return;
+            }
+        });
+    </script>
     </body>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

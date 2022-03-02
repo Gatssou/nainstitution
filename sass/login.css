@@ -273,6 +273,35 @@ input[type="checkbox"]:checked + .app .toggle{
   text-align: center;
   border-radius: 0 0 15px 15px;
 }
+.cookie{
+  border-top: rgb(255, 0, 0) solid 5px;
+  border: solid white 2px;
+  background: rgba(0, 0, 0, 0.808);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-family: 'Signika Negative',sans-serif;
+}
+.text-cookie p{
+  font-size: large;
+}
+.button-cookie{
+  padding-bottom: 15px;
+}
+.button-cookie a{
+border: ridge 1px red;
+padding: 10px;
+background: rgba(255, 0, 0, 0.726);
+border-radius: 7px;
+color: white;
+text-decoration: none;
+}
+
 /*version portable*/
 @media screen and (max-width: 900px){
   .labin{

@@ -221,14 +221,18 @@ border:inset 1px rgba(240, 6, 6, 0.719);
 /**BANDEAU publicité**/
 .publicite{
   display: flex;
- flex-wrap: wrap;
-  height: 30vh;
-  border: 1px ridge black;
+  height: 20vh;
+  border: 1px ridge rgb(0, 0, 0);
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 1em;
 }
-.publicite img:hover{
+
+.publicite p:active{
   border-radius: 30%;
 border:inset 1px black;
 }
+
+
+  

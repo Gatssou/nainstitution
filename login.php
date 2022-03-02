@@ -1,4 +1,10 @@
 <?php
+if(isset($_GET['accepte-cookie'])){
+    setcookie('accepte-cookie', 'true', time() + 365*24*3600);
+    header('Location:./pub.php')
+}
+?>
+<?php
 include './include/header.php';
 ?>
 
@@ -53,11 +59,22 @@ include './include/header.php';
         echo 'Bad pass';
        }
        }
-      
-    
-
 ?>
 </section>
 <?php
 include './include/footer.php';
 ?>
+<?php
+ if(!isset($_COOKIE['accepte-cookie'])){
+ ?>
+ <div class="cookie">
+     <div class="text-cookie">
+         <p>Hello world je suis un mechant cookies </p>
+     </div>
+     <div class="button-cookie">
+         <a href="?accepte-cookie">Oui je suis vraiment mais vraiment un mechant cookie</a>
+     </div>
+ </div>
+ <?php
+ }
+ ?>
