@@ -128,9 +128,6 @@ input {
   justify-content: space-around;
   height: 3vh;
 }
-.title{
-  font-size: 70px;
-}
 .nav{
     position: fixed;
     left: -90px;
@@ -152,10 +149,13 @@ input {
     margin-top: 2.5vh;
 }
 /** image effect start  **/
-
+#pic_1{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+}
 .containere{
-    position: fixed;
-    right: -50px;
+   grid-area: 1 / 4 / 4 / 6;
+   margin-left: 4vw;
 }
 
 .containere h1{
@@ -388,15 +388,50 @@ a {
   color: white;
 }
 
-/*Arrow*/
-#arrow{
-  width: 0;
-  height: 0;
-  border-left: 18px solid red;
-  border-right: 18px solid red;
-  border-bottom: 30px solid blue;
+/*aventurier 1*/
+.av1{
+  grid-area: 2 / 3 / 3 / 4;
 }
-
+.ttl{
+  display: block;
+  font-size: 2em;
+  z-index: 99;
+  color: #FFF;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.av{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+  
+  a{
+    color: #fff;
+  }
+}
+.avs{
+  top: -5vh;
+  z-index: 1;
+}
+.clicked{
+  opacity: 1;
+  transition: 1.2s all ease;
+  transform: translateY(56px);
+}
+.st, .nd, .rd{
+  transition: 1s ease;
+}
+.pop{
+  visibility: hidden;
+}
+.x{
+  color: red;
+}
 
 /*** RESPONSIVE ***/
 

@@ -49,3 +49,64 @@ window.onscroll = () => {
   }
   window.scroll(0, window.screen.height)
 }
+
+/* Button menu */
+$(document).ready(function(){
+
+  $(".av1").mouseenter(function(){
+    $(".st").css({
+      transform: "translateX(-7vw)",
+      background: "black"
+    })
+    $(".nd").css({
+      transform: "translateY(-10vh)",
+      background: "grey",
+      right: "4%"
+    })
+    $(".rd").css({
+      transform: "translateY(10vh)",
+      background: "white",
+      right: "20%"
+    })
+  })
+  $(".av1").click(function(){
+    $(".st").css({
+      background: "transparent"
+    })
+    $(".nd").css({
+      background: "transparent"
+    })
+    $(".rd").css({
+      background: "transparent"
+    })
+  })
+})
+
+$(document).ready(function(){
+  $('.st').click(function openPop(){
+    $('.pop').css({
+      visibility: "visible",
+      color: "red",
+      backgroundColor: "white",
+    })
+  })
+  $('.pop').click(function closePop(){
+    $('.pop').css({
+      visibility: "hidden",
+    })
+  })
+
+  $('.nd').click(function openTog(){
+    $('tog').css({
+      visibility: "visible",
+      color: "blue",
+      backgroundColor: "white",
+      
+    })
+  })
+  $('.tog').click(function closeTog(){
+    $('.tog').css({
+      visibility: "hidden",
+    })
+  })
+})

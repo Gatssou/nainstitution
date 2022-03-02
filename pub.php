@@ -59,14 +59,15 @@ logged_only();
     </div>
     </section>
     <div class="publicite">
+        
      <div class="hover-effect">
-         
+
    <p>T</p><p>R</p><p>A</p><p>I</p><p>N</p>
     </div>
 </div>
 </header>
 <div class="selectionner">
-    <h1 class="selec"> Jeux Enigme </h1>
+    <h1 class="selec"> Explorateur du Monde </h1>
         </div>
             <div class="tout">
                <div class="suivant"><a href="./personnage.php"><img  src="./img/img_log/homme.png" alt=""></a></div>
@@ -77,7 +78,6 @@ logged_only();
  </div>
  <footer>
  </footer>
- 
  
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
