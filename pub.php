@@ -3,6 +3,7 @@ session_start();
 require './include/functions.php';
 logged_only();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

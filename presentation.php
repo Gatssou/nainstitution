@@ -109,7 +109,7 @@ logged_only();
     <path fill="none" stroke="white" stroke-width=".1" id="star-path" d="M" />-->
   
 
-  <a href="./index.php">
+  <a href="./pub.php">
     <button class="btn but">
       <div class="text">Join us !</div>
     </button>
@@ -122,6 +122,80 @@ logged_only();
 
 
 </body>
+
+<!-- COOKIE -->
+
+<?php
+if(isset($_COOKIE['accept_cookie'])){
+    $showcookie = false;
+}else{
+    $showcookie = true;
+}
+require_once '/laragon/www/nainstitution/presentation.php';
+?>
+
+<?php
+    if($showcookie){
+?>
+<div class="overlay">
+    <div class="cookie_alert">
+        <p>Hello world je suis un mechant cookies. Oui je suis vraiment mais vraiment un mechant cookie.
+            <a href="./include/accept_cookie.php">J'accepte</a></p>
+    </div>
+</div>
+
+<?php
+    }
+?>
+<style>
+    .cookie_alert {
+        text-align: center;
+        position: fixed;
+        bottom: 25vh;
+        left: 25vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+        width: 50vw;
+        color: white;
+        padding: 25px;
+        border-radius: 25px;
+        background-color: black;
+        font-size: 2em;
+    }
+    .cookie_alert a{
+        text-decoration: none;
+        border: 5px solid blue;
+        border-radius: 25px;
+        padding: 25px;
+        color: blue;
+        transition: 1.2 ease;
+    }
+    a:hover{
+        color: white;
+        background: blue;
+        transition: 2s;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, .6);
+    }
+</style>
+<script src="./js/stock/jquery-3.6.0.min.js"></script>
+<script>
+    $('overlay').on('click', function(e) {
+        if (e.target !== this) {
+            return;
+        }
+    });
+</script>
+
 <script src="../js/stock/jquery-3.6.0.min.js"></script>
 <script src="../js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="./js/presentation.js"></script>
