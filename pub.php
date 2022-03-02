@@ -3,7 +3,6 @@ session_start();
 require './include/functions.php';
 logged_only();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,8 +58,9 @@ logged_only();
     </div>
     </section>
     <div class="publicite">
+        
      <div class="hover-effect">
-         
+
    <p>T</p><p>R</p><p>A</p><p>I</p><p>N</p>
     </div>
 </div>
@@ -77,7 +77,6 @@ logged_only();
  </div>
  <footer>
  </footer>
- 
  
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
