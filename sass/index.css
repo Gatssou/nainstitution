@@ -156,10 +156,6 @@ input {
   height: 3vh;
 }
 
-.title {
-  font-size: 70px;
-}
-
 .nav {
   position: fixed;
   left: -90px;
@@ -184,9 +180,14 @@ input {
 }
 
 /** image effect start  **/
+#pic_1 {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+}
+
 .containere {
-  position: fixed;
-  right: -50px;
+  grid-area: 1/4/4/6;
+  margin-left: 4vw;
 }
 
 .containere h1 {
@@ -218,7 +219,7 @@ input {
 }
 
 #bouddhaa {
-  background-image: url(../img/img_country/amazonie_forest.jpg);
+  background-image: url(../img/imgbg/16.jpg);
   background-size: cover;
   height: 700px;
   opacity: 0.7;
@@ -234,7 +235,7 @@ input {
 }
 
 #bouddhaaa {
- 
+  background-image: url(../img/imgbg/22.jpg);
   background-size: cover;
   height: 700px;
   width: 600px;
@@ -246,7 +247,7 @@ input {
 }
 
 #bouddhaaaa {
-  
+  background-image: url(../img/imgbg/36.jpg);
   background-size: cover;
   height: 700px;
   width: 600px;
@@ -442,19 +443,67 @@ a {
   color: white;
 }
 
-/*Arrow*/
-.arrow_box_t {
-  position: relative;
-  background: #88b7d5;
-  border: 4px solid #c2e1f5;
+/*aventurier 1*/
+.av1 {
+  grid-area: 2/3/3/4;
 }
 
-.arrow_box_t:after, .arrow_box_t:before {
-  bottom: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: "";
-  height: 0;
+.ttl {
+  font-size: 2em;
+  border-radius: 10px;
+  width: 15vw;
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: transparent;
+  border-radius: 20px;
+  color: #FFF;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+.av {
+  opacity: 0;
+  position: relative;
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+}
+.av i {
+  margin-top: 10px;
+}
+.av a {
+  color: #fff;
+}
+
+.clicked {
+  opacity: 1;
+  transition: 1.2s all ease;
+  transform: translateY(56px);
+}
+
+.st {
+  background: #000;
+}
+
+.nd {
+  background-color: #8093F1;
+}
+
+.rd {
+  background: #aaa;
+}
+
+/*Arrow*/
+#arrow {
   width: 0;
   height: 0;
   border-left: 18px solid red;
@@ -485,16 +534,11 @@ a {
 .supergrille {
   margin: 0 -10px -10px auto;
   padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(10, 10, 10, 0.78039);
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  filter: brightness(100%);
+  justify-content: center;
 }
 
 .articlee {

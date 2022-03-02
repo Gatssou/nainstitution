@@ -13,7 +13,7 @@ logged_only();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./sass/index.css">
   <link rel="shortcut icon" href="../img/bierre.jpg" type="image">
-  <link rel="stylesheet" href="../fa/css/all.css">
+  <link rel="stylesheet" href="./fa/css/all.css">
   <title>Nain ventura</title>
 </head>
 
@@ -36,7 +36,14 @@ logged_only();
 
         <div id="triangle"></div>
         
-
+        <div class="av1">
+            <div class="ttl">Aventurier 1</div>
+            <div id="avs">
+                <div class="st av"><i class="far fa-file-alt"></i>Hi</div>
+                <div class="nd av"><i class="fas fa-dragon"></i>Hi</div>
+                <div class="rd av"><i class="fab fa-envira"></i>Hi</div>
+            </div>
+        </div>
         
 
         <div class="containere">

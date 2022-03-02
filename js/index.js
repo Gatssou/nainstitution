@@ -49,3 +49,21 @@ window.onscroll = () => {
   }
   window.scroll(0, window.screen.height)
 }
+
+/* Button menu */
+$(document).ready(function openAv(){
+  $(".av1").mouseenter(function(){
+    $(".avs").css({
+      transform: "translateY(20vw)",
+      width: "20vw",
+      bottom: "10vh"
+    })
+  })
+  $(".av1").click(function closeAv(){
+    $(".avs").css({
+      width: "0",
+      transform: "translateY(20vw)",
+      bottom: "0"
+    });
+  });
+});
