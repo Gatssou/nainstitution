@@ -149,21 +149,18 @@ require_once '/laragon/www/nainstitution/presentation.php';
 ?>
 <style>
     .cookie_alert {
-        text-align: center;
-        position: fixed;
-        bottom: 25vh;
-        left: 25vw;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        height: 50vh;
-        width: 50vw;
-        color: white;
-        padding: 25px;
-        border-radius: 25px;
-        background-color: black;
-        font-size: 2em;
+      border-top: rgb(255, 0, 0) solid 5px;
+  border: solid white 2px;
+  background: rgba(0, 0, 0, 0.808);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-family: 'Signika Negative',sans-serif;
     }
     .cookie_alert a{
         text-decoration: none;
@@ -173,7 +170,7 @@ require_once '/laragon/www/nainstitution/presentation.php';
         color: blue;
         transition: 1.2 ease;
     }
-    a:hover{
+   .cookie_alert a:hover{
         color: white;
         background: blue;
         transition: 2s;
