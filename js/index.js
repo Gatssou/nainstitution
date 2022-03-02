@@ -55,22 +55,58 @@ $(document).ready(function(){
 
   $(".av1").mouseenter(function(){
     $(".st").css({
-      transform: "translateY(10vh)",
-      background: "black",
-      right: "40%"
+      transform: "translateX(-7vw)",
+      background: "black"
     })
     $(".nd").css({
       transform: "translateY(-10vh)",
-      background: "grey"
+      background: "grey",
+      right: "4%"
     })
     $(".rd").css({
       transform: "translateY(10vh)",
-      background: "white"
+      background: "white",
+      right: "20%"
     })
   })
   $(".av1").click(function(){
-    $(".st").hide(1000);
-    $(".nd").hide(1000);
-    $(".rd").hide(1000);
+    $(".st").css({
+      background: "transparent"
+    })
+    $(".nd").css({
+      background: "transparent"
+    })
+    $(".rd").css({
+      background: "transparent"
+    })
   })
-});
+})
+
+$(document).ready(function(){
+  $('.st').click(function openPop(){
+    $('.pop').css({
+      visibility: "visible",
+      color: "red",
+      backgroundColor: "white",
+    })
+  })
+  $('.pop').click(function closePop(){
+    $('.pop').css({
+      visibility: "hidden",
+    })
+  })
+
+  $('.nd').click(function openTog(){
+    $('tog').css({
+      visibility: "visible",
+      color: "blue",
+      backgroundColor: "white",
+      
+    })
+  })
+  $('.tog').click(function closeTog(){
+    $('.tog').css({
+      visibility: "hidden",
+    })
+  })
+})

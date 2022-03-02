@@ -393,24 +393,15 @@ a {
   grid-area: 2 / 3 / 3 / 4;
 }
 .ttl{
+  display: block;
   font-size: 2em;
-  border-radius: 10px;
-  width: 15vw;
   z-index: 99;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  background: transparent;
-  border-radius: 20px;
   color: #FFF;
   letter-spacing: 1px;
   font-weight: 200;
 }
 .av{
   position: relative;
-  margin: 8px;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -418,12 +409,14 @@ a {
   color: #FFF;
   font-size: 20px;
   text-align: center;
-  i {
-   margin-top: 10px;
-  }
+  
   a{
     color: #fff;
   }
+}
+.avs{
+  top: -5vh;
+  z-index: 1;
 }
 .clicked{
   opacity: 1;
@@ -431,8 +424,13 @@ a {
   transform: translateY(56px);
 }
 .st, .nd, .rd{
-  background: transparent;
   transition: 1s ease;
+}
+.pop{
+  visibility: hidden;
+}
+.x{
+  color: red;
 }
 
 /*** RESPONSIVE ***/

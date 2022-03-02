@@ -40,11 +40,28 @@ logged_only();
             <div class="av1">
                 <div class="ttl">Aventurier 1</div>
                 <div id="avs">
-                    <div class="st av"><i class="fa fa-facebook"></i></div>
-                    <div class="nd av"><i class="fa fa-twitter"></i></div>
-                    <div class="rd av"><i class="fa fa-instagram"></i></div>
+                    <a href="#" onclick="openPop()">
+                        <div class="st av"></div>
+                    </a>
+                    <a href="#" onclick="openTog()">
+                        <div class="nd av"></div>
+                    </a>
+                    <div class="rd av"></div>
                 </div>
             </div>
+
+            <div class="pop">
+                <a href="javascript:void(0)" class="x" onclick="closePop()">X</a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+
+            <div class="tog">
+                <a href="javascript:void(0)" class="x" onclick="closeTog()">X</a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            
 
 
             <div class="containere">
