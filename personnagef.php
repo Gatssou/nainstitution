@@ -13,22 +13,19 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
+    
     <section>
     <div id="globe"> <img src="./img/imagepersosnage/terretrois.gif" alt="">
 </div>
     </section>
-  
-  
     <div class="contien"> 
-  
     <div class="menup ">
         <div class="persos"> 
             <div class="left">
             </div>
             <div class="right">
                 <h1>Personnage uno</h1>
-            </div>
-            
+            </div>     
     </div>
             <div class="perso-back"> 
            
@@ -44,7 +41,7 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/Annie Smith-Peck.jpg" height="400px" alt=""> 
+                <img src="./img/imagepersosnage/Annie Smith-Peck.jpg" height="400px"   alt=""> 
             </div>     
     </div>
     <div class="menup">
@@ -68,11 +65,13 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
+                
                 <img src="./img/imagepersosnage/Annie “Londonderry” Cohen Kopchovsky.jpg" height="400px" alt=""> 
                 </a>
             </div>         
     </div>
     </div>
+    
     <footer>
     <div class="retour"><a href="./pub.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
  <div class="deco"><a href="./include/disconnect.php">Se déconnecter</a></div>
@@ -86,7 +85,7 @@ logged_only();
 <script>
     function changeBg(){
 const images = [
-    'url("./img/imagepersosnage/etoile.jpg")','url("./img/imagepersosnage/etoile.jpg")','url("./img/imgbg/4.jpg")','url("./img/img_country/plage.jpg")',
+    'url("./img/imagepersosnage/etoile.jpg")','url("./img/imagepersosnage/595000.jpg")','url("./img/imagepersosnage/voixlacte.jpg")','url("./img/imagepersosnage/274697.jpg")',
 ]
         const section = document.querySelector('section')
         const bg = images[Math.floor(Math.random() * images.length)
@@ -95,6 +94,5 @@ const images = [
     }
     setInterval(changeBg, 5000)
 </script>
-
 </body>
 </html>
