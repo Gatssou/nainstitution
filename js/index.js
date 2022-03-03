@@ -51,22 +51,29 @@ window.onscroll = () => {
 }
 
 /* Button menu */
+//SECTION 1
 $(document).ready(function(){
 
   $(".av1").mouseenter(function(){
     $(".st").css({
-      transform: "translateX(-7vw)",
+      transform: "translateX(-5vw)",
+      top: "-4vh",
       background: "black"
     })
     $(".nd").css({
-      transform: "translateY(-10vh)",
+      transform: "translateY(-12vh)",
       background: "grey",
-      right: "4%"
+      right: "-5%"
     })
     $(".rd").css({
-      transform: "translateY(10vh)",
+      transform: "translateY(5vh)",
       background: "white",
       right: "20%"
+    })
+    $(".th").css({
+      transform: "translateY(5vh)",
+      background: "#407261",
+      right: "5%"
     })
   })
   $(".av1").click(function(){
@@ -79,15 +86,25 @@ $(document).ready(function(){
     $(".rd").css({
       background: "transparent"
     })
+    $(".th").css({
+      background: "transparent"
+    })
   })
 })
 
+//Fonction qui ouvre la bulle au clique pour first (black)
 $(document).ready(function(){
   $('.st').click(function openPop(){
     $('.pop').css({
       visibility: "visible",
-      color: "red",
-      backgroundColor: "white",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      left: "10vw",
+      top: "15vh",
+      width: "20vw",
     })
   })
   $('.pop').click(function closePop(){
@@ -96,17 +113,223 @@ $(document).ready(function(){
     })
   })
 
-  $('.nd').click(function openTog(){
-    $('tog').css({
+//Fonction pour second (grey)
+  $('.nd').click(function openPopnd(){
+    $('.popnd').css({
       visibility: "visible",
-      color: "blue",
-      backgroundColor: "white",
-      
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      left: "23vw",
+      width: "10vw"
     })
   })
-  $('.tog').click(function closeTog(){
-    $('.tog').css({
+  $('.popnd').click(function closePopnd(){
+    $('.popnd').css({
+      visibility: "hidden",
+    })
+  })
+
+//Fonction pour third (white)
+  $('.rd').click(function openPoprd(){
+    $('.poprd').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "50vh",
+      left: "-25vw",
+      width: "15vw",
+      height: "25vh",
+    })
+  })
+  $('.poprd').click(function closePoprd(){
+    $('.poprd').css({
+      visibility: "hidden",
+    })
+  })
+//Fonction pour fourth (blue)
+  $('.th').click(function openPopth(){
+    $('.popth').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "30vh",
+      width: "15vw",
+      height: "15vh",
+      left: "40vw"
+    })
+  })
+  $('.popth').click(function closePopth(){
+    $('.popth').css({
       visibility: "hidden",
     })
   })
 })
+
+//SECTION 2
+$(document).ready(function(){
+
+  $(".av2").mouseenter(function(){
+    $(".st2").css({
+      transform: "translateX(-5vw)",
+      top: "-4vh",
+      background: "black"
+    })
+    $(".nd2").css({
+      transform: "translateY(-12vh)",
+      background: "grey",
+      right: "-14%"
+    })
+    $(".rd2").css({
+      transform: "translateY(5vh)",
+      background: "white",
+      right: "13%"
+    })
+    $(".th2").css({
+      transform: "translateY(5vh)",
+      background: "#407261",
+      right: "-5%"
+    })
+    $(".fi2").css({
+      transform: "translateX(10vh)",
+      background: "#f5deb3",
+      top: "-4vh"
+    })
+  })
+  $(".av2").click(function(){
+    $(".st2").css({
+      background: "transparent"
+    })
+    $(".nd2").css({
+      background: "transparent"
+    })
+    $(".rd2").css({
+      background: "transparent"
+    })
+    $(".th2").css({
+      background: "transparent"
+    })
+    $(".fi2").css({
+      background: "transparent"
+    })
+  })
+})
+
+//Fonction qui ouvre la bulle au clique pour first (black)
+$(document).ready(function(){
+  $('.st2').click(function openPop2(){
+    $('.pop2').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      left: "10vw",
+      top: "15vh",
+      width: "20vw",
+    })
+  })
+  $('.pop2').click(function closePop2(){
+    $('.pop2').css({
+      visibility: "hidden",
+    })
+  })
+
+//Fonction pour second (grey)
+  $('.nd2').click(function openPopnd2(){
+    $('.popnd2').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      left: "23vw",
+      width: "10vw"
+    })
+  })
+  $('.popnd2').click(function closePopnd2(){
+    $('.popnd2').css({
+      visibility: "hidden",
+    })
+  })
+
+//Fonction pour third (white)
+  $('.rd2').click(function openPoprd2(){
+    $('.poprd2').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "50vh",
+      left: "-25vw",
+      width: "15vw",
+      height: "25vh",
+    })
+  })
+  $('.poprd2').click(function closePoprd2(){
+    $('.poprd2').css({
+      visibility: "hidden",
+    })
+  })
+//Fonction pour fourth (blue)
+  $('.th2').click(function openPopth2(){
+    $('.popth2').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "60vh",
+      width: "15vw",
+      height: "15vh",
+      left: "-9vw"
+    })
+  })
+  $('.popth2').click(function closePopth2(){
+    $('.popth2').css({
+      visibility: "hidden",
+    })
+  })
+//Fonction pour fifth (wheat)
+  $('.fi2').click(function openPopfi2(){
+    $('.popfi2').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "30vh",
+      width: "15vw",
+      height: "15vh",
+      left: "-13vw"
+    })
+  })
+  $('.popfi2').click(function closePopfi2(){
+    $('.popfi2').css({
+      visibility: "hidden",
+    })
+  })
+});
+
+
+if(window.matchMedia("(max-width: 576px)").matches){
+  $('.st2').click(function closePop(){
+    $('.pop').css({
+      visibility: "visible"
+    })
+  })
+}

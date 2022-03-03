@@ -36,19 +36,19 @@ body::-webkit-scrollbar {
   
 }
 #pic_1 {
-    background-image: url(../img/img_country/amazonie.jpg);
+    background-color: #4d6652;
     @include back;
 }
 #pic_2{
-    background-image: url(../img/img_log/224557.jpg);
+    background-color: #4d6652cc;
     @include back;
 }
 #pic_3{
-    background-image: url(../img/img_log/659797.jpg);
+    background-color: #4d6652a2;
     @include back;
 }
 #pic_4{
-    background-image: url(../img/img_log/783437.jpg);
+    background-color: #4d665280;
     @include back;
 }
   
@@ -149,7 +149,7 @@ input {
     margin-top: 2.5vh;
 }
 /** image effect start  **/
-#pic_1{
+#pic_1, #pic_2{
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
@@ -389,6 +389,7 @@ a {
 }
 
 /*aventurier 1*/
+//sec1
 .av1{
   grid-area: 2 / 3 / 3 / 4;
 }
@@ -423,15 +424,35 @@ a {
   transition: 1.2s all ease;
   transform: translateY(56px);
 }
-.st, .nd, .rd{
+.st, .nd, .rd, .th{
   transition: 1s ease;
 }
-.pop{
+.pop, .popnd, .poprd, .popth{
   visibility: hidden;
+  cursor: pointer;
 }
-.x{
-  color: red;
+//sec2
+.av2{
+  grid-area: 2 / 3 / 3 / 4;
 }
+.ttl2{
+  display: block;
+  font-size: 2em;
+  z-index: 99;
+  color: #FFF;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.st2, .nd2, .rd2, .th2, .fi2{
+  transition: 1s ease;
+}
+.pop2, .popnd2, .poprd2, .popth2, .popfi2{
+  visibility: hidden;
+  cursor: pointer;
+}
+
+
+
 
 /*** RESPONSIVE ***/
 

@@ -15,6 +15,7 @@ logged_only();
     <link rel="stylesheet" href="./sass/index.css">
     <link rel="shortcut icon" href="../img/bierre.jpg" type="image">
     <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./sass/media_q.css">
     <title>Nain ventura</title>
 </head>
 
@@ -34,39 +35,53 @@ logged_only();
         </nav>
 
         <section id="pic_1" class="s1">
-
-            <div id="triangle"></div>
-
             <div class="av1">
-                <div class="ttl">Aventurier 1</div>
+                <div class="ttl">Name</div>
                 <div id="avs">
                     <a href="#" onclick="openPop()">
                         <div class="st av"></div>
                     </a>
-                    <a href="#" onclick="openTog()">
+                    <a href="#" onclick="openPopnd()">
                         <div class="nd av"></div>
                     </a>
-                    <div class="rd av"></div>
+                    <a href="#" onclick="openPoprd()">
+                        <div class="rd av"></div>
+                    </a>
+                    <a href="#" onclick="openPopth()">
+                        <div class="th av"></div>
+                    </a>
                 </div>
             </div>
 
             <div class="pop">
-                <a href="javascript:void(0)" class="x" onclick="closePop()">X</a>
+                <a href="javascript:void(0)" class="x" onclick="closePop()"></a>
                 <h1>Hi</h1>
-                <p>test pop up</p>
+                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
             </div>
 
-            <div class="tog">
-                <a href="javascript:void(0)" class="x" onclick="closeTog()">X</a>
+            <div class="popnd">
+                <a href="javascript:void(0)" onclick="closePopnd()"></a>
                 <h1>Hi</h1>
-                <p>test pop up</p>
+                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
+            </div>
+
+            <div class="poprd">
+                <a href="javascript:void(0)" onclick="closePoprd()"></a>
+                <h1>Hi</h1>
+                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
+            </div>
+
+            <div title="Cliquez n'importe où pour fermer" class="popth">
+                <a href="javascript:void(0)" onclick="closePopth()"></a>
+                <h1>Hi</h1>
+                <p>Lorem, ipsum dolor.</p>
             </div>
             
 
 
             <div class="containere">
                 <a href="" id="bouddha">
-                    <h1>Mr Kangourou IDS de survie 9.9</h1>
+                    <h1>Prénom Nom<br> Indice de survie 7.9</h1>
                     <p class="infos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam
                         veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi
                         corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur,
@@ -77,7 +92,59 @@ logged_only();
         </section>
 
         <section id="pic_2" class="s2">
-            <h1>Aventurier 2</h1>
+        <div class="av2">
+                <div class="ttl2">Aventurier 2</div>
+                <div id="avs2">
+                    <a href="#pic_2" onclick="openPop2()">
+                        <div class="st2 av"></div>
+                    </a>
+                    <a href="#pic_2" onclick="openPopnd2()">
+                        <div class="nd2 av"></div>
+                    </a>
+                    <a href="#pic_2" onclick="openPoprd2()">
+                        <div class="rd2 av"></div>
+                    </a>
+                    <a href="#pic_2" onclick="openPopth2()">
+                        <div class="th2 av"></div>
+                    </a>
+                    <a href="#pic_2" onclick="openPopfi2()">
+                        <div class="fi2 av"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pop2" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" class="x" onclick="closePop2()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+
+            <div class="popnd2" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePopnd2()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+
+            <div class="poprd2" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePoprd2()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+
+            <div class="popth2" title="Cliquez n'importe où pour fermer" >
+                <a href="javascript:void(0)" onclick="closePopth2()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+
+            <div class="popfi2" title="Cliquez n'importe où pour fermer" >
+                <a href="javascript:void(0)" onclick="closePopfi2()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+
+
+        <!--  
             <div class="containere">
                 <a href="#" id="bouddhaa">
                     <h1>Mr Kangourou IDS de survie 9.9</h1>
@@ -88,6 +155,8 @@ logged_only();
                         commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
                 </a>
             </div>
+            -->
+
         </section>
 
         <section id="pic_3" class="s3">
