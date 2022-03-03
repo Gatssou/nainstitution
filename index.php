@@ -13,7 +13,7 @@ logged_only();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/index.css">
-    <link rel="shortcut icon" href="../img/bierre.jpg" type="image">
+    <link rel="shortcut icon" href="./img/imagepersosnage/terre.gif" type="image">
     <link rel="stylesheet" href="./fa/css/all.css">
     <link rel="stylesheet" href="./sass/media_q.css">
     <title>Nain ventura</title>

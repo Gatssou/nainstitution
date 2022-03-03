@@ -13,10 +13,13 @@ logged_only();
     <title>Document</title>
 </head>
 <body>
-     <!-- section contien les photos-->
-    <section>
-        <h2></h2>
+    
+  
+<section>
+    <div id="globe"> <img src="./img/imagepersosnage/terretrois.gif" alt="">
+</div>
     </section>
+  
     <div class="contien ">
     <div class="menup ">
         <div class="persos"> 
