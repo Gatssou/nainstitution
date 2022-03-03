@@ -51,9 +51,7 @@ window.onscroll = () => {
 }
 
 /* Button menu */
-//SECTION 1
-if(window.matchMedia("(mix-width: 700px)").matches){
-  
+//SECTION 1  
 $(document).ready(function(){
 
   $(".av1").mouseenter(function(){
@@ -93,11 +91,7 @@ $(document).ready(function(){
     })
   })
 })
-}else{
-    $('.avs').css({
-    display: none
-    })
-}
+
 
 //Fonction qui ouvre la bulle au clique pour first (black)
 $(document).ready(function(){
@@ -334,3 +328,9 @@ $(document).ready(function(){
 });
 
 
+/*if(window.matchMedia("(mix-width: 700px)").matches){
+  }else{
+    $('.avs').css({
+    display: none
+    })
+}*/
