@@ -1,5 +1,5 @@
 @media screen  and (max-width: 576px){
-    .containere, .av{
+    .containere{
         display: none;
     }
     .ttl, .ttl2{
