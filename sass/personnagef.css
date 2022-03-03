@@ -105,22 +105,25 @@ body{
   
     background-image: url(../img/imagepersosnage/jeanne.jpg);
     background-size: cover;
+    border-radius: 15px;
 }
 .menup:nth-child(2) .persos .left{
   
     background-image: url(../img/imagepersosnage/Annie\ Smith-Peck.jpg);
     background-size: cover;
+    border-radius: 15px;
 }
 .menup:nth-child(3) .persos .left{
   
     background-image: url(../img/imagepersosnage/Nellie\ Bly.jpg);
     background-size: cover;
-    
+    border-radius: 15px;
 }
 .menup:nth-child(4) .persos .left{
     background-image: url(../img/imagepersosnage/Annie\ “Londonderry”\ Cohen\ Kopchovsky.jpg);
     background-size: cover;
     width: 111px;
+    border-radius: 15px;
 }
 .persos .right h1 {
     font-size: 1.5em;
@@ -135,12 +138,32 @@ body{
     position: absolute;
     height: 100%;
     top: 0;
-    left: 50%;
+    left: 52%;
 }
 .perso-back img{
   display: none;
 }
 .active .perso-back img{
+    display: flex;
+    border-radius: 15px;
+}
+.maintexte {
+  color: red;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  
+  left: 24%;
+  font-size: 1.2em;
+  top: 22%;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+.maintexte{
+  display: none;
+}
+.active .maintexte {
     display: flex;
 }
 .deco{

@@ -18,23 +18,30 @@ logged_only();
 <section>
     <div id="globe"> <img src="./img/imagepersosnage/terretrois.gif" alt="">
 </div>
+
+
     </section>
-  
-    <div class="contien ">
+    
+    <div class="contien"> 
     <div class="menup ">
+    <div class="maintexte">
+     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam fuga natus velit asperiores optio! Sequi alias, libero id quos sint asperiores perferendis. Pariatur error sapiente consectetur distinctio similique eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim, magnam excepturi quis repellat, labore quo consequuntur atque maxime facere animi ab aliquam porro et reiciendis dolorum aperiam corrupti ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ipsum porro aperiam architecto, suscipit animi cupiditate nulla ipsam eligendi illo recusandae. Harum consequuntur minima cumque, corporis debitis est unde non.
+    </div>
         <div class="persos"> 
             <div class="left">
             </div>
             <div class="right">
                 <h1>Personnage uno</h1>
-            </div>
-            
+            </div>     
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/jacquecartier.jpg" height="400px" alt=""> 
+                <a href=""><img src="../nainstitution/img/imagepersosnage/jacquecartier.jpg" height="400px" alt=""> </a>
             </div>     
     </div>
     <div class="menup">
+    <div class="maintexte">
+     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam fuga natus velit asperiores optio! Sequi alias, libero id quos sint asperiores perferendis. Pariatur error sapiente consectetur distinctio similique eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim, magnam excepturi quis repellat, labore quo consequuntur atque maxime facere animi ab aliquam porro et reiciendis dolorum aperiam corrupti ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ipsum porro aperiam architecto, suscipit animi cupiditate nulla ipsam eligendi illo recusandae. Harum consequuntur minima cumque, corporis debitis est unde non.boumboumboumboumlboulm
+    </div>
         <div class="persos"> 
             <div class="left">
             </div>
@@ -43,10 +50,13 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/jamescook.jpg" height="400px" alt=""> 
+                <img src="./img/imagepersosnage/christophe.jpg" height="400px"   alt=""> 
             </div>     
     </div>
     <div class="menup">
+    <div class="maintexte">
+     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam fuga natus velit asperiores optio! Sequi alias, libero id quos sint asperiores perferendis. Pariatur error sapiente consectetur distinctio similique eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim, magnam excepturi quis repellat, labore quo consequuntur atque maxime facere animi ab aliquam porro et reiciendis dolorum aperiam corrupti ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ipsum porro aperiam architecto, suscipit animi cupiditate nulla ipsam eligendi illo recusandae. Harum consequuntur minima cumque, corporis debitis est unde non.lklklklklklklklklk
+    </div>
         <div class="persos"> 
             <div class="left">
             </div>
@@ -55,11 +65,13 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
-                <img src="./img/imagepersosnage/christophe.jpg" height="400px" alt=""> 
-                
-            </div>       
+                <img src="./img/imagepersosnage/jamescook.jpg" height="400px" alt="">  
+            </div>      
     </div>
     <div class="menup">
+    <div class="maintexte">
+     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam fuga natus velit asperiores optio! Sequi alias, libero id quos sint asperiores perferendis. Pariatur error sapiente consectetur distinctio similique eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim, magnam excepturi quis repellat, labore quo consequuntur atque maxime facere animi ab aliquam porro et reiciendis dolorum aperiam corrupti ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ipsum porro aperiam architecto, suscipit animi cupiditate nulla ipsam eligendi illo recusandae. Harum consequuntur minima cumque.
+    </div>
         <div class="persos"> 
             <div class="left">
             </div>
@@ -68,33 +80,31 @@ logged_only();
             </div>
     </div>
             <div class="perso-back"> 
+                
                 <img src="./img/imagepersosnage/Magellan.jpg" height="400px" alt=""> 
-            </div>
-               
+                </a>
+            </div>         
     </div>
-
     </div>
-   
+    
     <footer>
     <div class="retour"><a href="./pub.php"><img src="./include/admin/img/retour.png" alt=""></a></div>
-    
  <div class="deco"><a href="./include/disconnect.php">Se déconnecter</a></div>
  </footer>
- 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
       $(document).on("click", ".menup", function () {
         $(this).addClass("active").siblings().removeClass("active");
       });
-            </script>
- <script>
+    </script>
+   
+<script>
     function changeBg(){
 const images = [
-   'url("./img/imgbg/2.jpg")','url("./img/imgbg/3.jpg")','url("./img/imgbg/4.jpg")','url("./img/img_country/plage.jpg")',
-
+    'url("./img/imagepersosnage/etoile.jpg")','url("./img/imagepersosnage/595000.jpg")','url("./img/imagepersosnage/voixlacte.jpg")','url("./img/imagepersosnage/274697.jpg")',
 ]
-        let section = document.querySelector('section')
-       let bg = images[Math.floor(Math.random() * images.length)
+        const section = document.querySelector('section')
+        const bg = images[Math.floor(Math.random() * images.length)
     ];
     section.style.backgroundImage = bg;
     }
