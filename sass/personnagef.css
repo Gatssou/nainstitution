@@ -5,7 +5,11 @@
     overflow-x: hidden;
 }
 body{
-  background-color: rgb(0, 0, 0);
+ background-image: url(../img/imagepersosnage/chut.jpg)
+ ;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
 }
   section{
       position: absolute;
