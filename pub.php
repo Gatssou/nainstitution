@@ -67,7 +67,7 @@ logged_only();
 </div>
 </header>
 <div class="selectionner">
-    <h1 class="selec"> Explorateur du Monde </h1>
+    <h1 class="selec"> Explorateurs du Monde </h1>
         </div>
             <div class="tout">
                <div class="suivant"><a href="./personnage.php"><img  src="./img/img_log/homme.png" alt=""></a></div>
