@@ -62,7 +62,7 @@ $(document).ready(function(){
     })
     $(".nd").css({
       transform: "translateY(-12vh)",
-      background: "grey",
+      background: "#c79c9c",
       right: "-5%"
     })
     $(".rd").css({
@@ -105,7 +105,6 @@ $(document).ready(function(){
       position: "relative",
       left: "10vw",
       top: "15vh",
-      width: "20vw",
     })
   })
   $('.pop').click(function closePop(){
@@ -114,7 +113,7 @@ $(document).ready(function(){
     })
   })
 
-//Fonction pour second (grey)
+//Fonction pour second (wheat)
   $('.nd').click(function openPopnd(){
     $('.popnd').css({
       visibility: "visible",
@@ -123,8 +122,7 @@ $(document).ready(function(){
       border: "2px solid black",
       borderRadius: "10px",
       position: "relative",
-      left: "23vw",
-      width: "10vw"
+      left: "18vw",
     })
   })
   $('.popnd').click(function closePopnd(){
@@ -144,8 +142,7 @@ $(document).ready(function(){
       position: "relative",
       top: "50vh",
       left: "-25vw",
-      width: "15vw",
-      height: "25vh",
+      width: "15vw"
     })
   })
   $('.poprd').click(function closePoprd(){
@@ -153,6 +150,7 @@ $(document).ready(function(){
       visibility: "hidden",
     })
   })
+
 //Fonction pour fourth (blue)
   $('.th').click(function openPopth(){
     $('.popth').css({
@@ -163,8 +161,6 @@ $(document).ready(function(){
       borderRadius: "10px",
       position: "relative",
       top: "30vh",
-      width: "15vw",
-      height: "15vh",
       left: "40vw"
     })
   })
@@ -175,10 +171,10 @@ $(document).ready(function(){
   })
 })
 
-
 //SECTION 2
 $(document).ready(function(){
 
+  //quand souris passe dessus fait apparaître les balles
   $(".av2").mouseenter(function(){
     $(".st2").css({
       transform: "translateX(-5vw)",
@@ -187,7 +183,7 @@ $(document).ready(function(){
     })
     $(".nd2").css({
       transform: "translateY(-12vh)",
-      background: "grey",
+      background: "#c79c9c",
       right: "-14%"
     })
     $(".rd2").css({
@@ -206,6 +202,7 @@ $(document).ready(function(){
       top: "-4vh"
     })
   })
+  //Quand clique, fait disparaître les balles
   $(".av2").click(function(){
     $(".st2").css({
       background: "transparent"
@@ -225,7 +222,7 @@ $(document).ready(function(){
   })
 })
 
-//Fonction qui ouvre la bulle au clique pour first (black)
+//Ouvre la bulle (cadre) quand on clique sur la balle pour first (black)
 $(document).ready(function(){
   $('.st2').click(function openPop2(){
     $('.pop2').css({
@@ -240,6 +237,7 @@ $(document).ready(function(){
       width: "20vw",
     })
   })
+  //Fait disparaître la bulle (cadre) quand on clique dessus
   $('.pop2').click(function closePop2(){
     $('.pop2').css({
       visibility: "hidden",
@@ -328,7 +326,7 @@ $(document).ready(function(){
 });
 
 
-/*if(window.matchMedia("(mix-width: 700px)").matches){
+/*if(window.matchMedia("(mix-width: 500px)").matches){
   }else{
     $('.avs').css({
     display: none

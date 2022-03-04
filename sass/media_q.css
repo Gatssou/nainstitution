@@ -1,5 +1,6 @@
-@media screen  and (max-width: 576px){
-    .containere{
+
+@media screen  and (max-width: 700px){
+    .containere, .av{
         display: none;
     }
     .ttl, .ttl2{
@@ -21,5 +22,15 @@
         margin: 2px;
         width: 90%;
         box-shadow: 0 5px 10px 2px;
+        /*display: none;*/
     }
+    /*.popmq{
+        visibility: visible;
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 2px;
+        width: 90%;
+        box-shadow: 0 5px 10px 2px;*/
+    
 }

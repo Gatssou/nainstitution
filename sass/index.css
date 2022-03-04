@@ -455,6 +455,8 @@ a {
   color: #FFF;
   letter-spacing: 1px;
   font-weight: 200;
+  text-shadow: 5px 5px 4px black;
+  letter-spacing: 5px;
 }
 
 .av {
@@ -489,6 +491,8 @@ a {
 .pop, .popnd, .poprd, .popth {
   visibility: hidden;
   cursor: pointer;
+  width: 20vw;
+  height: auto;
 }
 
 .av2 {
@@ -502,6 +506,8 @@ a {
   color: #FFF;
   letter-spacing: 1px;
   font-weight: 200;
+  text-shadow: 5px 5px 4px black;
+  letter-spacing: 5px;
 }
 
 .st2, .nd2, .rd2, .th2, .fi2 {
