@@ -36,7 +36,6 @@ section{
     border-radius: 40%;
   }
   75% {
-     
     width: 100%;
     border-radius: 40%;
   }
@@ -50,14 +49,11 @@ section{
   from {
     margin-left: 100%;
     width: 100%;
-    
   }
   75% {
-     
     width: 100%;
     border-radius: 40%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;     
@@ -102,19 +98,16 @@ animation-duration: 5s;
   background-color: rgb(0, 0, 0);
 }
 .menup:nth-child(1) .persos .left{
-
   background-image: url(../img/imagepersosnage/jacquecartier.jpg);
   background-size: cover;
   border-radius: 15px;
 }
 .menup:nth-child(2) .persos .left{
-
   background-image: url(../img/imagepersosnage/christophe.jpg);
   background-size: cover;
   border-radius: 15px;
 }
 .menup:nth-child(3) .persos .left{
-
   background-image: url(../img/imagepersosnage/jamescook.jpg);
   background-size: cover;
   border-radius: 15px;
@@ -187,4 +180,108 @@ margin-top: 10vh;
 justify-content: space-between;
 flex-direction: row;
 }
-  
+@media only screen and (max-width: 760px){
+  section{
+    display:none;
+  }
+  .contien{
+   animation-duration: 5s;
+   animation-name: slide;
+   width: 100%;
+   flex-direction: row;
+   display: flex;
+   justify-content: center;
+   position: relative;
+  }
+  .menup{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   margin-left:0;
+   margin: 15px;
+  }
+  .persos{
+   border: 1px solid white;
+   height: 9.1vh;
+  margin-top: -86vh;
+   width: 9.4vh;
+   display: flex;
+   background-color: #334e6965;
+   font-size: 0.5em;
+   font-weight: 200;
+   transition: 0.2s;
+   cursor: pointer;
+ }
+ .persos:hover{
+  display: none;
+ }
+ .persos .left{
+   background-color: rgb(0, 0, 0);
+ }
+ .right h1{
+   display: none;
+ }
+ .menup:nth-child(1) .persos .left{
+   background-image: url(../img/imagepersosnage/jacquecartier.jpg);
+   background-size: cover;
+ }
+ .menup:nth-child(2) .persos .left{
+   background-image: url(../img/imagepersosnage/christophe.jpg);
+   background-size: cover;
+ }
+ .menup:nth-child(3) .persos .left{
+   background-image: url(../img/imagepersosnage/jamescook.jpg);
+   background-size: cover;
+ }
+ .menup:nth-child(4) .persos .left{
+   background-image: url(../img/imagepersosnage/Magellan.jpg);
+   background-size: cover;
+ }
+ .perso-back{
+   width: 48vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   height: 50vh;
+   top:13%;
+   left: 59%;
+ }
+ .perso-back img{
+ display: none;
+ height: 200px;
+ width: 100px;
+ }
+ .active .perso-back img{
+   display: flex;
+   border-radius: 5px;
+ }
+ .maintexte {
+ color: red;
+ width: 60%;
+ height: 50%;
+ display: flex;
+ align-items: center;
+ justify-content:start;
+ position: absolute;
+ font-size: 0.8em;
+ top: 15%;
+ left: 2vh;
+ background-color: rgba(0, 0, 0, 0.514);
+ }
+ .maintexte{
+ display: none;
+ }
+ .active .maintexte {
+   display: flex;
+ }
+ footer{
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+ }
+ .retour{
+   height: 15vh;
+   width: 25vw;
+ }
+ }

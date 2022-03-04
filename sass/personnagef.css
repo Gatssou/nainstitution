@@ -9,7 +9,6 @@ body{
  ;
  background-repeat: no-repeat;
  background-size: cover;
- 
 }
   section{
       position: absolute;
@@ -54,14 +53,11 @@ body{
     from {
       margin-left: 100%;
       width: 100%;
-      
     }
     75% {
-       
       width: 100%;
       border-radius: 40%;
     }
-  
     to {
       margin-left: 0%;
       width: 100%;     
@@ -185,8 +181,6 @@ body{
 .choix h1{
   margin: 2vh;
 }
-
-
 footer{
   display: flex;
   margin-top: 10vh;
@@ -201,7 +195,6 @@ footer{
  .contien{
   animation-duration: 5s;
   animation-name: slide;
-  height: 100vh;
   width: 100%;
   flex-direction: row;
   display: flex;
@@ -213,17 +206,15 @@ footer{
   width: 100%;
   align-items: center;
   margin-left:0;
-top: 0;
-  
+  margin: 15px;
  }
  .persos{
-  border: 2px solid white;
+  border: 1px solid white;
   height: 9.1vh;
- margin-top: -60vh;
+ margin-top: -86vh;
   width: 9.4vh;
   display: flex;
   background-color: #334e6965;
-  color: white;
   font-size: 0.5em;
   font-weight: 200;
   transition: 0.2s;
@@ -233,8 +224,7 @@ top: 0;
  display: none;
 }
 .persos .left{
-  height: 100%;
-  width: 100%;
+ 
   background-color: rgb(0, 0, 0);
 }
 .right h1{
@@ -243,50 +233,50 @@ top: 0;
 .menup:nth-child(1) .persos .left{
   background-image: url(../img/imagepersosnage/jeanne.jpg);
   background-size: cover;
-  
 }
 .menup:nth-child(2) .persos .left{
   background-image: url(../img/imagepersosnage/Annie\ Smith-Peck.jpg);
   background-size: cover;
-  
 }
 .menup:nth-child(3) .persos .left{
 
   background-image: url(../img/imagepersosnage/Nellie\ Bly.jpg);
   background-size: cover;
-
 }
 .menup:nth-child(4) .persos .left{
   background-image: url(../img/imagepersosnage/Annie\ “Londonderry”\ Cohen\ Kopchovsky.jpg);
   background-size: cover;
 }
 .perso-back{
-  width: 60%;
+  width: 48vw;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  height: 100%;
-  top: 40%;
-  left: 49%;
+  height: 50vh;
+  top:13%;
+  left: 59%;
 }
 .perso-back img{
 display: none;
+height: 200px;
+width: 100px;
 }
 .active .perso-back img{
   display: flex;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .maintexte {
 color: red;
-width: 10%;
+width: 60%;
+height: 50%;
 display: flex;
 align-items: center;
-justify-content: start;
+justify-content:start;
 position: absolute;
-left: 10.5%;
-font-size: 0.4em;
-top: 80%;
+font-size: 0.8em;
+top: 15%;
+left: 2vh;
 background-color: rgba(0, 0, 0, 0.514);
 }
 .maintexte{
@@ -295,5 +285,13 @@ display: none;
 .active .maintexte {
   display: flex;
 }
-
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.retour{
+  height: 15vh;
+  width: 25vw;
+}
 }
