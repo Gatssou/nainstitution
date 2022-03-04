@@ -5,7 +5,10 @@
   overflow-x: hidden;
 }
 body{
-background-color: rgb(0, 0, 0);
+background-color: black;
+;
+background-repeat: no-repeat;
+background-size: cover;
 }
 section{
     position: absolute;
@@ -36,6 +39,7 @@ section{
     border-radius: 40%;
   }
   75% {
+     
     width: 100%;
     border-radius: 40%;
   }
@@ -98,16 +102,19 @@ animation-duration: 5s;
   background-color: rgb(0, 0, 0);
 }
 .menup:nth-child(1) .persos .left{
+
   background-image: url(../img/imagepersosnage/jacquecartier.jpg);
   background-size: cover;
   border-radius: 15px;
 }
 .menup:nth-child(2) .persos .left{
+
   background-image: url(../img/imagepersosnage/christophe.jpg);
   background-size: cover;
   border-radius: 15px;
 }
 .menup:nth-child(3) .persos .left{
+
   background-image: url(../img/imagepersosnage/jamescook.jpg);
   background-size: cover;
   border-radius: 15px;
@@ -115,8 +122,8 @@ animation-duration: 5s;
 .menup:nth-child(4) .persos .left{
   background-image: url(../img/imagepersosnage/Magellan.jpg);
   background-size: cover;
-  border-radius: 15px;
   width: 111px;
+  border-radius: 15px;
 }
 .persos .right h1 {
   font-size: 1.5em;
@@ -124,14 +131,14 @@ animation-duration: 5s;
   margin-left: 20px;
 }
 .perso-back{
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 49%;
+width: 60%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+height: 100%;
+top: 0;
+left: 49%;
 }
 .perso-back img{
 display: none;
