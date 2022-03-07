@@ -463,22 +463,15 @@ a {
 /*** RESPONSIVE ***/
 
 /* MOBILE */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 700px) {
     body::-webkit-scrollbar {
     width: 0px;
     background: transparent;
     -webkit-appearance: none;
-}
-
-.para .section-stick {
-  right: 20px;
-  bottom: 20px;
-  transform: scale(0.7);
-}
-
-.para section {
-  font-size: 40px;
-}
+  }
+  .para section {
+    font-size: 40px;
+  }
 }
 
   

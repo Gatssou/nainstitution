@@ -14,7 +14,7 @@
         align-items: center;
         flex-direction: column;
     }
-    .pop, .popnd, .poprd, .popth, .popfi{
+    .pop, .popnd, .poprd, .popth, .popfi, .pop2, .popnd2, .poprd2, .popth2, .popfi2{
         visibility: visible;
         font-size: 20px;
         border: 2px solid black;
