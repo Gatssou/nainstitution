@@ -33,6 +33,12 @@ if(!$_SESSION['mdp']){
             font-family: "Bungee Inline", sans-serif;
          text-shadow: 2px 2px 8px red;
         }
+        footer a{
+    display: flex;
+    justify-content: end;
+    color: white;
+
+}
       
     </style>
     <div class="retour"><a href="./indexad.php"><img src="./img/retour.png" alt=""></a></div>
@@ -47,5 +53,9 @@ while($user = $recupUsers->fetch()){
 }
          ?>
     <!--Fin d'afficher tous les membres -->
+    <footer>
+ <a href="adlogout.php">Se déconnecter</a>
+ </footer>
+    
 </body>
 </html>
