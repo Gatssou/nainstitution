@@ -25,6 +25,7 @@ header('location: articles.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/terread.gif" type="image">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Roi des articles</title>
 </head>
 <body>
@@ -45,7 +46,7 @@ header('location: articles.php');
             border: 3px ridge orange;
             text-align: center;
             justify-content: center;
-            width: 30vw;
+            width: 10vw;
             height: 10vh;
         }
         input{
@@ -54,7 +55,7 @@ header('location: articles.php');
         }
         .envoie{
             height: 4vh;
-            width: 17vw;
+            width: 13vw;
             cursor: pointer;
         }
         .titre{
@@ -62,8 +63,14 @@ header('location: articles.php');
             display: flex;
             justify-content: center;
             height: 3vh;
-            width: 38vw;
+            width: 12vw;
         }
+        footer a{
+    display: flex;
+    justify-content: end;
+    color: white;
+
+}
     </style>
     <form action="" method="POST">
 <input class="titre" type="text" name="titre" placeholder="Titre" >
@@ -72,5 +79,8 @@ header('location: articles.php');
 <br>
 <input class="envoie" type="submit" name="envoi">
     </form>
+    <footer>
+ <a href="adlogout.php">Se déconnecter</a>
+ </footer>
 </body>
 </html>

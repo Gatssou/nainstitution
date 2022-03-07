@@ -30,6 +30,8 @@ body{
  background: black;  
  display: flex;
  justify-content:space-around;
+ align-items: center;
+
         }
 
 
@@ -37,37 +39,46 @@ footer.active{
     color: red;
 }
      .contien{
-      
         font-family: "Bungee Inline", sans-serif;
          font-size: 3em;
-         position: relative;
    display: flex;
+   top: 50vh;
+   position: absolute;
    flex-direction: column;
-   justify-content: center;
      }
        .membres {
         border-bottom: 1px white ridge;
            color: white;
             text-decoration: none;
             list-style: none;
+            margin: 20px;
+            box-shadow: 5px 5px 5px red;
+            text-shadow: 7px 7px  red ;
         }
        .publier {
         border-bottom: 1px white ridge;
+        text-shadow: 10px 10px  orange ;
+        margin: 20px;
            color: white;
             text-decoration: none;
             list-style: none;
+            box-shadow: 5px 5px 5px orange;
         }
        .articles {
         border-bottom: 1px white ridge;
+        text-shadow: 7px 7px  blue ;
+        box-shadow: 5px 5px 5px blue;
+        margin: 20px;
            color: white;
             text-decoration: none;
             list-style: none;
+          
         }
 footer a{
-    display: flex;
-    justify-content: end;
+ left: 80%;
+ top: 90%;
     color: white;
-
+    position: absolute;
 }
       
     </style>
