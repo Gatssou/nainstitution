@@ -11,6 +11,7 @@ logged_only();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/reliephpindex.css">
+    <link rel="shortcut icon" href="../nainstitution/img/imagepersosnage/terre.gif" type="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <script src="./js/jquery-3.6.0.min.js"></script>
     <title>Document</title>
@@ -58,12 +59,7 @@ logged_only();
         </li>
     </div>
     </section>
-    <div class="publicite">
-        
-     <div class="hover-effect">
-
-   <p>T</p><p>R</p><p>A</p><p>I</p><p>N</p>
-    </div>
+  
 </div>
 </header>
 <div class="selectionner">
