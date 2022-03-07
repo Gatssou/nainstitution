@@ -96,7 +96,7 @@ logged_only();
 
         <section id="pic_2" class="s2">
         <div class="av2">
-                <div class="ttl2">Aventurier 2</div>
+                <div class="ttl2">Av2</div>
                 <div id="avs2">
                     <a href="#pic_2" onclick="openPop2()">
                         <div class="st2 av"></div>
