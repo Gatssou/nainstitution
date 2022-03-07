@@ -36,7 +36,7 @@ logged_only();
 
         <section id="pic_1" class="s1">
             <div class="av1">
-                <div class="ttl">Mike Horn</div>
+                <div class="ttl">Av1</div>
                 <div id="avs">
                     <a href="#" onclick="openPop()">
                         <div class="st av"></div>
@@ -55,7 +55,7 @@ logged_only();
 
             <div class="pop">
                 <a href="javascript:void(0)" class="x" onclick="closePop()"></a>
-                <h1>Descrption</h1>
+                <h1>Description</h1>
                 <p title="Cliquez n'importe où pour fermer">Né le 16 juillet 1966 à Johannesbourg.</p>
             </div>
 <!-- 
