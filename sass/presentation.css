@@ -134,3 +134,11 @@ color: transparent;
   color: white;
   background-color: rgb(77, 146, 71);
 }
+.test{
+  color: black;
+  font-size: 5em;
+  text-align: center;
+}
+.test::selection{
+  color: white;
+}

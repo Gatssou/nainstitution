@@ -1,6 +1,6 @@
-/*function mediaS(s)
-if (s.match){
-  */
+function mdqObj(q)
+if (q.match){
+
 const TIME_OUT = 600
 const body = document.querySelector('body')
 const sectionsQty = document.querySelectorAll('section').length
@@ -52,15 +52,15 @@ window.onscroll = () => {
   }
   window.scroll(0, window.screen.height)
 }
-/*
+
 }else{
-  $(document).ready(function(){
-    $('html').removeClass("para")
-  })
+  let panda = document.getElementById('all');
+  panda.classList.remove('section-stick')
 }
-const rmvS = window.matchMedia("(min-width: 700px)");
-mediaS(rmvS);
-rmvS.addListener(mediaS);*/
+
+const jm = window.matchMedia("(min-width: 700px)");
+mdqObj(jm);
+jm.addListener(mdqObj);
 
 /* Button menu */
 //SECTION 1  

@@ -70,6 +70,7 @@ logged_only();
       " />
     -->
 
+    <div class="test">J'aime les alpagas</div>
   <svg viewBox="0 0 100.6 107.6" id="svgf">
     <path fill="none" stroke="white" stroke-width=".1" id="pathf" d="
     M 10 10
