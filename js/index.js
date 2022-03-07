@@ -1,6 +1,3 @@
-function mdqObj(q)
-if (q.match){
-
 const TIME_OUT = 600
 const body = document.querySelector('body')
 const sectionsQty = document.querySelectorAll('section').length
@@ -53,14 +50,16 @@ window.onscroll = () => {
   window.scroll(0, window.screen.height)
 }
 
-}else{
-  let panda = document.getElementById('all');
-  panda.classList.remove('section-stick')
-}
+/*
+function mediaS(s)
+if (s.match){
 
+}else{
+  
+}
 const jm = window.matchMedia("(min-width: 700px)");
 mdqObj(jm);
-jm.addListener(mdqObj);
+jm.addListener(mdqObj);*/
 
 /* Button menu */
 //SECTION 1  
