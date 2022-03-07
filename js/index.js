@@ -1,3 +1,6 @@
+/*function mediaS(s)
+if (s.match){
+  */
 const TIME_OUT = 600
 const body = document.querySelector('body')
 const sectionsQty = document.querySelectorAll('section').length
@@ -49,6 +52,15 @@ window.onscroll = () => {
   }
   window.scroll(0, window.screen.height)
 }
+/*
+}else{
+  $(document).ready(function(){
+    $('html').removeClass("para")
+  })
+}
+const rmvS = window.matchMedia("(min-width: 700px)");
+mediaS(rmvS);
+rmvS.addListener(mediaS);*/
 
 /* Button menu */
 //SECTION 1  
@@ -93,7 +105,6 @@ $(document).ready(function () {
   })
 })
 
-
 //Fonction qui ouvre la bulle au clique pour first (black)
 $(document).ready(function () {
   $('.st').click(function openPop() {
@@ -122,7 +133,6 @@ $(document).ready(function () {
     })
   })
 }*/
-
 
   //Fonction pour second (wheat)
   $('.nd').click(function openPopnd() {
@@ -191,7 +201,7 @@ $(document).ready(function () {
     } else {
       $('.pop').click(function closePop() {
         $('.pop').css({
-          display: "block"
+          display: "block",
         })
       })
       $('.popnd').click(function closePopnd() {
@@ -414,6 +424,8 @@ $(document).ready(function () {
   mdqObj.addListener(mediaQ);
 
 });
+
+
 
 /*
 function mediaQ(q){

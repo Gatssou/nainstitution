@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
     background-color: #4d665280;
     @include back;
 }
-  
+
 .para {
   width: 100%;
   height: calc(100vh * 3);
@@ -393,7 +393,8 @@ a {
 .av1{
   grid-area: 2 / 3 / 3 / 4;
 }
-.ttl{
+
+.ttl, .ttl2{
   display: block;
   font-size: 2em;
   z-index: 99;
@@ -402,6 +403,12 @@ a {
   font-weight: 200;
   text-shadow: 5px 5px 4px black;
   letter-spacing: 5px;
+  font-family: Dancing Script, cursive;
+  cursor: pointer;
+}
+.ttl::selection{
+  color: black;
+  text-shadow: 5px 5px 4px white;
 }
 .av{
   position: relative;
@@ -439,16 +446,7 @@ a {
 .av2{
   grid-area: 2 / 3 / 3 / 4;
 }
-.ttl2{
-  display: block;
-  font-size: 2em;
-  z-index: 99;
-  color: #FFF;
-  letter-spacing: 1px;
-  font-weight: 200;
-  text-shadow: 5px 5px 4px black;
-  letter-spacing: 5px;
-}
+
 .st2, .nd2, .rd2, .th2, .fi2{
   transition: 1s ease;
 }

@@ -16,6 +16,9 @@ logged_only();
     <link rel="shortcut icon" href="./img/imagepersosnage/terre.gif" type="image">
     <link rel="stylesheet" href="./fa/css/all.css">
     <link rel="stylesheet" href="./sass/media_q.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>Nain ventura</title>
 </head>
 
@@ -36,7 +39,7 @@ logged_only();
 
         <section id="pic_1" class="s1">
             <div class="av1">
-                <div class="ttl">Av1</div>
+                <div class="ttl">Mike Horn</div>
                 <div id="avs">
                     <a href="#" onclick="openPop()">
                         <div class="st av"></div>
@@ -58,7 +61,7 @@ logged_only();
                 <h1>Description</h1>
                 <p title="Cliquez n'importe où pour fermer">Né le 16 juillet 1966 à Johannesbourg.</p>
             </div>
-<!-- 
+            <!-- 
             <div class="popmq">
                 <h1>Hi</h1>
                 <p>Lorem, ipsum dolor.</p>
@@ -67,19 +70,24 @@ logged_only();
             <div class="popnd">
                 <a href="javascript:void(0)" onclick="closePopnd()"></a>
                 <h1>Hi</h1>
-                <p title="Cliquez n'importe où pour fermer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia sapiente non expedita molestias hic numquam aliquid aut debitis culpa.</p>
+                <p title="Cliquez n'importe où pour fermer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos officia sapiente non expedita molestias hic numquam aliquid aut debitis culpa.</p>
             </div>
 
             <div class="poprd">
                 <a href="javascript:void(0)" onclick="closePoprd()"></a>
                 <h1>Hi</h1>
-                <p title="Cliquez n'importe où pour fermer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut aspernatur odio repellat. Error, dolor!</p>
+                <p title="Cliquez n'importe où pour fermer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste aut aspernatur odio repellat. Error, dolor!</p>
             </div>
 
             <div title="Cliquez n'importe où pour fermer" class="popth">
                 <a href="javascript:void(0)" onclick="closePopth()"></a>
                 <h1>Hi</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet laborum, ab voluptatum ratione molestiae atque facere at accusamus. Dolor unde totam neque eius rem delectus dolores aliquid. Laborum similique culpa aperiam aliquid vero tenetur consequatur ad hic doloribus quibusdam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet laborum, ab voluptatum
+                    ratione molestiae atque facere at accusamus. Dolor unde totam neque eius rem delectus dolores
+                    aliquid. Laborum similique culpa aperiam aliquid vero tenetur consequatur ad hic doloribus
+                    quibusdam.</p>
             </div>
 
             <div class="containere">
@@ -95,7 +103,7 @@ logged_only();
         </section>
 
         <section id="pic_2" class="s2">
-        <div class="av2">
+            <div class="av2">
                 <div class="ttl2">Av2</div>
                 <div id="avs2">
                     <a href="#pic_2" onclick="openPop2()">
@@ -134,20 +142,20 @@ logged_only();
                 <p>test pop up</p>
             </div>
 
-            <div class="popth2" title="Cliquez n'importe où pour fermer" >
+            <div class="popth2" title="Cliquez n'importe où pour fermer">
                 <a href="javascript:void(0)" onclick="closePopth2()"></a>
                 <h1>Hi</h1>
                 <p>test pop up</p>
             </div>
 
-            <div class="popfi2" title="Cliquez n'importe où pour fermer" >
+            <div class="popfi2" title="Cliquez n'importe où pour fermer">
                 <a href="javascript:void(0)" onclick="closePopfi2()"></a>
                 <h1>Hi</h1>
                 <p>test pop up</p>
             </div>
 
 
-        <!--  
+            <!--  
             <div class="containere">
                 <a href="#" id="bouddhaa">
                     <h1>Mr Kangourou IDS de survie 9.9</h1>
@@ -195,4 +203,5 @@ logged_only();
 <script src="./js/stock/jquery-3.6.0.min.js"></script>
 <script src="./js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="./js/index.js"></script>
+
 </html>

@@ -70,24 +70,22 @@ logged_only();
       " />
     -->
 
-    <svg viewBox="0 0 100.6 107.6" id="svgf">
-    <path fill="none" stroke="white" stroke-width=".1" id="pathf" 
-    d="
+  <svg viewBox="0 0 100.6 107.6" id="svgf">
+    <path fill="none" stroke="white" stroke-width=".1" id="pathf" d="
     M 10 10
     C 10 10, 15 20, 70 30
     C 70 30, 80 20, 80 10
-    "/>
-    </svg>
+    " />
+  </svg>
 
-    <svg viewBox="0 0 100.6 107.6" id="svgs">
-    <path fill="none" stroke="white" stroke-width=".1" id="paths" 
-    d="
+  <svg viewBox="0 0 100.6 107.6" id="svgs">
+    <path fill="none" stroke="white" stroke-width=".1" id="paths" d="
     M 50 10
     C 50 10, 30 30, 60 40
-    "/>
-    </svg>
-    
-    <!--  
+    " />
+  </svg>
+
+  <!--  
     <path fill="none" stroke="white" stroke-width=".1" id="star-path" 
     d="
     M 50 10
@@ -95,19 +93,19 @@ logged_only();
     
     "/>
     -->
-    
-
-    
 
 
 
 
 
 
-    <!-- d = start draw, M Moveto, C Curveto, L Lineto Q Quadratic Bezier curve more simple than C, one control point..., z end 
+
+
+
+  <!-- d = start draw, M Moveto, C Curveto, L Lineto Q Quadratic Bezier curve more simple than C, one control point..., z end 
       C 30 100, 70 130, 90 200
     <path fill="none" stroke="white" stroke-width=".1" id="star-path" d="M" />-->
-  
+
 
   <a href="./pub.php">
     <button class="btn but">
@@ -138,60 +136,63 @@ require_once '/laragon/www/nainstitution/presentation.php';
     if($showcookie){
 ?>
 <div class="overlay">
-    <div class="cookie_alert">
-      <img src="./img/draw/cookies.gif" style="width: 5vw;" alt="">
-        <p>Hello world je suis un méchant cookie. Oui je suis vraiment mais vraiment un méchant cookie.
-            <a href="./include/accept_cookie.php">J'accepte</a></p>
-    </div>
+  <div class="cookie_alert">
+    <a href="./img/draw/cookies.gif"><img src="./img/draw/cookies.gif" style="width: 5vw;" alt=""></a>
+    <p>Hello world je suis un méchant cookie. Oui je suis vraiment mais vraiment un méchant cookie.
+      <a class="accpt" href="./include/accept_cookie.php">J'accepte</a></p>
+  </div>
 </div>
 
 <?php
     }
 ?>
 <style>
-    .cookie_alert {
-      border-top: rgb(255, 0, 0) solid 5px;
-  border: solid white 2px;
-  background: rgba(0, 0, 0, 0.808);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 95%;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 30px;
-  font-family: 'Signika Negative',sans-serif;
-    }
-    .cookie_alert a{
-        text-decoration: none;
-        border: 5px solid blue;
-        border-radius: 25px;
-        padding: 25px;
-        color: blue;
-        transition: 1.2 ease;
-    }
-   .cookie_alert a:hover{
-        color: white;
-        background: blue;
-        transition: 2s;
-    }
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        background: rgba(0, 0, 0, .6);
-    }
+  .cookie_alert {
+    border-top: rgb(255, 0, 0) solid 5px;
+    border: solid white 2px;
+    background: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-family: 'Signika Negative', sans-serif;
+  }
+
+  .cookie_alert .accpt {
+    text-decoration: none;
+    border: 5px solid blue;
+    border-radius: 25px;
+    padding: 25px;
+    color: blue;
+    transition: 1.2 ease;
+  }
+
+  .cookie_alert .accpt:hover {
+    color: white;
+    background: blue;
+    transition: 2s;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+  }
 </style>
 <script src="./js/stock/jquery-3.6.0.min.js"></script>
 <script>
-    $('overlay').on('click', function(e) {
-        if (e.target !== this) {
-            return;
-        }
-    });
+  $('overlay').on('click', function (e) {
+    if (e.target !== this) {
+      return;
+    }
+  });
 </script>
 
 <script src="../js/stock/jquery-3.6.0.min.js"></script>
