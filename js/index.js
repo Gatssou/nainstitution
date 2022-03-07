@@ -1,4 +1,4 @@
-const TIME_OUT = 600 
+const TIME_OUT = 600
 const body = document.querySelector('body')
 const sectionsQty = document.querySelectorAll('section').length
 const sectionStick = document.querySelector('.section-stick')
@@ -18,7 +18,7 @@ window.onscroll = () => {
   if (startFlag) {
     const scrollDown = this.scrollY >= initialScroll
     const scrollLimit = qty >= 1 && qty <= sectionsQty
-   
+
     if (scrollLimit) {
       body.style.overflowY = 'hidden' // Lock el scroll
       if (scrollDown && qty < sectionsQty) {
@@ -34,16 +34,16 @@ window.onscroll = () => {
         next.style.transform = 'translateY(100vh)'
         qty--
       }
-     
+
       const active = document.querySelector('.section-stick .stick.active')
       active.style.top = (62 + 30) * (qty - 1) + 'px'
     }
     console.log('SLIDE', qty)
-    
+
     setTimeout(() => {
       initialScroll = this.scrollY
       startFlag = true
-      body.style.overflowY = 'scroll' 
+      body.style.overflowY = 'scroll'
     }, TIME_OUT)
     startFlag = false
   }
@@ -52,9 +52,10 @@ window.onscroll = () => {
 
 /* Button menu */
 //SECTION 1  
-$(document).ready(function(){
 
-  $(".av1").mouseenter(function(){
+$(document).ready(function () {
+
+  $(".av1").mouseenter(function () {
     $(".st").css({
       transform: "translateX(-5vw)",
       top: "-4vh",
@@ -76,7 +77,7 @@ $(document).ready(function(){
       right: "5%"
     })
   })
-  $(".av1").click(function(){
+  $(".av1").click(function () {
     $(".st").css({
       background: "transparent"
     })
@@ -94,8 +95,8 @@ $(document).ready(function(){
 
 
 //Fonction qui ouvre la bulle au clique pour first (black)
-$(document).ready(function(){
-  $('.st').click(function openPop(){
+$(document).ready(function () {
+  $('.st').click(function openPop() {
     $('.pop').css({
       visibility: "visible",
       color: "white",
@@ -107,14 +108,24 @@ $(document).ready(function(){
       top: "15vh",
     })
   })
+
+  /*if (window.matchMedia("(min-width: 700px)").matches){
   $('.pop').click(function closePop(){
     $('.pop').css({
       visibility: "hidden",
     })
   })
+}else{
+  $('.pop').click(function closePop(){
+    $('.pop').css({
+      display: "block"
+    })
+  })
+}*/
 
-//Fonction pour second (wheat)
-  $('.nd').click(function openPopnd(){
+
+  //Fonction pour second (wheat)
+  $('.nd').click(function openPopnd() {
     $('.popnd').css({
       visibility: "visible",
       color: "white",
@@ -125,14 +136,9 @@ $(document).ready(function(){
       left: "18vw",
     })
   })
-  $('.popnd').click(function closePopnd(){
-    $('.popnd').css({
-      visibility: "hidden",
-    })
-  })
 
-//Fonction pour third (white)
-  $('.rd').click(function openPoprd(){
+  //Fonction pour third (white)
+  $('.rd').click(function openPoprd() {
     $('.poprd').css({
       visibility: "visible",
       color: "white",
@@ -145,14 +151,9 @@ $(document).ready(function(){
       width: "15vw"
     })
   })
-  $('.poprd').click(function closePoprd(){
-    $('.poprd').css({
-      visibility: "hidden",
-    })
-  })
 
-//Fonction pour fourth (blue)
-  $('.th').click(function openPopth(){
+  //Fonction pour fourth (blue)
+  $('.th').click(function openPopth() {
     $('.popth').css({
       visibility: "visible",
       color: "white",
@@ -164,18 +165,64 @@ $(document).ready(function(){
       left: "40vw"
     })
   })
-  $('.popth').click(function closePopth(){
-    $('.popth').css({
-      visibility: "hidden",
-    })
-  })
-})
+
+  function mediaQ(q) {
+    if (q.matches) {
+      $('.pop').click(function closePop() {
+        $('.pop').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popnd').click(function closePopnd() {
+        $('.popnd').css({
+          visibility: "hidden"
+        })
+      })
+      $('.poprd').click(function closePoprd() {
+        $('.poprd').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popth').click(function closePopth() {
+        $('.popth').css({
+          visibility: "hidden"
+        })
+      })
+    } else {
+      $('.pop').click(function closePop() {
+        $('.pop').css({
+          display: "block"
+        })
+      })
+      $('.popnd').click(function closePopnd() {
+        $('.popnd').css({
+          display: "block"
+        })
+      })
+      $('.poprd').click(function closePoprd() {
+        $('.poprd').css({
+          display: "block"
+        })
+      })
+      $('.popth').click(function closePopth() {
+        $('.popth').css({
+          display: "block"
+        })
+      })
+    }
+  }
+
+  const mdqObj = window.matchMedia("(min-width: 700px)");
+  mediaQ(mdqObj);
+  mdqObj.addListener(mediaQ);
+
+});
 
 //SECTION 2
-$(document).ready(function(){
+$(document).ready(function () {
 
   //quand souris passe dessus fait apparaître les balles
-  $(".av2").mouseenter(function(){
+  $(".av2").mouseenter(function () {
     $(".st2").css({
       transform: "translateX(-5vw)",
       top: "-4vh",
@@ -203,7 +250,7 @@ $(document).ready(function(){
     })
   })
   //Quand clique, fait disparaître les balles
-  $(".av2").click(function(){
+  $(".av2").click(function () {
     $(".st2").css({
       background: "transparent"
     })
@@ -223,8 +270,8 @@ $(document).ready(function(){
 })
 
 //Ouvre la bulle (cadre) quand on clique sur la balle pour first (black)
-$(document).ready(function(){
-  $('.st2').click(function openPop2(){
+$(document).ready(function () {
+  $('.st2').click(function openPop2() {
     $('.pop2').css({
       visibility: "visible",
       color: "white",
@@ -238,14 +285,14 @@ $(document).ready(function(){
     })
   })
   //Fait disparaître la bulle (cadre) quand on clique dessus
-  $('.pop2').click(function closePop2(){
-    $('.pop2').css({
-      visibility: "hidden",
-    })
-  })
+  /* $('.popst2').click(function closePopth2(){
+     $('.popst2').css({
+       display: "block"
+     })
+   })*/
 
-//Fonction pour second (grey)
-  $('.nd2').click(function openPopnd2(){
+  //Fonction pour second (grey)
+  $('.nd2').click(function openPopnd2() {
     $('.popnd2').css({
       visibility: "visible",
       color: "white",
@@ -257,14 +304,9 @@ $(document).ready(function(){
       width: "10vw"
     })
   })
-  $('.popnd2').click(function closePopnd2(){
-    $('.popnd2').css({
-      visibility: "hidden",
-    })
-  })
 
-//Fonction pour third (white)
-  $('.rd2').click(function openPoprd2(){
+  //Fonction pour third (white)
+  $('.rd2').click(function openPoprd2() {
     $('.poprd2').css({
       visibility: "visible",
       color: "white",
@@ -278,13 +320,9 @@ $(document).ready(function(){
       height: "25vh",
     })
   })
-  $('.poprd2').click(function closePoprd2(){
-    $('.poprd2').css({
-      visibility: "hidden",
-    })
-  })
-//Fonction pour fourth (blue)
-  $('.th2').click(function openPopth2(){
+
+  //Fonction pour fourth (blue)
+  $('.th2').click(function openPopth2() {
     $('.popth2').css({
       visibility: "visible",
       color: "white",
@@ -298,13 +336,9 @@ $(document).ready(function(){
       left: "-9vw"
     })
   })
-  $('.popth2').click(function closePopth2(){
-    $('.popth2').css({
-      visibility: "hidden",
-    })
-  })
-//Fonction pour fifth (wheat)
-  $('.fi2').click(function openPopfi2(){
+
+  //Fonction pour fifth (wheat)
+  $('.fi2').click(function openPopfi2() {
     $('.popfi2').css({
       visibility: "visible",
       color: "white",
@@ -318,17 +352,132 @@ $(document).ready(function(){
       left: "-13vw"
     })
   })
-  $('.popfi2').click(function closePopfi2(){
-    $('.popfi2').css({
-      visibility: "hidden",
-    })
-  })
+
+  function mediaQ(q) {
+    if (q.matches) {
+      $('.pop2').click(function closePop2() {
+        $('.pop2').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popnd2').click(function closePopnd2() {
+        $('.popnd2').css({
+          visibility: "hidden"
+        })
+      })
+      $('.poprd2').click(function closePoprd2() {
+        $('.poprd2').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popth2').click(function closePopth2() {
+        $('.popth2').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popfi2').click(function closePopfi2() {
+        $('.popfi2').css({
+          visibility: "hidden",
+        })
+      })
+    } else {
+      $('.popst2').click(function closePop2() {
+        $('.popst2').css({
+          display: "block"
+        })
+      })
+      $('.popnd2').click(function closePopnd2() {
+        $('.popnd2').css({
+          display: "block"
+        })
+      })
+      $('.poprd2').click(function closePoprd2() {
+        $('.poprd2').css({
+          display: "block"
+        })
+      })
+      $('.popth2').click(function closePopth2() {
+        $('.popth2').css({
+          display: "block"
+        })
+      })
+      $('.popfi2').click(function closePopfi2() {
+        $('.popfi2').css({
+          display: "block"
+        })
+      })
+    }
+  }
+
+  const mdqObj = window.matchMedia("(min-width: 700px)");
+  mediaQ(mdqObj);
+  mdqObj.addListener(mediaQ);
+
 });
 
+/*
+function mediaQ(q){
+  if (q.matches){
+    document.getElementsByClassName('.popfi2').style = "visibility: hidden";
+  }else{
+    document.getElementsByClassName('.popfi2').style = "display: block";
+  }
+}
+
+const mdqObj = window.matchMedia("(min-width: 700px)");
+mediaQ(mdqObj);
+mdqObj.addListener(mediaQ);*/
 
 /*if(window.matchMedia("(mix-width: 500px)").matches){
   }else{
     $('.avs').css({
     display: none
     })
+}*/
+/*
+if (window.matchMedia("(min-width: 540px)").matches){
+  $(document).ready(function(){
+
+    $(".av1").mouseenter(function(){
+      $(".st").css({
+        transform: "translateX(-5vw)",
+        top: "-4vh",
+        background: "black"
+      })
+      $(".nd").css({
+        transform: "translateY(-12vh)",
+        background: "#c79c9c",
+        right: "-5%"
+      })
+      $(".rd").css({
+        transform: "translateY(5vh)",
+        background: "white",
+        right: "20%"
+      })
+      $(".th").css({
+        transform: "translateY(5vh)",
+        background: "#407261",
+        right: "5%"
+      })
+    })
+  })
+  
+}else{
+  $(document).ready(function(){
+
+    $(".av1").mouseenter(function(){
+      $(".st").css({
+        display: "none"
+      })
+      $(".nd").css({
+        display: "none"
+      })
+      $(".rd").css({
+        display: "none"
+      })
+      $(".th").css({
+        display: "none"
+      })
+    })
+  })
 }*/
