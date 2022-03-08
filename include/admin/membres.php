@@ -19,14 +19,16 @@ if(!$_SESSION['mdp']){
 <style>
         body{
             background: black;
+            color: white;
           
         }
-       p {border-bottom: 1px orange solid;
-        margin-right: 20vh;
-        margin-left: 7vh;
-        margin-top: 3vh;
+       p {
          color: white;
          text-align: center;
+         padding: 10px;
+         background-color: black;
+         border: 10px;
+         box-shadow:  5px 5px 15px gray;
             justify-content: center;
             display: flex;
             flex-direction: column;
@@ -37,13 +39,27 @@ if(!$_SESSION['mdp']){
     display: flex;
     justify-content: end;
     color: white;
-
 }
-      
+.retour{
+    display: flex;
+    justify-content: start;
+}
+.container{
+    color: white;
+ display: flex;
+ justify-content: center;
+}
+.row{
+    display: grid;
+  grid-template-columns: repeat(1, 2fr);
+   
+}
     </style>
     <div class="retour"><a href="./indexad.php"><img src="./img/retour.png" alt=""></a></div>
     <!--Afficher tous les membres , on recupere tout les pseudo dans la table -->
-    <?php
+    <div class="container">
+  <div class="row">
+  <?php
 $recupUsers = $bdd->query('SELECT * FROM logtest');
 
 while($user = $recupUsers->fetch()){
@@ -52,6 +68,11 @@ while($user = $recupUsers->fetch()){
  <?php 
 }
          ?>
+  </div>
+</div>
+
+    
+  
     <!--Fin d'afficher tous les membres -->
     <footer>
  <a href="adlogout.php">Se déconnecter</a>

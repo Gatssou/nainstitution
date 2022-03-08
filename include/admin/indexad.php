@@ -4,8 +4,17 @@ session_start();
 if(!$_SESSION['mdp']){
     header('Location: connexion.php');
 }
+$utili = new PDO('mysql:host=localhost;dbname=blipou;','root','');
 
+$stats = $utili->prepare('SELECT * FROM logtest ');
+//execution de la rêquete pas besoin de bind pas de values
+
+$executeisok = $stats->execute();
+//recup le resultat
+$profil = $stats->fetchALL();
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,24 +26,29 @@ if(!$_SESSION['mdp']){
     <title>Page administration Gagnant</title>
 </head>
 <body>
-
+<h1>
+    <ul>
+        <?php foreach ($profil as $profil):  ?>
+            <?php endforeach; ?>
+            <li>
+                <?= $profil['username'] ?> 
+                <?= $profil['id'] ?> 
+                <?= $profil['email'] ?> 
+            </li>
+    </ul>
+</h1>
     <style>
         *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-  
- background: black;  
+ background: white;  
  display: flex;
  justify-content:space-around;
  align-items: center;
-
         }
-
-
 footer.active{
     color: red;
 }
@@ -72,16 +86,18 @@ footer.active{
            color: white;
             text-decoration: none;
             list-style: none;
-          
         }
 footer a{
  left: 80%;
  top: 90%;
-    color: white;
+    color: black;
     position: absolute;
 }
-      
+      .membre{
+          color: black;
+      }
     </style>
+   
     <div class="contien">
         <a class="membres" href="membres.php">Afficher tous les gueux !</a>
        
