@@ -244,7 +244,6 @@ border:inset 1px black;
 @media only screen and (max-width: 1814px){
 
   body{
-    display: block;
     justify-content: center;
     align-items: center;
   }
@@ -256,8 +255,7 @@ border:inset 1px black;
   display: none;
   }
   .menu{
-   top: 10vh;
-   
+   top: 15vh;
 left: 10vh;
     width: 100px;
     height: 250px;
@@ -265,8 +263,10 @@ left: 10vh;
     align-items: center;
   }
   .menu img{
-    height: 5vh;
-    width: 5vh;
+    height: 7vh;
+    width: 7vh;
+    border: 1px white ridge;
+    border-radius: 10px;
   }
   .menu img:hover{
     border-radius: 30%;
