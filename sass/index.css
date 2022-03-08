@@ -532,6 +532,9 @@ a {
   .para section {
     font-size: 40px;
   }
+  .section-stick{
+    display: none;
+  }
 }
 /*julien moi loni ne touche pas sil te plait merci.*/
 .supergrille {
