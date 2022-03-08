@@ -68,7 +68,10 @@ header{
   width: 150px;
   height: 150px;
   align-items: center;
-
+}
+.toggle img{
+  height: 7vh;
+  width: 7vh;
 }
 .menu img:hover{
   border-radius: 30%;
@@ -76,7 +79,6 @@ border:inset 1px black;
 background-color: rgba(255, 255, 255, 0.986);
 }
 .menu li{
-  
   opacity: 0;
 position: absolute;
 left: 0;
@@ -107,9 +109,7 @@ width: 4vw;
     transition: 1.2s  ;
     transform:rotate(720deg) ;
 }
-
 .toggle {
-  position:absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,14 +118,13 @@ width: 4vw;
   cursor: pointer;
   font-size: 2em;
   transition: transform 1.25s;
+  background-color: rgba(240, 248, 255, 0);
 }
 .toggle :hover{
   border-radius: 30%;
-  border:inset 1px rgba(240, 6, 6, 0.719);
 }
  /**FIN Bouton et menu**/
 /** à partir du titre selectionner et l'image homme/femme  apparision du menu côté gauche a la même hauteur*/
-
   .selectionner {
     display: flex;
     align-items: center;
@@ -134,8 +133,6 @@ width: 4vw;
   }
   .selectionner h1{
     color: white;
-  
-    
   }
   .selectionner a{
     list-style: none;
@@ -147,7 +144,6 @@ width: 4vw;
     justify-content: center;
     align-items: center;
     z-index: 0;
-
   }
   a, ::before, ::after, img {
     transition: all .3s ease;
@@ -162,13 +158,11 @@ width: 4vw;
   .suivant img {
     display: block;
     width: 100%;
-    
   }
   .suivant img:hover{
     background-color: rgba(95, 252, 33, 0.1);
     border-radius: 30%;
   border:inset 1px black;
-   
   }
   .avant,
   .apres {
@@ -179,7 +173,6 @@ width: 4vw;
     font-size: 20px;
     border-radius: 30%;
     background: rgba(252, 33, 33, 0.863);
-   
   }
   .apres {
     border-radius: 30%;
@@ -197,19 +190,15 @@ width: 4vw;
   }
   .next .avant .apres p{
     list-style: none;
-  
     color: white;
   }
-
   .container{
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items:flex-end;
-    justify-content: space-around;
-    
+    justify-content: space-around;  
 }
-
 .container a{
     margin: 5px;
     text-decoration: none;
@@ -217,15 +206,12 @@ width: 4vw;
 .container a p{
     color: black;
 }
-
-
 /** connexion page admin**/
 .formp{
   text-align: center;
   justify-content: center;
   display: flex;
 }
-
 /**BANDEAU publicité**/
 .publicite{
   display: flex;
@@ -236,13 +222,11 @@ width: 4vw;
   text-align: center;
   font-size: 1em;
 }
-
 .publicite p:active{
   border-radius: 30%;
 border:inset 1px black;
 }
-@media only screen and (max-width: 1814px){
-
+@media only screen and (max-width: 1855px){
   body{
     justify-content: center;
     align-items: center;
@@ -251,8 +235,10 @@ border:inset 1px black;
   height: 50px;
   width: 50px;
   }
-  button img{
-  display: none;
+  .toggle img{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0);
   }
   .menu{
    top: 15vh;
@@ -265,16 +251,15 @@ left: 10vh;
   .menu img{
     height: 7vh;
     width: 7vh;
-    border: 1px white ridge;
+    border: 1px rgba(255, 255, 255, 0.267) ridge;
     border-radius: 10px;
   }
   .menu img:hover{
     border-radius: 30%;
   border:inset 1px black;
-  background-color: rgba(255, 255, 255, 0.986);
+  background-color: rgb(255, 255, 255);
   }
   .menu li{
-    
     opacity: 0;
   position: absolute;
   left: 0;
@@ -295,7 +280,6 @@ left: 10vh;
     transform: rotate(calc(360deg / 8 * var(--i)));
     transition: 0.5s;
   }
-  
   
 }
 

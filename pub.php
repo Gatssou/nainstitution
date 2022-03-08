@@ -30,7 +30,8 @@ logged_only();
   <p class="n">N</p><p class="a">A</p><p class="i">I</p><p class="n">N</p><p class="v">V</p><p class="e">E</p><p class="i">N</p><p class="t">T</p><p class="u">U</p><p class="r">R</p><p class="a">A</p>
 </div>
     <!-- blipou -->
-    <button type="boutton" class="toggle"><img src="./img/img_index/menu.png" alt=""></button>
+    <button type="boutton" class="toggle"><img src="./img/index/burger.gif" alt=""s>
+</button>
       <section>
     <div class="menu"  >
         <li style="--i:0;" >
@@ -46,7 +47,7 @@ logged_only();
         <a href="./personnage.php"><img src="./img/img_index/Sans titre.png" height="100px" width="110px" alt=""></a>
         </li>
         <li style="--i:4;">
-        <a href=""><img src="./img/img_index/kitsurvie.png" height="80px" width="80px" alt=""></a>
+        <a href="https://www.amazon.fr/s/?ie=UTF8&keywords=sp%C3%A9l%C3%A9o&index=aps&tag=googhydr0a8-21&ref=pd_sl_9oudaqi60e_b&adgrpid=51656120770&hvpone=&hvptwo=&hvadid=275309076390&hvpos=&hvnetw=g&hvrand=16735063151113577990&hvqmt=b&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055869&hvtargid=kwd-298119585795&hydadcr=28262_1825247&gclid=EAIaIQobChMIpb_cwoi29gIVjtd3Ch3yhggqEAAYASAAEgI-n_D_BwE"><img src="./img/img_index/kitsurvie.png" height="80px" width="80px" alt=""></a>
         </li>
         <li style="--i:5;">
         <a href="./include/articlepage/envoief.php"><img src="./img/img_index/faq.png" alt=""></a>
@@ -59,7 +60,6 @@ logged_only();
         </li>
     </div>
     </section>
-  
 </div>
 </header>
 <div class="selectionner">
@@ -74,7 +74,6 @@ logged_only();
  </div>
  <footer>
  </footer>
- 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $('.overlay').on('click', function(e){
