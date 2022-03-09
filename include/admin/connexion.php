@@ -110,6 +110,9 @@ body.active{
   align-items: center;
   display: flex;
 }
+footer a {
+    color:black;
+}
     </style>
    <div id="toggle">
         <i class="inducator"></i>
@@ -124,6 +127,9 @@ body.active{
         <br><br>
         <input class="motdepass" type="submit"  name="valider">
         <section class="errmessadmin">
+            <footer>
+            <a href="/nainstitution/pub.php">page login</a>
+            </footer>
 <?php
     if(isset($_GET['log_err'])){
         $e = $_GET['log_err'];

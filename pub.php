@@ -1,18 +1,10 @@
 <?php
 session_start();
 require './include/functions.php';
+require_once '../nainstitution/include/bdd.php';
 logged_only();
-$utili = new PDO('mysql:host=localhost;dbname=blipou;','root','');
-
-$stats = $utili->prepare('SELECT id, username, email FROM logtest ');
-//execution de la rêquete pas besoin de bind pas de values
-
-$executeisok = $stats->execute();
-//recup le resultat
-$profil = $stats->fetchALL();
-
+$usename = $_SESSION["auth"];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,18 +27,23 @@ $profil = $stats->fetchALL();
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 </style> 
-<h1>
-    <ul>
-        <?php foreach ($profil as $profil):  ?>
-           
-            <li>
-                <?= $profil['username'] ?> 
-                <?= $profil['id'] ?> 
-                <?= $profil['email'] ?> 
-            </li>
-    </ul>
-    <?php endforeach; ?>
-</h1>
+<div class="pop">
+
+<div class="loupe">
+    <?php
+                if($usename){
+                    echo ' Pseudo : <br>'
+                    .$usename. '<br>';
+                }
+    
+            ?>
+</div>
+
+
+    
+</div>
+
+
 <div class="titree">
   <p class="n">N</p><p class="a">A</p><p class="i">I</p><p class="n">N</p><p class="v">V</p><p class="e">E</p><p class="i">N</p><p class="t">T</p><p class="u">U</p><p class="r">R</p><p class="a">A</p>
 </div>

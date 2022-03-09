@@ -33,5 +33,6 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
 }else{
         header('location:../login.php?log_err=2');   
     }
+    
 ?>
 

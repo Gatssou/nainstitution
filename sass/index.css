@@ -102,7 +102,6 @@ body::-webkit-scrollbar {
   width: 40vw;
   height: auto;
 }
-
 .textbtn {
   display: flex;
   align-items: center;

@@ -16,11 +16,13 @@ function logged_only(){
     }
 }
 ?>
-
 <?php
 if(isset($_GET['accepte_cookie'])){
     setcookie('accepte_cookie', 'true', time() + 365*24*3600);
     header('location:./pub.php');
 }
 ?>
+<?php
+// retenir l'email de la personne connectée pendant 1 an
+
 

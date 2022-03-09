@@ -4,10 +4,8 @@ require './include/functions.php';
 logged_only();
 // session_start recupere l'information si l'utilisateur est connecté si ne l'est pas  on redirige vers une funtion créé au préalable dans un dossier qui utilise la manière require qui appelle cette dite function pour rediriger méthode 1.
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,21 +19,21 @@ logged_only();
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>Nain ventura</title>
 </head>
-
 <body>
 
+<h1 class="pop">
+
+</h1>
     <div class="para">
 
         <div class="sct">
             <div id="all" class="sect active"></div>
         </div>
-
         <nav class="nav">
             <div class="btn"></div>
             <div class="btn"></div>
             <div class="btn"></div>
         </nav>
-
         <section id="pic_1" class="s1">
             <div class="av1">
                 <div class="ttl">Mike Horn</div>
@@ -66,19 +64,16 @@ logged_only();
                 <h1>Hi</h1>
                 <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
             </div>
-
             <div class="poprd">
                 <a href="javascript:void(0)" onclick="closePoprd()"></a>
                 <h1>Hi</h1>
                 <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
             </div>
-
             <div title="Cliquez n'importe où pour fermer" class="popth">
                 <a href="javascript:void(0)" onclick="closePopth()"></a>
                 <h1>Hi</h1>
                 <p>Lorem, ipsum dolor.</p>
             </div>
-
             <div class="containere">
                 <a href="" id="bouddha">
                     <h1>Prénom Nom<br> Indice de survie 7.9</h1>
@@ -86,7 +81,6 @@ logged_only();
                 </a>
             </div>
         </section>
-
         <section id="pic_2" class="s2">
             <div class="av2">
                 <div class="ttl2">Av2</div>
@@ -108,38 +102,31 @@ logged_only();
                     </a>
                 </div>
             </div>
-
             <div class="pop2" title="Cliquez n'importe où pour fermer">
                 <a href="javascript:void(0)" class="x" onclick="closePop2()"></a>
                 <h1>Hi</h1>
                 <p>test pop up</p>
             </div>
-
             <div class="popnd2" title="Cliquez n'importe où pour fermer">
                 <a href="javascript:void(0)" onclick="closePopnd2()"></a>
                 <h1>Hi</h1>
                 <p>test pop up</p>
             </div>
-
             <div class="poprd2" title="Cliquez n'importe où pour fermer">
                 <a href="javascript:void(0)" onclick="closePoprd2()"></a>
                 <h1>Hi</h1>
                 <p>test pop up</p>
             </div>
-
             <div class="popth2" title="Cliquez n'importe où pour fermer">
                 <a href="javascript:void(0)" onclick="closePopth2()"></a>
                 <h1>Hi</h1>
                 <p>test pop up</p>
             </div>
-
             <div class="popfi2" title="Cliquez n'importe où pour fermer">
                 <a href="javascript:void(0)" onclick="closePopfi2()"></a>
                 <h1>Hi</h1>
                 <p>test pop up</p>
             </div>
-
-
             <!--  
             <div class="containere">
                 <a href="#" id="bouddhaa">
@@ -152,7 +139,6 @@ logged_only();
                 </a>
             </div>
             -->
-
         </section>
 
         <section id="pic_3" class="s3">
@@ -168,7 +154,6 @@ logged_only();
                 </a>
             </div>
         </section>
-
         <section id="pic_4" class="s4">
             <h1>Aventurier 4</h1>
             <div class="containere">
@@ -183,7 +168,6 @@ logged_only();
             </div>
         </section>
     </div>
-
 </body>
 <script src="./js/stock/jquery-3.6.0.min.js"></script>
 <script src="./js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>

@@ -38,6 +38,7 @@ window.onscroll = () => {
       }
       //else if (e.target.className === ".section-stick" & window.innerHeight<=680) return;
       const active = document.querySelector('.sct .sect')
+      
       active.style.top = (62 + 30) * (qty - 1) + 'px'
     }
     console.log('SLIDE', qty)
@@ -66,7 +67,6 @@ window.onscroll = () => {
   };
 })
 }
-
 
 
 
