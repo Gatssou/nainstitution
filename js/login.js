@@ -30,3 +30,12 @@ $(document).ready(function(){
 
 //98x*@CziY0vz4%6eC^
 /*$('body').css('background', 'url("../img/img_log/659797.jpg")');*/
+
+
+let pass = document.querySelector('input[type="password"]');
+
+pass.addEventListener('focus', (event) => {
+    event.target.style.color = 'purple';
+});
+
+
