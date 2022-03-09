@@ -3,6 +3,7 @@ session_start();
 require './include/functions.php';
 require_once '../nainstitution/include/bdd.php';
 logged_only();
+$id_session = session_id();
 $usename = $_SESSION["auth"];
 ?>
 <!DOCTYPE html>
@@ -27,21 +28,17 @@ $usename = $_SESSION["auth"];
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 </style> 
-<div class="pop">
-
-<div class="loupe">
-    <?php
-                if($usename){
-                    echo ' Pseudo : <br>'
-                    .$usename. '<br>';
-                }
-    
-            ?>
-</div>
-
+<h1 class="pop">
+<?php
+            if($usename){
+                echo ' ID de session ! <br>'
+                .$usename. '<br>';
+            } 
+           
+        ?>
 
     
-</div>
+</h1>
 
 
 <div class="titree">

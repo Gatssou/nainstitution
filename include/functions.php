@@ -9,6 +9,12 @@ function logged_only(){
         session_start();
         header('location:login.php');
     }
+    if($_SESSION['auth']==true){ 
+    
+        }
+    elseif($_SESSION['auth']==false) 
+        echo '<pas de data>';
+    
     if(!isset($_SESSION['auth'])){
         $_SESSION['flash']['danger'] = "Vous n'avez pas les droits suffisants pour accèder à cette page";
         header('location:./login.php');

@@ -23,7 +23,7 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
     }finally{
         if(!empty($userdata) && password_verify($_POST['motdedep'], $userdata->password)){
             session_start();
-            $_SESSION['auth'] = $userdata;
+            $_SESSION['auth'] = $userdata->username;
             header('location:../presentation.php');
 
         }else{
@@ -33,6 +33,5 @@ if (!empty($_POST['motdedep']) && preg_match('#(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-
 }else{
         header('location:../login.php?log_err=2');   
     }
-    
 ?>
 
