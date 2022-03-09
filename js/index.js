@@ -1,7 +1,9 @@
+if (window.matchMedia("(min-width: 700px)").matches) {
+
 const TIME_OUT = 600
 const body = document.querySelector('body')
 const sectionsQty = document.querySelectorAll('section').length
-const sectionStick = document.querySelector('.section-stick')
+const sct = document.querySelector('.sct')
 let startFlag = true
 let initialScroll = window.scrollY
 let qty = 1,
@@ -11,7 +13,7 @@ let qty = 1,
 Array(sectionsQty)
   .fill()
   .forEach(() => {
-    sectionStick.innerHTML = sectionStick.innerHTML + '<div class="stick"></div>'
+    sct.innerHTML = sct.innerHTML + '<div class="sect"></div>'
   })
 console.log('SLIDE', qty)
 window.onscroll = () => {
@@ -34,12 +36,9 @@ window.onscroll = () => {
         next.style.transform = 'translateY(100vh)'
         qty--
       }
-      else if (e.target.className === ".section-stick" & window.innerHeight<=680) return;
-     
-
-      const active = document.querySelector('.section-stick .stick.active')
+      //else if (e.target.className === ".section-stick" & window.innerHeight<=680) return;
+      const active = document.querySelector('.sct .sect')
       active.style.top = (62 + 30) * (qty - 1) + 'px'
-      
     }
     console.log('SLIDE', qty)
 
@@ -51,12 +50,27 @@ window.onscroll = () => {
     startFlag = false
   }
   window.scroll(0, window.screen.height)
- 
+}
+}else{
+  $(document).ready(function(){
+  let removeS = document.body.clientWidth;
+  let b = $('body')
+  if (removeS < 700){
+    $('body').removeClass('active');
+    b.css({
+      overflowY: "scroll",
+      scrollBehavior: "smooth",
+    })
+  }else if (removeS > 700) {
+    $('body').addClass('active');
+  };
+})
 }
 
 
 
 
+  
 /*
 function mediaS(s)
 if (s.match){
@@ -433,7 +447,6 @@ $(document).ready(function () {
 
 
 
-
 /*
 function mediaQ(q){
   if (q.matches){
@@ -500,3 +513,4 @@ if (window.matchMedia("(min-width: 540px)").matches){
     })
   })
 }*/
+

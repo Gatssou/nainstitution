@@ -17,13 +17,4 @@
     display: flex;
     align-items: center;
 }
-@mixin arrow_ab {
-    border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-    border-color: rgba(136, 183, 213, 0);
-	border-width: 30px;
-}
+
