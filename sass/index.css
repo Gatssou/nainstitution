@@ -95,13 +95,11 @@ body::-webkit-scrollbar {
   transition: all var(--time-animation) ease-in-out;
   z-index: 1;
 }
-
 .border {
   border-radius: 5%;
   width: 40vw;
   height: auto;
 }
-
 .textbtn {
   display: flex;
   align-items: center;

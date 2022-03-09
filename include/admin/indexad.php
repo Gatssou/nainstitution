@@ -4,17 +4,7 @@ session_start();
 if(!$_SESSION['mdp']){
     header('Location: connexion.php');
 }
-$utili = new PDO('mysql:host=localhost;dbname=blipou;','root','');
-
-$stats = $utili->prepare('SELECT * FROM logtest ');
-//execution de la rêquete pas besoin de bind pas de values
-
-$executeisok = $stats->execute();
-//recup le resultat
-$profil = $stats->fetchALL();
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,17 +16,6 @@ $profil = $stats->fetchALL();
     <title>Page administration Gagnant</title>
 </head>
 <body>
-<h1>
-    <ul>
-        <?php foreach ($profil as $profil):  ?>
-            <?php endforeach; ?>
-            <li>
-                <?= $profil['username'] ?> 
-                <?= $profil['id'] ?> 
-                <?= $profil['email'] ?> 
-            </li>
-    </ul>
-</h1>
     <style>
         *{
     margin: 0;

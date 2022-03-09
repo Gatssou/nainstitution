@@ -61,7 +61,6 @@ if(!$_SESSION['mdp']){
   <div class="row">
   <?php
 $recupUsers = $bdd->query('SELECT * FROM logtest');
-
 while($user = $recupUsers->fetch()){
  ?>
  <p><?= $user['username'];?><a href="bannir.php?id=<?= $user['id'];?>" style="color:red; text-decoration:none;">Bannissement du gueux !</a></p>
@@ -75,6 +74,7 @@ while($user = $recupUsers->fetch()){
   
     <!--Fin d'afficher tous les membres -->
     <footer>
+       
  <a href="adlogout.php">Se déconnecter</a>
  </footer>
     

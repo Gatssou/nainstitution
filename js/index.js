@@ -34,7 +34,7 @@ window.onscroll = () => {
         next.style.transform = 'translateY(100vh)'
         qty--
       }
-      else if (e.target.className === ".section-stick" & window.innerHeight<=680) return;
+      
      
 
       const active = document.querySelector('.section-stick .stick.active')
