@@ -26,14 +26,13 @@ logged_only();
 </h1>
     <div class="para">
 
-        <div class="section-stick">
-            <div id="all" class="stick active"></div>
+        <div class="sct">
+            <div id="all" class="sect active"></div>
         </div>
         <nav class="nav">
-            <p class="poney"><a href="./pub.php">Pub</a></p>
-            <p class="poney">Tanzanie</p>
-            <p class="poney">Fidji</p>
-            <p class="poney">Laos</p>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
         </nav>
         <section id="pic_1" class="s1">
             <div class="av1">
@@ -57,42 +56,28 @@ logged_only();
             <div class="pop">
                 <a href="javascript:void(0)" class="x" onclick="closePop()"></a>
                 <h1>Description</h1>
-                <p title="Cliquez n'importe où pour fermer">Né le 16 juillet 1966 à Johannesbourg.</p>
+                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
             </div>
-            <!-- 
-            <div class="popmq">
-                <h1>Hi</h1>
-                <p>Lorem, ipsum dolor.</p>
-            </div>
- -->
+            
             <div class="popnd">
                 <a href="javascript:void(0)" onclick="closePopnd()"></a>
                 <h1>Hi</h1>
-                <p title="Cliquez n'importe où pour fermer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos officia sapiente non expedita molestias hic numquam aliquid aut debitis culpa.</p>
+                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
             </div>
             <div class="poprd">
                 <a href="javascript:void(0)" onclick="closePoprd()"></a>
                 <h1>Hi</h1>
-                <p title="Cliquez n'importe où pour fermer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iste aut aspernatur odio repellat. Error, dolor!</p>
+                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
             </div>
             <div title="Cliquez n'importe où pour fermer" class="popth">
                 <a href="javascript:void(0)" onclick="closePopth()"></a>
                 <h1>Hi</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet laborum, ab voluptatum
-                    ratione molestiae atque facere at accusamus. Dolor unde totam neque eius rem delectus dolores
-                    aliquid. Laborum similique culpa aperiam aliquid vero tenetur consequatur ad hic doloribus
-                    quibusdam.</p>
+                <p>Lorem, ipsum dolor.</p>
             </div>
             <div class="containere">
                 <a href="" id="bouddha">
                     <h1>Prénom Nom<br> Indice de survie 7.9</h1>
-                    <p class="infos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam
-                        veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi
-                        corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum
-                        commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
+                    <p class="infos">Lorem, ipsum dolor.</p>
                 </a>
             </div>
         </section>
@@ -184,7 +169,6 @@ logged_only();
         </section>
     </div>
 </body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="./js/stock/jquery-3.6.0.min.js"></script>
 <script src="./js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="./js/index.js"></script>

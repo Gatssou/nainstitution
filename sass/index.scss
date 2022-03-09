@@ -2,7 +2,7 @@
 
 :root{
     --color-white: #fff;
-    --time-animation: 0.6s;
+    --time-animation: .6s;
 }
 
 @keyframes pulse {
@@ -27,29 +27,23 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  overflow: hidden scroll;
   -ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar {
   display: none;
-  
 }
 #pic_1 {
     background-color: #4d6652;
-    @include back;
 }
 #pic_2{
     background-color: #4d6652cc;
-    @include back;
 }
 #pic_3{
     background-color: #4d6652a2;
-    @include back;
 }
 #pic_4{
     background-color: #4d665280;
-    @include back;
 }
 
 .para {
@@ -57,7 +51,6 @@ body::-webkit-scrollbar {
   height: calc(100vh * 3);
   position: relative;
 }
-
 
 .para section {
   width: 100%;
@@ -73,7 +66,23 @@ body::-webkit-scrollbar {
   transition: all var(--time-animation) ease-in-out;
   z-index: 1;
 }
-  
+
+/*** RESPONSIVE ***/
+/* MOBILE */
+@media screen and (max-width: 700px) {
+  body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    
+  }
+  body{
+    overflow-y: scroll;
+  }
+  .para section{
+    font-size: 40px;
+  }
+}
+
 .border {
   border-radius: 5%;
   width: 40vw;
@@ -129,22 +138,27 @@ input {
   height: 3vh;
 }
 .nav{
-    position: fixed;
-    left: -90px;
-    top: 40%;
-    z-index: 1001;
-    border: 2px solid black;
-    width: 5vw;
-    height: 22vh;
-    border-radius: 0 20px 20px 0;
-    overflow-x: hidden;
-    background: black;
-    color: white;
-    transition: 1s ease-in-out;
+  float: left;
+  border-radius: 100%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 5px 10px 2px;
 }
-.nav:hover{
-    transform: translateX(92px);
+nav::before, nav::after{
+  content: '';
+  background: grey;
+  border-radius: 5px;
+  width: 30px;
+  height: 5px;
+  transition: .2 ease;
 }
+nav::before{
+  transform: rotate(0deg);
+}
+nav::after{
+  transform: rotate(-90deg);
+}
+
 .poney{
     margin-top: 2.5vh;
 }
@@ -454,24 +468,6 @@ a {
   visibility: hidden;
   cursor: pointer;
 }
-
-
-
-
-/*** RESPONSIVE ***/
-
-/* MOBILE */
-@media screen and (max-width: 700px) {
-    body::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-    -webkit-appearance: none;
-  }
-  .para section {
-    font-size: 40px;
-  }
-}
-
   
 /*julien moi loni ne touche pas sil te plait merci.*/
 .supergrille{
