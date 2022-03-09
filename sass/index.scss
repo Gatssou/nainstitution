@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 #pic_4{
     background-color: #4d665280;
 }
-
+/*
 .para {
   width: 100%;
   height: calc(100vh * 3);
@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
   transform: translateY(100vh);
   transition: all var(--time-animation) ease-in-out;
   z-index: 1;
-}
+}*/
 
 /*** RESPONSIVE ***/
 /* MOBILE */
@@ -74,9 +74,6 @@ body::-webkit-scrollbar {
     width: 0px;
     background: transparent;
     
-  }
-  body{
-    overflow-y: scroll;
   }
   .para section{
     font-size: 40px;
