@@ -8,27 +8,34 @@
 
 @-webkit-keyframes pulse {
   0% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   50% {
-    transform: translateY(25px);
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes pulse {
   0% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   50% {
-    transform: translateY(25px);
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
+
 html {
   scrollbar-width: none;
 }
@@ -37,7 +44,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  overflow: hidden scroll;
   -ms-overflow-style: none;
 }
 
@@ -63,7 +69,7 @@ body::-webkit-scrollbar {
 
 .para {
   width: 100%;
-  height: 300vh;
+  height: calc(100vh * 3);
   position: relative;
 }
 
@@ -74,12 +80,20 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   color: var(--color-white);
-  transform: translateY(100vh);
+  -webkit-transform: translateY(100vh);
+          transform: translateY(100vh);
+  -webkit-transition: all var(--time-animation) ease-in-out;
   transition: all var(--time-animation) ease-in-out;
   z-index: 1;
 }
@@ -90,23 +104,35 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar {
     width: 0px;
     background: transparent;
-    -webkit-appearance: none;
   }
-
+  body {
+    overflow-y: scroll;
+  }
   .para section {
     font-size: 40px;
   }
 }
+
 .border {
   border-radius: 5%;
   width: 40vw;
   height: auto;
 }
+
 .textbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 input {
@@ -124,7 +150,8 @@ input {
 }
 
 .para .s1 {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   z-index: 1000;
 }
 
@@ -149,10 +176,18 @@ input {
 }
 
 .dispo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 3vh;
 }
 
@@ -161,24 +196,28 @@ input {
   border-radius: 100%;
   background: white;
   cursor: pointer;
-  box-shadow: 0 5px 10px 2px;
+  -webkit-box-shadow: 0 5px 10px 2px;
+          box-shadow: 0 5px 10px 2px;
 }
 
 nav::before, nav::after {
-  content: "";
+  content: '';
   background: grey;
   border-radius: 5px;
   width: 30px;
   height: 5px;
-  transition: 0.2 ease;
+  -webkit-transition: .2 ease;
+  transition: .2 ease;
 }
 
 nav::before {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 nav::after {
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .poney {
@@ -187,12 +226,19 @@ nav::after {
 
 /** image effect start  **/
 #pic_1, #pic_2 {
+  display: -ms-grid;
   display: grid;
-  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
 
 .containere {
-  grid-area: 1/4/4/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 4 / 4 / 6;
   margin-left: 4vw;
 }
 
@@ -219,9 +265,15 @@ nav::after {
   width: 600px;
   border-radius: 25px;
   border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #bouddhaa {
@@ -231,9 +283,15 @@ nav::after {
   opacity: 0.7;
   width: 600px;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #bouddhaa:hover {
@@ -247,9 +305,15 @@ nav::after {
   width: 600px;
   border-radius: 25px;
   border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #bouddhaaaa {
@@ -259,67 +323,105 @@ nav::after {
   width: 600px;
   border-radius: 25px;
   border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #bouddha p {
-  transform: translate(3px);
+  -webkit-transform: translate(3px);
+          transform: translate(3px);
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: ease 1s;
   transition: ease 1s;
   background-color: rgba(255, 255, 255, 0);
 }
 
 #bouddhaa p {
-  transform: translate(3px);
+  -webkit-transform: translate(3px);
+          transform: translate(3px);
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: ease 1s;
   transition: ease 1s;
   background-color: rgba(255, 255, 255, 0);
 }
 
 #bouddhaaa p {
-  transform: translate(3px);
+  -webkit-transform: translate(3px);
+          transform: translate(3px);
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: ease 1s;
   transition: ease 1s;
   background-color: rgba(255, 255, 255, 0);
 }
 
 #bouddhaaaa p {
-  transform: translate(3px);
+  -webkit-transform: translate(3px);
+          transform: translate(3px);
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: ease 1s;
   transition: ease 1s;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -327,13 +429,20 @@ nav::after {
 #bouddha h1 {
   color: white;
   text-shadow: #aaa 1px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   height: 100%;
   width: 70%;
   opacity: 1;
+  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -343,13 +452,20 @@ nav::after {
 #bouddhaa h1 {
   color: white;
   text-shadow: #aaa 1px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   height: 100%;
   width: 70%;
   opacity: 1;
+  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -359,13 +475,20 @@ nav::after {
 #bouddhaaa h1 {
   color: white;
   text-shadow: #aaa 1px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   height: 100%;
   width: 70%;
   opacity: 1;
+  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -375,13 +498,20 @@ nav::after {
 #bouddhaaaa h1 {
   color: white;
   text-shadow: #aaa 1px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   height: 100%;
   width: 70%;
   opacity: 1;
+  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -389,25 +519,29 @@ nav::after {
 }
 
 #bouddha:hover p {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 #bouddhaa:hover p {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 #bouddhaaa:hover p {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 #bouddhaaaa:hover p {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -451,7 +585,11 @@ a {
 
 /*aventurier 1*/
 .av1 {
-  grid-area: 2/3/3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 3 / 4;
 }
 
 .ttl, .ttl2 {
@@ -487,6 +625,7 @@ a {
   font-size: 20px;
   text-align: center;
 }
+
 .av a {
   color: #fff;
 }
@@ -498,11 +637,14 @@ a {
 
 .clicked {
   opacity: 1;
+  -webkit-transition: 1.2s all ease;
   transition: 1.2s all ease;
-  transform: translateY(56px);
+  -webkit-transform: translateY(56px);
+          transform: translateY(56px);
 }
 
 .st, .nd, .rd, .th {
+  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
 
@@ -514,10 +656,15 @@ a {
 }
 
 .av2 {
-  grid-area: 2/3/3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 3 / 4;
 }
 
 .st2, .nd2, .rd2, .th2, .fi2 {
+  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
 
@@ -530,11 +677,17 @@ a {
 .supergrille {
   margin: 0 -10px -10px auto;
   padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(10, 10, 10, 0.78039);
-  filter: brightness(100%);
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: red;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .articlee {
@@ -543,12 +696,11 @@ a {
   margin-right: 10px;
   width: 30%;
   cursor: pointer;
-  transition: all 0.15s;
   border: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
   margin: 15px;
-  border: 1px black ridge;
   background-color: rgba(0, 0, 0, 0.171);
 }
 
@@ -556,13 +708,29 @@ a {
   overflow: hidden;
 }
 
+.retour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 /* LE FORMULAIRE BY DYLAN LA MERDE , DEBUT */
 .content {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
-  justify-content: center;
-  border: 1px chartreuse solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px chartreuse  solid;
   border-radius: 15% 15% 0% 0%;
   background-color: rgba(169, 169, 169, 0.158);
   padding: 2vh;
@@ -632,6 +800,7 @@ a {
   left: 35%;
   border: 1px chartreuse solid;
   cursor: pointer;
+  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
 
@@ -652,4 +821,5 @@ label::first-letter {
   outline: solid chocolate 2px;
 }
 
-/* FIN DU FORMULAIRE *//*# sourceMappingURL=index.css.map */
+/* FIN DU FORMULAIRE */
+/*# sourceMappingURL=index.css.map */

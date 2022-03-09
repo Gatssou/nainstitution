@@ -475,7 +475,7 @@ a {
   padding: 15px;
 display: flex;
 flex-wrap: wrap;
-background-color: rgba(10,10,10,.78039);
+color: red;
  filter: brightness(100%);
 justify-content: center;
 }
@@ -486,17 +486,21 @@ justify-content: center;
   margin-right: 10px;
   width: 30%;
   cursor: pointer;
-  transition: all .15s;
   border: 1px solid hsla(0,0%,100%,.08);
   position: relative;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.31373);
     margin: 15px;
-    border: 1px black ridge;
+ 
     background-color: rgba(0, 0, 0, 0.171);
 }
 .articlee p{
   overflow: hidden;
 }
+.retour{
+  display: flex;
+  justify-content: start;
+}
+
 
 /* LE FORMULAIRE BY DYLAN LA MERDE , DEBUT */
 
