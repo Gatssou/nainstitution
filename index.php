@@ -200,6 +200,7 @@ logged_only();
     </div>
 
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="./js/stock/jquery-3.6.0.min.js"></script>
 <script src="./js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="./js/index.js"></script>
