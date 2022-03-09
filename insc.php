@@ -12,8 +12,8 @@ include './include/header.php';
             <label for="switch">
                 <div class="toggle" onclick="toggleSwitch()"></div>
                 <div class="names">
-                    <p class="styl" id="day">Light</p>
-                    <p class="styn" id="night">Dark</p>
+                    <p class="styl" id="day">Day</p>
+                    <p class="styn" id="night">Night</p>
                 </div>
             </label>
         </div>
@@ -24,7 +24,7 @@ include './include/header.php';
         <div class="inpdec">
             <i class="far fa-user"></i>
             <input type="text" class="decou" name="pseudo" id="pseud" required
-                pattern="^[A-Za-zÀ-ÿ'-]+$" max="20" placeholder="Pseudo" required />
+                pattern="^[A-Za-zÀ-ÿ'-]+$" max="20" placeholder="Username" required />
         </div>
 
         <div class="inpdec">
@@ -41,7 +41,7 @@ include './include/header.php';
 
         <div class="inpdec">
             <i class="fas fa-lock"></i>
-            <input type="password" class="decop" placeholder="Password" required name="mdpconf"
+            <input type="password" class="decop" placeholder="Confirm Password" required name="mdpconf"
                 id="motdpec" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?$/\=*.-]).{6,18}$">
         </div>
 
