@@ -52,7 +52,7 @@ $usename = $_SESSION["auth"];
                 <p class="a">A</p>
             </div>
             <!-- blipou -->
-            <button type="boutton" class="toggle"><img src="./img/index/burger.gif" alt="" s>
+            <button type="boutton" class="toggle"><img src="./img/index/burger.gif" alt="" >
             </button>
             <section>
                 <div class="menu">
@@ -89,7 +89,7 @@ $usename = $_SESSION["auth"];
                     </li>
                 </div>
             </section>
-            </div>
+            
     </header>
     <div class="selectionner">
         <h1 class="selec"> Explorateurs du Monde </h1>

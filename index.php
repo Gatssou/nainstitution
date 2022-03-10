@@ -20,12 +20,39 @@ logged_only();
     <title>Nain ventura</title>
 </head>
 
+<header>
+<div class="menu ">
+    <div class="toggle nav">
+      <ion-icon name="add-outline"></ion-icon>
+    </div>
+    <li class="icon" style="--i: 0">
+      <ion-icon name="home-outline"></ion-icon>
+    </li>
+    <li class="icon" style="--i: 1">
+      <ion-icon name="aperture-outline"></ion-icon>
+    </li>
+    <li class="icon" style="--i: 2">
+      <ion-icon name="arrow-redo-outline"></ion-icon>
+    </li>
+   
+   
+  </div>
+</header>
 <body>
+
+  
+
+    <div class="menu" onclick="this.classList.toggle('open')">
+  <div class="button"></div>
+  <div class="button"></div>
+  <div class="button"></div>
+</div>
     <div class="para">
+   
         <div class="sct">
             <div id="all" class="sect active"></div>
         </div>
-       
+      
         <section id="pic_1" class="s1">
             <div class="av1">
                 <div class="ttl">Mike Horn</div>
@@ -47,13 +74,11 @@ logged_only();
                     </a>
                 </div>
             </div>
-
             <div class="pop">
                 <a href="javascript:void(0)" class="x" onclick="closePop()"></a>
                 <h1>Description</h1>
                 <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
             </div>
-
             <div class="popnd">
                 <a href="javascript:void(0)" onclick="closePopnd()"></a>
                 <h1>Hi</h1>
@@ -256,4 +281,12 @@ logged_only();
 <script src="./js/stock/jquery-3.6.0.min.js"></script>
 <script src="./js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="./js/index.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/menu.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
 </html>
