@@ -27,12 +27,10 @@ $usename = $_SESSION["auth"];
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
         </style>
-        <h1 class="popi">
-            <?php
-            if($usename){
-                echo ' Bienvenue ' .$usename. '<br> dans cette';
-            }
-?>
+     
+ <p class="loge">
+            <?= $usename;?>
+        </p> 
         </h1>
 
         <div class="titree">
