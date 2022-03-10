@@ -23,7 +23,7 @@ $usename = $_SESSION["auth"];
 <body>
 
     <header>
-
+        <img class="lierre" src="./img/img_index/lierre2.png" alt="">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
         </style>

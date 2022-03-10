@@ -354,5 +354,4 @@ img {
     transform: rotate(calc(360deg / 8 * var(--i)));
     transition: 0.5s;
   }
-
 }
