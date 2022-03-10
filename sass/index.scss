@@ -1,8 +1,8 @@
 @import "./stock/variable.scss";
 
-:root{
-    --color-white: #fff;
-    --time-animation: .6s;
+:root {
+  --color-white: #fff;
+  --time-animation: .6s;
 }
 
 @keyframes pulse {
@@ -33,17 +33,21 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
 #pic_1 {
-    background-color: #4d6652;
+  background-color: #4d6652;
 }
-#pic_2{
-    background-color: #4d6652cc;
+
+#pic_2 {
+  background-color: #4d6652cc;
 }
-#pic_3{
-    background-color: #4d6652a2;
+
+#pic_3 {
+  background-color: #4d6652a2;
 }
-#pic_4{
-    background-color: #4d665280;
+
+#pic_4 {
+  background-color: #4d665280;
 }
 
 .para {
@@ -66,15 +70,17 @@ body::-webkit-scrollbar {
   transition: all var(--time-animation) ease-in-out;
   z-index: 1;
 }
+
 /*** RESPONSIVE ***/
 /* MOBILE */
 @media screen and (max-width: 700px) {
   body::-webkit-scrollbar {
     width: 0px;
     background: transparent;
-    
+
   }
-  .para section{
+
+  .para section {
     font-size: 40px;
   }
 }
@@ -84,6 +90,7 @@ body::-webkit-scrollbar {
   width: 40vw;
   height: auto;
 }
+
 .textbtn {
   @include disp3;
   flex-direction: column;
@@ -115,7 +122,7 @@ input {
 .para .s3 {
   z-index: 5;
 }
-  
+
 .para .s4 {
   z-index: 4;
 }
@@ -127,20 +134,24 @@ input {
 .para .s6 {
   z-index: 2;
 }
-.dispo{
+
+.dispo {
   @include disp2;
   flex-direction: column;
   justify-content: space-around;
   height: 3vh;
 }
-.nav{
+
+.nav {
   float: left;
   border-radius: 100%;
   background: white;
   cursor: pointer;
   box-shadow: 0 5px 10px 2px;
 }
-nav::before, nav::after{
+
+nav::before,
+nav::after {
   content: '';
   background: grey;
   border-radius: 5px;
@@ -148,21 +159,20 @@ nav::before, nav::after{
   height: 5px;
   transition: .2 ease;
 }
-nav::before{
+
+nav::before {
   transform: rotate(0deg);
 }
-nav::after{
+
+nav::after {
   transform: rotate(-90deg);
 }
 
-.poney{
-    margin-top: 2.5vh;
+.poney {
+  margin-top: 2.5vh;
 }
+
 /** image effect start  **/
-#pic_1, #pic_2{
-  display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
-}
 /*
 .containere{
    grid-area: 1 / 4 / 4 / 6;
@@ -402,11 +412,29 @@ a {
 
 /*aventurier 1*/
 //sec1
+#pic_1,
+#pic_2,
+#pic_3,
+#pic_4{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+}
 .av1{
   grid-area: 2 / 3 / 3 / 4;
 }
-
-.ttl, .ttl2{
+.av2{
+  grid-area: 2 / 3 / 3 / 4;
+}
+.av3{
+  grid-area: 2 / 3 / 3 / 4;
+}
+.av4{
+  grid-area: 2 / 3 / 3 / 4;
+}
+.ttl,
+.ttl2,
+.ttl3,
+.ttl4 {
   display: block;
   font-size: 2em;
   z-index: 99;
@@ -418,11 +446,23 @@ a {
   font-family: Dancing Script, cursive;
   cursor: pointer;
 }
-.ttl::selection{
+.ttl::selection {
   color: black;
   text-shadow: 5px 5px 4px white;
 }
-.av{
+.ttl2::selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+.ttl3::selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+.ttl4::selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+.av {
   position: relative;
   width: 40px;
   height: 40px;
@@ -431,70 +471,97 @@ a {
   color: #FFF;
   font-size: 20px;
   text-align: center;
-  
-  a{
+  a {
     color: #fff;
   }
 }
-.avs{
+.avs {
   top: -5vh;
   z-index: 1;
 }
-.clicked{
+.clicked {
   opacity: 1;
   transition: 1.2s all ease;
   transform: translateY(56px);
 }
-.st, .nd, .rd, .th, .fi{
+.st,
+.nd,
+.rd,
+.th,
+.fi,
+.st2,
+.nd2,
+.rd2,
+.th2,
+.fi2,
+.st3,
+.nd3,
+.rd3,
+.th3,
+.fi3,
+.st4,
+.nd4,
+.rd4,
+.th4,
+.fi4 {
   transition: 1s ease;
 }
-.pop, .popnd, .poprd, .popth, .popfi{
+.pop,
+.popnd,
+.poprd,
+.popth,
+.popfi,
+.pop2,
+.popnd2,
+.poprd2,
+.popth2,
+.popfi2,
+.pop3,
+.popnd3,
+.poprd3,
+.popth3,
+.popfi3,
+.pop4,
+.popnd4,
+.poprd4,
+.popth4,
+.popfi4 {
   visibility: hidden;
   cursor: pointer;
   width: 20vw;
   height: auto;
 }
-//sec2
-.av2{
-  grid-area: 2 / 3 / 3 / 4;
-}
 
-.st2, .nd2, .rd2, .th2, .fi2{
-  transition: 1s ease;
-}
-.pop2, .popnd2, .poprd2, .popth2, .popfi2{
-  visibility: hidden;
-  cursor: pointer;
-}
-  
 /*julien moi loni ne touche pas sil te plait merci.*/
-.supergrille{
+.supergrille {
   margin: 0 -10px -10px auto;
   padding: 15px;
-display: flex;
-flex-wrap: wrap;
-color: red;
- filter: brightness(100%);
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  filter: brightness(100%);
+  justify-content: center;
 }
 
-.articlee{
+.articlee {
   padding: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
   width: 30%;
   cursor: pointer;
-  border: 1px solid hsla(0,0%,100%,.08);
+  border: 1px solid hsla(0, 0%, 100%, .08);
   position: relative;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.31373);
-    margin: 15px;
- 
-    background-color: rgba(0, 0, 0, 0.171);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .31373);
+  margin: 15px;
+
+  background-color: rgba(0, 0, 0, 0.171);
 }
-.articlee p{
+
+.articlee p {
   overflow: hidden;
 }
-.retour{
+
+.retour {
   display: flex;
   justify-content: start;
 }
@@ -502,96 +569,104 @@ justify-content: center;
 
 /* LE FORMULAIRE BY DYLAN LA MERDE , DEBUT */
 
-.content{
-    flex-direction: column;
-    display: flex;
-    position:absolute;
-    justify-content: center;
-    border: 1px chartreuse  solid;
-    border-radius: 15% 15% 0% 0%;
-    background-color: rgba(169, 169, 169, 0.158);
-    padding: 2vh;
-    width: 20%;
-    height: 50%;
-    top: 20%;
-    left: 37%;
-   
+.content {
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  border: 1px chartreuse solid;
+  border-radius: 15% 15% 0% 0%;
+  background-color: rgba(169, 169, 169, 0.158);
+  padding: 2vh;
+  width: 20%;
+  height: 50%;
+  top: 20%;
+  left: 37%;
+
 }
 
-.mail{
-    text-align: center;
-    font-size: 1.5em;
-    letter-spacing: 0.2em;
-    margin-bottom: 2vh;
-    position: relative;
-    width: 50%;
-    left: 25%;
-    color: chartreuse;
-}
-.titre{
-    height: 2.5vh;
-    background-color: rgb(255, 255, 255);
-    border: grey 1px solid;
-    width: 70%;
-    position: relative;
-    margin-bottom: 2vh;
-    left: 15%;
-}
-.textarea{
-    font-size: 1.5em;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin-bottom: 2vh;
-    color: chartreuse;
-    
-}
-.proute{
-    position: absolute;
-    width: 10%;
-    bottom: 39.8vh;
-    left: 6%;
+.mail {
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  margin-bottom: 2vh;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  color: chartreuse;
 }
 
-.textarea-con{
-    min-width: 97.6%;
-    max-width: 97.6%;
-    max-height: 40%;
-    min-height: 40%;
-    
-}
-.plume{
-    position: absolute;
-    height: 37%;
-    opacity: 0.2;
-    left: 53.5%;
-    top: 41.2%;
-    
-    
-}
-.envoie{
-    margin-top: 4vh;
-    width: 30%;
-    height: 6%;
-    color: white;
-    position: relative;
-    left: 35%;
-    border: 1px chartreuse solid;
-    cursor: pointer;
-    transition: 0.8s ease;
-}
-.envoie:hover{
-    color: chocolate;
-    background-color: chartreuse;
-    border:gray 1px solid;
-    border-radius: 20% 0% 20% 0%;
-}
-label::first-letter{
-    color: chocolate;
-    font-size: 1.5em;
-    font-weight:lighter;
+.titre {
+  height: 2.5vh;
+  background-color: rgb(255, 255, 255);
+  border: grey 1px solid;
+  width: 70%;
+  position: relative;
+  margin-bottom: 2vh;
+  left: 15%;
 }
 
-.textarea-con:focus{
-    outline: solid chocolate 2px;
+.textarea {
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 2vh;
+  color: chartreuse;
+
 }
+
+.proute {
+  position: absolute;
+  width: 10%;
+  bottom: 39.8vh;
+  left: 6%;
+}
+
+.textarea-con {
+  min-width: 97.6%;
+  max-width: 97.6%;
+  max-height: 40%;
+  min-height: 40%;
+
+}
+
+.plume {
+  position: absolute;
+  height: 37%;
+  opacity: 0.2;
+  left: 53.5%;
+  top: 41.2%;
+
+
+}
+
+.envoie {
+  margin-top: 4vh;
+  width: 30%;
+  height: 6%;
+  color: white;
+  position: relative;
+  left: 35%;
+  border: 1px chartreuse solid;
+  cursor: pointer;
+  transition: 0.8s ease;
+}
+
+.envoie:hover {
+  color: chocolate;
+  background-color: chartreuse;
+  border: gray 1px solid;
+  border-radius: 20% 0% 20% 0%;
+}
+
+label::first-letter {
+  color: chocolate;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.textarea-con:focus {
+  outline: solid chocolate 2px;
+}
+
 /* FIN DU FORMULAIRE */

@@ -19,13 +19,9 @@ logged_only();
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>Nain ventura</title>
 </head>
+
 <body>
-
-<h1 class="pop">
-
-</h1>
     <div class="para">
-
         <div class="sct">
             <div id="all" class="sect active"></div>
         </div>
@@ -61,7 +57,7 @@ logged_only();
                 <h1>Description</h1>
                 <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
             </div>
-            
+
             <div class="popnd">
                 <a href="javascript:void(0)" onclick="closePopnd()"></a>
                 <h1>Hi</h1>
@@ -149,7 +145,7 @@ logged_only();
             -->
         </section>
 
-     <!--   <section id="pic_3" class="s3">
+        <!--   <section id="pic_3" class="s3">
             <h1>Aventurier 3</h1>
              <div class="containere">
                 <a href="" id="bouddhaaa">
@@ -170,16 +166,16 @@ logged_only();
                     <a href="#pic_3" onclick="openPop3()">
                         <div class="st3 av"></div>
                     </a>
-                    <a href="#pic_2" onclick="openPopnd3()">
+                    <a href="#pic_3" onclick="openPopnd3()">
                         <div class="nd3 av"></div>
                     </a>
-                    <a href="#pic_2" onclick="openPoprd3()">
+                    <a href="#pic_3" onclick="openPoprd3()">
                         <div class="rd3 av"></div>
                     </a>
-                    <a href="#pic_2" onclick="openPopth3()">
+                    <a href="#pic_3" onclick="openPopth3()">
                         <div class="th3 av"></div>
                     </a>
-                    <a href="#pic_2" onclick="openPopfi3()">
+                    <a href="#pic_3" onclick="openPopfi3()">
                         <div class="fi3 av"></div>
                     </a>
                 </div>
@@ -209,24 +205,59 @@ logged_only();
                 <h1>Hi</h1>
                 <p>test pop up</p>
             </div>
+        </section>
 
         <section id="pic_4" class="s4">
-            <h1>Aventurier 4</h1>
-            <div class="containere">
-                <a href="" id="bouddhaaaa">
-                    <h1>Mr Kangourou IDS de survie 9.9</h1>
-                    <p class="infos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam
-                        veniam sunt omnis non ratione inventore quis. Dolor dolore exercitationem odit nostrum modi
-                        corporis perferendis quibusdam nemo necessitatibus Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum
-                        commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
-                </a>
+            <div class="av4">
+                <div class="ttl4">Av4</div>
+                <div id="avs4">
+                    <a href="#pic_4" onclick="openPop4()">
+                        <div class="st4 av"></div>
+                    </a>
+                    <a href="#pic_4" onclick="openPopnd4()">
+                        <div class="nd4 av"></div>
+                    </a>
+                    <a href="#pic_4" onclick="openPoprd4()">
+                        <div class="rd4 av"></div>
+                    </a>
+                    <a href="#pic_4" onclick="openPopth4()">
+                        <div class="th4 av"></div>
+                    </a>
+                    <a href="#pic_4" onclick="openPopfi4()">
+                        <div class="fi4 av"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="pop4" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" class="x" onclick="closePop4()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            <div class="popnd4" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePopnd4()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            <div class="poprd4" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePoprd4()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            <div class="popth4" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePopth4()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            <div class="popfi4" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePopfi4()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
             </div>
         </section>
     </div>
+
 </body>
 <script src="./js/stock/jquery-3.6.0.min.js"></script>
 <script src="./js/stock/jquery-ui-1.13.0/jquery-ui.js"></script>
 <script src="./js/index.js"></script>
-
 </html>

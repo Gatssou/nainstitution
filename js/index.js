@@ -482,7 +482,387 @@ $(document).ready(function () {
 
 });
 
+//SECTION 3
+$(document).ready(function () {
 
+  $(".av3").mouseenter(function () {
+    $(".st3").css({
+      transform: "translateX(-5vw)",
+      top: "-4vh",
+      background: "black"
+    })
+    $(".nd3").css({
+      transform: "translateY(-12vh)",
+      background: "#c79c9c",
+      right: "-10%"
+    })
+    $(".rd3").css({
+      transform: "translateY(5vh)",
+      background: "white",
+      right: "20%"
+    })
+    $(".th3").css({
+      transform: "translateY(5vh)",
+      background: "#407261",
+      right: "5%"
+    })
+    $(".fi3").css({
+      transform: "translateX(9vh)",
+      background: "#407261",
+      top: "-4vh"
+    })
+  })
+  $(".av3").click(function () {
+    $(".st3").css({
+      background: "transparent"
+    })
+    $(".nd3").css({
+      background: "transparent"
+    })
+    $(".rd3").css({
+      background: "transparent"
+    })
+    $(".th3").css({
+      background: "transparent"
+    })
+    $(".fi3").css({
+      background: "transparent"
+    })
+  })
+})
+
+//Fonction qui ouvre la bulle, donc fait apparaître le cadre au clique pour first (black)
+$(document).ready(function () {
+  $('.st3').click(function openPop3() {
+    $('.pop3').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      left: "10vw",
+      top: "15vh",
+    })
+  })
+
+  //Fonction pour second (wheat)
+  $('.nd3').click(function openPopnd3() {
+    $('.popnd3').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      left: "18vw",
+    })
+  })
+
+  //Fonction pour third (white)
+  $('.rd3').click(function openPoprd3() {
+    $('.poprd3').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "50vh",
+      left: "-20vw",
+      width: "15vw"
+    })
+  })
+
+  //Fonction pour fourth (blue)
+  $('.th3').click(function openPopth3() {
+    $('.popth3').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "55vh",
+      left: "-10vw"
+    })
+  })
+
+  //Fonction pour fourth (blue)
+  $('.fi3').click(function openPopfi3() {
+    $('.popfi3').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "30vh",
+      width: "15vw",
+      height: "15vh",
+      left: "-13vw"
+    })
+  })
+
+  function mediaQ(q) {
+    if (q.matches) {
+      $('.pop3').click(function closePop3() {
+        $('.pop3').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popnd3').click(function closePopnd() {
+        $('.popnd3').css({
+          visibility: "hidden"
+        })
+      })
+      $('.poprd3').click(function closePoprd3() {
+        $('.poprd3').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popth3').click(function closePopth3() {
+        $('.popth3').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popfi3').click(function closePopfi3() {
+        $('.popfi3').css({
+          visibility: "hidden"
+        })
+      })
+    } else {
+      $('.pop3').click(function closePop3() {
+        $('.pop3').css({
+          display: "block",
+        })
+      })
+      $('.popnd3').click(function closePopnd3() {
+        $('.popnd3').css({
+          display: "block"
+        })
+      })
+      $('.poprd3').click(function closePoprd3() {
+        $('.poprd3').css({
+          display: "block"
+        })
+      })
+      $('.popth3').click(function closePopth3() {
+        $('.popth3').css({
+          display: "block"
+        })
+      })
+      $('.popfi3').click(function closePopfi3() {
+        $('.popfi3').css({
+          display: "block"
+        })
+      })
+    }
+  }
+
+  const mdqObj = window.matchMedia("(min-width: 700px)");
+  mediaQ(mdqObj);
+  mdqObj.addListener(mediaQ);
+
+});
+
+//SECTION 4
+$(document).ready(function () {
+
+  $(".av4").mouseenter(function () {
+    $(".st4").css({
+      transform: "translateX(-5vw)",
+      top: "-4vh",
+      background: "black"
+    })
+    $(".nd4").css({
+      transform: "translateY(-12vh)",
+      background: "#c79c9c",
+      right: "-10%"
+    })
+    $(".rd4").css({
+      transform: "translateY(5vh)",
+      background: "white",
+      right: "20%"
+    })
+    $(".th4").css({
+      transform: "translateY(5vh)",
+      background: "#407261",
+      right: "5%"
+    })
+    $(".fi4").css({
+      transform: "translateX(9vh)",
+      background: "#407261",
+      top: "-4vh"
+    })
+  })
+  $(".av4").click(function () {
+    $(".st4").css({
+      background: "transparent"
+    })
+    $(".nd4").css({
+      background: "transparent"
+    })
+    $(".rd4").css({
+      background: "transparent"
+    })
+    $(".th4").css({
+      background: "transparent"
+    })
+    $(".fi4").css({
+      background: "transparent"
+    })
+  })
+})
+
+//Fonction qui ouvre la bulle, donc fait apparaître le cadre au clique pour first (black)
+$(document).ready(function () {
+  $('.st4').click(function openPop4() {
+    $('.pop4').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      left: "10vw",
+      top: "15vh",
+    })
+  })
+
+  /*if (window.matchMedia("(min-width: 700px)").matches){
+  $('.pop').click(function closePop(){
+    $('.pop').css({
+      visibility: "hidden",
+    })
+  })
+}else{
+  $('.pop').click(function closePop(){
+    $('.pop').css({
+      display: "block"
+    })
+  })
+}*/
+
+  //Fonction pour second (wheat)
+  $('.nd4').click(function openPopnd4() {
+    $('.popnd4').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      left: "18vw",
+    })
+  })
+
+  //Fonction pour third (white)
+  $('.rd4').click(function openPoprd4() {
+    $('.poprd4').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "50vh",
+      left: "-20vw",
+      width: "15vw"
+    })
+  })
+
+  //Fonction pour fourth (blue)
+  $('.th4').click(function openPopth4() {
+    $('.popth4').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "55vh",
+      left: "-10vw"
+    })
+  })
+
+  //Fonction pour fourth (blue)
+  $('.fi4').click(function openPopfi4() {
+    $('.popfi4').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
+      top: "30vh",
+      width: "15vw",
+      height: "15vh",
+      left: "-13vw"
+    })
+  })
+
+  function mediaQ(q) {
+    if (q.matches) {
+      $('.pop4').click(function closePop4() {
+        $('.pop4').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popnd4').click(function closePopnd4() {
+        $('.popnd4').css({
+          visibility: "hidden"
+        })
+      })
+      $('.poprd4').click(function closePoprd3() {
+        $('.poprd4').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popth4').click(function closePopth4() {
+        $('.popth4').css({
+          visibility: "hidden"
+        })
+      })
+      $('.popfi4').click(function closePopfi4() {
+        $('.popfi4').css({
+          visibility: "hidden"
+        })
+      })
+    } else {
+      $('.pop4').click(function closePop4() {
+        $('.pop4').css({
+          display: "block",
+        })
+      })
+      $('.popnd4').click(function closePopnd4() {
+        $('.popnd4').css({
+          display: "block"
+        })
+      })
+      $('.poprd4').click(function closePoprd4() {
+        $('.poprd4').css({
+          display: "block"
+        })
+      })
+      $('.popth4').click(function closePopth4() {
+        $('.popth4').css({
+          display: "block"
+        })
+      })
+      $('.popfi4').click(function closePopfi4() {
+        $('.popfi4').css({
+          display: "block"
+        })
+      })
+    }
+  }
+
+  const mdqObj = window.matchMedia("(min-width: 700px)");
+  mediaQ(mdqObj);
+  mdqObj.addListener(mediaQ);
+
+});
 
 /*
 function mediaQ(q){

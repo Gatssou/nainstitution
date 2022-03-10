@@ -163,7 +163,8 @@ input {
   box-shadow: 0 5px 10px 2px;
 }
 
-nav::before, nav::after {
+nav::before,
+nav::after {
   content: "";
   background: grey;
   border-radius: 5px;
@@ -185,11 +186,6 @@ nav::after {
 }
 
 /** image effect start  **/
-#pic_1, #pic_2 {
-  display: grid;
-  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
-}
-
 /*
 .containere{
    grid-area: 1 / 4 / 4 / 6;
@@ -428,11 +424,34 @@ a {
 }
 
 /*aventurier 1*/
+#pic_1,
+#pic_2,
+#pic_3,
+#pic_4 {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+}
+
 .av1 {
   grid-area: 2/3/3/4;
 }
 
-.ttl, .ttl2 {
+.av2 {
+  grid-area: 2/3/3/4;
+}
+
+.av3 {
+  grid-area: 2/3/3/4;
+}
+
+.av4 {
+  grid-area: 2/3/3/4;
+}
+
+.ttl,
+.ttl2,
+.ttl3,
+.ttl4 {
   display: block;
   font-size: 2em;
   z-index: 99;
@@ -451,6 +470,36 @@ a {
 }
 
 .ttl::selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+
+.ttl2::-moz-selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+
+.ttl2::selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+
+.ttl3::-moz-selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+
+.ttl3::selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+
+.ttl4::-moz-selection {
+  color: black;
+  text-shadow: 5px 5px 4px white;
+}
+
+.ttl4::selection {
   color: black;
   text-shadow: 5px 5px 4px white;
 }
@@ -480,28 +529,53 @@ a {
   transform: translateY(56px);
 }
 
-.st, .nd, .rd, .th, .fi {
+.st,
+.nd,
+.rd,
+.th,
+.fi,
+.st2,
+.nd2,
+.rd2,
+.th2,
+.fi2,
+.st3,
+.nd3,
+.rd3,
+.th3,
+.fi3,
+.st4,
+.nd4,
+.rd4,
+.th4,
+.fi4 {
   transition: 1s ease;
 }
 
-.pop, .popnd, .poprd, .popth, .popfi {
+.pop,
+.popnd,
+.poprd,
+.popth,
+.popfi,
+.pop2,
+.popnd2,
+.poprd2,
+.popth2,
+.popfi2,
+.pop3,
+.popnd3,
+.poprd3,
+.popth3,
+.popfi3,
+.pop4,
+.popnd4,
+.poprd4,
+.popth4,
+.popfi4 {
   visibility: hidden;
   cursor: pointer;
   width: 20vw;
   height: auto;
-}
-
-.av2 {
-  grid-area: 2/3/3/4;
-}
-
-.st2, .nd2, .rd2, .th2, .fi2 {
-  transition: 1s ease;
-}
-
-.pop2, .popnd2, .poprd2, .popth2, .popfi2 {
-  visibility: hidden;
-  cursor: pointer;
 }
 
 /*julien moi loni ne touche pas sil te plait merci.*/
