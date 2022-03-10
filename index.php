@@ -20,10 +20,11 @@ logged_only();
     <title>Nain ventura</title>
 </head>
 
-<header>
-<div class="menu ">
+<body>
+    <div class="para">
+    <div class="menu ">
     <div class="toggle nav">
-      <ion-icon name="add-outline"></ion-icon>
+   <img src="./img/index/gouvernail.png" alt=""  >
     </div>
     <li class="icon" style="--i: 0">
       <ion-icon name="home-outline"></ion-icon>
@@ -34,21 +35,12 @@ logged_only();
     <li class="icon" style="--i: 2">
       <ion-icon name="arrow-redo-outline"></ion-icon>
     </li>
-   
-   
   </div>
-</header>
-<body>
-
-  
-
-    <div class="menu" onclick="this.classList.toggle('open')">
+  <div class="menu" onclick="this.classList.toggle('open')">
   <div class="button"></div>
   <div class="button"></div>
   <div class="button"></div>
 </div>
-    <div class="para">
-   
         <div class="sct">
             <div id="all" class="sect active"></div>
         </div>
