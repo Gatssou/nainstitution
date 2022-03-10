@@ -25,11 +25,7 @@ logged_only();
         <div class="sct">
             <div id="all" class="sect active"></div>
         </div>
-        <nav class="nav">
-            <div class="btn"></div>
-            <div class="btn"></div>
-            <div class="btn"></div>
-        </nav>
+       
         <section id="pic_1" class="s1">
             <div class="av1">
                 <div class="ttl">Mike Horn</div>
