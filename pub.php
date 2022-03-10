@@ -23,8 +23,6 @@ $usename = $_SESSION["auth"];
 <body>
 
     <header>
-<<<<<<< Updated upstream
-=======
     <div class="image">
     <img src="./img/wrong-pass.jpg" alt="">
     
@@ -32,34 +30,14 @@ $usename = $_SESSION["auth"];
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 </style> 
-<h1 class="pop" " style="color:red; text-decoration:none;">
-<?php 
-        
-                if($usename){
-                  echo ' ID de session ! <br>'
-                    .$usename. '<br>';
-                
-                }
-           
-           
-        ?>
-        <p class="log">
-            <?= $usename;?>
-        </p> 
-
-    
-</h1>
->>>>>>> Stashed changes
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
         </style>
-        <h1 class="popi">
-            <?php
-            if($usename){
-                echo ' Bienvenue ' .$usename. '<br> dans cette';
-            }
-?>
+     
+ <p class="loge">
+            <?= $usename;?>
+        </p> 
         </h1>
 
         <div class="titree">
