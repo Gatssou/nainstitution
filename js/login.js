@@ -35,7 +35,7 @@ $(document).ready(function(){
 let pass = document.querySelector('input[type="text"]');
 
 pass.addEventListener('focus', (event) => {
-    event.target.style.color = 'orange';
+    event.target.style.color = '#7e2d4f';
 });
 
 const eye = document.querySelector(".eye");
