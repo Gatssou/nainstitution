@@ -287,8 +287,15 @@ img {
   text-align: center;
   font-size: 1em;
 }
+<<<<<<< Updated upstream
 
 .publicite p:active {
+=======
+.log{
+  color: red;
+}
+.publicite p:active{
+>>>>>>> Stashed changes
   border-radius: 30%;
   border: inset 1px black;
 }
