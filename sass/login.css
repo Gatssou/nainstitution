@@ -75,7 +75,7 @@ input{
 .inpdec{
   position: relative;
 }
-.inpdec i{
+.fa-user, .fa-envelope, .fa-lock{
   position: absolute;
   left: 1vw;
   top: 6vh;
@@ -342,7 +342,7 @@ input[type="checkbox"]:checked + .app .toggle{
     position: relative;
     top: -23px;
   }
-  .inpdec i{
+  .fa-user, .fa-envelope, .fa-lock{
     position: absolute;
     top: 6vh;
     font-size: 2.5em;
@@ -353,3 +353,27 @@ input[type="checkbox"]:checked + .app .toggle{
   }
 }
 
+#passcon .eyecon{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 30px;
+  transition: all .2s;
+}
+#passcon .eyecon:hover{
+  cursor: pointer;
+  color: #ff0000;
+}
+.eyecon .eyeoff{
+  display: none;
+}
+.eye, .eye-off{
+  position: relative;
+  top: 5vh;
+}
+.eye-off{
+  overflow: hidden;
+}

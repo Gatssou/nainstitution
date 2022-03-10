@@ -32,10 +32,26 @@ $(document).ready(function(){
 /*$('body').css('background', 'url("../img/img_log/659797.jpg")');*/
 
 
-let pass = document.querySelector('input[type="password"]');
+let pass = document.querySelector('input[type="text"]');
 
 pass.addEventListener('focus', (event) => {
-    event.target.style.color = 'purple';
+    event.target.style.color = 'orange';
 });
 
+const eye = document.querySelector(".eye");
+const eyeoff = document.querySelector(".eye-off");
+const passwordField = document.querySelector("input[type=password]");
 
+eye.addEventListener("click", () => {
+  eye.style.display = "none";
+  eyeoff.style.display = "block";
+
+  passwordField.type = "text";
+});
+
+eyeoff.addEventListener("click", () => {
+  eyeoff.style.display = "none";
+  eye.style.display = "block";
+
+  passwordField.type = "password";
+});

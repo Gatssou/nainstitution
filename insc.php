@@ -34,16 +34,24 @@ include './include/header.php';
                 pattern="^[A-Za-z0-9'_.-]+@{1}[A-Za-z0-9]+.[A-Za-z]{2,}$" placeholder="Email">
         </div>
 
-        <div class="inpdec">
+        <div id="passcon" class="inpdec">
             <i class="fas fa-lock"></i>
             <input type="password" class="decop" placeholder="Password" required name="mdp"
                 id="motdpe" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?$/\=*.-]).{6,18}$">
+                <div class="eyecon">
+                    <img class="eye" src="../nainstitution/img/img_log/eye.svg" alt="">
+                    <img class="eye-off" src="../nainstitution/img/img_log/eye-off.svg" alt="">
+                </div>
         </div>
 
-        <div class="inpdec">
+        <div id="passcon" class="inpdec">
             <i class="fas fa-lock"></i>
-            <input type="password" class="decop" placeholder="Confirm Password" required name="mdpconf"
+            <input type="password" class="decop" placeholder="Confirm" required name="mdpconf"
                 id="motdpec" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?$/\=*.-]).{6,18}$">
+                <div class="eyecon">
+                    <img class="eye" src="../nainstitution/img/img_log/eye.svg" alt="">
+                    <img class="eye-off" src="../nainstitution/img/img_log/eye-off.svg" alt="">
+                </div>
         </div>
 
         <input type="submit" name="submit" value=">" class="logbtn" />
@@ -66,7 +74,9 @@ include './include/header.php';
     ?>
 </section>
 
-
+<script>
+    feather.replace();
+</script>
 <?php
 include './include/footer.php';
 ?>

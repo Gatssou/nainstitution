@@ -26,11 +26,15 @@ include './include/header.php';
                 required pattern="^[A-Za-zÀ-ÿ0-9'-]+$">
         </div>
 
-        <div class="inpdec">
+        <div id="passcon" class="inpdec">
             <i class="fas fa-lock"></i>
 
             <input type="password" class="decop" placeholder="Password" name="motdedep"
                 id="motdp" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@!?$/\=*.-]).{6,18}$">
+                <div class="eyecon">
+                    <img class="eye" src="../nainstitution/img/img_log/eye.svg" alt="">
+                    <img class="eye-off" src="../nainstitution/img/img_log/eye-off.svg" alt="">
+                </div>
         </div>
 
         <div class="passforgot">

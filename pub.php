@@ -28,16 +28,14 @@ $usename = $_SESSION["auth"];
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 </style> 
-<h1 class="pop">
+<h1 class="popi">
 <?php
             if($usename){
-                echo ' ID de session ! <br>'
-                .$usename. '<br>';
-            } 
-           
-        ?>
+                echo ' Bienvenue '
+                .$usename. '<br> dans la';
+            }
+?>
 
-    
 </h1>
 
 

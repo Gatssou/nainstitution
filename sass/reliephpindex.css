@@ -1,82 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  background-image: url()   ;
+  background-image: url();
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.671);
- filter: brightness(100%);
+  filter: brightness(100%);
 }
-h1{
+
+h1 {
   font-size: 1.5em;
 }
-header{
-    width: 100%;
-       }
-       .pop {
-     width: 25%;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        background-color: black;
-        border: 10px;
-        box-shadow:  5px 5px 15px gray;
-           justify-content:start;
-           display: flex;  
-    }
-    .loupe{
-      width: 100%;
-      height: 100%;
-    }
-       /**TITRE ninventura**/
-       .titree{
-         cursor: pointer;
-         display: flex;
-         flex-wrap: wrap;
-         flex-direction: row;
-         justify-content: center;
-         text-align: center;
-         color: white;
-         font-size: 2em;
-         font-family:  'Marck Script', cursive;
-       }
-      .r{
-        transition: width 2s, height 2s, background-color 2s, transform 2s; 
-      }
-       .n:hover{
-         color: blue;
-       }
-       .a:hover{
-        transform: scale(0.7);
-       }
-       .i:hover{
-        transform: rotate(45deg);
-       }
-       .v:active{
-        transform: translate(100px, 200px);
-       }
-       .e:active:hover{
-         color: red;
-        transform: translateX(13px) translateY(27.5px);
-       }
-       .t:active{
-         display: none;
-       }
-       .u:active{
-         border-bottom: rgb(255, 0, 0) 0.1px solid ;
-       }
-       .r:hover{
-         color: #FFCCCC;
-          width: 20px;
-          height: 20px;
-          transform: rotate(360deg);
-       }
 
-       /**Bouton et menu**/
-.menu{
+header {
+  width: 100%;
+}
+
+.popi {
+  width: 20%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  border: 10px;
+  box-shadow: 5px 5px 15px gray;
+  position: relative;
+  left: 40%;
+  margin-bottom: 4vh;
+}
+
+.loupe {
+  width: 100%;
+  height: 100%;
+}
+
+/**TITRE nainventura**/
+.titree {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  font-family: 'Marck Script', cursive;
+}
+
+.r {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.n:hover {
+  color: blue;
+}
+
+.a:hover {
+  transform: scale(0.7);
+}
+
+.i:hover {
+  transform: rotate(45deg);
+}
+
+.v:active {
+  transform: translate(100px, 200px);
+}
+
+.e:active:hover {
+  color: red;
+  transform: translateX(13px) translateY(27.5px);
+}
+
+.t:active {
+  display: none;
+}
+
+.u:active {
+  border-bottom: rgb(255, 0, 0) 0.1px solid;
+}
+
+.r:hover {
+  color: #FFCCCC;
+  width: 20px;
+  height: 20px;
+  transform: rotate(360deg);
+}
+
+/**Bouton et menu**/
+.menu {
   margin-top: 5px;
   position: relative;
   top: 30vh;
@@ -85,29 +101,34 @@ header{
   height: 150px;
   align-items: center;
 }
-.toggle img{
+
+.toggle img {
   height: 7vh;
   width: 7vh;
 }
-.menu img:hover{
+
+.menu img:hover {
   border-radius: 30%;
-border:inset 1px black;
-background-color: rgba(255, 255, 255, 0.986);
+  border: inset 1px black;
+  background-color: rgba(255, 255, 255, 0.986);
 }
-.menu li{
+
+.menu li {
   opacity: 0;
-position: absolute;
-left: 0;
-list-style: none;
-transform-origin: 200px;
-transition: 0.5s;
-transition-delay: calc(0.1s * var(--1i));
-transform: rotate(0deg) translateX(130px) translateY(27.5px);
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transform-origin: 200px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--1i));
+  transform: rotate(0deg) translateX(130px) translateY(27.5px);
 }
+
 .menu.active li {
   transform: rotate(calc(360deg / 8 * var(--i)));
   opacity: 1;
 }
+
 .menu li a {
   display: flex;
   justify-content: center;
@@ -115,16 +136,19 @@ transform: rotate(0deg) translateX(130px) translateY(27.5px);
   transform: rotate(calc(360deg / 8 * var(--i)));
   transition: 0.5s;
 }
-.menu li a:hover{
+
+.menu li a:hover {
   color: red;
 }
-.toggle img{
-height: 7vh;
-width: 4vw;
+
+.toggle img {
+  height: 7vh;
+  width: 4vw;
   position: relative;
-    transition: 1.2s  ;
-    transform:rotate(720deg) ;
+  transition: 1.2s;
+  transform: rotate(720deg);
 }
+
 .toggle {
   display: flex;
   justify-content: center;
@@ -136,100 +160,124 @@ width: 4vw;
   transition: transform 1.25s;
   background-color: rgba(240, 248, 255, 0);
 }
-.toggle :hover{
+
+.toggle :hover {
   border-radius: 30%;
 }
- /**FIN Bouton et menu**/
+
+/**FIN Bouton et menu**/
 /** à partir du titre selectionner et l'image homme/femme  apparision du menu côté gauche a la même hauteur*/
-  .selectionner {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  .selectionner h1{
-    color: white;
-  }
-  .selectionner a{
-    list-style: none;
-    color: white;
-    margin: 2px;
-  }
-  .tout{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-  }
-  a, ::before, ::after, img {
-    transition: all .3s ease;
-        transition-duration: 0.3s;
-  }
-  .tout img{
-    display: flex;
-  }
-  .suivant {
-    display: none;
-  }
-  .suivant img {
-    display: block;
-    width: 100%;
-  }
-  .suivant img:hover{
-    background-color: rgba(95, 252, 33, 0.1);
-    border-radius: 30%;
-  border:inset 1px black;
-  }
-  .avant,
-  .apres {
-    cursor: pointer;
-    width: auto;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    border-radius: 30%;
-    background: rgba(252, 33, 33, 0.863);
-  }
-  .apres {
-    border-radius: 30%;
-  }
-  .avant:hover,
-  .apres:hover {
-    background-color: rgba(255, 0, 0, 0.3);
-    text-shadow: cadetblue;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0), inset 0px 0px 10px rgb(0, 0, 0);
-  }
-  .next{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  .next .avant .apres p{
-    list-style: none;
-    color: white;
-  }
-  .container{
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    justify-content: space-around;  
+.selectionner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
-.container a{
-    margin: 5px;
-    text-decoration: none;
+
+.selectionner h1 {
+  color: white;
 }
-.container a p{
-    color: black;
+
+.selectionner a {
+  list-style: none;
+  color: white;
+  margin: 2px;
 }
+
+.tout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+a,
+::before,
+::after,
+img {
+  transition: all .3s ease;
+  transition-duration: 0.3s;
+}
+
+.tout img {
+  display: flex;
+}
+
+.suivant {
+  display: none;
+}
+
+.suivant img {
+  display: block;
+  width: 100%;
+}
+
+.suivant img:hover {
+  background-color: rgba(95, 252, 33, 0.1);
+  border-radius: 30%;
+  border: inset 1px black;
+}
+
+.avant,
+.apres {
+  cursor: pointer;
+  width: auto;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-radius: 30%;
+  background: rgba(252, 33, 33, 0.863);
+}
+
+.apres {
+  border-radius: 30%;
+}
+
+.avant:hover,
+.apres:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  text-shadow: cadetblue;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0), inset 0px 0px 10px rgb(0, 0, 0);
+}
+
+.next {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 5vh;
+}
+
+.next .avant .apres p {
+  list-style: none;
+  color: white;
+}
+
+.container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.container a {
+  margin: 5px;
+  text-decoration: none;
+}
+
+.container a p {
+  color: black;
+}
+
 /** connexion page admin**/
-.formp{
+.formp {
   text-align: center;
   justify-content: center;
   display: flex;
 }
+
 /**BANDEAU publicité**/
-.publicite{
+.publicite {
   display: flex;
   height: 15vh;
   border: 1px ridge rgb(0, 0, 0);
@@ -238,56 +286,66 @@ width: 4vw;
   text-align: center;
   font-size: 1em;
 }
-.publicite p:active{
+
+.publicite p:active {
   border-radius: 30%;
-border:inset 1px black;
+  border: inset 1px black;
 }
-@media only screen and (max-width: 1855px){
-  body{
+
+@media only screen and (max-width: 1855px) {
+  body {
     justify-content: center;
     align-items: center;
   }
-  .toggle{
-  height: 50px;
-  width: 50px;
+
+  .toggle {
+    height: 50px;
+    width: 50px;
   }
-  .toggle img{
+
+  .toggle img {
     height: 7vh;
     width: 14vw;
   }
-  .menu{
-   top: 15vh;
-left: 10vh;
+
+  .menu {
+    top: 15vh;
+    left: 10vh;
     width: 100px;
     height: 250px;
     justify-content: center;
     align-items: center;
   }
-  .menu img{
+
+  .menu img {
     height: 7vh;
     width: 7vh;
     border: 1px rgba(255, 255, 255, 0.267) ridge;
     border-radius: 10px;
   }
-  .menu img:hover{
+
+  .menu img:hover {
     border-radius: 30%;
-  border:inset 1px black;
-  background-color: rgb(255, 255, 255);
+    border: inset 1px black;
+    background-color: rgb(255, 255, 255);
   }
-  .menu li{
+
+  .menu li {
     opacity: 0;
-  position: absolute;
-  left: 0;
-  list-style: none;
-  transform-origin: 120px;
-  transition: 0.5s;
-  transition-delay: calc(0.1s * var(--1i));
-  transform: rotate(0deg) translateX(50px) translateY(10.5px);
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 120px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--1i));
+    transform: rotate(0deg) translateX(50px) translateY(10.5px);
   }
+
   .menu.active li {
     transform: rotate(calc(360deg / 8 * var(--i)));
     opacity: 1;
   }
+
   .menu li a {
     display: flex;
     justify-content: center;
@@ -295,7 +353,5 @@ left: 10vh;
     transform: rotate(calc(360deg / 8 * var(--i)));
     transition: 0.5s;
   }
-  
-}
 
-  
+}
