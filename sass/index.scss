@@ -33,6 +33,80 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 15%;
+  left: 10%;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.5s;
+  transition-delay: 0.3s;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.menu.active{
+  background-color: rgb(0, 0, 0);
+ 
+}
+
+ion-icon {
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  transition: background-color 250ms linear;
+  box-shadow: 0px 0px 16px -3px #000000;
+}
+
+.menu .toggle {
+  transition: transform 0.75s linear, background-color 250ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+li {
+  list-style: none;
+}
+.menu .toggle ion-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.menu .toggle.active {
+  transform: rotate(605deg);
+}
+
+.menu .icon {
+  position: absolute;
+  transition: 0.75s ease-out;
+  transform-origin: 125px;
+  transform: rotate(0deg) translateX(125px) translateX(-50%);
+  left: 0;
+  transition-delay: calc(var(--i) * 0.1s);
+}
+
+.menu .icon.active {
+  transform: rotate(calc(var(--i) * 110deg));
+}
+
+.menu .icon.active ion-icon {
+  z-index: 1001;
+}
+
+.menu .toggle ion-icon:hover {
+  background-color: rgba(0, 0, 0, 0.541);
+}
+.menu .icon.active ion-icon:hover {
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
 
 #pic_1 {
   background-color: #4d6652;
