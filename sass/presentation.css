@@ -69,7 +69,12 @@ button{
 */
 
 body{
-  background: black;
+  background-image: url(../img/draw/map.jpg);
+  background-repeat: no-repeat;
+  background-size: 70vw;
+  background-position: center;
+  background-attachment: scroll;
+  background-color: black;
 }
   
 h1{
@@ -141,4 +146,35 @@ color: transparent;
 }
 .test::selection{
   color: white;
+}
+
+.tree1{
+  position: absolute;
+  top: 114vh;
+  left: 12vw;
+  z-index: 2000;
+}
+.tree2{
+  position: absolute;
+  top: 110vh;
+  left: 15vw;
+  z-index: 2000;
+}
+.tree3{
+  position: absolute;
+  top: 112vh;
+  left: 19vw;
+  z-index: 2000;
+}
+.tree4{
+  position: absolute;
+  top: 107vh;
+  left: 20vw;
+  z-index: 2000;
+}
+.tree5{
+  position: absolute;
+  top: 115vh;
+  left: 16vw;
+  z-index: 2000;
 }

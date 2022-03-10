@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 #pic_4{
     background-color: #4d665280;
 }
-/*
+
 .para {
   width: 100%;
   height: calc(100vh * 3);
@@ -65,8 +65,7 @@ body::-webkit-scrollbar {
   transform: translateY(100vh);
   transition: all var(--time-animation) ease-in-out;
   z-index: 1;
-}*/
-
+}
 /*** RESPONSIVE ***/
 /* MOBILE */
 @media screen and (max-width: 700px) {
@@ -164,9 +163,11 @@ nav::after{
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
+/*
 .containere{
    grid-area: 1 / 4 / 4 / 6;
-   margin-left: 4vw;
+   margin-right: 4vw;
+   width: 50%;
 }
 
 .containere h1{
@@ -177,7 +178,7 @@ nav::after{
   margin: 5px;
   text-decoration: none;
 }
-/* Mr kangourou IDs de survie côté gauche écriture et gauche aussi  , (a - p) */
+// Mr kangourou IDs de survie côté gauche écriture et gauche aussi  , (a - p) 
 .containere a p{
   font-size: 1.5em;
   color: white;
@@ -393,7 +394,7 @@ nav::after{
   background-color: rgba(0, 0, 0, 0.568);
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
-}
+}*/
 a {
   text-decoration: none;
   color: white;
@@ -444,10 +445,10 @@ a {
   transition: 1.2s all ease;
   transform: translateY(56px);
 }
-.st, .nd, .rd, .th{
+.st, .nd, .rd, .th, .fi{
   transition: 1s ease;
 }
-.pop, .popnd, .poprd, .popth{
+.pop, .popnd, .poprd, .popth, .popfi{
   visibility: hidden;
   cursor: pointer;
   width: 20vw;

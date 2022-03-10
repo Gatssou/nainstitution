@@ -50,6 +50,9 @@ logged_only();
                     <a href="#" onclick="openPopth()">
                         <div class="th av"></div>
                     </a>
+                    <a href="#" onclick="openPopfi()">
+                        <div class="fi av"></div>
+                    </a>
                 </div>
             </div>
 
@@ -74,12 +77,17 @@ logged_only();
                 <h1>Hi</h1>
                 <p>Lorem, ipsum dolor.</p>
             </div>
-            <div class="containere">
+            <div title="Cliquez n'importe où pour fermer" class="popfi">
+                <a href="javascript:void(0)" onclick="closePopfi()"></a>
+                <h1>Hi</h1>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+            <!--<div class="containere">
                 <a href="" id="bouddha">
                     <h1>Prénom Nom<br> Indice de survie 7.9</h1>
                     <p class="infos">Lorem, ipsum dolor.</p>
                 </a>
-            </div>
+            </div>  -->
         </section>
         <section id="pic_2" class="s2">
             <div class="av2">
@@ -141,9 +149,9 @@ logged_only();
             -->
         </section>
 
-        <section id="pic_3" class="s3">
+     <!--   <section id="pic_3" class="s3">
             <h1>Aventurier 3</h1>
-            <div class="containere">
+             <div class="containere">
                 <a href="" id="bouddhaaa">
                     <h1>Mr Kangourou IDS de survie 9.9</h1>
                     <p class="infos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur totam
@@ -152,8 +160,56 @@ logged_only();
                         adipisicing elit. Accusamus adipisci beatae labore laudantium. Quos quis ipsa totam rerum
                         commodi in consequatur, quaerat explicabo deleniti iste ratione delectus doloremque </p>
                 </a>
+            </div> 
+        </section>-->
+
+        <section id="pic_3" class="s3">
+            <div class="av3">
+                <div class="ttl3">Av3</div>
+                <div id="avs3">
+                    <a href="#pic_3" onclick="openPop3()">
+                        <div class="st3 av"></div>
+                    </a>
+                    <a href="#pic_2" onclick="openPopnd3()">
+                        <div class="nd3 av"></div>
+                    </a>
+                    <a href="#pic_2" onclick="openPoprd3()">
+                        <div class="rd3 av"></div>
+                    </a>
+                    <a href="#pic_2" onclick="openPopth3()">
+                        <div class="th3 av"></div>
+                    </a>
+                    <a href="#pic_2" onclick="openPopfi3()">
+                        <div class="fi3 av"></div>
+                    </a>
+                </div>
             </div>
-        </section>
+            <div class="pop3" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" class="x" onclick="closePop3()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            <div class="popnd3" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePopnd3()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            <div class="poprd3" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePoprd3()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            <div class="popth3" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePopth3()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+            <div class="popfi3" title="Cliquez n'importe où pour fermer">
+                <a href="javascript:void(0)" onclick="closePopfi3()"></a>
+                <h1>Hi</h1>
+                <p>test pop up</p>
+            </div>
+
         <section id="pic_4" class="s4">
             <h1>Aventurier 4</h1>
             <div class="containere">

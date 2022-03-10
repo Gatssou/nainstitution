@@ -207,7 +207,7 @@ window.addEventListener("scroll", function(e) {
   
 });
 
-/*Second svg*/
+/*Second svg
 let paths = document.querySelector('#paths');
 let pathLs = paths.getTotalLength();
 
@@ -228,4 +228,4 @@ window.addEventListener("scroll", function(e) {
   }
   
 });
-
+*/

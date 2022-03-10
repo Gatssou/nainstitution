@@ -1,4 +1,6 @@
-if (window.matchMedia("(min-width: 700px)").matches) {
+//SCROLL ONE PAGE + RESPONSIVE
+
+//if (window.matchMedia("(min-width: 700px)").matches) {
 
 const TIME_OUT = 600
 const body = document.querySelector('body')
@@ -52,6 +54,7 @@ window.onscroll = () => {
   }
   window.scroll(0, window.screen.height)
 }
+/*
 }else{
   $(document).ready(function(){
   let removeS = document.body.clientWidth;
@@ -68,7 +71,7 @@ window.onscroll = () => {
 })
 }
 
-
+*/
 
   
 /*
@@ -84,7 +87,7 @@ jm.addListener(mdqObj);*/
 
 /* Button menu */
 //SECTION 1  
-
+// Passe la souris sur le nom = fait apparaître les bulles
 $(document).ready(function () {
 
   $(".av1").mouseenter(function () {
@@ -96,7 +99,7 @@ $(document).ready(function () {
     $(".nd").css({
       transform: "translateY(-12vh)",
       background: "#c79c9c",
-      right: "-5%"
+      right: "-10%"
     })
     $(".rd").css({
       transform: "translateY(5vh)",
@@ -107,6 +110,11 @@ $(document).ready(function () {
       transform: "translateY(5vh)",
       background: "#407261",
       right: "5%"
+    })
+    $(".fi").css({
+      transform: "translateX(9vh)",
+      background: "#407261",
+      top: "-4vh"
     })
   })
   $(".av1").click(function () {
@@ -122,10 +130,13 @@ $(document).ready(function () {
     $(".th").css({
       background: "transparent"
     })
+    $(".fi").css({
+      background: "transparent"
+    })
   })
 })
 
-//Fonction qui ouvre la bulle au clique pour first (black)
+//Fonction qui ouvre la bulle, donc fait apparaître le cadre au clique pour first (black)
 $(document).ready(function () {
   $('.st').click(function openPop() {
     $('.pop').css({
@@ -177,7 +188,7 @@ $(document).ready(function () {
       borderRadius: "10px",
       position: "relative",
       top: "50vh",
-      left: "-25vw",
+      left: "-20vw",
       width: "15vw"
     })
   })
@@ -191,8 +202,24 @@ $(document).ready(function () {
       border: "2px solid black",
       borderRadius: "10px",
       position: "relative",
+      top: "55vh",
+      left: "-10vw"
+    })
+  })
+
+  //Fonction pour fourth (blue)
+  $('.fi').click(function openPopfi() {
+    $('.popfi').css({
+      visibility: "visible",
+      color: "white",
+      backgroundColor: "#00000042",
+      border: "2px solid black",
+      borderRadius: "10px",
+      position: "relative",
       top: "30vh",
-      left: "40vw"
+      width: "15vw",
+      height: "15vh",
+      left: "-13vw"
     })
   })
 
@@ -218,6 +245,11 @@ $(document).ready(function () {
           visibility: "hidden"
         })
       })
+      $('.popfi').click(function closePopfi() {
+        $('.popfi').css({
+          visibility: "hidden"
+        })
+      })
     } else {
       $('.pop').click(function closePop() {
         $('.pop').css({
@@ -236,6 +268,11 @@ $(document).ready(function () {
       })
       $('.popth').click(function closePopth() {
         $('.popth').css({
+          display: "block"
+        })
+      })
+      $('.popfi').click(function closePopfi() {
+        $('.popfi').css({
           display: "block"
         })
       })

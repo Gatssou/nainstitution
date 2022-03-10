@@ -57,9 +57,7 @@ logged_only();
     </g>
   </svg>  
 </div>-->
-
-  <h1>Scroll-to-draw</h1>
-
+  
   <!--  
   <svg viewBox="0 0 100.6 107.6" id="pathsvg">
     <path fill="none" stroke="white" stroke-width=".1" id="star-path" d=" 
@@ -67,25 +65,32 @@ logged_only();
        C 50 70, 5 30, 6 60
        C 6 60, 5 85, 70 70
        C 70 70, 80 67, 90 75
+       <div class="test">J'aime les alpagas</div>
       " />
     -->
 
-    <div class="test">J'aime les alpagas</div>
+    
   <svg viewBox="0 0 100.6 107.6" id="svgf">
-    <path fill="none" stroke="white" stroke-width=".1" id="pathf" d="
-    M 10 10
-    C 10 10, 15 20, 70 30
-    C 70 30, 80 20, 80 10
+    <path fill="none" stroke="red" stroke-width=".2" id="pathf" d="
+    M 60 10, 40 40
+       C 50 50, 5 30, 6 60
+       C 6 60, 5 85, 70 70
+       C 70 70, 80 67, 90 75
     " />
   </svg>
-
+  <img src="./img/draw/little_tree.png" class="tree1" alt="">
+  <img src="./img/draw/little_tree.png" class="tree2" alt="">
+  <img src="./img/draw/little_tree.png" class="tree3" alt="">
+  <img src="./img/draw/little_tree.png" class="tree4" alt="">
+  <img src="./img/draw/little_tree.png" class="tree5" alt="">
+<!-- 
   <svg viewBox="0 0 100.6 107.6" id="svgs">
     <path fill="none" stroke="white" stroke-width=".1" id="paths" d="
     M 50 10
     C 50 10, 30 30, 60 40
     " />
   </svg>
-
+ -->
   <!--  
     <path fill="none" stroke="white" stroke-width=".1" id="star-path" 
     d="
