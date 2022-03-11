@@ -23,39 +23,36 @@ logged_only();
 
 <body>
     <div class="para">
-    <div class="menu ">
-    <div class="toggle nav">
-   <img src="./img/index/gouvernail.png" alt=""  >
-    </div>
-  
-        <li class="icon" style="--i: 0">
-        <a href="./pub.php">
-          <ion-icon name="home-outline"></ion-icon>
-          </a>
-       </li>
-    </a>
-        <li class="icon" style="--i: 1">
-        <a href="./include/disconnect.php">
-        <ion-icon name="close-circle-outline"></ion-icon>
-          </a>
-        </li>
-   
-    <li class="icon" style="--i: 2">
-      <a href="">
-          <ion-icon name="arrow-redo-outline"></ion-icon>
-      </a>
-    </li>
-  </div>
-  <div class="menu" onclick="this.classList.toggle('open')">
-  <div class="button"></div>
-  <div class="button"></div>
-  <div class="button"></div>
-</div>
-        <div class="sct">
-            <div class="sect active"></div>
+        <div class="menu ">
+            <div class="toggle nav">
+                <img src="./img/index/gouvernail.png" alt="">
+            </div>
+
+            <li class="icon" style="--i: 0">
+                <a href="./pub.php">
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+            </li>
+            </a>
+            <li class="icon" style="--i: 1">
+                <a href="./include/disconnect.php">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </a>
+            </li>
+
+            <li class="icon" style="--i: 2">
+                <a href="">
+                    <ion-icon name="arrow-redo-outline"></ion-icon>
+                </a>
+            </li>
+        </div>
+        <div class="menu" onclick="this.classList.toggle('open')">
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
         </div>
 
-        <section id="pic_1" class="s1">
+        <section id="pic_1" class="sec">
             <div class="av1">
                 <div class="ttl">Mike Horn</div>
                 <div id="avs">
@@ -108,7 +105,7 @@ logged_only();
                 </a>
             </div>  -->
         </section>
-        <section id="pic_2" class="s2">
+        <section id="pic_2" class="sec">
             <div class="av2">
                 <div class="ttl2">Av2</div>
                 <div id="avs2">
@@ -182,7 +179,7 @@ logged_only();
             </div> 
         </section>-->
 
-        <section id="pic_3" class="s3">
+        <section id="pic_3" class="sec">
             <div class="av3">
                 <div class="ttl3">Av3</div>
                 <div id="avs3">
@@ -230,7 +227,7 @@ logged_only();
             </div>
         </section>
 
-        <section id="pic_4" class="s4">
+        <section id="pic_4" class="sec">
             <div class="av4">
                 <div class="ttl4">Av4</div>
                 <div id="avs4">
