@@ -8,34 +8,27 @@
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   50% {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 @keyframes pulse {
   0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   50% {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
-
 html {
   scrollbar-width: none;
 }
@@ -57,27 +50,19 @@ body::-webkit-scrollbar {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  cursor: pointer;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  top: 15%;
-  left: 7%;
+  top: 12%;
+  left: 10%;
   width: 250px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: background-color 0.5s;
+  transform: translate(-50%, -50%);
   transition: background-color 0.5s;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
   border-radius: 50%;
-  z-index: 100000;
+  z-index: 10000;
 }
 
 .menu.active {
@@ -86,59 +71,43 @@ body::-webkit-scrollbar {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 ion-icon {
   background-color: white;
-  width: 2rem;
-  height: 2rem;
-  padding: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.3rem;
   font-size: 1rem;
   border-radius: 50%;
-  -webkit-transition: background-color 250ms linear;
   transition: background-color 250ms linear;
-  -webkit-box-shadow: 0px 0px 16px -3px #000000;
-          box-shadow: 0px 0px 16px -3px #000000;
+  box-shadow: 0px 0px 16px -3px #000000;
 }
 
 .menu .toggle {
-  -webkit-transition: background-color 250ms linear, -webkit-transform 0.75s linear;
-  transition: background-color 250ms linear, -webkit-transform 0.75s linear;
-  transition: transform 0.75s linear, background-color 250ms linear;
-  transition: transform 0.75s linear, background-color 250ms linear, -webkit-transform 0.75s linear;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transition: transform 1.8s linear, background-color 250ms linear;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
 }
 
 .menu .toggle.active {
-  -webkit-transform: rotate(605deg);
-          transform: rotate(605deg);
+  transform: rotate(605deg);
 }
 
 .menu .icon {
   position: absolute;
-  -webkit-transition: 0.75s ease-out;
-  transition: 0.75s ease-out;
-  -webkit-transform-origin: 125px;
-          transform-origin: 125px;
-  -webkit-transform: rotate(0deg) translateX(125px) translateX(-50%);
-          transform: rotate(0deg) translateX(125px) translateX(-50%);
+  transition: 1.5s ease-out;
+  transform-origin: 125px;
+  transform: rotate(0deg) translateX(125px) translateX(-50%);
   left: 0;
-  -webkit-transition-delay: calc(var(--i) * 0.1s);
-          transition-delay: calc(var(--i) * 0.1s);
+  transition-delay: calc(var(--i) * 0.1s);
 }
 
 .menu .icon.active {
-  -webkit-transform: rotate(calc(var(--i) * 110deg));
-          transform: rotate(calc(var(--i) * 110deg));
+  transform: rotate(calc(var(--i) * 110deg));
 }
 
 .menu .icon.active ion-icon {
@@ -171,7 +140,7 @@ ion-icon {
 
 .para {
   width: 100%;
-  height: calc(100vh * 3);
+  height: 300vh;
   position: relative;
 }
 
@@ -182,108 +151,83 @@ ion-icon {
   top: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: var(--color-white);
-  -webkit-transform: translateY(100vh);
-          transform: translateY(100vh);
-  -webkit-transition: all var(--time-animation) ease-in-out;
+  transform: translateY(100vh);
   transition: all var(--time-animation) ease-in-out;
   z-index: 1;
 }
 
 /*** RESPONSIVE ***/
 /* MOBILE */
-.border {
-  border-radius: 5%;
-  width: 40vw;
-  height: auto;
-}
+@media screen and (max-width: 700px) {
+  .border {
+    border-radius: 5%;
+    width: 40vw;
+    height: auto;
+  }
 
-.textbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+  .textbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-input {
-  border: none;
-  background: #837c85;
-  outline: none;
-}
+  input {
+    border: none;
+    background: #837c85;
+    outline: none;
+  }
 
-.stylebtn {
-  background: white;
-  width: 10vw;
-  height: 7vh;
-  border-radius: 15px;
-  font-size: 25px;
-}
+  .stylebtn {
+    background: white;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 15px;
+    font-size: 25px;
+  }
 
-.para .s1 {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  z-index: 1000;
-}
+  .para .s1 {
+    transform: translateY(0);
+    z-index: 1000;
+  }
 
-.para .s2 {
-  z-index: 6;
-}
+  .para .s2 {
+    z-index: 6;
+  }
 
-.para .s3 {
-  z-index: 5;
-}
+  .para .s3 {
+    z-index: 5;
+  }
 
-.para .s4 {
-  z-index: 4;
-}
+  .para .s4 {
+    z-index: 4;
+  }
 
-.para .s5 {
-  z-index: 3;
-}
+  .para .s5 {
+    z-index: 3;
+  }
 
-.para .s6 {
-  z-index: 2;
-}
+  .para .s6 {
+    z-index: 2;
+  }
 
-.dispo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 3vh;
-}
+  .dispo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 3vh;
+  }
 
-.poney {
-  margin-top: 2.5vh;
+  .poney {
+    margin-top: 2.5vh;
+  }
 }
-
 /** image effect start  **/
 /*
 .containere{
@@ -527,43 +471,24 @@ a {
 #pic_2,
 #pic_3,
 #pic_4 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
 }
 
 .av1 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area: 2/3/3/4;
 }
 
 .av2 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area: 2/3/3/4;
 }
 
 .av3 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area: 2/3/3/4;
 }
 
 .av4 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area: 2/3/3/4;
 }
 
 .ttl,
@@ -632,7 +557,6 @@ a {
   font-size: 20px;
   text-align: center;
 }
-
 .av a {
   color: #fff;
 }
@@ -644,10 +568,8 @@ a {
 
 .clicked {
   opacity: 1;
-  -webkit-transition: 1.2s all ease;
   transition: 1.2s all ease;
-  -webkit-transform: translateY(56px);
-          transform: translateY(56px);
+  transform: translateY(56px);
 }
 
 .st,
@@ -670,7 +592,6 @@ a {
 .rd4,
 .th4,
 .fi4 {
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
 
@@ -704,17 +625,11 @@ a {
 .supergrille {
   margin: 0 -10px -10px auto;
   padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   color: red;
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  filter: brightness(100%);
+  justify-content: center;
 }
 
 .articlee {
@@ -725,8 +640,7 @@ a {
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
-  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
-          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.31373);
   margin: 15px;
   background-color: rgba(0, 0, 0, 0.171);
 }
@@ -736,27 +650,16 @@ a {
 }
 
 .retour {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
 }
 
 /* LE FORMULAIRE BY DYLAN LA MERDE , DEBUT */
 .content {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
   position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border: 1px chartreuse solid;
   border-radius: 15% 15% 0% 0%;
   background-color: rgba(169, 169, 169, 0.158);
@@ -827,7 +730,6 @@ a {
   left: 35%;
   border: 1px chartreuse solid;
   cursor: pointer;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
 
@@ -848,5 +750,4 @@ label::first-letter {
   outline: solid chocolate 2px;
 }
 
-/* FIN DU FORMULAIRE */
-/*# sourceMappingURL=index.css.map */
+/* FIN DU FORMULAIRE *//*# sourceMappingURL=index.css.map */

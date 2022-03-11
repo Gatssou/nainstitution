@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 10%;
+  top: 12%;
   left: 10%;
   width: 250px;
   transform: translate(-50%, -50%);
@@ -58,16 +58,16 @@ li {
 }
 ion-icon {
   background-color: white;
-  width: 2rem;
-  height: 2rem;
-  padding: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.3rem;
   font-size: 1rem;
   border-radius: 50%;
   transition: background-color 250ms linear;
   box-shadow: 0px 0px 16px -3px #000000;
 }
 .menu .toggle {
-  transition: transform 0.75s linear, background-color 250ms linear;
+  transition: transform 1.8s linear, background-color 250ms linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +78,7 @@ ion-icon {
 }
 .menu .icon {
   position: absolute;
-  transition: 0.75s ease-out;
+  transition: 1.5s ease-out;
   transform-origin: 125px;
   transform: rotate(0deg) translateX(125px) translateX(-50%);
   left: 0;
@@ -136,7 +136,7 @@ ion-icon {
 
 /*** RESPONSIVE ***/
 /* MOBILE */
-
+@media screen and (max-width: 700px) {
 
 .border {
   border-radius: 5%;
@@ -197,6 +197,7 @@ input {
 
 .poney {
   margin-top: 2.5vh;
+}
 }
 
 /** image effect start  **/
@@ -695,5 +696,6 @@ label::first-letter {
 .textarea-con:focus {
   outline: solid chocolate 2px;
 }
+
 
 /* FIN DU FORMULAIRE */
