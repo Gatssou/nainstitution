@@ -19,22 +19,6 @@ h1 {
 header {
   width: 100%;
 }
-
-.popi {
-  width: 20%;
-  color: rgb(47, 119, 47);
-  text-align: center;
-  padding: 10px;
-  background-color: transparent;
-  border: 10px;
-  box-shadow: 5px 5px 15px gray;
-  position: relative;
-  left: 40%;
-  top: -13vh;
-  margin-bottom: 4vh;
-  margin-top: 2vh;
-}
-
 .loupe {
   width: 100%;
   height: 100%;
@@ -48,10 +32,10 @@ header {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  margin-top: -10vh;
   color: white;
   font-size: 2em;
   font-family: 'Marck Script', cursive;
+  text-shadow: 5px 5px 15px;
 }
 
 .r {
@@ -169,7 +153,7 @@ header {
 }
 
 /**FIN Bouton et menu**/
-/** à partir du titre selectionner et l'image homme/femme  apparision du menu côté gauche a la même hauteur*/
+/** à partir du titre selectionner et l'image homme/femme  apparition du menu côté gauche à la même hauteur*/
 .selectionner {
   display: flex;
   align-items: center;
@@ -179,6 +163,12 @@ header {
 
 .selectionner h1 {
   color: white;
+  background: transparent;
+  border-bottom: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 2vh;
+  letter-spacing: 5px;
 }
 
 .selectionner a {
@@ -360,6 +350,20 @@ img {
 .welcome, .suite{
   color: white;
 }
-.lierre2{
-  float: right;
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.popi {
+  color: rgb(47, 119, 47);
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  border: 10px;
+  box-shadow: 5px 5px 15px gray;
+}
+.lierre{
+  transform: rotate(180deg);
 }
