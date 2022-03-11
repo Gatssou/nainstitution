@@ -227,8 +227,9 @@ ion-icon {
   }
 
   .menu .icon.active {
-    transform: translateX(calc(var(--i) * 60deg));
+    flex-direction: row;
     display: flex;
+    justify-content: space-around;
     opacity: 1;
   }
 

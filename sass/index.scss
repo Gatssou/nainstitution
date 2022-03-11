@@ -164,6 +164,7 @@ ion-icon {
   li {
     list-style: none;
     cursor: pointer;
+    
   }
   ion-icon {
     background-color: rgb(0, 0, 0);
@@ -175,7 +176,6 @@ ion-icon {
     transition: background-color 250ms linear;
     box-shadow: 0px 0px 16px -3px #000000;
   }
-  
   .menu .toggle {
     transition: transform 1.8s linear, background-color 250ms linear;
     display: flex;
@@ -194,35 +194,30 @@ ion-icon {
     opacity: 0;
     transition-delay: calc(var(--i) * 0.1s);
   }
-  
   .menu .icon.active {
-    transform: translateX(calc(var(--i) * 60deg));
+    flex-direction: row;
     display: flex;
+    justify-content: space-around;
     opacity: 1;
-
   }
   .menu .icon.active ion-icon {
     z-index: 1001;
   }
-  
    .menu .toggle ion-icon:hover {
     background-color: rgb(0, 0, 0);
   }
   .menu .icon.active ion-icon:hover {
     background-color: rgba(0, 0, 0, 0.377);
   }
-  
 .border {
   border-radius: 5%;
   width: 40vw;
   height: auto;
 }
-
 .textbtn {
   @include disp3;
   flex-direction: column;
 }
-
 input {
   border: none;
   background: rgb(131, 124, 133);
