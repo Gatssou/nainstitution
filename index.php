@@ -26,14 +26,23 @@ logged_only();
     <div class="toggle nav">
    <img src="./img/index/gouvernail.png" alt=""  >
     </div>
-    <li class="icon" style="--i: 0">
-      <ion-icon name="home-outline"></ion-icon>
-    </li>
-    <li class="icon" style="--i: 1">
-      <ion-icon name="aperture-outline"></ion-icon>
-    </li>
+  
+        <li class="icon" style="--i: 0">
+        <a href="./pub.php">
+          <ion-icon name="home-outline"></ion-icon>
+          </a>
+       </li>
+    </a>
+        <li class="icon" style="--i: 1">
+        <a href="./include/disconnect.php">
+        <ion-icon name="close-circle-outline"></ion-icon>
+          </a>
+        </li>
+   
     <li class="icon" style="--i: 2">
-      <ion-icon name="arrow-redo-outline"></ion-icon>
+      <a href="">
+          <ion-icon name="arrow-redo-outline"></ion-icon>
+      </a>
     </li>
   </div>
   <div class="menu" onclick="this.classList.toggle('open')">
