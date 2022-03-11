@@ -23,19 +23,21 @@ $usename = $_SESSION["auth"];
 <body>
 
     <header>
-        <img class="lierre" src="./img/img_index/lierre2.png" alt="">
-        <img class="lierre2" src="./img/img_index/lierre2.png" alt="">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
         </style>
-
-        <h1 class="popi">
-            <?php
-            if($usename){
-                echo '<font color="white"> Bienvenue </font>' .$usename. '<font color="white"> <br> dans cette </font>';
-            }
-            ?>
-        </h1>
+        
+        <div class="head">
+            <img class="lierre" src="./img/img_index/lierre2.png" alt="">
+            <h1 class="popi">
+                <?php
+                if($usename){
+                    echo '<font color="white"> Bienvenue </font>' .$usename. '<font color="white"> <br> dans cette </font>';
+                }
+                ?>
+            </h1>
+            <img class="lierre2" src="./img/img_index/lierre2.png" alt="">
+        </div>
 
 
             <div class="titree">
