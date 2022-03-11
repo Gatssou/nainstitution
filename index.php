@@ -23,25 +23,10 @@ logged_only();
 
 <body>
     <div class="para">
-        <div class="menu ">
-            <div class="toggle nav">
-                <img src="./img/index/gouvernail.png" alt="">
-            </div>
-            <li class="icon" style="--i: 0">
-                <ion-icon name="home-outline"></ion-icon>
-            </li>
-            <li class="icon" style="--i: 1">
-                <ion-icon name="aperture-outline"></ion-icon>
-            </li>
-            <li class="icon" style="--i: 2">
-                <ion-icon name="arrow-redo-outline"></ion-icon>
-            </li>
-        </div>
-        <div class="menu" onclick="this.classList.toggle('open')">
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-        </div>
+ 
+       
+   
+  
         <div class="sct">
             <div class="sect active"></div>
         </div>
@@ -276,10 +261,4 @@ logged_only();
 <script src="./js/index.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./js/menu.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
 </html>
