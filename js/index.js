@@ -24,7 +24,7 @@ window.onscroll = () => {
     const scrollLimit = qty >= 1 && qty <= sectionsQty
 
     if (scrollLimit) {
-      body.style.overflowY = 'hidden' // Lock el scroll
+      body.style.overflowY = 'hidden' // Lock and scroll
       if (scrollDown && qty < sectionsQty) {
         main = document.querySelector(`section.s${qty}`)
         next = document.querySelector(`section.s${qty + 1}`)

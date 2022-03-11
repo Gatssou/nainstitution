@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./sass/login.css">
     <link rel="stylesheet" href="../sass/index.scss">
 	<link rel="stylesheet" href="./fa/css/all.css">
-    <link rel="stylesheet" href="../sass/test.css">
     <title>Document</title>
 </head>
 

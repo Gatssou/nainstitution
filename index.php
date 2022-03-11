@@ -6,6 +6,7 @@ logged_only();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,29 +23,29 @@ logged_only();
 
 <body>
     <div class="para">
-    <div class="menu ">
-    <div class="toggle nav">
-   <img src="./img/index/gouvernail.png" alt=""  >
-    </div>
-    <li class="icon" style="--i: 0">
-      <ion-icon name="home-outline"></ion-icon>
-    </li>
-    <li class="icon" style="--i: 1">
-      <ion-icon name="aperture-outline"></ion-icon>
-    </li>
-    <li class="icon" style="--i: 2">
-      <ion-icon name="arrow-redo-outline"></ion-icon>
-    </li>
-  </div>
-  <div class="menu" onclick="this.classList.toggle('open')">
-  <div class="button"></div>
-  <div class="button"></div>
-  <div class="button"></div>
-</div>
-        <div class="sct">
-            <div id="all" class="sect active"></div>
+        <div class="menu ">
+            <div class="toggle nav">
+                <img src="./img/index/gouvernail.png" alt="">
+            </div>
+            <li class="icon" style="--i: 0">
+                <ion-icon name="home-outline"></ion-icon>
+            </li>
+            <li class="icon" style="--i: 1">
+                <ion-icon name="aperture-outline"></ion-icon>
+            </li>
+            <li class="icon" style="--i: 2">
+                <ion-icon name="arrow-redo-outline"></ion-icon>
+            </li>
         </div>
-      
+        <div class="menu" onclick="this.classList.toggle('open')">
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+        </div>
+        <div class="sct">
+            <div class="sect active"></div>
+        </div>
+
         <section id="pic_1" class="s1">
             <div class="av1">
                 <div class="ttl">Mike Horn</div>
@@ -277,7 +278,7 @@ logged_only();
 <script src="./js/menu.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
 
