@@ -54,7 +54,8 @@ $usename = $_SESSION["auth"];
                 <p class="a">A</p>
             </div>
             <!-- blipou -->
-            <button type="boutton" class="toggle"><img src="./img/index/burger.gif" alt="" >
+            <button type="boutton" class="toggle"><img src="./img/index/menu.webp" width="100px"
+             height="100px" alt="" >
             </button>
             <section>
                 <div class="menu">
