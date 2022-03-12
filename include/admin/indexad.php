@@ -70,8 +70,10 @@ footer.active{
         }
       .membre{
           color: black;
+          
       }
       .naruto img{
+        box-shadow: 5px 5px 5px black;
           border-radius: 30%;
       }
     </style>
