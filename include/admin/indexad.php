@@ -68,9 +68,11 @@ footer.active{
             text-decoration: none;
             list-style: none;
         }
-
       .membre{
           color: black;
+      }
+      .naruto img{
+          border-radius: 30%;
       }
     </style>
    <div class="naruto">
