@@ -89,13 +89,8 @@ header {
   align-items: center;
 }
 
-.toggle img {
-  height: 7vh;
-  width: 7vh;
-}
-
 .menu img:hover {
-  border-radius: 30%;
+  border-radius: 10%;
   border: inset 1px black;
   background-color: rgba(255, 255, 255, 0.986);
 }
@@ -129,23 +124,28 @@ header {
 }
 
 .toggle img {
-  height: 7vh;
-  width: 4vw;
+  height: 15vh;
+  width: 10vw;
   position: relative;
   transition: 1.2s;
-  transform: rotate(720deg);
+  box-shadow: 5px 5px 15px;
+  
 }
 
 .toggle {
+  margin-left: 10vh;
+  margin-top: 10vh;
+  height: 1vh;
+  width: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10000;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 2em;
+
   transition: transform 1.25s;
-  background-color: rgba(240, 248, 255, 0);
+  background-color: rgba(240, 248, 255, 0.925);
 }
 
 .toggle :hover {
@@ -206,9 +206,9 @@ img {
 }
 
 .suivant img:hover {
-  background-color: rgba(95, 252, 33, 0.1);
+  background-color: rgb(255, 255, 255);
   border-radius: 30%;
-  border: inset 1px black;
+  border: inset 3px rgb(0, 0, 0);
 }
 
 .avant,
@@ -219,7 +219,7 @@ img {
   color: rgb(0, 0, 0);
   font-size: 20px;
   border-radius: 30%;
-  background: rgba(252, 33, 33, 0.863);
+  background: rgba(255, 255, 255, 0.863);
 }
 
 .apres {
@@ -294,6 +294,11 @@ img {
   .toggle {
     height: 50px;
     width: 50px;
+    background-color: rgba(0, 0, 0, 0.671);
+    margin-left: 4vh;
+    margin-top: 0vh;
+    height: 1vh;
+    width: 1vw;
   }
 
   .toggle img {
@@ -302,7 +307,7 @@ img {
   }
 
   .menu {
-    top: 15vh;
+    top: 17vh;
     left: 10vh;
     width: 100px;
     height: 250px;
