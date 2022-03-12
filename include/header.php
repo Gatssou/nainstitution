@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./sass/login.css">
     <link rel="stylesheet" href="../sass/index.scss">
 	<link rel="stylesheet" href="./fa/css/all.css">
-    <title>Document</title>
+    <title>Nain ventura</title>
 </head>
 
 <body>

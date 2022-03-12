@@ -1,4 +1,14 @@
-.deco{
-  top:15vh;
-}
 
+/*julien moi loni ne touche pas sil te plait merci.*/
+.supergrille {
+    margin: 0 -10px -10px auto;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    color: red;
+    filter: brightness(100%);
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.767);
+  }
+  
+  

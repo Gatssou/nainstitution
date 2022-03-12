@@ -11,7 +11,7 @@ logged_only();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/imagepersosnage/terre.gif" type="image">
     <link rel="stylesheet" href="./sass/personnages.css">
-    <title>Document</title>
+    <title>Nain ventura</title>
 </head>
 <body>
 <section>

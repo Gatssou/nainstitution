@@ -68,6 +68,15 @@ footer.active{
             text-decoration: none;
             list-style: none;
         }
+       .recupenvoie {
+        border-bottom: 1px white ridge;
+        text-shadow: 7px 6px  black ;
+        box-shadow: 5px 5px 5px black;
+        margin: 8px;
+           color: white;
+            text-decoration: none;
+            list-style: none;
+        }
       .membre{
           color: black;
           
@@ -87,6 +96,7 @@ footer.active{
       
         <a class="articles" href="./articles.php">Afficher tous les articles </a>
 
+        <a class="recupenvoie" href="./adminsite/recupenvoie.php">Afficher tous les envoies </a>
         <div class="deco"><a href="adlogout.php">Se déconnecter</a></div>
     </div>
  

@@ -22,8 +22,9 @@ header('location: envoief.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/terre.gif" type="image">
     <link rel="stylesheet" href="./../../sass/index.scss">
-    <title>Document</title>
+    <title>Nain ventura</title>
 </head>
 
 <body>
@@ -37,19 +38,20 @@ background-color: gray;
 </style>
 
 
-
-
-
 </html>
+
 <form class="content" action="" method="POST">
 <img src="./Img/mail.png" alt="" class="proute">
     <label class="mail" for="mail">Mail:</label  >
     
     <input class="titre" type="text" name="maill" placeholder="Email ou pseudo ">
+
     <label class="textarea" for="textarea">Description:</label>
+
     <img class="plume" src="../articlepage/Img/plume.png" alt="">
+
     <textarea class="textarea-con" name="descript" placeholder="write"></textarea>
 
-    <input class="envoie" type="submit" name="starting">
+    <input class="envoie" type="submit" name="starting"> <span><a href="./envoief.php">ici</a></span>
 </form>
 </body>

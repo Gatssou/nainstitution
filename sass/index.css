@@ -336,7 +336,17 @@ a {
   height: auto;
 }
 
-/*julien moi loni ne touche pas sil te plait merci.*/
+/*julien moi loni ne touche pas sil te plait merci. page envoief.php*/
+.supergrille {
+  margin: 0 -10px -10px auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  filter: brightness(100%);
+  justify-content: center;
+}
+
 .supergrille {
   margin: 0 -10px -10px auto;
   padding: 15px;
