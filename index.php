@@ -29,9 +29,15 @@ logged_only();
                     <img src="./img/index/gouvernail.png"  alt="">
                     </div> 
 					<ul>
-				 	<li>Home</li>
-						<li>truc deux</li>
-						<li>truc trois</li>	
+				 	<a href="./pub.php">
+                         <li>Pub.php</li>
+                     </a>
+						<a href="./presentation.php">
+                            <li>Présentation</li>
+                        </a>
+						<a href="../nainstitution/include/articlepage/fonctionform.php">
+                            <li>Envoie réclamation</li>	
+                        </a>
 					</ul>
 				</div>
                 </div>
@@ -268,11 +274,5 @@ logged_only();
 <script src="./js/index.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./js/menu.js"></script>
-
-<script type="text/javascript">
-		
-	
-
-
 
 </html>
