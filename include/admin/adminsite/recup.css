@@ -7,10 +7,9 @@
     filter: brightness(100%);
     justify-content: center;
   }
-  
   .articlee {
     padding: 10px;
-    width: 30%;
+   
     cursor: pointer;
     border: 1px solid hsla(0, 0%, 100%, .08);
     position: relative;
