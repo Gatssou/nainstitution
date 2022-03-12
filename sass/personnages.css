@@ -170,7 +170,7 @@ section {
 }
 
 .maintexte {
-  color: purple;
+  color: red;
   width: 23%;
   display: flex;
   align-items: center;
@@ -194,7 +194,7 @@ section {
 
 .deco {
   display: flex;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-right: 2vh;
 }
 
@@ -214,9 +214,9 @@ section {
 
 footer {
   display: flex;
-  margin-top: 10vh;
   justify-content: space-between;
   flex-direction: row;
+  margin-top: -10vh;
 }
 
 /** FORMAT PORTABLE **/

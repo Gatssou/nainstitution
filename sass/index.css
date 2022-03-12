@@ -347,21 +347,10 @@ a {
   justify-content: center;
 }
 
-.supergrille {
-  margin: 0 -10px -10px auto;
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  color: red;
-  filter: brightness(100%);
-  justify-content: center;
-}
-
 .articlee {
   padding: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
-  width: 30%;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;

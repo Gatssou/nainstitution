@@ -64,7 +64,7 @@ $usename = $_SESSION["auth"];
                                 height="70px" width="70px" alt=""></a>
                     </li>
                     <li style="--i:1;">
-                        <a href="./index.php"><img src="./img/index/home.png" alt=""></a>
+                        <a href="./presentation.php"><img src="./img/index/home.png" alt=""></a>
                     </li>
                     <li style="--i:2;">
                         <a href="./personnagef.php"><img src="./img/img_index/femme.png" height="80px" width="80px"

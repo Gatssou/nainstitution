@@ -167,7 +167,7 @@ body{
 }
 .deco{
   display: flex;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-right: 2vh;
 }
 .deco a{
@@ -183,7 +183,7 @@ body{
 }
 footer{
   display: flex;
-  margin-top: 10vh;
+  margin-top: -10vh;
   justify-content: space-between;
   flex-direction: row;
 }
