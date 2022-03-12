@@ -96,7 +96,7 @@ footer.active{
       
         <a class="articles" href="./articles.php">Afficher tous les articles </a>
 
-        <a class="recupenvoie" href="./adminsite/recupenvoie.php">Afficher tous les envoies </a>
+        <a class="recupenvoie" href="./adminsite/recupenvoie.php">Afficher poste des geux </a>
         <div class="deco"><a href="adlogout.php">Se déconnecter</a></div>
     </div>
  
