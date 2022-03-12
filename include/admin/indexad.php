@@ -11,6 +11,7 @@ if(!$_SESSION['mdp']){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="./img/terread.gif" type="image">
+    <link rel="stylesheet" href="./css/naruto.css">
     <meta name="viewport" content="width=a, initial-scale=1.0">
    
     <title>Page administration Gagnant</title>
@@ -23,7 +24,6 @@ if(!$_SESSION['mdp']){
     box-sizing: border-box;
 }
 body{
- background: white;  
  display: flex;
  justify-content:space-around;
  align-items: center;
@@ -39,54 +39,53 @@ footer.active{
    position: absolute;
    flex-direction: column;
      }
+     .contien .deco{
+         margin-top: 5vh;
+     }
        .membres {
         border-bottom: 1px white ridge;
            color: white;
             text-decoration: none;
             list-style: none;
-            margin: 20px;
+            margin: 8px;
             box-shadow: 5px 5px 5px red;
             text-shadow: 7px 7px  red ;
         }
        .publier {
         border-bottom: 1px white ridge;
-        text-shadow: 10px 10px  orange ;
-        margin: 20px;
+        text-shadow: 5px 5px  orange ;
+        margin: 8px;
            color: white;
             text-decoration: none;
-            list-style: none;
-            box-shadow: 5px 5px 5px orange;
+            box-shadow: 5px 5px 9px orange;
         }
        .articles {
         border-bottom: 1px white ridge;
-        text-shadow: 7px 7px  blue ;
+        text-shadow: 7px 6px  blue ;
         box-shadow: 5px 5px 5px blue;
-        margin: 20px;
+        margin: 8px;
            color: white;
             text-decoration: none;
             list-style: none;
         }
-footer a{
- left: 80%;
- top: 90%;
-    color: black;
-    position: absolute;
-}
+
       .membre{
           color: black;
       }
     </style>
-   
+   <div class="naruto">
+<img src="./img/narutopain.gif" alt="">
+   </div>
     <div class="contien">
-        <a class="membres" href="membres.php">Afficher tous les gueux !</a>
+        <a class="membres" href="membres.php">Afficher tous les gueux </a>
        
-        <a class="publier" href="./publier-article.php">Publier un nouvel article !</a>
+        <a class="publier" href="./publier-article.php">Publier un nouvel article  </a>
       
-        <a class="articles" href="./articles.php">Afficher tous les articles !</a>
+        <a class="articles" href="./articles.php">Afficher tous les articles </a>
+
+        <div class="deco"><a href="adlogout.php">Se déconnecter</a></div>
     </div>
-    <footer>
- <a href="adlogout.php">Se déconnecter</a>
- </footer>
+ 
 </body>
 
 </html>
