@@ -208,7 +208,7 @@ img {
 .suivant img:hover {
   background-color: rgb(255, 255, 255);
   border-radius: 30%;
-  border: inset 3px rgb(0, 0, 0);
+
 }
 
 .avant,
