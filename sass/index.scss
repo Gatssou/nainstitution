@@ -77,6 +77,7 @@ position:fixed;}
 /* MOBILE */
 
 @media screen and (max-width: 700px) {
+
  #div1{position:absolute; font-family:'Museo'; width:20vw;
     border-radius:10px;
      overflow:hidden;  cursor:pointer;}
@@ -126,6 +127,10 @@ a {
 
 /*aventurier 1*/
 //sec1
+
+
+
+
 #pic_1,
 #pic_2,
 #pic_3,
@@ -134,6 +139,7 @@ a {
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
 .av1{
+ 
   grid-area: 2 / 3 / 3 / 4;
 }
 .av2{

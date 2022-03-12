@@ -83,6 +83,8 @@ $(document).ready(function () {
   })
 })
 
+
+
 //Fonction qui ouvre la bulle, donc fait apparaître le cadre au clique pour first (black)
 $(document).ready(function () {
   $('.st').click(function openPop() {
@@ -93,8 +95,8 @@ $(document).ready(function () {
       border: "2px solid black",
       borderRadius: "10px",
       position: "relative",
-      left: "10vw",
-      top: "15vh",
+      left: "0vw",
+      top: "0vh",
     })
   })
 
@@ -166,7 +168,7 @@ $(document).ready(function () {
       top: "30vh",
       width: "15vw",
       height: "15vh",
-      left: "-13vw"
+      left: "13vw"
     })
   })
 
