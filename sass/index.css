@@ -14,6 +14,66 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+#menud {
+  /* background-color:rgb(8,196,93); */
+  margin: 0 auto;
+  color: black;
+  border-radius: 10px;
+  font-size: 0.85em;
+  height: 7vh;
+  text-align: center;
+  z-index: 5;
+  width: 20vw;
+  align-items: center;
+  position: fixed;
+}
+
+#div1 {
+  position: absolute;
+  font-family: "Museo";
+  width: 8vw;
+  border-radius: 10px;
+  padding: 0.5em;
+  overflow: hidden;
+  height: 1.3vh;
+  cursor: pointer;
+}
+
+#div1:hover,
+#div1:hover {
+  background-color: rgba(38, 38, 40, 0.205);
+  color: white;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+#div1:active,
+#div1:hover {
+  height: 6.7em;
+  transition: height 0.3s ease;
+  z-index: 3;
+}
+
+#menud h4 {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 0.5em 0;
+}
+
+#menud img {
+  width: 14%;
+}
+
+#menud ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0.4em;
+}
+
+#menud li {
+  border-bottom: 1px black ridge;
+}
+
 .para {
   position: relative;
   width: 100%;
@@ -54,6 +114,29 @@ body::-webkit-scrollbar {
 /*** RESPONSIVE ***/
 /* MOBILE */
 @media screen and (max-width: 700px) {
+  #div1 {
+    position: absolute;
+    font-family: "Museo";
+    width: 20vw;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  #div1:focus,
+#div1:hover {
+    background-color: rgba(0, 0, 0, 0.205);
+    color: black;
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+
+  #div1:active,
+#div1:focus {
+    height: 15vh;
+    z-index: 3;
+    width: 20vw;
+  }
+
   .border {
     border-radius: 5%;
     width: 40vw;
