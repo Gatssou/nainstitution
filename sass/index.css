@@ -190,7 +190,7 @@ body::-webkit-scrollbar {
 #pic_2,
 #pic_3,
 #pic_4 {
-    background-color: grey;
+    background-color: rgba(50, 102, 67, 0.7);
   }
 
   .ttl,
@@ -256,7 +256,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    color: grey;
+    color: rgba(50, 102, 67, 0.7);
   }
 }
 a {
