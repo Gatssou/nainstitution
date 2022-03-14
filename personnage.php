@@ -102,7 +102,6 @@ logged_only();
                 </div>
             </div>
             <div class="perso-back">
-
                 <img src="./img/imagepersosnage/Magellan.jpg" height="400px" alt="">
                 </a>
             </div>
