@@ -135,7 +135,7 @@ if(isset($_COOKIE['accept_cookie'])){
 }else{
     $showcookie = true;
 }
-require_once '/laragon/www/nainstitution/presentation.php';
+require_once '/laragon/www/nainstitution/index.php';
 ?>
 
 <?php
@@ -144,7 +144,7 @@ require_once '/laragon/www/nainstitution/presentation.php';
 <div class="overlay">
   <div class="cookie_alert">
     <a href="./img/draw/cookies.gif"><img src="./img/draw/cookies.gif" style="width: 5vw;" alt=""></a>
-    <p>Hello world je suis un méchant cookie. Oui je suis vraiment mais vraiment un méchant cookie.
+    <p class="cookie_text">Hello world je suis un méchant cookie. Oui je suis vraiment mais vraiment un méchant cookie.
       <a class="accpt" href="./include/accept_cookie.php">J'accepte</a></p>
   </div>
 </div>
@@ -167,19 +167,19 @@ require_once '/laragon/www/nainstitution/presentation.php';
     padding: 30px;
     font-family: 'Signika Negative', sans-serif;
   }
-
+  
   .cookie_alert .accpt {
     text-decoration: none;
-    border: 5px solid blue;
+    border: 3px solid green;
     border-radius: 25px;
-    padding: 25px;
-    color: blue;
+    padding: 15px;
+    color: green;
     transition: 1.2 ease;
   }
 
   .cookie_alert .accpt:hover {
     color: white;
-    background: blue;
+    background: green;
     transition: 2s;
   }
 

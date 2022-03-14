@@ -23,28 +23,27 @@ logged_only();
 
 <body>
     <div class="para">
-    <div id="menud">
-				<div id="div1" tabindex="0">   <!-- tabindex ="0" 1 2 4 5 etc indique si l'élément peut capturer le focus et si c'est le cas, dans quel ordre il le capture lors de la navigation au clavier généralement à l'aide de la touche Tab. Si plusieurs éléments partagent la même valeur d'attribut tabindex, leur ordre sera calculé en fonction de leur position dans le document.  -->
-					<div class="imgg">
-                    <img src="./img/index/gouvernail.png"  alt="">
-                    </div> 
-					<ul>
-				 	<a href="./pub.php">
-                         <li>Pub.php</li>
-                     </a>
-						<a href="./index.php">
-                            <li>Index Map</li>
-                        </a>
-						<a href="../nainstitution/include/articlepage/fonctionform.php">
-                            <li>Envoie réclamation</li>	
-                        </a>
-					</ul>
-				</div>
+        <div id="menud">
+            <div id="div1" tabindex="0">
+                <!-- tabindex ="0" 1 2 4 5 etc indique si l'élément peut capturer le focus et si c'est le cas, dans quel ordre il le capture lors de la navigation au clavier généralement à l'aide de la touche Tab. Si plusieurs éléments partagent la même valeur d'attribut tabindex, leur ordre sera calculé en fonction de leur position dans le document.  -->
+                <div class="imgg">
+                    <img src="./img/index/gouvernail.png" alt="">
                 </div>
+                <ul>
+                    <a href="./pub.php">
+                        <li>Pub.php</li>
+                    </a>
+                    <a href="./index.php">
+                        <li>Index Map</li>
+                    </a>
+                    <a href="../nainstitution/include/articlepage/fonctionform.php">
+                        <li>Envoie réclamation</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <h1 class="aventuriers">Aventuriers</h1>
         <section id="pic_1" class="sec">
-        <nav>
-      
-    </nav>
             <div class="av1">
                 <div class="ttl">Mike Horn</div>
                 <div id="avs">

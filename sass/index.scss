@@ -3,43 +3,80 @@
 html {
   scrollbar-width: none;
 }
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
 
 //SCROLL PARALAX
-#menud{/* background-color:rgb(8,196,93); */ margin:0 auto;
-   color:rgb(0,0,0); border-radius:10px;
-    font-size:0.85em;height: 7vh;text-align: center;
-  z-index: 5;width: 20vw; align-items: center;
-position:fixed;}
+#menud {
+  /* background-color:rgb(8,196,93); */
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-size: 0.85em;
+  height: 7vh;
+  text-align: center;
+  z-index: 5;
+  width: 20vw;
+  align-items: center;
+  position: fixed;
+}
 
-#div1{position:absolute; font-family:'Museo'; width:8vw;
-   border-radius:10px; padding:0.5em;
-    overflow:hidden; height:1.3vh; cursor:pointer;}
+#div1 {
+  position: absolute;
+  font-family: 'Museo';
+  width: 8vw;
+  border-radius: 10px;
+  padding: 0.5em;
+  overflow: hidden;
+  height: 5vh;
+  cursor: pointer;
+}
 
 #div1:hover,
-#div1:hover{background-color:rgba(38, 38, 40, 0.205); color: rgb(255,255,255);  transition:background 0.5s ease, color 0.5s ease;}
+#div1:hover {
+  background-color: rgba(38, 38, 40, 0.205);
+  color: rgb(255, 255, 255);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
 #div1:active,
-#div1:hover{height:6.7em; transition:height 0.3s ease; z-index:3;}
-
-
-#menud h4 {font-size:1em; text-transform:uppercase; text-align:center; margin:0 0 0.5em 0; 
+#div1:hover {
+  height: 6.7em;
+  transition: height 0.3s ease;
+  z-index: 3;
 }
+
+
+#menud h4 {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 0.5em 0;
+}
+
 #menud img {
-  width: 14%;
+  width: 50%;
 }
-#menud ul{margin:0; list-style:none; padding-left:0.4em;
+
+#menud ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0.4em;
 }
-#menud li{
+
+#menud li {
   border-bottom: 1px black ridge;
 }
-.para{
+
+.para {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -47,10 +84,12 @@ position:fixed;}
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
 }
-.para section{
+
+.para section {
   scroll-snap-align: start;
 }
-.para .sec{
+
+.para .sec {
   position: relative;
   width: 100%;
   height: 100%;
@@ -72,54 +111,83 @@ position:fixed;}
   background-color: cadetblue;
   overflow: hidden;
 }
+.aventuriers{
+  display: none;
+}
 
 /*** RESPONSIVE ***/
 /* MOBILE */
 
 @media screen and (max-width: 700px) {
 
- #div1{position:absolute; font-family:'Museo'; width:20vw;
-    border-radius:10px;
-     overflow:hidden;  cursor:pointer;}
-     #div1:focus,
-#div1:hover{background-color:rgba(0, 0, 0, 0.205); color: rgb(0, 0, 0);  transition:background 0.5s ease, color 0.5s ease;}
-#div1:active,
-#div1:focus{height:15vh;  z-index:3;width: 20vw;}
-.border {
-  border-radius: 5%;
-  width: 40vw;
-  height: auto;
+  #div1 {
+    position: absolute;
+    font-family: 'Museo';
+    width: 20vw;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #div1:focus,
+  #div1:hover {
+    background-color: rgba(0, 0, 0, 0.205);
+    color: rgb(0, 0, 0);
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  #div1:active,
+  #div1:focus {
+    height: 15vh;
+    z-index: 3;
+    width: 20vw;
+  }
+  .border {
+    border-radius: 5%;
+    width: 40vw;
+    height: auto;
+  }
+  .textbtn {
+    @include disp3;
+    flex-direction: column;
+  }
+  input {
+    border: none;
+    background: rgb(131, 124, 133);
+    outline: none;
+  }
+  .stylebtn {
+    background: white;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 15px;
+    font-size: 25px;
+  }
+  .dispo {
+    @include disp2;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 3vh;
+  }
+  .poney {
+    margin-top: 2.5vh;
+  }
+  .para{
+    scroll-snap-type: none;
+  }
+  #pic_1, #pic_2, #pic_3, #pic_4{
+    background-color: grey;
+  }
+  .ttl, .ttl2, .ttl3, .ttl4{
+    display: none;
+  }
+  .aventuriers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: grey;
+  }
 }
 
-.textbtn {
-  @include disp3;
-  flex-direction: column;
-}
-
-input {
-  border: none;
-  background: rgb(131, 124, 133);
-  outline: none;
-}
-
-.stylebtn {
-  background: white;
-  width: 10vw;
-  height: 7vh;
-  border-radius: 15px;
-  font-size: 25px;
-}
-.dispo {
-  @include disp2;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 3vh;
-}
-
-.poney {
-  margin-top: 2.5vh;
-}
-}
 a {
   text-decoration: none;
   color: white;
@@ -127,35 +195,35 @@ a {
 
 /*aventurier 1*/
 //sec1
-
-
-
-
 #pic_1,
 #pic_2,
 #pic_3,
-#pic_4{
+#pic_4 {
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
-.av1{
- 
+
+.av1 {
+
   grid-area: 2 / 3 / 3 / 4;
 }
-.av2{
+
+.av2 {
   grid-area: 2 / 3 / 3 / 4;
 }
-.av3{
+
+.av3 {
   grid-area: 2 / 3 / 3 / 4;
 }
-.av4{
+
+.av4 {
   grid-area: 2 / 3 / 3 / 4;
 }
+
 .ttl,
 .ttl2,
 .ttl3,
 .ttl4 {
-  display: block;
   font-size: 2em;
   z-index: 99;
   color: #FFF;
@@ -166,22 +234,27 @@ a {
   font-family: Dancing Script, cursive;
   cursor: pointer;
 }
+
 .ttl::selection {
   color: black;
   text-shadow: 5px 5px 4px white;
 }
+
 .ttl2::selection {
   color: black;
   text-shadow: 5px 5px 4px white;
 }
+
 .ttl3::selection {
   color: black;
   text-shadow: 5px 5px 4px white;
 }
+
 .ttl4::selection {
   color: black;
   text-shadow: 5px 5px 4px white;
 }
+
 .av {
   position: relative;
   width: 40px;
@@ -191,19 +264,23 @@ a {
   color: #FFF;
   font-size: 20px;
   text-align: center;
+
   a {
     color: #fff;
   }
 }
+
 .avs {
   top: -5vh;
   z-index: 1;
 }
+
 .clicked {
   opacity: 1;
   transition: 1.2s all ease;
   transform: translateY(56px);
 }
+
 .st,
 .nd,
 .rd,
@@ -226,6 +303,7 @@ a {
 .fi4 {
   transition: 1s ease;
 }
+
 .pop,
 .popnd,
 .poprd,
@@ -262,11 +340,12 @@ a {
   filter: brightness(100%);
   justify-content: center;
 }
+
 .articlee {
   padding: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
- 
+
   cursor: pointer;
   border: 1px solid hsla(0, 0%, 100%, .08);
   position: relative;
