@@ -72,10 +72,11 @@ logged_only();
     
   <svg viewBox="0 0 100.6 107.6" id="svgf">
     <path fill="none" stroke="red" stroke-width=".2" id="pathf" d="
-    M 60 10, 40 40
-       C 50 50, 5 30, 6 60
-       C 6 60, 5 85, 70 70
-       C 70 70, 80 67, 90 75
+       M 60 20, 60 20
+       C 60 20, 65 45, 50 43
+       C 50 43, 13 40, 15 60
+       C 15 60, 15 85, 55 60
+       C 55 60, 90 40, 65 90
     " />
   </svg>
   <img src="./img/draw/little_tree.png" class="tree1" alt="">
@@ -114,9 +115,8 @@ logged_only();
 
 
   <a href="./pub.php">
-    <button class="btn but">
-      <div class="text">Join us !</div>
-    </button>
+    <img src="./img/draw/kisspng-american-red-cross-international-red-cross-and-red-red-cross-5a75a2afd6b3f5.9559250815176587998794.png" class="red_cross" alt="">
+    
   </a>
 
 
