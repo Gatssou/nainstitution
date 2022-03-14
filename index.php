@@ -69,6 +69,7 @@ logged_only();
       " />
     -->
 
+    <h1 class="welc">Bienvenue dans notre aventure !</h1>
     
   <svg viewBox="0 0 100.6 107.6" id="svgf">
     <path fill="none" stroke="red" stroke-width=".2" id="pathf" d="
@@ -76,7 +77,7 @@ logged_only();
        C 60 20, 65 45, 50 43
        C 50 43, 13 40, 15 60
        C 15 60, 15 85, 55 60
-       C 55 60, 90 40, 65 90
+       C 55 60, 90 40, 64 92
     " />
   </svg>
   <img src="./img/draw/little_tree.png" class="tree1" alt="">

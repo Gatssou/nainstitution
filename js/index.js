@@ -61,7 +61,7 @@ $(document).ready(function () {
     })
     $(".fi").css({
       transform: "translateX(9vh)",
-      background: "#407261",
+      background: "#f5deb3",
       top: "-4vh"
     })
   })
@@ -123,6 +123,7 @@ $(document).ready(function () {
       borderRadius: "10px",
       position: "relative",
       left: "18vw",
+      top: "5vh"
     })
   })
 
@@ -135,9 +136,8 @@ $(document).ready(function () {
       border: "2px solid black",
       borderRadius: "10px",
       position: "relative",
-      top: "50vh",
-      left: "-20vw",
-      width: "15vw"
+      top: "65vh",
+      left: "-15vw",
     })
   })
 
@@ -150,12 +150,12 @@ $(document).ready(function () {
       border: "2px solid black",
       borderRadius: "10px",
       position: "relative",
-      top: "55vh",
-      left: "-10vw"
+      top: "65vh",
+      right: "10vw"
     })
   })
 
-  //Fonction pour fourth (blue)
+  //Fonction pour fifth (blue)
   $('.fi').click(function openPopfi() {
     $('.popfi').css({
       visibility: "visible",
@@ -165,8 +165,6 @@ $(document).ready(function () {
       borderRadius: "10px",
       position: "relative",
       top: "30vh",
-      width: "15vw",
-      height: "15vh",
       left: "-13vw"
     })
   })

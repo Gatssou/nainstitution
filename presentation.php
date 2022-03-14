@@ -64,30 +64,30 @@ logged_only();
                     </a>
                 </div>
             </div>
-            <div class="pop">
+            <div title="Cliquez pour fermer" class="pop">
                 <a href="javascript:void(0)" class="x" onclick="closePop()"></a>
                 <h1>Description</h1>
-                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ea! Expedita molestias sequi cum neque?</p>
             </div>
-            <div class="popnd">
+            <div title="Cliquez pour fermer" class="popnd">
                 <a href="javascript:void(0)" onclick="closePopnd()"></a>
                 <h1>Hi</h1>
-                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, similique.</p>
             </div>
-            <div class="poprd">
+            <div title="Cliquez pour fermer" class="poprd">
                 <a href="javascript:void(0)" onclick="closePoprd()"></a>
                 <h1>Hi</h1>
-                <p title="Cliquez n'importe où pour fermer">Lorem, ipsum dolor.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div title="Cliquez n'importe où pour fermer" class="popth">
+            <div title="Cliquez pour fermer" class="popth">
                 <a href="javascript:void(0)" onclick="closePopth()"></a>
                 <h1>Hi</h1>
-                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor possimus sapiente aperiam voluptate impedit illo harum!</p>
             </div>
-            <div title="Cliquez n'importe où pour fermer" class="popfi">
+            <div title="Cliquez pour fermer" class="popfi">
                 <a href="javascript:void(0)" onclick="closePopfi()"></a>
                 <h1>Hi</h1>
-                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores modi perferendis, porro eum, vel doloribus sint accusantium illo eligendi, exercitationem voluptatem numquam!</p>
             </div>
             <!--<div class="containere">
                 <a href="" id="bouddha">

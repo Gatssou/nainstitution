@@ -32,7 +32,7 @@ $usename = $_SESSION["auth"];
             <h1 class="popi">
                 <?php
                 if($usename){
-                    echo '<font color="white"> Bienvenue </font>' .$usename. '<font color="white"> <br> dans cette </font>';
+                    echo '<font color="white"> Bienvenue Aventurier <br> </font>' . $usename ;
                 }
                 ?>
             </h1>

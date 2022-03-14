@@ -76,50 +76,99 @@ body{
   background-attachment: scroll;
   background-color: black;
 }
-  
-h1{
-  color: white;
-  text-align: center;
-  font-size: 22px;
-  letter-spacing: 5px;
-  font-weight: 100;
-  padding: 25px 15px;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
-}
 .red_cross{
   width: 3vw;
   position: relative;
-  top: -30vh;
+  top: -37vh;
   right: -60vw;
 
 }
 .tree1{
   position: absolute;
-  top: 112vh;
+  top: 122vh;
   left: 20vw;
   z-index: 2000;
 }
 .tree2{
   position: absolute;
-  top: 107vh;
+  top: 117vh;
   left: 22vw;
   z-index: 2000;
 }
 .tree3{
   position: absolute;
-  top: 110vh;
+  top: 120vh;
   left: 27vw;
   z-index: 2000;
 }
 .tree4{
   position: absolute;
-  top: 107vh;
+  top: 117vh;
   left: 25vw;
   z-index: 2000;
 }
 .tree5{
   position: absolute;
-  top: 112vh;
+  top: 122vh;
   left: 24vw;
   z-index: 2000;
+}
+.welc{
+  letter-spacing: 2px;
+  font-size: 2em;
+  text-align: center;
+  color: burlywood;
+  width: 35vw;
+  margin-left: 30vw;
+  border-radius: 15px;
+  font-weight: 100;
+  padding: 25px 15px;
+  text-shadow: 1px 1px 1px black;
+  transition: 1s ease;
+  position: relative;
+  top: -2vh;
+}
+.welc:hover{
+  color: white;
+  background-color: burlywood;
+}
+.welc::selection{
+  color: black;
+}
+#svgf{
+  position: relative;
+  top: -10vh;
+}
+@media screen and (max-width: 700px) {
+  body{
+    height: 100vh;
+  }
+  #svgf{
+    position: relative;
+    top: 3vh;
+    stroke-dasharray: none;
+  }
+  .tree3, .tree4, .tree5{
+    display: none;
+  }
+  .tree1, .tree2{
+    position: relative;
+    top: -28vh;
+    left: 17vw;
+    width: 5vw;
+  }
+  .red_cross{
+    position: relative;
+    top: -7vh;
+    left: 47vw;
+  }
+  .welc{
+    background-color: burlywood;
+    color: black;
+    font-size: 1em;
+    width: 50vw;
+    padding: 10px;
+    margin-left: 21vw;
+    margin-top: 15vh;
+  }
 }

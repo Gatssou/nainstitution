@@ -95,23 +95,24 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 
-.para .sec:nth-child(1) {
-  background-color: #FFF;
-}
-
-.para .sec:nth-child(2) {
-  background-color: aquamarine;
-}
-
 .para .sec:nth-child(3) {
-  background-color: brown;
+  background-color: rgb(50, 102, 67);
 }
 
 .para .sec:nth-child(4) {
-  background-color: cadetblue;
+  background-color: rgba(50, 102, 67, 0.900);
   overflow: hidden;
 }
-.aventuriers{
+
+.para .sec:nth-child(5) {
+  background-color: rgba(50, 102, 67, 0.800);
+}
+
+.para .sec:nth-child(6) {
+  background-color: rgba(50, 102, 67, 0.700);
+}
+
+.aventuriers {
   display: none;
 }
 
@@ -128,32 +129,38 @@ body::-webkit-scrollbar {
     overflow: hidden;
     cursor: pointer;
   }
+
   #div1:focus,
   #div1:hover {
     background-color: rgba(0, 0, 0, 0.205);
     color: rgb(0, 0, 0);
     transition: background 0.5s ease, color 0.5s ease;
   }
+
   #div1:active,
   #div1:focus {
     height: 15vh;
     z-index: 3;
     width: 20vw;
   }
+
   .border {
     border-radius: 5%;
     width: 40vw;
     height: auto;
   }
+
   .textbtn {
     @include disp3;
     flex-direction: column;
   }
+
   input {
     border: none;
     background: rgb(131, 124, 133);
     outline: none;
   }
+
   .stylebtn {
     background: white;
     width: 10vw;
@@ -161,30 +168,92 @@ body::-webkit-scrollbar {
     border-radius: 15px;
     font-size: 25px;
   }
+
   .dispo {
     @include disp2;
     flex-direction: column;
     justify-content: space-around;
     height: 3vh;
   }
+
   .poney {
     margin-top: 2.5vh;
   }
-  .para{
+
+  .para {
     scroll-snap-type: none;
+    height: 100vh;
   }
-  #pic_1, #pic_2, #pic_3, #pic_4{
+
+  #pic_1,
+  #pic_2,
+  #pic_3,
+  #pic_4 {
     background-color: grey;
   }
-  .ttl, .ttl2, .ttl3, .ttl4{
+
+  .ttl,
+  .ttl2,
+  .ttl3,
+  .ttl4 {
     display: none;
   }
-  .aventuriers{
+
+  .st,
+  .nd,
+  .rd,
+  .th,
+  .fi,
+  .st2,
+  .nd2,
+  .rd2,
+  .th2,
+  .fi2,
+  .st3,
+  .nd3,
+  .rd3,
+  .th3,
+  .fi3,
+  .st4,
+  .nd4,
+  .rd4,
+  .th4,
+  .fi4 {
+    display: none;
+  }
+
+  .pop,
+  .popnd,
+  .poprd,
+  .popth,
+  .popfi,
+  .pop2,
+  .popnd2,
+  .poprd2,
+  .popth2,
+  .popfi2,
+  .pop3,
+  .popnd3,
+  .poprd3,
+  .popth3,
+  .popfi3,
+  .pop4,
+  .popnd4,
+  .poprd4,
+  .popth4,
+  .popfi4 {
+    display: none;
+  }
+  .av{
+    display: none;
+  }
+  .aventuriers {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: grey;
+    background-color: white;
+    color: grey;
   }
 }
 
@@ -204,20 +273,27 @@ a {
 }
 
 .av1 {
-
   grid-area: 2 / 3 / 3 / 4;
+  text-align: center;
+  margin-top: 14vh;
 }
 
 .av2 {
   grid-area: 2 / 3 / 3 / 4;
+  text-align: center;
+  margin-top: 14vh;
 }
 
 .av3 {
   grid-area: 2 / 3 / 3 / 4;
+  text-align: center;
+  margin-top: 14vh;
 }
 
 .av4 {
   grid-area: 2 / 3 / 3 / 4;
+  text-align: center;
+  margin-top: 14vh;
 }
 
 .ttl,
@@ -231,7 +307,7 @@ a {
   font-weight: 200;
   text-shadow: 5px 5px 4px black;
   letter-spacing: 5px;
-  font-family: Dancing Script, cursive;
+  font-family: 'Dancing Script', cursive;
   cursor: pointer;
 }
 
@@ -326,8 +402,8 @@ a {
 .popfi4 {
   visibility: hidden;
   cursor: pointer;
-  width: 20vw;
-  height: auto;
+  padding: 1vw;
+  letter-spacing: 2px;
 }
 
 /*julien moi loni ne touche pas sil te plait merci. page envoief.php*/
