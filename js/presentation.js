@@ -194,7 +194,7 @@ path.style.strokeDashoffset = pathLf;
 path.getBoundingClientRect();
 
 window.addEventListener("scroll", function(e) {
-  let scrollPerc = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+  let scrollPerc = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight); //rapport
   let drawLf = pathLf * scrollPerc;
   path.style.strokeDashoffset = pathLf - drawLf;
     

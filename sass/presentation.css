@@ -137,7 +137,7 @@ body{
 }
 #svgf{
   position: relative;
-  top: -10vh;
+  top: -5vh;
 }
 @media screen and (max-width: 700px) {
   body{
