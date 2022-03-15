@@ -10,11 +10,24 @@ if(!$_SESSION['mdp']){
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/naruto.css">
     <link rel="shortcut icon" href="./img/terre.gif" type="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nain ventura</title>
 </head>
+<style>
+    body{
+        background: black;
+        display: flex;
+        justify-content: center;
+    }
+    .supergrille{
+        color: white;
+        font-size: 1em;
+    }
+   
+  
+
+</style>
 <body class="supergrille">
     <div class="retour"><a href="./indexad.php"><img src="./img/retour.png" alt=""></a></div>
     <!--Afficher tous les membres , on recupere tout les pseudo dans la table -->

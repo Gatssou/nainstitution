@@ -5,6 +5,7 @@
     color: red;
     filter: brightness(100%);
     justify-content: center;
+    display: inline-block;
 
   }
   .articlee {
