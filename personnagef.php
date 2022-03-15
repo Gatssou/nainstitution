@@ -104,7 +104,7 @@ logged_only();
 <script>
     function changeBg(){
 const images = [
-    'url("./img/imagepersosnage/etoile.jpg")','url("./img/imagepersosnage/595000.jpg")','url("./img/imagepersosnage/1.png")','url("./img/imagepersosnage/2.jpg")','url("./img/imagepersosnage/3.jpg")','url("./img/imagepersosnage/ACCUEIL personalisepc.gif")'
+    'url("./img/imagepersosnage/etoile.jpg")','url("./img/imagepersosnage/595000.jpg")','url("./img/imagepersosnage/1.png")','url("./img/imagepersosnage/2.jpg")','url("./img/imagepersosnage/3.jpg")'
 ]
         const section = document.querySelector('section')
         const bg = images[Math.floor(Math.random() * images.length)
