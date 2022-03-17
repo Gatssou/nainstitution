@@ -31,13 +31,30 @@ body::-webkit-scrollbar {
 
 #div1 {
   position: absolute;
-  font-family: 'Museo';
-  width: 8vw;
+  font-family: "Museo";
+  width: 10vw;
   border-radius: 10px;
   padding: 0.5em;
   overflow: hidden;
-  height: 5vh;
+  height: 3vh;
   cursor: pointer;
+}
+.imgg{
+  height: 2vh;
+  width:2vw;
+ 
+}
+@keyframes spin {
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.imgg:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 #div1:hover,
