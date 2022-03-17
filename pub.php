@@ -8,7 +8,6 @@ $usename = $_SESSION["auth"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,16 +16,13 @@ $usename = $_SESSION["auth"];
     <link rel="shortcut icon" href="../nainstitution/img/imagepersosnage/terre.gif" type="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <title>Document</title>
+    <title>Nainstitution</title>
 </head>
-
 <body>
-
     <header>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
         </style>
-        
         <div class="head">
             <img class="lierre" src="./img/img_index/lierre2.png" alt="">
             <h1 class="popi">
