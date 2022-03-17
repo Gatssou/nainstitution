@@ -3,7 +3,6 @@ session_start();
 require './include/functions.php';
 require_once '../nainstitution/include/bdd.php';
 logged_only();
-$id_session = session_id();
 $usename = $_SESSION["auth"];
 ?>
 <!DOCTYPE html>
