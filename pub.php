@@ -105,13 +105,7 @@ $usename = $_SESSION["auth"];
     <footer>
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $('.overlay').on('click', function (e) {
-            if (e.target !== this) {
-                return;
-            }
-        });
-    </script>
+  
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -122,7 +116,6 @@ $usename = $_SESSION["auth"];
         menu.classList.toggle('active')
     }
 </script>
-<script src="./js/menu.js"></script>
 <script src="./js/personnage.js"></script>
 
 </html>

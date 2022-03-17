@@ -24,7 +24,7 @@ logged_only();
 <body>
     <div class="para">
         <div id="menud">
-            <div id="div1" tabindex="0">
+            <div id="div1">
                 <!-- tabindex ="0" 1 2 4 5 etc indique si l'élément peut capturer le focus et si c'est le cas, dans quel ordre il le capture lors de la navigation au clavier généralement à l'aide de la touche Tab. Si plusieurs éléments partagent la même valeur d'attribut tabindex, leur ordre sera calculé en fonction de leur position dans le document.  -->
                 <div class="imgg">
                     <img src="./img/index/gouvernail.png" alt="">

@@ -4,14 +4,7 @@ function boutonAvant() {
     alpatofIndex++;
     putinSlides();
 }
-function boutonApres() {
-    alpatofIndex--;
-    putinSlides();
-}
-function bierreSlide(n) {
-    alpatofIndex = n - 1;
-    putinSlides();
-}
+
 function putinSlides() {
   let slides = document.querySelectorAll(".suivant");
   if (alpatofIndex > slides.length - 1) alpatofIndex = 0;
