@@ -18,13 +18,13 @@
            <title>Nain ventura</title>
        </head>
 
-       <body class="supergrille">
+       <body>
        <?php    
        while($article = $recupForme->fetch()):
         ?>
             <div class="articlee" >
              <div class="article" >
-             <img   src="../img/pikapika.png" height="100px" width="100px" alt="">
+             <img   src="../img/raitchu.png"  alt="">
                  <h1><?= $article['recupmail'];?></h1>
                  <p><?= $article['descript'];?></p>
                  <a href="./supp.php?id=<?= $article['id'];?>"> <button style="color:black;  margin-bottom:10px; "> Supprimer l'article</button>
@@ -34,7 +34,7 @@
              <br>
      
         </div>
-    
+    <hr>
         <?php
         endwhile; 
         ?>

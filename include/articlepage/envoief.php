@@ -16,7 +16,7 @@
     <title>Nain ventura</title>
 </head>
 
-<body class="supergrille">
+<body >
     <?php    
        while($articlee = $recupForm->fetch()):
         ?>
@@ -31,6 +31,7 @@
         </div>
         <br>
     </div>
+    <hr>
     <?php
         endwhile; 
         ?>

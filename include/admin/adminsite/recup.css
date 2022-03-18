@@ -1,27 +1,29 @@
-.supergrille {
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    color: red;
-    filter: brightness(100%);
-    justify-content: center;
-    display: inline-block;
+body{
+  background-color: black;
+   }
+ .article h1{
+   font-family: "Bungee Inline", sans-serif;
+    text-shadow: 10px 2px 8px red;
+     color: white;
+     text-align: center;
+     justify-content:center;
+ }
+ p{
+   color: white;
+   text-align: center;
+     justify-content:center;
+     font-size: 2em;
+     background-color:black;
+     width: 100%;
+ }
 
-  }
-  .articlee {
-    padding: 10px;
-    cursor: pointer;
-    border: 1px solid hsla(0, 0%, 100%, .08);
-    position: relative;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .31373);
-    margin: 15px;
-    background-color: rgba(0, 0, 0, 0.171);
-    color: black;
-  }
-  
-  .articlee p {
-    overflow: hidden;
-  }
+ article{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+ }
+
+
   
   .retour {
     display: flex;

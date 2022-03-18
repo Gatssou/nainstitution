@@ -1,30 +1,32 @@
+body{
+  background-color: black;
+   }
+ h1{
+   font-family: "Bungee Inline", sans-serif;
+    text-shadow: 10px 2px 8px red;
+     color: white;
+     text-align: center;
+     justify-content:center;
+ }
+ p{
+   color: white;
+   text-align: center;
+     justify-content:center;
+     font-size: 2em;
+     background-color:black;
+     
+     width: 100%;
+ }
 
-.supergrille {
-  padding: 15px;
-  display: flex;
+ article{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+ }
 
- display: inline-block;
-  color: red;
-  filter: brightness(100%);
-  justify-content: center;
 
-}
-.articlee {
-  height: auto;
-  padding: 10px;
-  width: auto;
-  cursor: pointer;
-  border: 1px solid hsla(0, 0%, 100%, .08);
-  position: relative;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .31373);
-  margin: 15px;
-  background-color: rgba(0, 0, 0, 0.171);
-  color: black;
-}
 
-.articlee p {
-  overflow: hidden;
-}
+
 
 .retour {
   display: flex;
