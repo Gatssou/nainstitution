@@ -3,12 +3,10 @@ session_start();
 require './include/functions.php';
 require_once '../nainstitution/include/bdd.php';
 logged_only();
-$id_session = session_id();
 $usename = $_SESSION["auth"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,16 +15,13 @@ $usename = $_SESSION["auth"];
     <link rel="shortcut icon" href="../nainstitution/img/imagepersosnage/terre.gif" type="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <title>Document</title>
+    <title>Nainstitution</title>
 </head>
-
 <body>
-
     <header>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
         </style>
-        
         <div class="head">
             <img class="lierre" src="./img/img_index/lierre2.png" alt="">
             <h1 class="popi">
@@ -109,13 +104,7 @@ $usename = $_SESSION["auth"];
     <footer>
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $('.overlay').on('click', function (e) {
-            if (e.target !== this) {
-                return;
-            }
-        });
-    </script>
+  
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -126,7 +115,6 @@ $usename = $_SESSION["auth"];
         menu.classList.toggle('active')
     }
 </script>
-<script src="./js/menu.js"></script>
 <script src="./js/personnage.js"></script>
 
 </html>

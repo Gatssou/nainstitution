@@ -183,7 +183,7 @@ body{
 }
 footer{
   display: flex;
-  margin-top: -10vh;
+  
   justify-content: space-between;
   flex-direction: row;
 }

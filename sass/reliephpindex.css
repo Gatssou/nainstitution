@@ -102,7 +102,7 @@ header {
   list-style: none;
   transform-origin: 200px;
   transition: 0.5s;
-  transition-delay: calc(0.1s * var(--1i));
+  transition-delay: calc(0.1s * var(--i));
   transform: rotate(0deg) translateX(130px) translateY(27.5px);
 }
 
@@ -335,7 +335,7 @@ img {
     list-style: none;
     transform-origin: 120px;
     transition: 0.5s;
-    transition-delay: calc(0.1s * var(--1i));
+    transition-delay: calc(0.1s * var(--i));
     transform: rotate(0deg) translateX(50px) translateY(10.5px);
   }
 

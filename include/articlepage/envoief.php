@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Img/terre.gif" type="image">
-    <link rel="stylesheet" href="../admin/adminsite/recup.css">
+    <link rel="stylesheet" href="../admin/css/naruto.css">
     <title>Nain ventura</title>
 </head>
 
@@ -24,12 +24,7 @@
     <div class="articlee">
 
         <div class="article">
-            <?php
-         
-         if($usename){
-             echo '<font color="green">  Pseudo: </font>' .$usename;
-         }
-         ?>
+          
             <img src="../admin/img/pikapika.png" height="100px" width="100px" alt="">
             <h1><?= $articlee['recupmail'];?></h1>
             <p><?= $articlee['descript'];?></p>

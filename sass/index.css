@@ -20,10 +20,8 @@ body::-webkit-scrollbar {
   color: black;
   border-radius: 10px;
   font-size: 0.85em;
-  height: 7vh;
   text-align: center;
   z-index: 5;
-  width: 20vw;
   align-items: center;
   position: fixed;
 }
@@ -31,14 +29,30 @@ body::-webkit-scrollbar {
 #div1 {
   position: absolute;
   font-family: "Museo";
-  width: 8vw;
+  width: 10vw;
   border-radius: 10px;
   padding: 0.5em;
   overflow: hidden;
-  height: 5vh;
+  height: 3vh;
   cursor: pointer;
 }
+.imgg{
+  height: 2vh;
+  width:2vw;
+ 
+}
+@keyframes spin {
+  100% {
+    transform: rotateX(360deg);
+  }
+}
 
+.imgg:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+}
 #div1:hover,
 #div1:hover {
   background-color: rgba(38, 38, 40, 0.205);
@@ -61,19 +75,19 @@ body::-webkit-scrollbar {
 }
 
 #menud img {
-  width: 50%;
+  width: 80%;
 }
 
 #menud ul {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
   list-style: none;
   padding-left: 0.4em;
 }
-
 #menud li {
   border-bottom: 1px black ridge;
 }
-
 .para {
   position: relative;
   width: 100%;

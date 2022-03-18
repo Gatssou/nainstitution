@@ -1,14 +1,32 @@
 
-/*julien moi loni ne touche pas sil te plait merci.*/
 .supergrille {
-    margin: 0 -10px -10px auto;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    color: red;
-    filter: brightness(100%);
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.767);
-  }
-  
-  
+  padding: 15px;
+  display: flex;
+
+ display: inline-block;
+  color: red;
+  filter: brightness(100%);
+  justify-content: center;
+
+}
+.articlee {
+  height: auto;
+  padding: 10px;
+  width: auto;
+  cursor: pointer;
+  border: 1px solid hsla(0, 0%, 100%, .08);
+  position: relative;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .31373);
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.171);
+  color: black;
+}
+
+.articlee p {
+  overflow: hidden;
+}
+
+.retour {
+  display: flex;
+  justify-content: start;
+}

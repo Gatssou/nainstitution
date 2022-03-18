@@ -25,7 +25,6 @@ include './include/header.php';
             <input type="text" class="decou" placeholder="Username" name="pseudo" id="pseud"
                 required pattern="^[A-Za-zÀ-ÿ0-9'-]+$">
         </div>
-
         <div id="passcon" class="inpdec">
             <i class="fas fa-lock"></i>
 
@@ -36,15 +35,11 @@ include './include/header.php';
                     <img class="eye-off" src="../nainstitution/img/img_log/eye-off.svg" alt="">
                 </div>
         </div>
-
         <div class="passforgot">
             <!-- <a class="fgtp" href="./">Forgot Pass ?</a> -->
-
             <input type="submit" name="submit" value=">" class="logbtn" />
         </div>
-
         <p class="box-register">Vous êtes nouveau ici? <a class="dec" href="./insc.php">S'inscrire</a></p>
-
     </form>
 </section>
 <section class="errmess">

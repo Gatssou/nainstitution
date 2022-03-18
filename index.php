@@ -155,6 +155,7 @@ require_once '/laragon/www/nainstitution/index.php';
 ?>
 <style>
   .cookie_alert {
+   
     border-top: rgb(255, 0, 0) solid 5px;
     border: solid white 2px;
     background: rgba(0, 0, 0, 0.808);
