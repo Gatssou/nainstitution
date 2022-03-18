@@ -115,7 +115,7 @@ if(isset($_COOKIE['accept_cookie'])){
 }else{
     $showcookie = true;
 }
-require_once '/laragon/www/GitHub/nainstitution/index.php';
+require_once '/laragon/www/nainstitution/index.php';
 ?>
 
 <?php

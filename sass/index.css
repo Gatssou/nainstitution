@@ -20,11 +20,11 @@ body::-webkit-scrollbar {
   color: black;
   border-radius: 10px;
   font-size: 0.85em;
-
- 
+  height: 7vh;
+  text-align: center;
   z-index: 5;
   width: 20vw;
- 
+  align-items: center;
   position: fixed;
 }
 
@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
 
 #div1:active,
 #div1:hover {
-  height: 11em;
+  height: 6.7em;
   transition: height 0.3s ease;
   z-index: 3;
 }
@@ -60,7 +60,9 @@ body::-webkit-scrollbar {
   margin: 0 0 0.5em 0;
 }
 
-
+#menud img {
+  width: 50%;
+}
 
 #menud ul {
   margin: 0;
