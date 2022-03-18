@@ -324,9 +324,46 @@ footer {
 }
 
 /** FORMAT PORTABLE couché **/
-@media only screen and (max-width: 1814px) {
-
+@media only screen and (min-width: 761px) {
+  @keyframes slide {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
   
+    75% {
+      width: 100%;
+      border-radius: 0%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes slidee {
+    from {
+      margin-left: 0%;
+    }
+  
+    25% {
+      border-radius: 0%;
+      width: 0%;
+      border-radius: 0%;
+    }
+  
+    75% {
+  
+      width: 0%;
+      border-radius: 0%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 0%;
+      height: 0%;
+    }
+  }
     
   section{
     position: absolute;
@@ -407,7 +444,7 @@ footer {
     justify-content: center;
     position: absolute;
     height: 33vh;
-    top: 30%;
+    top: 20%;
     overflow-x:hidden; 
     left: 72%;
   }
@@ -425,15 +462,15 @@ footer {
 
   .maintexte {
     color: red;
-    width: 60%;
-    height: 40%;
+    width: 50%;
+    height: 35vh;
     display: flex;
     align-items: center;
     justify-content: start;
     position: absolute;
     font-size: .8em;
-    top: 28%;
-    left: 2vh;
+    top: 20%;
+    left: 28%;
     background-color: rgba(0, 0, 0, 0.815);
   }
 
