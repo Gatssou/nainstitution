@@ -408,7 +408,7 @@ footer {
     position: absolute;
     height: 33vh;
     top: 30%;
-    overflow-y:hidden; 
+    overflow-x:hidden; 
     left: 72%;
   }
 
