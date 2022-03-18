@@ -105,6 +105,8 @@ header button {
 /* MOBILE */
 
 @media screen and (max-width: 700px) {
+  
+  
   header{
     list-style: none;
     z-index: 100;
@@ -250,6 +252,8 @@ header button {
     background-color: white;
     color: rgb(50, 102, 67, 0.700);
   }
+  
+ 
 }
 
 a {
@@ -402,6 +406,7 @@ a {
 }
 
 /*julien moi loni ne touche pas sil te plait merci. page envoief.php*/
+
 .supergrille {
   margin: 0 -10px -10px auto;
   padding: 15px;
@@ -442,32 +447,31 @@ a {
   display: flex;
   position: absolute;
   justify-content: center;
-  border: 1px chartreuse solid;
   border-radius: 15% 15% 0% 0%;
   background-color: rgba(169, 169, 169, 0.158);
   padding: 2vh;
-  width: 20%;
-  height: 50%;
+ width: 50%;
+ height: 50%;
   top: 20%;
-  left: 37%;
+  left:25%;
 
 }
 
 .mail {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
   letter-spacing: 0.2em;
   margin-bottom: 2vh;
   position: relative;
   width: 50%;
   left: 25%;
-  color: chartreuse;
+  color: rgba(134, 65, 0, 0.781);
 }
 
 .titre {
   height: 2.5vh;
   background-color: rgb(255, 255, 255);
-  border: grey 1px solid;
+  color: rgb(134, 0, 0);
   width: 70%;
   position: relative;
   margin-bottom: 2vh;
@@ -479,7 +483,7 @@ a {
   letter-spacing: 0.2em;
   text-align: center;
   margin-bottom: 2vh;
-  color: chartreuse;
+  color: rgba(134, 65, 0, 0.781);
 
 }
 
@@ -501,9 +505,9 @@ a {
 .plume {
   position: absolute;
   height: 37%;
-  opacity: 0.2;
-  left: 53.5%;
-  top: 41.2%;
+  opacity: 0.5;
+  left: 75%;
+  top: 43%;
 
 
 }
@@ -515,14 +519,14 @@ a {
   color: white;
   position: relative;
   left: 35%;
-  border: 1px chartreuse solid;
+  border: 1px rgba(134, 65, 0, 0.781) solid;
   cursor: pointer;
   transition: 0.8s ease;
 }
 
 .envoie:hover {
-  color: chocolate;
-  background-color: chartreuse;
+  color: rgb(0, 0, 0);
+  background-color: rgba(134, 65, 0, 0.781);
   border: gray 1px solid;
   border-radius: 20% 0% 20% 0%;
 }

@@ -42,7 +42,7 @@ background-color: gray;
 
 <form class="content" action="" method="POST">
 <img src="./Img/mail.png" alt="" class="proute">
-    <label class="mail" for="mail">Mail:</label  >
+    <label class="mail" for="mail">HELLO!</label  >
     
     <input class="titre" type="text" name="maill" placeholder="Email ou pseudo ">
 
@@ -52,6 +52,6 @@ background-color: gray;
 
     <textarea class="textarea-con" name="descript" placeholder="write"></textarea>
 
-    <input class="envoie" type="submit" name="starting"> <span><a href="./envoief.php">ici Forum</a></span>
+    <input class="envoie" type="submit" name="starting"> <span><a class="ehh" href="./envoief.php">ici Forum</a></span>
 </form>
 </body>
