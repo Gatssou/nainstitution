@@ -23,9 +23,8 @@ logged_only();
     <div class="contien">
         <div class="menup ">
             <div class="maintexte">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam fuga natus velit asperiores optio!
-                Sequi alias, libero id quos sint asperiores perferendis. Pariatur error sapiente consectetur distinctio
-                similique eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim, magnam
+             
+              
                 excepturi quis repellat, labore quo consequuntur atque maxime facere animi ab aliquam porro et
                 reiciendis dolorum aperiam corrupti ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
                 ipsum porro aperiam architecto, suscipit animi cupiditate nulla ipsam eligendi illo recusandae. Harum
@@ -44,8 +43,7 @@ logged_only();
         </div>
         <div class="menup">
             <div class="maintexte">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam fuga natus velit asperiores optio!
-                Sequi alias, libero id quos sint asperiores perferendis. Pariatur error sapiente consectetur distinctio
+             
                 similique eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim, magnam
                 excepturi quis repellat, labore quo consequuntur atque maxime facere animi ab aliquam porro et
                 reiciendis dolorum aperiam corrupti ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
@@ -65,8 +63,7 @@ logged_only();
         </div>
         <div class="menup">
             <div class="maintexte">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam fuga natus velit asperiores optio!
-                Sequi alias, libero id quos sint asperiores perferendis. Pariatur error sapiente consectetur distinctio
+             
                 similique eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim, magnam
                 excepturi quis repellat, labore quo consequuntur atque maxime facere animi ab aliquam porro et
                 reiciendis dolorum aperiam corrupti ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
@@ -86,8 +83,7 @@ logged_only();
         </div>
         <div class="menup">
             <div class="maintexte">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsam fuga natus velit asperiores optio!
-                Sequi alias, libero id quos sint asperiores perferendis. Pariatur error sapiente consectetur distinctio
+             
                 similique eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim, magnam
                 excepturi quis repellat, labore quo consequuntur atque maxime facere animi ab aliquam porro et
                 reiciendis dolorum aperiam corrupti ad?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum

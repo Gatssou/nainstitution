@@ -31,6 +31,7 @@
         </div>
         <br>
     </div>
+   
     <hr>
     <?php
         endwhile; 
