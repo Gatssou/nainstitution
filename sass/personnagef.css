@@ -281,32 +281,16 @@ footer{
  /** FORMAT PORTABLE couché **/
  @media only screen and (max-width: 1814px){
 
-  @keyframes slidee {
-    from {
-      margin-left: 100%;
-    }
-    25% {
-      border-radius: 100%;
-      width: 100%;
-    }
-    75% {
-       
-      width: 100%;
-    
-    }
-    to {
-      width: 100%;
-      height: 100%;
-    }
-  }
+  
   section{
     position: absolute;
     top: 0;
+
    width: 100%;
     justify-content: center;
     align-items: center;
     animation-duration: 6s ;
-  transform: none;
+  
 }
 section img{
 height: 200px;
