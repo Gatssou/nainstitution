@@ -15,7 +15,7 @@ section {
   position: absolute;
   top: 0;
   background-attachment: fixed;
-  left: 14.1vh;
+  left: 6.5vh;
   width: 100%;
   height: 100vh;
   background-image: url(../img/imagepersosnage/etoile.jpg);
@@ -75,9 +75,7 @@ section {
 .contien {
   animation-duration: 5s;
   animation-name: slide;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
+  height: 115vh;
   display: flex;
   justify-content: center;
   position: relative;
@@ -85,9 +83,7 @@ section {
 
 .menup {
   display: flex;
-  width: 20%;
   align-items: center;
-  margin: 10px 0px 10px 20px;
 }
 
 .persos {
@@ -142,13 +138,11 @@ section {
   width: 111px;
   border-radius: 15px;
 }
-
 .persos .right h1 {
   font-size: 1.5em;
   font-weight: 500;
   margin-left: 20px;
 }
-
 .perso-back {
   width: 60%;
   display: flex;
@@ -159,16 +153,13 @@ section {
   top: 0;
   left: 49%;
 }
-
 .perso-back img {
   display: none;
 }
-
 .active .perso-back img {
   display: flex;
   border-radius: 15px;
 }
-
 .maintexte {
   color: red;
   width: 23%;
@@ -180,14 +171,10 @@ section {
   font-size: 1.2em;
   top: 19%;
   background-color: rgba(0, 0, 0, 0.514);
-  font-family: 'Hubballi', cursive;
-  font-size: 1.3em;
 }
-
 .maintexte {
   display: none;
 }
-
 .active .maintexte {
   display: flex;
 }
@@ -298,7 +285,7 @@ footer {
     justify-content: start;
     position: absolute;
     font-size: .8em;
-    top: 15%;
+    top: 17%;
     left: 2vh;
     background-color: rgba(0, 0, 0, 0.514);
   }
@@ -325,174 +312,173 @@ footer {
 
 /** FORMAT PORTABLE couché **/
 @media only screen and (min-width: 761px) {
-  @keyframes slide {
-    from {
-      margin-left: 100%;
-      width: 100%;
-    }
+ 
+
   
-    75% {
-      width: 100%;
-      border-radius: 0%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-  @keyframes slidee {
-    from {
-      margin-left: 0%;
-    }
-  
-    25% {
-      border-radius: 0%;
-      width: 0%;
-      border-radius: 0%;
-    }
-  
-    75% {
-  
-      width: 0%;
-      border-radius: 0%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 0%;
-      height: 0%;
-    }
-  }
+    @keyframes slide {
+      from {
+        margin-left: 100%;
+        width: 100%;
+      }
     
-  section{
-    position: absolute;
-    top: 0;
-   width: 100%;
-    justify-content: center;
-    align-items: center;
-    animation-duration: 6s ;
+      75% {
+        width: 100%;
+        border-radius: 0%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    @keyframes slidee {
+      from {
+        margin-left: 0%;
+      }
+    
+      25% {
+        border-radius: 0%;
+        width: 0%;
+        border-radius: 0%;
+      }
+    
+      75% {
+    
+        width: 0%;
+        border-radius: 0%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 0%;
+        height: 0%;
+      }
+    }
+      
+    section{
+      position: absolute;
+      top: 0;
+     width: 100%;
+      justify-content: center;
+      align-items: center;
+      animation-duration: 6s ;
+    
+  }
   
-}
-
-  section img {
-    height: 200px;
-    width: 280px;
-  }
-
-  #globe {
-    position: absolute;
-    z-index: 1000;
-    bottom: 5%;
-    left: 60%;
-  }
-
-  .contien {
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation-duration: 5s;
-    animation-name: slide;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-  }
-
-  .contien img {
+    section img {
+      height: 200px;
+      width: 280px;
+    }
+  
+    #globe {
+      position: absolute;
+      z-index: 1000;
+      bottom: 5%;
+      left: 60%;
+    }
+  
+    .contien {
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation-duration: 5s;
+      animation-name: slide;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      position: relative;
+    }
+  
+    .contien img {
+      display: none;
+    }
+  
+    .menup {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-left: 0;
+      margin: 15px;
+    }
+  
+    .persos {
+      border: 1px solid white;
+      height: 9.1vh;
+      margin-top: -86vh;
+      width: 9.4vh;
+      display: flex;
+      background-color: #334e6965;
+      font-size: 0.5em;
+      font-weight: 200;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+  
+    .persos:hover {
+      display: none;
+    }
+  
+    .persos .left {
+      background-color: rgb(0, 0, 0);
+      height: 100%;
+      width: 100%;
+    }
+  
+    .right h1 {
+      display: none;
+    }
+  
+    .perso-back {
+      width: 28vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      height: 33vh;
+      top: 20%;
+      overflow-x:hidden; 
+      left: 74%;
+    }
+  
+    .perso-back img {
+      display: none;
+      height: 200px;
+      width: 100px;
+    }
+  
+    .active .perso-back img {
+      display: flex;
+      border-radius: 5px;
+    }
+  
+    .maintexte {
+      color: red;
+      width: 50%;
+      height: 35vh;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      position: absolute;
+      font-size: 1em;
+      top: 23%;
+      left: 28%;
+      background-color: rgba(0, 0, 0, 0.815);
+    }
+    .maintexte{
     display: none;
-  }
-
-  .menup {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-left: 0;
-    margin: 15px;
-  }
-
-  .persos {
-    border: 1px solid white;
-    height: 9.1vh;
-    margin-top: -86vh;
-    width: 9.4vh;
-    display: flex;
-    background-color: #334e6965;
-    font-size: 0.5em;
-    font-weight: 200;
-    transition: 0.2s;
-    cursor: pointer;
-  }
-
-  .persos:hover {
-    display: none;
-  }
-
-  .persos .left {
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 100%;
-  }
-
-  .right h1 {
-    display: none;
-  }
-
-  .perso-back {
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    height: 33vh;
-    top: 20%;
-    overflow-x:hidden; 
-    left: 72%;
-  }
-
-  .perso-back img {
-    display: none;
-    height: 200px;
-    width: 100px;
-  }
-
-  .active .perso-back img {
-    display: flex;
-    border-radius: 5px;
-  }
-
-  .maintexte {
-    color: red;
-    width: 50%;
-    height: 35vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    position: absolute;
-    font-size: .8em;
-    top: 20%;
-    left: 28%;
-    background-color: rgba(0, 0, 0, 0.815);
-  }
-
-  .maintexte {
-    display: none;
-  }
-
-  .active .maintexte {
-    display: flex;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .retour {
-    height: 15vh;
-    width: 25vw;
-    overflow: hidden;
-  }
-}
+    }
+    .active .maintexte {
+      display: flex;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .retour{
+      height: 15vh;
+      width: 25vw;
+      overflow: hidden;
+    }
+   }
 
 /** FORMAT tablette**/
