@@ -37,7 +37,6 @@ logged_only();
 
   <button class="lebouton"><a href="./index.php">Visiter</a></button>
   </section> -->
-
   <!--
 <section>
   <h1>Tartiflette</h1>
@@ -53,7 +52,6 @@ logged_only();
 		c0,5.1-3.5,8.2-7.3,9.8L63.9,53.8l27.9,12c3.8,1.6,7.3,5.1,7.3,10.1c0,5.7-5.1,10.5-10.8,10.5c-2.5,0-4.8-1.3-7.6-3.2L57,65.8
 		l3.2,28.2c1,6.7-3.5,12-9.8,12c-6.3,0-10.8-5.1-9.8-11.7L43.7,65.8z"/>
 </svg>
-
     </g>
   </svg>  
 </div>-->
@@ -102,41 +100,22 @@ logged_only();
     "/>
     -->
 
-
-
-
-
-
-
-
-
   <!-- d = start draw, M Moveto, C Curveto, L Lineto Q Quadratic Bezier curve more simple than C, one control point..., z end 
       C 30 100, 70 130, 90 200
     <path fill="none" stroke="white" stroke-width=".1" id="star-path" d="M" />-->
 
-
   <a href="./pub.php">
     <img src="./img/draw/kisspng-american-red-cross-international-red-cross-and-red-red-cross-5a75a2afd6b3f5.9559250815176587998794.png" class="red_cross" alt="">
-    
   </a>
-
-
-
-
-
-
-
 </body>
-
 <!-- COOKIE -->
-
 <?php
 if(isset($_COOKIE['accept_cookie'])){
     $showcookie = false;
 }else{
     $showcookie = true;
 }
-require_once '/laragon/www/nainstitution/index.php';
+require_once '/laragon/www/GitHub/nainstitution/index.php';
 ?>
 
 <?php
