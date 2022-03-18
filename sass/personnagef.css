@@ -294,18 +294,18 @@ footer{
   
     25% {
       border-radius: 0%;
-      width: 0%;
+      width: 50%;
       border-radius: 0%;
     }
   
     75% {
-  
-      width: 0%;
-      border-radius: 0%;
+      margin-left: 80%;
+      width: 20%;
+      border-radius: 20%;
     }
   
     to {
-      margin-left: 0%;
+      margin-left: 50%;
       width: 0%;
       height: 0%;
     }
@@ -390,7 +390,7 @@ footer{
     justify-content: center;
     position: absolute;
     height: 33vh;
-    top: 20%;
+    top: 30%;
     overflow-x:hidden; 
     left: 74%;
   }
