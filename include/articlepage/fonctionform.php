@@ -52,6 +52,6 @@ background-color: gray;
 
     <textarea class="textarea-con" name="descript" placeholder="write"></textarea>
 
-    <input class="envoie" type="submit" name="starting"> <span><a href="./envoief.php">ici</a></span>
+    <input class="envoie" type="submit" name="starting"> <span><a href="./envoief.php">ici Forum</a></span>
 </form>
 </body>
