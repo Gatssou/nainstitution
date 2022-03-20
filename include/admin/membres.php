@@ -7,6 +7,7 @@ if(!$_SESSION['mdp']){
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,37 +16,38 @@ if(!$_SESSION['mdp']){
     <title>Nain ventura</title>
 </head>
 <style>
-    body{
+    body {
         background: black;
         display: flex;
         justify-content: center;
     }
-    .supergrille{
+
+    .supergrille {
         color: white;
         font-size: 1em;
     }
-   
-  
-
 </style>
+
 <body class="supergrille">
     <div class="retour"><a href="./indexad.php"><img src="./img/retour.png" alt=""></a></div>
     <!--Afficher tous les membres , on recupere tout les pseudo dans la table -->
-  <?php
+<?php
 $recupUsers = $bdd->query('SELECT * FROM logtest');
 while($user = $recupUsers->fetch()){
- ?>
- <div class="articlee">
-    <img src="../admin/img/pikapika.png" height="100px" width="100px" alt="">
- <p><?= $user['username'];?><a href="bannir.php?id=<?= $user['id'];?>" style="color:red; text-decoration:none;">Bannissement du gueux !</a></p>
- <?php 
+?>
+    <div class="articlee">
+        <img src="../admin/img/pikapika.png" height="100px" width="100px" alt="">
+        <p><?= $user['username'];?><a href="bannir.php?id=<?= $user['id'];?>"
+                style="color:red; text-decoration:none;">Bannissement du gueux !</a></p>
+        <?php 
 }
          ?>
-</div>
+    </div>
     <!--Fin d'afficher tous les membres -->
     <footer>
- <a href="adlogout.php">Se déconnecter</a>
- </footer>
-    
+        <a href="adlogout.php">Se déconnecter</a>
+    </footer>
+
 </body>
+
 </html>
