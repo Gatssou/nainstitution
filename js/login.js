@@ -14,7 +14,7 @@ function toggleSwitch(){
 
 $(document).ready(function(){
     $("#switch").click(function(){
-        if(this.checked){
+        if(this.checked){ //element pour check si c'est true ou false
             $('html').attr('data-theme', 'night');
             $(this).prop("checked", true);
             $('html').removeClass('clair').addClass('obscur');
