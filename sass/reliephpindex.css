@@ -211,7 +211,8 @@ img {
 
 }
  .mention a{
-  font-size: 0.5em;
+  font-size: 0.3em;
+  color: rgba(252, 87, 87, 0.692);
 }
 .avant,
 .apres {

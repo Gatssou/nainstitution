@@ -50,7 +50,7 @@ $usename = $_SESSION["auth"];
                 <p class="u">U</p>
                 <p class="r">R</p>
                 <p class="a">A</p>
-                 <h2 class="mention"> <a href="#"> Mention Légal</a></h2>
+                 <h2 class="mention"> <a href="#"> Mention Légale</a></h2>
             </div>
             <!-- blipou -->
             <button type="boutton" class="toggle"><img src="./img/index/menugif.webp" width="100px"
