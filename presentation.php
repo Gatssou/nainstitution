@@ -34,7 +34,7 @@ logged_only();
           </div>
           </div> 
           <a href="#"></a>
-          <a class="icone" onclick="myfunction()">&#9776;</a>
+          <a class="icone" onclick="myfunction()">&#9776;</a> <!--fait apparaître le menu burger $#9776-->
      
 
   </header> 
