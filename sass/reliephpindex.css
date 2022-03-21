@@ -210,7 +210,9 @@ img {
   border-radius: 30%;
 
 }
-
+ .mention a{
+  font-size: 0.5em;
+}
 .avant,
 .apres {
   cursor: pointer;

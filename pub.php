@@ -25,11 +25,14 @@ $usename = $_SESSION["auth"];
         <div class="head">
             <img class="lierre" src="./img/img_index/lierre2.png" alt="">
             <h1 class="popi">
+                
                 <?php
                 if($usename){
                     echo '<font color="white"> Bienvenue Aventurier <br> </font>' . $usename ;
+                    
                 }
                 ?>
+                
             </h1>
             <img class="lierre2" src="./img/img_index/lierre2.png" alt="">
         </div>
@@ -47,6 +50,7 @@ $usename = $_SESSION["auth"];
                 <p class="u">U</p>
                 <p class="r">R</p>
                 <p class="a">A</p>
+                 <h2 class="mention"> <a href="#"> Mention Légal</a></h2>
             </div>
             <!-- blipou -->
             <button type="boutton" class="toggle"><img src="./img/index/menugif.webp" width="100px"
