@@ -99,7 +99,7 @@ logged_only();
         </section>
         <section id="pic_2" class="sec">
             <div class="av2">
-                <div class="ttl2">Av2</div>
+                <div class="ttl2">Steve Fisher</div>
                 <div id="avs2">
                     <a href="#pic_2" onclick="openPop2()">
                         <div class="st2 av"></div>
@@ -173,7 +173,7 @@ logged_only();
 
         <section id="pic_3" class="sec">
             <div class="av3">
-                <div class="ttl3">Av3</div>
+                <div class="ttl3">Freya Hoffmeister</div>
                 <div id="avs3">
                     <a href="#pic_3" onclick="openPop3()">
                         <div class="st3 av"></div>
@@ -221,7 +221,7 @@ logged_only();
 
         <section id="pic_4" class="sec">
             <div class="av4">
-                <div class="ttl4">Av4</div>
+                <div class="ttl4">Zara Rutherford</div>
                 <div id="avs4">
                     <a href="#pic_4" onclick="openPop4()">
                         <div class="st4 av"></div>
