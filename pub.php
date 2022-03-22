@@ -25,18 +25,14 @@ $usename = $_SESSION["auth"];
         <div class="head">
             <img class="lierre" src="./img/img_index/lierre2.png" alt="">
             <h1 class="popi">
-                
                 <?php
                 if($usename){
-                    echo '<font color="white"> Bienvenue Aventurier <br> </font>' . $usename ;
-                    
+                    echo '<font color="white"> Bienvenue Aventurier <br> </font>' . $usename ;    
                 }
                 ?>
-                
             </h1>
             <img class="lierre2" src="./img/img_index/lierre2.png" alt="">
         </div>
-
 
             <div class="titree">
                 <p class="n">N</p>
@@ -50,12 +46,13 @@ $usename = $_SESSION["auth"];
                 <p class="u">U</p>
                 <p class="r">R</p>
                 <p class="a">A</p>
-                 <h2 class="mention"> <a href="#"> Mention Légale</a></h2>
             </div>
+
             <!-- blipou -->
             <button type="boutton" class="toggle"><img src="./img/index/menugif.webp" width="100px"
              height="100px" alt="" >
             </button>
+            
             <section>
                 <div class="menu">
                     <li style="--i:0;">
@@ -106,6 +103,7 @@ $usename = $_SESSION["auth"];
         </a>
     </div>
     <footer>
+    <h2 class="mention"> <a href="./include/mentions.php"> Mentions Légales</a></h2>
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
