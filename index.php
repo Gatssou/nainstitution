@@ -68,7 +68,7 @@ logged_only();
       " />
     -->
 
-    <h1 class="welc">Bienvenue dans notre aventure !</h1>
+    <h1 class="welc">Bienvenue dans notre aventure ! <br> Scroll to draw</h1>
     
   <svg viewBox="0 0 100.6 107.6" id="svgf">
     <path fill="none" stroke="red" stroke-width=".2" id="pathf" d="
