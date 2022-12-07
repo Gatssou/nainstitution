@@ -142,6 +142,7 @@ body{
 @media screen and (max-width: 700px) {
   body{
     height: 100vh;
+    background-size: 90vw;
   }
   #svgf{
     position: relative;
@@ -169,6 +170,6 @@ body{
     width: 50vw;
     padding: 10px;
     margin-left: 21vw;
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 }

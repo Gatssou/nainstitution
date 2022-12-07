@@ -326,6 +326,7 @@ input[type="checkbox"]:checked + .app .toggle{
     width: 70vw;
     height: 3vh;
     font-size: 2em;
+    background: grey;
   }
   .errorMessage{
     font-size: 3em;

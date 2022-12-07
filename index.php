@@ -124,9 +124,9 @@ require_once '/laragon/www/nainstitution/index.php';
 ?>
 <div class="overlay">
   <div class="cookie_alert">
-    <a href="./img/draw/cookies.gif"><img src="./img/draw/cookies.gif" style="width: 5vw;" alt=""></a>
-    <p class="cookie_text">Hello world je suis un méchant cookie. Oui je suis vraiment mais vraiment un méchant cookie.
-      <a class="accpt" href="./include/accept_cookie.php">J'accepte</a></p>
+    <a href="./img/draw/cookies.gif"><img src="./img/draw/cookies.gif" style="width: 15vw;" alt=""></a>
+    <p class="cookie_text">Hello world je suis un méchant cookie. Oui je suis vraiment mais vraiment un méchant cookie.</p>
+    <a class="accpt" href="./include/accept_cookie.php">J'accepte</a>
   </div>
 </div>
 
@@ -135,36 +135,34 @@ require_once '/laragon/www/nainstitution/index.php';
 ?>
 <style>
   .cookie_alert {
-   
-    border-top: rgb(255, 0, 0) solid 5px;
-    border: solid white 2px;
     background: rgba(0, 0, 0, 0.808);
+    width: 100%;
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 95%;
-    color: white;
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
     font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    padding: 20px 0 20px 0;
   }
   
   .cookie_alert .accpt {
     text-decoration: none;
-    border: 3px solid green;
+    border: 1px solid burlywood;
     border-radius: 25px;
-    padding: 15px;
-    color: green;
+    color: burlywood;
     transition: 1.2 ease;
+    padding: .5em;
   }
 
   .cookie_alert .accpt:hover {
     color: white;
-    background: green;
+    background: burlywood;
     transition: 2s;
   }
-
   .overlay {
     position: fixed;
     top: 0;
@@ -172,6 +170,7 @@ require_once '/laragon/www/nainstitution/index.php';
     height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, .6);
+    
   }
 </style>
 <script src="./js/stock/jquery-3.6.0.min.js"></script>
