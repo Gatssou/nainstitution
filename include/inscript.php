@@ -3,11 +3,11 @@ session_start();
 require './functions.php';
 
 if(!empty($_POST['email']) && !empty($_POST['pseudo']) ){
-    $em = $_POST['email'];
+    $em = $_POST['email']; 
     $us = $_POST['pseudo'];
     require './bdd.php';
     $checkmail = $pdo->prepare("SELECT * FROM logtest WHERE email = ? OR username = ?");
-    $checkmail->bindParam(1, $em);
+    $checkmail->bindParam(1, $em); 
     $checkmail->bindParam(2, $us);
     $checkmail->execute();
     $datam = $checkmail->fetch(PDO::FETCH_OBJ);
